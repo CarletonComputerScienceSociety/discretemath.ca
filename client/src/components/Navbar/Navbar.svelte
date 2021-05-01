@@ -2,7 +2,7 @@
     import { link } from 'svelte-spa-router'
 </script>
 
-<div>
+<div class="navbar">
     <a href="/" use:link>Home</a>
     <a href="/about" use:link>About</a>
     <a href="/comp1805" use:link>COMP1805</a>
