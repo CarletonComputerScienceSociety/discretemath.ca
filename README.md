@@ -6,7 +6,7 @@ DiscreteMath.ca
 
 ## 1.Install Yarn
 
-![This guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable) will describe the best setup for you're operating system.
+[This guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable) will describe the best setup for you're operating system.
 
 ## 2.Install Dependencies
 
@@ -20,6 +20,7 @@ yarn install
 
 ```bash
 yarn run test
+```
 
 ## Lint
 
