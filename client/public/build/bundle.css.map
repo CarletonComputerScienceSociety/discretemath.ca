@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "Button.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n    import { createEventDispatcher } from 'svelte'\n\n    // props\n    export let label\n\n    // onClick\n    const dispatch = createEventDispatcher()\n\n    const onClick = (event) => {\n      dispatch('click', event)\n    }\n</script>\n\n<button\n    on:click={onClick}>\n    {label}\n</button>\n\n<style type=\"text/scss\">Button {\n  color: var(--theme);\n}</style>\n"
+  ],
+  "names": [],
+  "mappings": "AAmBwB,MAAM,eAAC,CAAC,AAC9B,KAAK,CAAE,IAAI,OAAO,CAAC,AACrB,CAAC"
+}
