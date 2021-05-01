@@ -14,7 +14,8 @@
 
 <button
     on:click={onClick}>
-    {label}
+    <div class="button_label">{label}</div>
+    
 </button>
 
 <style type="text/scss">
