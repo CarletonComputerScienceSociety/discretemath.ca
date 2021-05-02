@@ -2,11 +2,11 @@
 
 # Setup
 
-## 1.Install Yarn
+## 1. Install Yarn
 
-[This guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable) will describe the best setup for you're operating system.
+This [guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable) will describe the best setup for you're operating system.
 
-## 2.Install Dependencies
+## 2. Install Dependencies
 
 ```bash
 yarn install
