@@ -1,6 +1,4 @@
----
-
-DiscreteMath.ca
+# DiscreteMath.ca
 
 # Setup
 
