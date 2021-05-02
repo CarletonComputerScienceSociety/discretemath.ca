@@ -21,3 +21,7 @@
 </script>
 
 <Router {routes}/>
+
+<style type="text/scss">
+    @import 'global.style.scss';
+</style>
