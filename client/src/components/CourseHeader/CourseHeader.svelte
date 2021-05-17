@@ -8,7 +8,7 @@
     // onClick
     const dispatch = createEventDispatcher()
     dispatch('click')
-    
+
 </script>
 
 <div class="main">
@@ -17,5 +17,9 @@
 </div>
 
 <style type="text/scss">
-     @import 'CourseHeader.style.scss';
+    .main{
+        max-width: 40rem;
+        min-width: 30rem;
+    }
+
 </style>

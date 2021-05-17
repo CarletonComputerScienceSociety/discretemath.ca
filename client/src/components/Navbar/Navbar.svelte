@@ -10,5 +10,19 @@
 </div>
 
 <style type="text/scss">
-    @import 'Navbar.style.scss';
+    .navbar{
+    background-color: #FFAB40;
+    min-height: 0.75;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+    padding-left: 5rem;
+    a{
+        padding: 0.25rem 0.5rem;
+        color: white;
+        text-decoration: none;
+    }
+}
+
 </style>

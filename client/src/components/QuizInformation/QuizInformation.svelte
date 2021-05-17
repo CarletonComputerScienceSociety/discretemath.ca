@@ -10,7 +10,7 @@
     dispatch('click')
 
     // onClick
-    
+
 </script>
 
 <div class="main">
@@ -23,5 +23,25 @@
 </div>
 
 <style type="text/scss">
-    @import 'QuizInformation.style.scss';
+    img{
+    max-width: 2rem;
+}
+
+.main{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    .info{
+        min-width: 28rem;
+        padding-top: 0.75rem;
+        margin: 0rem 1.5rem;
+        .quiz-type{
+            font-weight: bold;
+            font-size: 22px;
+        }
+        p{
+            margin: 0rem;
+        }
+    }
+}
+
 </style>
