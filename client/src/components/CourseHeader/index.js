@@ -1,1 +1,1 @@
-export { default as CourseHeader } from './CourseHeader.svelte'
+export {default as CourseHeader} from './CourseHeader.svelte';

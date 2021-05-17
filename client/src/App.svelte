@@ -1,27 +1,27 @@
 <script>
-	import Router from 'svelte-spa-router'
-	import { About, Home, COMP1805Home, COMP2804Home, NotFound } from './pages'
+  import Router from 'svelte-spa-router';
+  import {About, Home, COMP1805Home, COMP2804Home, NotFound} from './pages';
 
-	const routes = {
-		// Exact path
-		'/': Home,
+  const routes = {
+    // Exact path
+    '/': Home,
 
-		// About path
-		'/about': About,
+    // About path
+    '/about': About,
 
-		// COMP1805 path
-		'/comp1805': COMP1805Home,
+    // COMP1805 path
+    '/comp1805': COMP1805Home,
 
-		// COMP1805 path
-		'/comp2804': COMP2804Home,
+    // COMP1805 path
+    '/comp2804': COMP2804Home,
 
-		// Catch-all
-		'*': NotFound,
-	}
+    // Catch-all
+    '*': NotFound
+  };
 </script>
 
-<Router {routes}/>
+<Router {routes} />
 
 <style type="text/scss">
-    @import 'global.style.scss';
+  @import 'global.style.scss';
 </style>

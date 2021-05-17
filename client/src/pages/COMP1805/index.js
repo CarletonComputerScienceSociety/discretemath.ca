@@ -1,1 +1,1 @@
-export { default as COMP1805Home } from './Home.svelte'
+export {default as COMP1805Home} from './Home.svelte';

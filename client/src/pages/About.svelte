@@ -1,6 +1,6 @@
 <script>
-    import { Navbar } from '../components'
+  import {Navbar} from '../components';
 </script>
 
-<Navbar/>
+<Navbar />
 <h1>About</h1>
