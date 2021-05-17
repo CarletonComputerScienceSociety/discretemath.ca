@@ -1,0 +1,25 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: discretemath_development
+  username: postgres
+  password: 1234
+
+test:
+  <<: *default
+  database: discretemath_test
+  username: postgres
+  password: 1234
+
+production:
+  <<: *default
+  database: discretemath_production
+  username: postgres
+  password: 1234
