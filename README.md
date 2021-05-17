@@ -1,6 +1,6 @@
 # DiscreteMath.ca
 
-# Setup
+# Cliet Setup
 
 ## 1. Install Yarn
 
@@ -20,15 +20,14 @@ yarn install
 yarn run test
 ```
 
-## Lint
+## Format
 
 ```bash
-yarn run lint
-yarn run lint:fix
+yarn run format
 ```
 
 ## Storybook
 
 ```bash
-yarn run storybook
+yarn storybook
 ```
