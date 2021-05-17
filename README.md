@@ -1,6 +1,6 @@
 # DiscreteMath.ca
 
-# Cliet Setup
+# Client Setup
 
 ## 1. Install Yarn
 
