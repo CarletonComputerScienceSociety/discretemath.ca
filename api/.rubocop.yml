@@ -1,0 +1,11 @@
+inherit_from: .rubocop_todo.yml
+require:
+    - rubocop-rails
+    - rubocop-faker
+    - rubocop-rspec
+AllCops:
+    NewCops: enable
+    Exclude:
+        - 'config/environments/development.rb'
+        - 'bin/bundle'
+        - 'app/models/application_record.rb'
