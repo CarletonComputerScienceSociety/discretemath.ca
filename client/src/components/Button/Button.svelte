@@ -1,23 +1,38 @@
 <script>
-    import { createEventDispatcher } from 'svelte'
+  import {createEventDispatcher} from 'svelte';
 
-    // props
-    export let label
+  // props
+  export let label;
 
-    // onClick
-    const dispatch = createEventDispatcher()
+  // onClick
+  const dispatch = createEventDispatcher();
 
-    const onClick = (event) => {
-      dispatch('click', event)
-    }
+  const onClick = event => {
+    dispatch('click', event);
+  };
 </script>
 
-<button
-    on:click={onClick}>
-    <div class="button_label">{label}</div>
-    
+<button on:click={onClick}>
+  <div class="button_label">{label}</div>
 </button>
 
 <style type="text/scss">
-    @import 'Button.style.scss';
+  button {
+    border-radius: 0.3rem;
+    border-width: 0px;
+    min-width: 6rem;
+    background-color: #ffab40;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.15s;
+    .button_label {
+      padding: 0.75rem 1.5rem;
+    }
+  }
+
+  button:hover {
+    background-color: #d68110;
+  }
 </style>

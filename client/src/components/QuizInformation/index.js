@@ -1,1 +1,1 @@
-export { default as QuizInformation } from './QuizInformation.svelte'
+export {default as QuizInformation} from './QuizInformation.svelte';
