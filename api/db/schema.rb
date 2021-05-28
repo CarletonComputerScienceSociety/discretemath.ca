@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_28_200201) do
+ActiveRecord::Schema.define(version: 2021_05_28_200823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,6 +66,18 @@ ActiveRecord::Schema.define(version: 2021_05_28_200201) do
     t.index ["course_id"], name: "index_questions_on_course_id"
   end
 
+  create_table "test_questions", force: :cascade do |t|
+    t.integer "order"
+    t.boolean "disabled"
+    t.string "question_type"
+    t.bigint "question_id"
+    t.bigint "test_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["question_type", "question_id"], name: "index_test_questions_on_question_type_and_question_id"
+    t.index ["test_id"], name: "index_test_questions_on_test_id"
+  end
+
   create_table "tests", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -79,5 +91,6 @@ ActiveRecord::Schema.define(version: 2021_05_28_200201) do
   add_foreign_key "multiple_choice_answers", "multiple_choice_questions", column: "multiple_choice_questions_id"
   add_foreign_key "multiple_choice_questions", "courses"
   add_foreign_key "questions", "courses"
+  add_foreign_key "test_questions", "tests"
   add_foreign_key "tests", "course_sessions", column: "course_sessions_id"
 end

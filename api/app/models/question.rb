@@ -1,3 +1,3 @@
 class Question < ApplicationRecord
-  belongs_to :Course
+  belongs_to :course
 end
