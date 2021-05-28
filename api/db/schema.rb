@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_28_200823) do
+ActiveRecord::Schema.define(version: 2021_05_28_204810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,15 @@ ActiveRecord::Schema.define(version: 2021_05_28_200823) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "lectures", force: :cascade do |t|
+    t.string "title"
+    t.string "url"
+    t.bigint "course_session_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_session_id"], name: "index_lectures_on_course_session_id"
   end
 
   create_table "multiple_choice_answers", force: :cascade do |t|
@@ -88,6 +97,7 @@ ActiveRecord::Schema.define(version: 2021_05_28_200823) do
   end
 
   add_foreign_key "course_sessions", "courses"
+  add_foreign_key "lectures", "course_sessions"
   add_foreign_key "multiple_choice_answers", "multiple_choice_questions", column: "multiple_choice_questions_id"
   add_foreign_key "multiple_choice_questions", "courses"
   add_foreign_key "questions", "courses"
