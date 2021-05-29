@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_26_155707) do
+ActiveRecord::Schema.define(version: 2021_05_28_204810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,15 @@ ActiveRecord::Schema.define(version: 2021_05_26_155707) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "lectures", force: :cascade do |t|
+    t.string "title"
+    t.string "url"
+    t.bigint "course_session_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_session_id"], name: "index_lectures_on_course_session_id"
   end
 
   create_table "multiple_choice_answers", force: :cascade do |t|
@@ -54,6 +63,30 @@ ActiveRecord::Schema.define(version: 2021_05_26_155707) do
     t.index ["course_id"], name: "index_multiple_choice_questions_on_course_id"
   end
 
+  create_table "questions", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.string "body_format"
+    t.text "solution"
+    t.string "solution_format"
+    t.bigint "course_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_id"], name: "index_questions_on_course_id"
+  end
+
+  create_table "test_questions", force: :cascade do |t|
+    t.integer "order"
+    t.boolean "disabled"
+    t.string "question_type"
+    t.bigint "question_id"
+    t.bigint "test_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["question_type", "question_id"], name: "index_test_questions_on_question_type_and_question_id"
+    t.index ["test_id"], name: "index_test_questions_on_test_id"
+  end
+
   create_table "tests", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -64,7 +97,10 @@ ActiveRecord::Schema.define(version: 2021_05_26_155707) do
   end
 
   add_foreign_key "course_sessions", "courses"
+  add_foreign_key "lectures", "course_sessions"
   add_foreign_key "multiple_choice_answers", "multiple_choice_questions", column: "multiple_choice_questions_id"
   add_foreign_key "multiple_choice_questions", "courses"
+  add_foreign_key "questions", "courses"
+  add_foreign_key "test_questions", "tests"
   add_foreign_key "tests", "course_sessions", column: "course_sessions_id"
 end
