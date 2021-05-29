@@ -4,6 +4,6 @@ class Course < ApplicationRecord
   validates :code, presence: true
 
   def display_name
-    code + ": " + title
+    "#{code}: #{title}"
   end
 end
