@@ -5,7 +5,7 @@ class CreateTestQuestions < ActiveRecord::Migration[6.0]
       t.boolean :disabled
       t.references :question, polymorphic: true
       t.references :test, null: false, foreign_key: true
-    
+
       t.timestamps
     end
   end

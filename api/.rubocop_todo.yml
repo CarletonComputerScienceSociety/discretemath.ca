@@ -135,7 +135,7 @@ Style/SymbolArray:
 # Configuration parameters: AutoCorrect, AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
 # URISchemes: http, https
 Layout/LineLength:
-  Max: 200
+  Max: 400
 
 Rails/UniqueValidationWithoutIndex:
   Enabled: false
