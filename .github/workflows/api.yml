@@ -1,0 +1,62 @@
+name: API
+'on':
+  - push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: 'postgres:11'
+        ports:
+          - '5432:5432'
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready --health-interval 10s --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: 'redis:alpine'
+        ports:
+          - '6379:6379'
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Ruby 2.6
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.3
+      - name: Install dependent libraries
+        run: sudo apt-get install libpq-dev
+      - name: Bundle install
+        run: |
+          gem install bundler
+          cd api
+          bundle install --jobs 4 --retry 3
+      - name: Setup Database
+        run: |
+          cd api
+          cp config/database.github.yml config/database.yml
+          bundle exec rake db:create
+          bundle exec rake db:schema:load
+        env:
+          RAILS_ENV: test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+      - name: Run Rubocop
+        run: |
+          cd api
+          rubocop
+      - name: Run RSpec
+        run: |
+          cd api
+          COVERAGE=true bundle exec rspec -f j -o tmp/rspec_results.json -f p --require rails_helper
+        env:
+          RAILS_ENV: test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+      - name: RSpec Report
+        uses: SonicGarden/rspec-report-action@v1
+        if: always()
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          json-path: tmp/rspec_results.json
