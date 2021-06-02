@@ -1,6 +1,6 @@
 module Types
     class QuestionType < Types::BaseObject
-      description 'A type that represents a Multiple Choice Question entity.'
+      description 'A type that represents a Question entity.'
       field :id, ID, null: false
       field :title, String, null: false
       field :body, String, null: false
