@@ -4,5 +4,6 @@ module Types
     field :courses, resolver: Queries::Courses
     field :tests, resolver: Queries::Tests
     field :multiple_choice_questions, resolver: Queries::MultipleChoiceQuestions
+    field :questions, resolver: Queries::Questions
   end
 end
