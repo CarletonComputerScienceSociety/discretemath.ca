@@ -1,6 +1,6 @@
 module Types
   class TestType < Types::BaseObject
-    description 'A type that represents a Course entity.'
+    description 'A type that represents a Test entity.'
     field :id, ID, null: false
     field :title, String, null: false
     field :description, String, null: false
