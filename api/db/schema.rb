@@ -46,10 +46,10 @@ ActiveRecord::Schema.define(version: 2021_05_28_204810) do
     t.text "body"
     t.string "body_format"
     t.boolean "correct"
-    t.bigint "multiple_choice_questions_id", null: false
+    t.bigint "multiple_choice_question_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["multiple_choice_questions_id"], name: "index_multiple_choice_answers_on_multiple_choice_questions_id"
+    t.index ["multiple_choice_question_id"], name: "index_multiple_choice_answers_on_multiple_choice_question_id"
   end
 
   create_table "multiple_choice_questions", force: :cascade do |t|
@@ -90,17 +90,17 @@ ActiveRecord::Schema.define(version: 2021_05_28_204810) do
   create_table "tests", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.bigint "course_sessions_id", null: false
+    t.bigint "course_session_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["course_sessions_id"], name: "index_tests_on_course_sessions_id"
+    t.index ["course_session_id"], name: "index_tests_on_course_session_id"
   end
 
   add_foreign_key "course_sessions", "courses"
   add_foreign_key "lectures", "course_sessions"
-  add_foreign_key "multiple_choice_answers", "multiple_choice_questions", column: "multiple_choice_questions_id"
+  add_foreign_key "multiple_choice_answers", "multiple_choice_questions"
   add_foreign_key "multiple_choice_questions", "courses"
   add_foreign_key "questions", "courses"
   add_foreign_key "test_questions", "tests"
-  add_foreign_key "tests", "course_sessions", column: "course_sessions_id"
+  add_foreign_key "tests", "course_sessions"
 end
