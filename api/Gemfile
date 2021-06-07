@@ -23,7 +23,7 @@ gem 'puma', '~> 4.1'
 
 # GraphQL Gems
 gem 'graphiql-rails'
-gem 'graphql', '1.8.13'
+gem 'graphql', '1.12.12'
 gem 'graphql-batch'
 gem 'graphql-errors'
 gem 'graphql-pagination'
