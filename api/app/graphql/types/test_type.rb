@@ -10,7 +10,5 @@ module Types
     def course_session
       Loaders::AssociationLoader.for(Course, :course_session).load(object)
     end
-
-    
   end
 end

@@ -4,7 +4,7 @@ module Types
     field :order, ID, null: false
     field :disabled, Boolean, null: false
     field :question_type, String, null: false
-    field :question, Types::PolymorphicQuestionType , null: false
+    field :question, Types::PolymorphicQuestionType, null: false
     field :test, Types::TestType, null: false
   end
 end
