@@ -21,6 +21,7 @@ RSpec.describe MultipleChoiceQuestion, type: :model do
         expect(result).to(be(false))
       end
     end
+
     context 'when multiple choice question has no body format' do
       before { multiple_choice_question.body_format = nil }
 
@@ -28,6 +29,7 @@ RSpec.describe MultipleChoiceQuestion, type: :model do
         expect(result).to(be(false))
       end
     end
+
     context 'when multiple choice question has no pseudocode' do
       before { multiple_choice_question.pseudocode = nil }
 
@@ -35,6 +37,7 @@ RSpec.describe MultipleChoiceQuestion, type: :model do
         expect(result).to(be(false))
       end
     end
+
     context 'when multiple choice question has no course id' do
       before { multiple_choice_question.course_id = nil }
 

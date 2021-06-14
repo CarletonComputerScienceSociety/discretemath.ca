@@ -6,6 +6,5 @@ class MultipleChoiceQuestion < ApplicationRecord
   validates :pseudocode, presence: true
   validates :course_id, presence: true
 
-
   belongs_to :course
 end

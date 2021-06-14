@@ -21,6 +21,7 @@ RSpec.describe CourseSession, type: :model do
         expect(result).to(be(false))
       end
     end
+
     context 'when course session has no instructor' do
       before { course.instructor = nil }
 
@@ -28,6 +29,7 @@ RSpec.describe CourseSession, type: :model do
         expect(result).to(be(false))
       end
     end
+
     context 'when course session has no course id' do
       before { course.course_id = nil }
 

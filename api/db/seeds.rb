@@ -41,7 +41,7 @@ sample_mcq = MultipleChoiceQuestion.create!(
   course_id: comp1805.id
 )
 
-sample_mca = MultipleChoiceAnswer.create!(
+MultipleChoiceAnswer.create!(
   body: 'Find Bitstring ?',
   body_format: 'MCQ',
   correct: true,
