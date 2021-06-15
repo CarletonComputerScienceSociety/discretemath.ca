@@ -2,6 +2,6 @@ FactoryBot.define do
   factory :lecture do
     title { 'MyString' }
     url { 'MyString' }
-    CourseSession { nil }
+    course_session { build(:course_session) }
   end
 end

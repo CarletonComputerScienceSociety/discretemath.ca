@@ -21,13 +21,5 @@ RSpec.describe Lecture, type: :model do
         expect(result).to(be(false))
       end
     end
-
-    context 'when lecture has no course session id' do
-      before { lecture.course_session_id = nil }
-
-      it 'returns false' do
-        expect(result).to(be(false))
-      end
-    end
   end
 end

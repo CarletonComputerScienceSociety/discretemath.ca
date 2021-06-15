@@ -3,6 +3,6 @@ FactoryBot.define do
     body { 'MyText' }
     body_format { 'MyString' }
     correct { false }
-    MultipleChoiceQuestion { nil }
+    multiple_choice_question { build(:multiple_choice_question) }
   end
 end
