@@ -15,7 +15,7 @@ RSpec.describe MultipleChoiceAnswer, type: :model do
     end
 
     context 'when multiple choice answer has no body format' do
-      before { course.body_format = nil }
+      before { multiple_choice_answer.body_format = nil }
 
       it 'returns false' do
         expect(result).to(be(false))
@@ -23,7 +23,7 @@ RSpec.describe MultipleChoiceAnswer, type: :model do
     end
 
     context 'when multiple choice answer has no multiple question if' do
-      before { course.multiple_choice_question_id = nil }
+      before { multiple_choice_answer.multiple_choice_question_id = nil }
 
       it 'returns false' do
         expect(result).to(be(false))

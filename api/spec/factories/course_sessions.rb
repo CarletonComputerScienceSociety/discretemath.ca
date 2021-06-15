@@ -3,6 +3,6 @@ FactoryBot.define do
     term { 'MyString' }
     year { '' }
     instructor { 'MyString' }
-    course { nil }
+    course { build(:course) }
   end
 end

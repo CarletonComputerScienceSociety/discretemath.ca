@@ -31,7 +31,7 @@ RSpec.describe TestQuestion, type: :model do
     end
 
     context 'when test question has no test id' do
-      before { test_question.ctest_id = nil }
+      before { test_question.test_id = nil }
 
       it 'returns false' do
         expect(result).to(be(false))

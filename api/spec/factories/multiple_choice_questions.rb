@@ -4,6 +4,6 @@ FactoryBot.define do
     body { 'MyText' }
     body_format { 'MyString' }
     pseudocode { 'MyText' }
-    course { nil }
+    course { build(:course) }
   end
 end
