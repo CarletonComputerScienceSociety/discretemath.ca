@@ -1,5 +1,5 @@
-//import {gql} from '@apollo/client';
-/*
+import {gql} from 'graphql-tag';
+
 const TEST = gql`
   query test($id: ID!) {
     test(id: $id) {
@@ -23,7 +23,5 @@ const TEST = gql`
     }
   }
 `;
-*/
-const TEST = "Hello";
 
 export {TEST};
