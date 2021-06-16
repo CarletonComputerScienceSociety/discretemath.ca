@@ -43,6 +43,7 @@
     link: httpLink,
     cache: new InMemoryCache()
   });
+
   setClient(client);
 </script>
 

@@ -58,7 +58,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-svelte3": "^3.2.0",
-    "graphql": "^15.5.0",
+    "graphql": "14.0.2",
     "graphql-tag": "^2.12.4",
     "prettier": "^2.3.0",
     "prettier-plugin-svelte": "^2.3.0",
