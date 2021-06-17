@@ -7,12 +7,6 @@
   export let body;
   export let body_format;
   export let state;
-
-  
-  // selected: orange
-  // correct: green
-  // incorrect: red
-  // solution: light green
   
   onMount(() => {
     let script = document.createElement('script');
@@ -46,13 +40,13 @@
 
 <style>
   .main {
-    height: 50px;
+    height: 3rem;
     display: flex;
     justify-content: left;
     align-items: center;
     border-style: solid;
-    border-radius: 10px;
-    border-width: 1px;
+    border-radius: 0.6rem;
+    border-width: 0.1rem;
     border-color: #c0c0c0;
     font-family: 'Nunito', sans-serif;
   }
@@ -80,10 +74,9 @@
   }
   .solution {
     background-color: #c1f0c1;
-    
   }
 
   .letter {
-    margin: 10px;
+    margin: 0.5rem;
   }
 </style>
