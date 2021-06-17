@@ -4,7 +4,7 @@ class CreateMultipleChoiceAnswers < ActiveRecord::Migration[6.0]
       t.text :body
       t.string :body_format
       t.boolean :correct
-      t.references :multiple_choice_questions, null: false, foreign_key: true
+      t.references :multiple_choice_question, null: false, foreign_key: true
 
       t.timestamps
     end

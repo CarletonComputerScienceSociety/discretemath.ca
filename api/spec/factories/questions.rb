@@ -5,6 +5,6 @@ FactoryBot.define do
     body_format { 'MyString' }
     solution { 'MyText' }
     solution_format { 'MyString' }
-    Course { nil }
+    course { build(:course) }
   end
 end

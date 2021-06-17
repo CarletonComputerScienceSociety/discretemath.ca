@@ -2,6 +2,6 @@ FactoryBot.define do
   factory :test do
     title { 'MyString' }
     description { 'MyText' }
-    CourseSession { nil }
+    course_session { build(:course_session) }
   end
 end
