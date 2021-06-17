@@ -1,1 +1,1 @@
-export {TEST} from './queries';
+export {getTest} from './services';

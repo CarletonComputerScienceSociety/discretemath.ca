@@ -1,1 +1,1 @@
-export {TEST} from './Test';
+export {TEST, TEST_EXAMPLE_DATA} from './Test';

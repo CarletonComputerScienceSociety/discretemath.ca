@@ -1,11 +1,8 @@
 <script>
   import {CourseNavbar as Navbar} from '../components';
-  import {query} from 'svelte-apollo';
-  import {TEST} from '../data';
+  import {getTest} from '../data';
 
-  const test = query(TEST, {
-    variables: {id: 1}
-  });
+  const test = getTest(1);
 </script>
 
 <Navbar />
@@ -15,6 +12,6 @@
   {:else if $test.error}
     <div>ERROR: {$test.error.message}</div>
   {:else}
-    <div>{$test.data.test.id} {console.log($test.data)}</div>
+    <div>{$test.data?.test.id} {console.log($test)}</div>
   {/if}
 </div>
