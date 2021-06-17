@@ -1,0 +1,1 @@
+export {getTest} from './getTest';
