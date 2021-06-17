@@ -6,5 +6,7 @@ class MultipleChoiceQuestion < ApplicationRecord
   validates :pseudocode, presence: true
   validates :course_id, presence: true
 
+  # Relations
+  has_many :multiple_choice_answers, dependent: :delete_all
   belongs_to :course
 end
