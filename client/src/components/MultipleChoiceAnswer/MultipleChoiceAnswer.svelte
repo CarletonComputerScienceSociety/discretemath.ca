@@ -7,7 +7,7 @@
   export let body;
   export let body_format;
   export let state;
-  
+
   onMount(() => {
     let script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
@@ -25,11 +25,9 @@
       };
     };
   });
-
-  
 </script>
 
-<div class="main {state}" id="answer" >
+<div class="main {state}" id="answer">
   <div class="letter">
     ({letter})
   </div>
@@ -66,11 +64,9 @@
 
   .correct {
     background-color: #80ff80;
-    
   }
   .incorrect {
     background-color: #ff5c33;
-    
   }
   .solution {
     background-color: #c1f0c1;
