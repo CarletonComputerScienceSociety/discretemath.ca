@@ -10,7 +10,9 @@
     letter: {options: ['a', 'b', 'c', 'd']},
     body: {control: 'text'},
     body_format: {options: ['mathjax', 'text', 'html']},
-    state: {options: ['unselected', 'selected', 'correct', 'incorrect', 'solution']},
+    state: {
+      options: ['unselected', 'selected', 'correct', 'incorrect', 'solution']
+    },
     onClick: {action: 'onClick'}
   }}
 />
