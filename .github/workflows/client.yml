@@ -13,7 +13,7 @@ jobs:
     - name: Run Prettier
       run: |
         cd client
-        yarn run format
+        yarn run check
     - name: Run Jest
       run: |
         cd client
