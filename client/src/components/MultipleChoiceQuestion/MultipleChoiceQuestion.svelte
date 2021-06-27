@@ -13,7 +13,6 @@
       letter={'a'}
       body={answer.body}
       body_format={answer.body_format}
-      correct={answer.correct}
       state="unselected"
     />
   {/each}
