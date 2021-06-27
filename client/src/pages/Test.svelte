@@ -1,5 +1,5 @@
 <script>
-  import {CourseNavbar as Navbar} from '../components';
+  import {CourseNavbar as Navbar, Test} from '../components';
   import {getTest} from '../data';
 
   const test = getTest(1);
@@ -12,6 +12,12 @@
   {:else if $test.error}
     <div>ERROR: {$test.error.message}</div>
   {:else}
-    <div>{$test.data?.test.id} {console.log($test)}</div>
+    <div>
+      <Test
+        title={$test.data.test.title}
+        description={$test.data.test.description}
+        questions={$test.data.test.testQuestions}
+      />
+    </div>
   {/if}
 </div>
