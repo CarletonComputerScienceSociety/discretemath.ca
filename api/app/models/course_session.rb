@@ -3,7 +3,8 @@ class CourseSession < ApplicationRecord
   validates :term, presence: true
   validates :year, presence: true
   validates :instructor, presence: true
-  validates :course_id, presence: true
 
   belongs_to :course
+  has_many :tests
+  has_many :lectures
 end
