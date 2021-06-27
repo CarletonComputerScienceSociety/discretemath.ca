@@ -18,7 +18,7 @@ RSpec.describe('Course Session Query') do
       result = graphql!
       expect(result.dig('data', 'courseSession', 'id')).to(eq(course_session.id.to_s))
     end
-    
+
     it 'returns error when given invalid id' do
       _course_session, query = setup_for_example
       prepare_query(query)
@@ -37,14 +37,14 @@ RSpec.describe('Course Session Query') do
   def setup_for_example
     course_session = create(:course_session)
     query = <<~GRAPHQL
-        query Course($id: ID!){
-            courseSession(id: $id){
-            id
-            instructor
-            term
-            year
-            }
-        }
+      query Course($id: ID!){
+          courseSession(id: $id){
+          id
+          instructor
+          term
+          year
+          }
+      }
     GRAPHQL
     [course_session, query]
   end

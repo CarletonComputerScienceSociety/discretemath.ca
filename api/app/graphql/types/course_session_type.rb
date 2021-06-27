@@ -12,9 +12,11 @@ module Types
     def course
       Loaders::AssociationLoader.for(CourseSession, :course).load(object)
     end
+
     def tests
       Loaders::AssociationLoader.for(CourseSession, :tests).load(object)
     end
+
     def lectures
       Loaders::AssociationLoader.for(CourseSession, :lectures).load(object)
     end
