@@ -3,7 +3,7 @@ class MultipleChoiceQuestion < ApplicationRecord
   validates :title, presence: true
   validates :body, presence: true
   validates :body_format, presence: true
-  validates :pseudocode, presence: true
+  validates :pseudocode, presence: false
   validates :course_id, presence: true
 
   # Relations
