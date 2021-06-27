@@ -33,8 +33,8 @@ RSpec.describe MultipleChoiceQuestion, type: :model do
     context 'when multiple choice question has no pseudocode' do
       before { multiple_choice_question.pseudocode = nil }
 
-      it 'returns false' do
-        expect(result).to(be(false))
+      it 'returns true' do
+        expect(result).to(be(true))
       end
     end
 
