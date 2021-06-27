@@ -1,72 +1,102 @@
-# frozen_string_literal: true
-
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
 comp1805 = Course.create!(
   title: 'Discrete Structures I',
   code: 'COMP 1805',
   description: 'Introduction to discrete mathematics and discrete structures. Topics include: propositional logic, predicate calculus, set theory, complexity of algorithms, mathematical reasoning and proof techniques, recurrences, induction, finite automata and graph theory. Material is illustrated through examples from computing.'
 )
 
-test_course_session = CourseSession.create!(
+comp1805_winter_2015 = CourseSession.create!(
   term: 'winter',
   year: '2015',
   instructor: 'John Howat',
   course: comp1805
 )
 
-Course.create!(
+comp2804 = Course.create!(
   title: 'Discrete Structures II',
   code: 'COMP 2804',
   description: 'A second course in discrete mathematics and discrete structures. Topics include: counting, sequences and sums, discrete probability, basic statistics, recurrence relations, randomized algorithms. Material is illustrated through examples from computing.'
 )
 
-sample_test = Test.create!(
-  title: 'Sample 1',
-  description: 'Sample Test MidTerm COMP 1805',
-  course_session: test_course_session
+comp2804_fall_2013 = CourseSession.create!(
+  term: 'fall',
+  year: '2013',
+  instructor: 'Michiel Smid',
+  course: comp2804
 )
 
-sample_mcq = MultipleChoiceQuestion.create!(
-  title: 'Question 1',
-  body: 'Find Bitstring ?',
-  body_format: 'MCQ',
-  pseudocode: 'IDK',
-  course_id: comp1805.id
+comp2804_winter_2014 = CourseSession.create!(
+  term: 'winter',
+  year: '2014',
+  instructor: 'Michiel Smid',
+  course: comp2804
 )
 
-MultipleChoiceAnswer.create!(
-  body: 'Find Bitstring ?',
-  body_format: 'MCQ',
-  correct: true,
-  multiple_choice_question: sample_mcq
+comp2804_fall_2014 = CourseSession.create!(
+  term: 'fall',
+  year: '2014',
+  instructor: 'Michiel Smid',
+  course: comp2804
 )
 
-sample_question = Question.create!(
-  title: 'Question 1',
-  body: 'Find Bitstring ?',
-  body_format: 'Q',
-  solution: 'IDK',
-  solution_format: 'Q',
-  course_id: comp1805.id
+comp2804_winter_2015 = CourseSession.create!(
+  term: 'winter',
+  year: '2015',
+  instructor: 'Michiel Smid',
+  course: comp2804
 )
 
-TestQuestion.create!(
-  test: sample_test,
-  question: sample_mcq,
-  order: 0,
-  disabled: false
+comp2804_fall_2015 = CourseSession.create!(
+  term: 'fall',
+  year: '2015',
+  instructor: 'Michiel Smid',
+  course: comp2804
 )
 
-TestQuestion.create!(
-  test: sample_test,
-  question: sample_question,
-  order: 1,
-  disabled: false
+comp2804_fall_2016 = CourseSession.create!(
+  term: 'fall',
+  year: '2016',
+  instructor: 'Michiel Smid',
+  course: comp2804
+)
+
+comp2804_winter_2017 = CourseSession.create!(
+  term: 'winter',
+  year: '2017',
+  instructor: 'Michiel Smid',
+  course: comp2804
+)
+
+comp2804_fall_2017 = CourseSession.create!(
+  term: 'fall',
+  year: '2017',
+  instructor: 'Michiel Smid',
+  course: comp2804
+)
+
+comp2804_winter_2018 = CourseSession.create!(
+  term: 'winter',
+  year: '2018',
+  instructor: 'Michiel Smid',
+  course: comp2804
+)
+
+comp2804_fall_2018 = CourseSession.create!(
+  term: 'fall',
+  year: '2018',
+  instructor: 'Michiel Smid',
+  course: comp2804
+)
+
+comp2804_winter_2019 = CourseSession.create!(
+  term: 'winter',
+  year: '2019',
+  instructor: 'Michiel Smid',
+  course: comp2804
+)
+
+comp2804_fall_2019 = CourseSession.create!(
+  term: 'fall',
+  year: '2019',
+  instructor: 'Pat Morin',
+  course: comp2804
 )
