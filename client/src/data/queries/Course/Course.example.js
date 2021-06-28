@@ -105,7 +105,24 @@ const COURSE_EXAMPLE_DATA = {
           displayName: 'COMP 2804: Fall 2019'
         }
       ],
-      lectures: [],
+      lectures: [
+        {
+          __typename: 'Lecture',
+          id: '1',
+          title: 'Lecture 1',
+          url: 'https://www.youtube.com/watch?v=2gJupmZeF9Y',
+          source: 'youtube',
+          sourceIdentifier: '2gJupmZeF9Y'
+        },
+        {
+          __typename: 'Lecture',
+          id: '2',
+          title: 'Lecture 2',
+          url: 'https://www.youtube.com/watch?v=oNoCCKkyP6Y',
+          source: 'youtube',
+          sourceIdentifier: 'oNoCCKkyP6Y'
+        }
+      ],
       tests: [
         {
           __typename: 'Test',

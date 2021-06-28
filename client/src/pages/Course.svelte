@@ -40,7 +40,7 @@
     <h2>Lectures</h2>
     <div class="course-tests">
       {#each $response.data.course.lectures as lecture}
-        <div class="course-test">{lecture.id}</div>
+        <a href={lecture.url}><div class="course-test">{lecture.id}</div></a>
       {/each}
     </div>
   {/if}

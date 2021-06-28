@@ -17,6 +17,8 @@ const COURSE = gql`
         id
         title
         url
+        source
+        sourceIdentifier
       }
       tests {
         id
