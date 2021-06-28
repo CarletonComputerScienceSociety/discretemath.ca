@@ -1,1 +1,1 @@
-export {getTest} from './services';
+export {getTest, getCourse, getCourseSession} from './services';
