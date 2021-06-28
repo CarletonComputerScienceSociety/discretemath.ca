@@ -4,6 +4,7 @@ module Types
     field :id, ID, null: false
     field :title, String, null: false
     field :description, String, null: false
+    field :question_count, Integer, null: false
     field :course_session, Types::CourseSessionType, null: true
     field :test_questions, [Types::TestQuestionType], null: false
 

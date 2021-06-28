@@ -4,6 +4,7 @@ module Types
     field :id, ID, null: false
     field :year, String, null: false
     field :term, String, null: false
+    field :display_name, String, null: false
     field :instructor, String, null: false
     field :course, Types::CourseType, null: true
     field :lectures, [Types::LectureType], null: true
