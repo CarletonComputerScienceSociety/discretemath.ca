@@ -14,7 +14,24 @@ const COURSESESSION_EXAMPLE_DATA = {
         description:
           'A second course in discrete mathematics and discrete structures. Topics include: counting, sequences and sums, discrete probability, basic statistics, recurrence relations, randomized algorithms. Material is illustrated through examples from computing.'
       },
-      lectures: [],
+      lectures: [
+        {
+          __typename: 'Lecture',
+          id: '1',
+          title: 'Lecture 1',
+          url: 'https://www.youtube.com/watch?v=2gJupmZeF9Y',
+          source: 'youtube',
+          sourceIdentifier: '2gJupmZeF9Y'
+        },
+        {
+          __typename: 'Lecture',
+          id: '2',
+          title: 'Lecture 2',
+          url: 'https://www.youtube.com/watch?v=oNoCCKkyP6Y',
+          source: 'youtube',
+          sourceIdentifier: 'oNoCCKkyP6Y'
+        }
+      ],
       tests: [
         {
           __typename: 'Test',
