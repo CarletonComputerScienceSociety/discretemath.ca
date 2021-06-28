@@ -2,6 +2,8 @@
   import Router from 'svelte-spa-router';
   import {
     About,
+    Course,
+    CourseSession,
     Home,
     COMP1805Home,
     COMP2804Home,
@@ -26,7 +28,10 @@
     '/comp2804': COMP2804Home,
 
     // Test path
-    '/test/:id': Test,
+    '/tests/:id': Test,
+
+    // Test path
+    '/sessions/:id': CourseSession,
 
     // Catch-all
     '*': NotFound
