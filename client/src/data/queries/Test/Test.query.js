@@ -12,14 +12,17 @@ const TEST = gql`
           ... on Question {
             id
             title
+            body
             bodyFormat
           }
           ... on MultipleChoiceQuestion {
             id
             title
+            body
             bodyFormat
             multipleChoiceAnswers {
               body
+              bodyFormat
               correct
             }
           }
