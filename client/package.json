@@ -7,8 +7,8 @@
     "start": "sirv public",
     "validate": "svelte-check",
     "test": "jest",
-    "check": "prettier --check '{public,src}/**/*.{css,html,js,svelte}'",
-    "format": "prettier --write '{public,src}/**/*.{css,html,js,svelte}'",
+    "check": "prettier --check '{public,src}/**/*.{css,html,js,ts,svelte}'",
+    "format": "prettier --write '{public,src}/**/*.{css,html,js,ts,svelte}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
