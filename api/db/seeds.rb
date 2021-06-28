@@ -11,6 +11,24 @@ comp1805_winter_2015 = CourseSession.create!(
   course: comp1805
 )
 
+Lecture.create!(
+    title: 'Lecture 1',
+    url: 'https://www.youtube.com/watch?v=2gJupmZeF9Y',
+    source: 'youtube',
+    source_identifier: '2gJupmZeF9Y',
+    date: Date.new(2015,1,6),
+    course_session: comp1805_winter_2015
+)
+
+Lecture.create!(
+    title: 'Lecture 2',
+    url: 'https://www.youtube.com/watch?v=oNoCCKkyP6Y',
+    source: 'youtube',
+    source_identifier: 'oNoCCKkyP6Y',
+    date: Date.new(2015,1,8),
+    course_session: comp1805_winter_2015
+)
+
 comp2804 = Course.create!(
   title: 'Discrete Structures II',
   code: 'COMP 2804',
@@ -100,7 +118,6 @@ comp2804_fall_2019 = CourseSession.create!(
   instructor: 'Pat Morin',
   course: comp2804
 )
-
 
 midterm_fall_2013 = Test.create!(
     title: 'Midterm Fall 2013',
