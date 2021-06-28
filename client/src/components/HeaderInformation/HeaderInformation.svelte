@@ -18,5 +18,27 @@
 </div>
 
 <style type="text/scss">
-  @import 'HeaderInformation.style.scss';
+  .home-container {
+    font-family: 'Assistant', sans-serif;
+    max-width: 30rem;
+    h2 {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+      font-size: 52px;
+    }
+  }
+
+  .description {
+    max-width: 25rem;
+  }
+
+  .button-container {
+    display: flex;
+  }
+
+  .button-left {
+    margin-left: 1rem;
+  }
 </style>
