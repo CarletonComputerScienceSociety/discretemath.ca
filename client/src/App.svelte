@@ -26,7 +26,7 @@
     '/comp2804': COMP2804Home,
 
     // Test path
-    '/test': Test,
+    '/test/:id': Test,
 
     // Catch-all
     '*': NotFound

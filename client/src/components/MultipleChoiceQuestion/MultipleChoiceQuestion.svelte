@@ -2,18 +2,23 @@
   import {MultipleChoiceAnswer} from '../../components';
   export let number;
   export let body;
-  export let body_format;
+  export let bodyFormat;
   export let answers;
+  export let model;
+  export let index;
 </script>
 
 <div class="multiple-choice-question">
-  question
+  <div>{number}. {body}</div>
   {#each answers as answer}
     <MultipleChoiceAnswer
-      letter={'a'}
+      letter={answer.letter}
       body={answer.body}
-      body_format={answer.body_format}
-      state="unselected"
+      body_format={answer.bodyFormat}
+      state={answer.state}
+      {model}
+      index={answer.index}
+      questionIndex={index}
     />
   {/each}
 </div>

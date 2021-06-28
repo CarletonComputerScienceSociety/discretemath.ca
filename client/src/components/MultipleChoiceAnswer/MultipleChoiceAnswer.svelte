@@ -8,6 +8,10 @@
   export let body_format;
   export let state;
 
+  export let model;
+  export let index;
+  export let questionIndex;
+
   onMount(() => {
     let script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
@@ -27,7 +31,11 @@
   });
 </script>
 
-<div class="main {state}" id="answer">
+<div
+  class="main {state}"
+  id="answer"
+  on:click={() => model.selectAnswer(questionIndex, index)}
+>
   <div class="letter">
     ({letter})
   </div>
