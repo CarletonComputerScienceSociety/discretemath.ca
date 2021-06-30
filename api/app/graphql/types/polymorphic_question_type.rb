@@ -8,9 +8,9 @@ module Types
         Types::MultipleChoiceQuestionType
       when Question
         Types::QuestionType
-      end
       when TrueOrFalseQuestion
         Types::TrueOrFalseQuestionType
       end
     end
   end
+end
