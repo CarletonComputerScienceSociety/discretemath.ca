@@ -5,6 +5,6 @@ FactoryBot.define do
     body_format { 'MyString' }
     pseudocode { 'MyText' }
     answer { false }
-    course { '' }
+    course { build(:course) }
   end
 end

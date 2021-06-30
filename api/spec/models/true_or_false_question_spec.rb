@@ -37,13 +37,5 @@ RSpec.describe TrueOrFalseQuestion, type: :model do
         expect(result).to(be(false))
       end
     end
-
-    context 'when true or false question has no course id' do
-      before { true_or_false_question.course_id = nil }
-
-      it 'returns false' do
-        expect(result).to(be(false))
-      end
-    end
   end
 end
