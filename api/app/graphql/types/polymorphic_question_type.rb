@@ -1,7 +1,7 @@
 module Types
   class PolymorphicQuestionType < Types::BaseUnion
     description 'Various kinds of Test Questions'
-    possible_types Types::MultipleChoiceQuestionType, Types::QuestionType,, Types::TrueOrFalseQuestionType
+    possible_types Types::MultipleChoiceQuestionType, Types::QuestionType, Types::TrueOrFalseQuestionType
     def self.resolve_type(object, _context)
       case object
       when MultipleChoiceQuestion
@@ -14,4 +14,3 @@ module Types
       end
     end
   end
-end
