@@ -1,6 +1,10 @@
 name: Client
-'on':
-  - push
+
+on:
+  push:
+    paths:
+      - 'client/**'
+ 
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -1,6 +1,10 @@
 name: API
-'on':
-  - push
+
+on:
+  push:
+    paths:
+      - 'api/**'
+
 jobs:
   build:
     runs-on: ubuntu-latest
