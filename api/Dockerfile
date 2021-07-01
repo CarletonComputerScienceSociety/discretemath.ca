@@ -14,3 +14,5 @@ RUN gem install bundler:2.1.4 \
 
 EXPOSE 3000
 ENTRYPOINT [ "/usr/src/app/entrypoint.sh" ]
+
+#test run job
