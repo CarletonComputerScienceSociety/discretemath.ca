@@ -1,5 +1,5 @@
 <script>
-  import {HeaderInformation} from '../Headerinformation';
+  import {HeaderInformation} from '../HeaderInformation';
 </script>
 
 <div class="main">
