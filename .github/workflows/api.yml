@@ -3,16 +3,16 @@ name: API
 on:
   push:
     paths:
-      - 'api/**'
+      - "api/**"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: 'postgres:11'
+        image: "postgres:11"
         ports:
-          - '5432:5432'
+          - "5432:5432"
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
@@ -20,9 +20,9 @@ jobs:
           --health-cmd pg_isready --health-interval 10s --health-timeout 5s
           --health-retries 5
       redis:
-        image: 'redis:alpine'
+        image: "redis:alpine"
         ports:
-          - '6379:6379'
+          - "6379:6379"
     steps:
       - uses: actions/checkout@v1
       - name: Set up Ruby 2.6
@@ -62,5 +62,5 @@ jobs:
         uses: SonicGarden/rspec-report-action@v1
         if: always()
         with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
+          token: "${{ secrets.GITHUB_TOKEN }}"
           json-path: tmp/rspec_results.json
