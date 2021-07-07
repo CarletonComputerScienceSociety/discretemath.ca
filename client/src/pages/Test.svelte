@@ -1,17 +1,47 @@
 <script>
-  import {CourseNavbar as Navbar} from '../components';
+  import {
+    CourseNavbar as Navbar,
+    Test as Component,
+    Button
+  } from '../components';
+  import {Test as Model} from '../models';
   import {getTest} from '../data';
 
-  const test = getTest(1);
+  export let params = {};
+
+  let data;
+  let model;
+
+  const response = getTest(parseInt(params.id));
+  $: {
+    if (!($response.loading || $response.error)) {
+      model = new Model($response.data.test);
+      data = model.getStore();
+    }
+  }
 </script>
 
 <Navbar />
 <div class="course-page">
-  {#if $test.loading}
+  {#if $response.loading}
     <div>Loading...</div>
-  {:else if $test.error}
-    <div>ERROR: {$test.error.message}</div>
-  {:else}
-    <div>{$test.data?.test.id} {console.log($test)}</div>
+  {/if}
+
+  {#if $response.error}
+    <div>ERROR: {$response.error.message}</div>
+  {/if}
+
+  {#if $data}
+    <div>
+      <Component
+        title={$data.title}
+        description={$data.description}
+        questions={$data.questions}
+        {model}
+      />
+    </div>
+    <div on:click={() => model.submit()}>
+      <Button label="Submit" />
+    </div>
   {/if}
 </div>

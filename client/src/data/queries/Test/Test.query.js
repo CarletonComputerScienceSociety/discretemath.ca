@@ -6,16 +6,25 @@ const TEST = gql`
       description
       id
       testQuestions {
+        order
+        questionType
         question {
           ... on Question {
             id
             title
+            body
             bodyFormat
           }
           ... on MultipleChoiceQuestion {
             id
             title
+            body
             bodyFormat
+            multipleChoiceAnswers {
+              body
+              bodyFormat
+              correct
+            }
           }
         }
       }

@@ -4,9 +4,12 @@ module Types
     field :id, ID, null: false
     field :title, String, null: false
     field :url, String, null: false
+    field :source, String, null: false
+    field :source_identifier, String, null: false
     field :course_session, Types::CourseSessionType, null: true
+
     def course_session
-      Loaders::AssociationLoader.for(Course, :course_session).load(object)
+      Loaders::AssociationLoader.for(Lecture, :course_session).load(object)
     end
   end
 end

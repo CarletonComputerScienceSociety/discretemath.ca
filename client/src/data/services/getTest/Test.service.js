@@ -3,7 +3,8 @@ import {TEST, TEST_EXAMPLE_DATA} from '../../queries';
 import {readable} from 'svelte/store';
 
 const getTest = id => {
-  if (false) { // ENV VAR TO HIT API INSTEAD OF MOCK
+  // ENV VAR TO HIT API INSTEAD OF MOCK
+  if (false) {
     return query(TEST, {
       variables: {id: id}
     });

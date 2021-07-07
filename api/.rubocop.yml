@@ -8,5 +8,7 @@ AllCops:
     Exclude:
         - 'config/environments/development.rb'
         - 'db/schema.rb'
+        - 'db/seeds.rb'
         - 'bin/bundle'
         - 'app/models/application_record.rb'
+        - 'db/migrate/20210628221442_lecture_updates.rb'

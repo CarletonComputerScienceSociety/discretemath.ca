@@ -1,20 +1,24 @@
 name: Client
-'on':
-  - push
+
+on:
+  push:
+    paths:
+      - "client/**"
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: |
-        cd client
-        yarn
-    - name: Run Prettier
-      run: |
-        cd client
-        yarn run format
-    - name: Run Jest
-      run: |
-        cd client
-        yarn run test
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: |
+          cd client
+          yarn
+      - name: Run Prettier
+        run: |
+          cd client
+          yarn run check
+      - name: Run Jest
+        run: |
+          cd client
+          yarn run test

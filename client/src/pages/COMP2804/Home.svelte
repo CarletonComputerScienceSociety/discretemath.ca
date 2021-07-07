@@ -1,8 +1,5 @@
 <script>
-  import {CourseNavbar as Navbar} from '../../components';
+  import {Course} from '../../pages';
 </script>
 
-<Navbar />
-<div class="course-page">
-  <h1>COMP 2804</h1>
-</div>
+<Course id={2} />
