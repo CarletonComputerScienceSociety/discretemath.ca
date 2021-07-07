@@ -10,12 +10,12 @@
     number: {control: 'number'},
     body: {control: 'text'},
     bodyFormat: {options: ['mathjax', 'text', 'html']},
-    answers: {control: 'array'},
+    answers: {control: 'array'}
   }}
 />
 
 <Template let:args>
-  <MultipleChoiceQuestion {...args}/>
+  <MultipleChoiceQuestion {...args} />
 </Template>
 
 <Story
@@ -25,30 +25,30 @@
     body: 'What is the runtime of binary search with respect to the size of the array?',
     body_format: 'mathjax',
     answers: [
-        {
+      {
         letter: 'a',
         body: '$$O(n^2)$$',
         body_format: 'mathjax',
         state: 'unselected'
-        },
-        {
+      },
+      {
         letter: 'b',
         body: '$$O(n)$$',
         body_format: 'mathjax',
         state: 'unselected'
-        },
-        {
+      },
+      {
         letter: 'c',
         body: '$$O(log n)$$',
         body_format: 'mathjax',
         state: 'correct'
-        },
-        {
+      },
+      {
         letter: 'd',
         body: '$$O(n log n)$$',
         body_format: 'mathjax',
         state: 'unselected'
-        }
-      ]
+      }
+    ]
   }}
 />

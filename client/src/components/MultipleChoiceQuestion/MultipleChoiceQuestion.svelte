@@ -28,5 +28,4 @@
     font-family: 'Nunito', sans-serif;
     padding: 1rem;
   }
-
 </style>
