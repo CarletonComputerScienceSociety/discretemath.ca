@@ -24,4 +24,8 @@
 </div>
 
 <style type="text/scss">
+  .multiple-choice-question {
+    font-family: 'Nunito', sans-serif;
+    padding: 1rem;
+  }
 </style>

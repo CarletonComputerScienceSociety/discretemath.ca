@@ -55,6 +55,7 @@
     border-width: 0.1rem;
     border-color: #c0c0c0;
     font-family: 'Nunito', sans-serif;
+    margin: 1rem 0rem;
   }
 
   .unselected:hover {
