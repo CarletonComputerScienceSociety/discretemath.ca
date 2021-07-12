@@ -1,7 +1,7 @@
 class Course < ApplicationRecord
   # Validations
-  validates :title, presence: true
-  validates :code, presence: true
+  validates :title, presence: true, uniqueness: true
+  validates :code, presence: true, uniqueness: true
 
   # Relations
   has_many :course_sessions, dependent: :delete_all
