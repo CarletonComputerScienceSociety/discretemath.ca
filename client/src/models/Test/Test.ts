@@ -54,9 +54,22 @@ class Test {
     this.store.set(this.getComponentFormat());
   }
 
+  calculateScore(): number {
+    let score = 0;
+    this.questions.forEach(question => {
+      let MCquestion = question as MultipleChoiceQuestion;
+      if (MCquestion.selectedAnswer == MCquestion.correctAnswer) {
+        score += 1;
+      }
+    });
+    return score;
+  }
+
   submit() {
+    this.calculateScore();
     this.setSubmitted(true);
     this.store.set(this.getComponentFormat());
+    window.scrollTo(0, 0);
   }
 
   getComponentFormat() {
@@ -69,7 +82,8 @@ class Test {
     return {
       title: this.title,
       description: this.description,
-      questions: questions
+      questions: questions,
+      score: this.calculateScore()
     };
   }
 

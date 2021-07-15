@@ -4,6 +4,7 @@ import {MultipleChoiceAnswer} from './MultipleChoiceAnswer';
 class MultipleChoiceQuestion extends Question {
   selectedAnswer: number;
   answers: MultipleChoiceAnswer[];
+  correctAnswer: number;
 
   constructor(i: number, n: number, b: string, bf: string, a: any[]) {
     super(i, n, b, bf);
@@ -23,9 +24,11 @@ class MultipleChoiceQuestion extends Question {
         input[i].bodyFormat,
         input[i].correct
       );
+      if (input[i].correct) {
+        this.correctAnswer = i;
+      }
       answers.push(answer);
     }
-
     return answers;
   }
 
