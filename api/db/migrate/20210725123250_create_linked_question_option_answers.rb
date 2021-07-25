@@ -4,7 +4,7 @@ class CreateLinkedQuestionOptionAnswers < ActiveRecord::Migration[6.0]
       t.text :body
       t.string :format
       t.references :linked_question, null: false, foreign_key: true
-      t.references :linked_question_option, null: false, foreign_key: true
+      t.references :linked_question_option, null: false, foreign_key: true, index: { name: :linked_question_option_answers_on_linked_question_option_id }
 
       t.timestamps
     end
