@@ -21,6 +21,7 @@ RSpec.describe LinkedQuestionOptionAnswer, type: :model do
         expect(result).to(be(false))
       end
     end
+
     context 'when linked question option answer has no linked question option' do
       before { linked_question_option_answer.linked_question_options = nil }
 
@@ -28,6 +29,7 @@ RSpec.describe LinkedQuestionOptionAnswer, type: :model do
         expect(result).to(be(false))
       end
     end
+
     context 'when linked question option answer has no linked question' do
       before { linked_question_option_answer.linked_question = nil }
 
