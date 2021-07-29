@@ -20,12 +20,12 @@
 </div>
 
 <style>
-  .linked-question-option{
+  .linked-question-option {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
 
-  select{
+  select {
     line-height: 10px;
     border: 1px solid #000000;
     border-radius: 12%;

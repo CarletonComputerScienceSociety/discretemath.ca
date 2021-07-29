@@ -23,7 +23,7 @@
     </div>
     <div class="linked-answers">
       <ol>
-        {#each answers as answer, index}
+        {#each answers as answer}
           <li>{answer}</li>
         {/each}
       </ol>
@@ -47,7 +47,7 @@
     width: 50%;
   }
 
-  .linked-answers ol li{
+  .linked-answers ol li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
