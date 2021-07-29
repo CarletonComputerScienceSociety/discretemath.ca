@@ -18,3 +18,20 @@
   </select>
   <label for="option-{qnumber}-{index}">{body}</label>
 </div>
+
+<style>
+  .linked-question-option{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  select{
+    line-height: 10px;
+    border: 1px solid #000000;
+    border-radius: 12%;
+    background-color: #fff;
+    padding-left: 2px;
+    width: 49px;
+    height: 31px;
+  }
+</style>

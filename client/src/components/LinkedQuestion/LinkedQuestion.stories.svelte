@@ -19,7 +19,7 @@
 </Template>
 
 <Story
-  name="One"
+  name="Example one"
   args={{
     number: 15,
     body: "Let S := {1,2,3,4,5,6,7,8}, and let T be an unknown set. From the following, what can you conclude about T. Be as precise as possible: if you can list the elements of T exhastively, do so; if you can't identify any elements that you can conclude must be (or must not be) in T.",

@@ -39,11 +39,17 @@
 
   .options-answers-grid {
     display: flex;
+    margin-top: 1rem;
   }
 
   .linked-options,
   .linked-answers {
     width: 50%;
+  }
+
+  .linked-answers ol li{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   @media only screen and (max-width: 414px) {
