@@ -2,7 +2,8 @@
   import {
     CourseNavbar as Navbar,
     Test as Component,
-    Button
+    Button,
+    Mathjax
   } from '../components';
   import {Test as Model} from '../models';
   import {getTest} from '../data';
@@ -22,6 +23,7 @@
 </script>
 
 <Navbar />
+<Mathjax />
 <div class="course-page">
   {#if $response.loading}
     <div>Loading...</div>

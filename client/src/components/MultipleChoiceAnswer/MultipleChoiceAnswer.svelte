@@ -2,33 +2,13 @@
   import {createEventDispatcher} from 'svelte';
   import {onMount} from 'svelte';
 
-  // props
   export let letter;
   export let body;
   export let body_format;
   export let state;
-
   export let model;
   export let index;
   export let questionIndex;
-
-  onMount(() => {
-    let script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-    document.head.append(script);
-
-    script.onload = () => {
-      MathJax = {
-        tex: {
-          inlineMath: [
-            ['$', '$'],
-            ['\\(', '\\)']
-          ]
-        },
-        svg: {fontCache: 'global'}
-      };
-    };
-  });
 </script>
 
 <div
