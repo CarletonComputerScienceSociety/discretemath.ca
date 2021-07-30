@@ -8,4 +8,5 @@ export {LinkedQuestionOption} from './LinkedQuestionOption';
 export {MultipleChoiceAnswer} from './MultipleChoiceAnswer';
 export {MultipleChoiceQuestion} from './MultipleChoiceQuestion';
 export {Navbar} from './Navbar';
+export {Pseudocode} from './Pseudocode';
 export {Test} from './Test';

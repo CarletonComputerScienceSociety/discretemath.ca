@@ -20,6 +20,17 @@
       data = model.getStore();
     }
   }
+  // the worse code ever written
+  if (window.location.href.indexOf('reload') > -1) {
+    window.scrollTo(0, 0);
+    let id = parseInt(params.id);
+    setTimeout(function () {
+      window.location.href = window.location.origin + '/#/tests/' + id;
+      setTimeout(function () {
+        window.location.reload();
+      }, 250);
+    }, 500);
+  }
 </script>
 
 <Navbar />

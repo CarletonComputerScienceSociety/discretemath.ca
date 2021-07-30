@@ -37,6 +37,7 @@ class Test {
         testQuestion.order,
         testQuestion.question.body,
         testQuestion.question.bodyFormat,
+        testQuestion.question.pseudocode,
         testQuestion.question.multipleChoiceAnswers
       );
     }
@@ -45,7 +46,8 @@ class Test {
       index,
       testQuestion.order,
       testQuestion.question.body,
-      testQuestion.question.bodyFormat
+      testQuestion.question.bodyFormat,
+      testQuestion.question.pseudocode
     );
   }
 
