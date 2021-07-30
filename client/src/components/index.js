@@ -1,6 +1,7 @@
 export {Button} from './Button';
 export {CourseNavbar} from './CourseNavbar';
 export {Header} from './Header';
+export {Mathjax} from './Mathjax';
 export {HeaderInformation} from './HeaderInformation';
 export {LinkedQuestion} from './LinkedQuestion';
 export {LinkedQuestionOption} from './LinkedQuestionOption';
