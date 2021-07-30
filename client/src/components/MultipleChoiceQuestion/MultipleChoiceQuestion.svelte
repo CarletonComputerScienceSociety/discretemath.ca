@@ -1,5 +1,5 @@
 <script>
-  import {MultipleChoiceAnswer} from '../../components';
+  import {MultipleChoiceAnswer, Pseudocode} from '../../components';
 
   export let number;
   export let body;
@@ -7,10 +7,15 @@
   export let answers;
   export let model;
   export let index;
+  export let pseudocode;
 </script>
 
 <div class="multiple-choice-question">
   <div>{number}. {@html body}</div>
+  <br />
+  {#if pseudocode.length > 4}
+    <Pseudocode string={pseudocode} />
+  {/if}
   {#each answers as answer}
     <MultipleChoiceAnswer
       letter={answer.letter}
@@ -26,7 +31,6 @@
 
 <style type="text/scss">
   .multiple-choice-question {
-    font-family: 'Nunito', sans-serif;
     padding: 1rem;
   }
 </style>

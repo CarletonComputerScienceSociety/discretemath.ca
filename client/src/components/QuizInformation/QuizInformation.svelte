@@ -31,7 +31,6 @@
 
   .main {
     display: flex;
-    font-family: 'Nunito', sans-serif;
     .info {
       min-width: 28rem;
       padding-top: 0.75rem;

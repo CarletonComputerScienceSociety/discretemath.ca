@@ -22,6 +22,7 @@
       bodyFormat={question.bodyFormat}
       answers={question.answers}
       {model}
+      pseudocode={question.pseudocode}
       index={question.index}
     />
   {/each}

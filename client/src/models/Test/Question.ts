@@ -3,12 +3,14 @@ class Question {
   number: number;
   body: string;
   bodyFormat: string;
+  pseudocode: string;
 
-  constructor(i: number, n: number, b: string, bf: string) {
+  constructor(i: number, n: number, b: string, bf: string, p: string) {
     this.index = i;
     this.number = n;
     this.body = b;
     this.bodyFormat = bf;
+    this.pseudocode = p;
   }
 
   getComponentFormat(submitted: boolean) {

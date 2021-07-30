@@ -31,7 +31,7 @@
     <h2>Tests</h2>
     <div class="course-tests">
       {#each $response.data.course.tests as test}
-        <a href={'/tests/' + test.id} use:link
+        <a href={'#/tests/' + test.id + '/?reload=true'}
           ><div class="course-test">{test.id}</div></a
         >
       {/each}

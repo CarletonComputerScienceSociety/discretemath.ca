@@ -5,8 +5,15 @@ class MultipleChoiceQuestion extends Question {
   selectedAnswer: number;
   answers: MultipleChoiceAnswer[];
 
-  constructor(i: number, n: number, b: string, bf: string, a: any[]) {
-    super(i, n, b, bf);
+  constructor(
+    i: number,
+    n: number,
+    b: string,
+    bf: string,
+    p: string,
+    a: any[]
+  ) {
+    super(i, n, b, bf, p);
     this.selectedAnswer = -1;
     this.answers = this.initAnswers(a);
   }
@@ -56,6 +63,7 @@ class MultipleChoiceQuestion extends Question {
       number: this.number,
       body: this.body,
       bodyFormat: this.bodyFormat,
+      pseudocode: this.pseudocode,
       answers: answers
     };
   }

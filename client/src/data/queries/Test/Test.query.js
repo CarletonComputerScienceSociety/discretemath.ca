@@ -20,6 +20,7 @@ const TEST = gql`
             title
             body
             bodyFormat
+            pseudocode
             multipleChoiceAnswers {
               body
               bodyFormat
