@@ -23,7 +23,6 @@
     min-width: 6rem;
     background-color: #ffab40;
     color: white;
-    font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 16px;
     transition: all 0.15s;
