@@ -293,27 +293,19 @@ f13m01 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf13m12text = %q{Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionf13m12text = %q{Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. When running ${\rm F{\small IB}}(5)$, how many calls are there to ${\rm F{\small IB}}(2)$?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-When running ${\rm F{\small IB}}(5)$, how many calls are there to ${\rm F{\small IB}}(2)$?}
-
-questionf13m12pseudocode = %q{M12-F13-pseudo.png}
+questionf13m12pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Fib}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+        \STATE $f = n$
+    \ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
+    \ENDIF
+    \STATE return $f$
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f13m12 = MultipleChoiceQuestion.create!(
     title: 'f13m12',
@@ -394,27 +386,19 @@ f13m14 = MultipleChoiceQuestion.create!(
 )
 
 questionf13m13text = %q{The Fibonacci numbers are defined as follows: $f_0 = 0, f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for $n \geq 2$. <br>
-Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
+Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. For $n \geq 2$, run algorithm ${\rm F{\small IB}}(n)$ and let $a_n$ be the number of times that ${\rm F{\small IB}}(0)$ is called.}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-For $n \geq 2$, run algorithm ${\rm F{\small IB}}(n)$ and let $a_n$ be the number of times that ${\rm F{\small IB}}(0)$ is called.}
-
-questionf13m13pseudocode = %q{M13-F13-pseudo.png}
+questionf13m13pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Fib}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE $f = n$
+    \ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
+    \ENDIF
+    \STATE return $f$
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f13m13 = MultipleChoiceQuestion.create!(
     title: 'f13m13',
@@ -707,12 +691,10 @@ f14m10 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionw17m15text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionw17m15text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$, which takes as input an integer $n \geq 0$.
+If you run algorithm ${\rm H{\small ELLO}}(7)$, how many times is the word "hello" printed?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="hello-code" style="display:none;">
+questionw17m15pseudocode = %q{
 \begin{algorithmic}
 \PROCEDURE{Hello}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -725,12 +707,7 @@ questionw17m15text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$,
 \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
-
-If you run algorithm ${\rm H{\small ELLO}}(7)$, how many times is the word "hello" printed?}
-
-questionw17m15pseudocode = %q{M15-W17-pseudo.png}
+}
 
 w17m15 = MultipleChoiceQuestion.create!(
     title: 'w17m15',
@@ -860,30 +837,22 @@ w17m17 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf14m13text = %q{Consider the following recursive algorithm ${\rm S{\small ILLY}}$, which takes as input an integer $n \geq 1$ which is a power of 2: <br><br>
+questionf14m13text = %q{Consider the following recursive algorithm ${\rm S{\small ILLY}}$, which takes as input an integer $n \geq 1$ which is a power of 2. For $n$ a power of 2, let $F(n)$ be the number of times you fart when running the algorithm ${\rm S{\small ILLY}}(n)$. Which of the following is true?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="silly-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Silly}{$n$}
-\IF{$n = 1$}
-  \STATE drink one pint of beer
-\ELSEIF{$n = 2$}
-      \STATE fart once
-  \ELSE \STATE fart once
-      \STATE \CALL{Silly}{$n/2$}
-      \STATE fart once
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-For $n$ a power of 2, let $F(n)$ be the number of times you fart when running the algorithm ${\rm S{\small ILLY}}(n)$. Which of the following is true?}
-
-questionf14m13pseudocode = %q{M13-F14-pseudo.png}
+questionf14m13pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Silly}{$n$}
+    \IF{$n = 1$}
+      \STATE drink one pint of beer
+    \ELSEIF{$n = 2$}
+          \STATE fart once
+      \ELSE \STATE fart once
+          \STATE \CALL{Silly}{$n/2$}
+          \STATE fart once
+    \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f14m13 = MultipleChoiceQuestion.create!(
     title: 'f14m13',
@@ -893,12 +862,9 @@ f14m13 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf14m12text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionf14m12text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. When running ${\rm F{\small IB}}(9)$, how many calls are there to ${\rm F{\small IB}}(4)$?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
+questionf14m12pseudocode = %q{
 \begin{algorithmic}
 \PROCEDURE{Fib}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -908,12 +874,7 @@ questionf14m12text = %q{Consider the following recursive algorithm ${\rm F{\smal
 \STATE return $f$
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
-
-When running ${\rm F{\small IB}}(9)$, how many calls are there to ${\rm F{\small IB}}(4)$?}
-
-questionf14m12pseudocode = %q{M12-F14-pseudo.png}
+}
 
 f14m12 = MultipleChoiceQuestion.create!(
     title: 'f14m12',
@@ -1524,31 +1485,23 @@ f18m16 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf18m14text = %q{Consider the recursive algorithm ${\rm F{\small ART}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionf18m14text = %q{Consider the recursive algorithm ${\rm F{\small ART}}$, which takes as input an integer $n \geq 0$. If you run algorithm ${\rm F{\small ART}}(9)$, how many times do you fart?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fart-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fart}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE eat one can of beans
-\ELSEIF{$n$ is even}
-  \STATE fart once
-  \STATE \CALL{Fart}{$n/2$}
-\ELSE \STATE \CALL{Fart}{$n+1$}
-  \STATE fart once
-  \STATE \CALL{Fart}{$n-1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-If you run algorithm ${\rm F{\small ART}}(9)$, how many times do you fart?}
-
-questionf18m14pseudocode = %q{M14-F18-pseudo.png}
+questionf18m14pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Fart}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE eat one can of beans
+    \ELSEIF{$n$ is even}
+      \STATE fart once
+      \STATE \CALL{Fart}{$n/2$}
+    \ELSE \STATE \CALL{Fart}{$n+1$}
+      \STATE fart once
+      \STATE \CALL{Fart}{$n-1$}
+    \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f18m14 = MultipleChoiceQuestion.create!(
     title: 'f18m14',
@@ -1687,27 +1640,19 @@ f15m04 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf15m13text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionf15m13text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. When running ${\rm F{\small IB}}(55)$, how many calls are there to ${\rm F{\small IB}}(50)$?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-When running ${\rm F{\small IB}}(55)$, how many calls are there to ${\rm F{\small IB}}(50)$?}
-
-questionf15m13pseudocode = %q{M13-F15-pseudo.png}
+questionf15m13pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Fib}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE $f = n$
+    \ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
+    \ENDIF
+    \STATE return $f$
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f15m13 = MultipleChoiceQuestion.create!(
     title: 'f15m13',
@@ -1748,29 +1693,21 @@ f15m08 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf15m14text = %q{Consider the following recursive algorithm ${\rm J{\small USTIN}B{\small IEBER}}$, which takes as input an integer $n \geq 1$, which is a power of 2. <br><br>
+questionf15m14text = %q{Consider the following recursive algorithm ${\rm J{\small USTIN}B{\small IEBER}}$, which takes as input an integer $n \geq 1$, which is a power of 2. For $n$ a power of 2, let $B(n)$ be the number of times you print "I don't like Justin Bieber" when running algorithm ${\rm J{\small USTIN}B{\small IEBER}}(n)$. Which of the following is true?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="jb-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{JustinBieber}{$n$}
-\IF{$n = 1$}
-  \STATE order chicken wings
-\ELSEIF{$n = 2$}
-  \STATE drink one pint of India Pale Ale
-\ELSE \STATE print "I don't like Justin Bieber"
-    \STATE \CALL{JustinBieber}{$n/2$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-For $n$ a power of 2, let $B(n)$ be the number of times you print "I don't like Justin Bieber" when running algorithm ${\rm J{\small USTIN}B{\small IEBER}}(n)$. Which of the following is true?}
-
-questionf15m14pseudocode = %q{M14-F15-pseudo.png}
+questionf15m14pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{JustinBieber}{$n$}
+    \IF{$n = 1$}
+      \STATE order chicken wings
+    \ELSEIF{$n = 2$}
+      \STATE drink one pint of India Pale Ale
+    \ELSE \STATE print "I don't like Justin Bieber"
+        \STATE \CALL{JustinBieber}{$n/2$}
+    \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f15m14 = MultipleChoiceQuestion.create!(
     title: 'f15m14',
@@ -1780,27 +1717,19 @@ f15m14 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf16m13text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionf16m13text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. When running ${\rm F{\small IB}}(12)$, how many calls are there to ${\rm F{\small IB}}(8)$?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-When running ${\rm F{\small IB}}(12)$, how many calls are there to ${\rm F{\small IB}}(8)$?}
-
-questionf16m13pseudocode = %q{M13-F16-pseudo.png}
+questionf16m13pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Fib}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE $f = n$
+    \ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
+    \ENDIF
+    \STATE return $f$
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f16m13 = MultipleChoiceQuestion.create!(
     title: 'f16m13',
@@ -1871,28 +1800,20 @@ f16m11 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf16m14text = %q{Consider the following recursive algorithm ${\rm E{\small LISA}D{\small RINKS}C{\small IDER}}$, which takes as input an integer $n \geq 1$, which is a power of 2. <br><br>
+questionf16m14text = %q{Consider the following recursive algorithm ${\rm E{\small LISA}D{\small RINKS}C{\small IDER}}$, which takes as input an integer $n \geq 1$, which is a power of 2. For $n$ a power of 2, let $C(n)$ be the total number of bottles of cider that you drink when running algorithm ${\rm E{\small LISA}D{\small RINKS}C{\small IDER}}(n)$. Which of the following is true for any $n \geq 1$ that is a power of 2?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="edc-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{ElisaDrinksCider}{$n$}
-\IF{$n = 1$}
-  \STATE order Fibonachos
-\ELSE \STATE \CALL{ElisaDrinksCider}{$n/2$}
-  \STATE drink $n$ bottles of cider
-  \STATE \CALL{ElisaDrinksCider}{$n/2$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-For $n$ a power of 2, let $C(n)$ be the total number of bottles of cider that you drink when running algorithm ${\rm E{\small LISA}D{\small RINKS}C{\small IDER}}(n)$. Which of the following is true for any $n \geq 1$ that is a power of 2?}
-
-questionf16m14pseudocode = %q{M14-F16-pseudo.png}
+questionf16m14pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{ElisaDrinksCider}{$n$}
+    \IF{$n = 1$}
+      \STATE order Fibonachos
+    \ELSE \STATE \CALL{ElisaDrinksCider}{$n/2$}
+      \STATE drink $n$ bottles of cider
+      \STATE \CALL{ElisaDrinksCider}{$n/2$}
+    \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f16m14 = MultipleChoiceQuestion.create!(
     title: 'f16m14',
@@ -2151,27 +2072,19 @@ w15m15 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionw15m13text = %q{Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionw15m13text = %q{Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. When running ${\rm F{\small IB}}(99)$, how many calls are there to ${\rm F{\small IB}}(95)$?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-When running ${\rm F{\small IB}}(99)$, how many calls are there to ${\rm F{\small IB}}(95)$?}
-
-questionw15m13pseudocode = %q{M13-W15-pseudo.png}
+questionw15m13pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Fib}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE $f = n$
+    \ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
+    \ENDIF
+    \STATE return $f$
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 w15m13 = MultipleChoiceQuestion.create!(
     title: 'w15m13',
@@ -2215,28 +2128,20 @@ w19m09 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionw15m14text = %q{Consider the following recursive algorithm ${\rm N{\small ATIONAL}A{\small NTHEM}}$, which takes as input an integer $n \geq 1$, which is a power of 2: <br><br>
+questionw15m14text = %q{Consider the following recursive algorithm ${\rm N{\small ATIONAL}A{\small NTHEM}}$, which takes as input an integer $n \geq 1$, which is a power of 2. For $n$ a power of 2, let $S(n)$ be the number of times you sing <i>O Canada</i> when running algorithm ${\rm N{\small ATIONAL}A{\small NTHEM}}(n)$. Which of the following is true?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="na-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{NationalAnthem}{$n$}
-\IF{$n = 1$}
-  \STATE sing \textit{O Canada} once
-\ELSE \STATE \CALL{NationalAnthem}{$n/2$}
-  \STATE sing \textit{O Canada} once
-  \STATE \CALL{NationalAnthem}{$n/2$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-For $n$ a power of 2, let $S(n)$ be the number of times you sing <i>O Canada</i> when running algorithm ${\rm N{\small ATIONAL}A{\small NTHEM}}(n)$. Which of the following is true?}
-
-questionw15m14pseudocode = %q{M14-W15-pseudo.png}
+questionw15m14pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{NationalAnthem}{$n$}
+    \IF{$n = 1$}
+      \STATE sing \textit{O Canada} once
+    \ELSE \STATE \CALL{NationalAnthem}{$n/2$}
+      \STATE sing \textit{O Canada} once
+      \STATE \CALL{NationalAnthem}{$n/2$}
+    \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 w15m14 = MultipleChoiceQuestion.create!(
     title: 'w15m14',
@@ -2512,30 +2417,22 @@ w19m16 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionw19m14text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}W{\small ORLD}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionw19m14text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}W{\small ORLD}}$, which takes as input an integer $n \geq 0$. Which of the following is correct?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="hw-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{HelloWorld}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE then print <i>Hello World</i>
-\ELIF{$n$ is a multiple of 3}
-      \STATE \CALL{HelloWorld}{$n/3$}
-      \STATE print <i>Hello World</i>;
-      \STATE \CALL{HelloWorld}{$2n/3$}
-  \ELSE \CALL{HelloWorld}{$n+1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-Which of the following is correct?}
-
-questionw19m14pseudocode = %q{M14-W19-pseudo.png}
+questionw19m14pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{HelloWorld}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE then print <i>Hello World</i>
+    \ELIF{$n$ is a multiple of 3}
+          \STATE \CALL{HelloWorld}{$n/3$}
+          \STATE print <i>Hello World</i>;
+          \STATE \CALL{HelloWorld}{$2n/3$}
+      \ELSE \CALL{HelloWorld}{$n+1$}
+    \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 w19m14 = MultipleChoiceQuestion.create!(
     title: 'w19m14',
@@ -2879,27 +2776,19 @@ w14m05 = MultipleChoiceQuestion.create!(
 )
 
 questionw14m12text = %q{The Fibonacci numbers are defined as follows: $f_0 = 0, f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for $n \geq 2$. <br>
-Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
+Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. For $n \geq 3$, run algorithm ${\rm F{\small IB}}(n)$ and let $a_n$ be the number of times that ${\rm F{\small IB}}(2)$ is called.}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-For $n \geq 3$, run algorithm ${\rm F{\small IB}}(n)$ and let $a_n$ be the number of times that ${\rm F{\small IB}}(2)$ is called.}
-
-questionw14m12pseudocode = %q{M12-W14-pseudo.png}
+questionw14m12pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Fib}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE $f = n$
+    \ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
+    \ENDIF
+    \STATE return $f$
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 w14m12 = MultipleChoiceQuestion.create!(
     title: 'w14m12',
@@ -3125,28 +3014,20 @@ f17m04 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf17m15text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$, which takes as input an integer $n \geq 0$: <br><br>
+questionf17m15text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$, which takes as input an integer $n \geq 0$. If you run algorithm ${\rm H{\small ELLO}}(5)$, how many times is the word "hello" printed?}
 
-<div id="pseudocode"></div>
-<br>
-
-<pre id="hello-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Hello}{$n$}
-  \IF{$n = 0$ or $n = 1$}
+questionf17m15pseudocode = %q{
+    \begin{algorithmic}
+    \PROCEDURE{Hello}{$n$}
+      \IF{$n = 0$ or $n = 1$}
+          \STATE print "hello"
+      \ELSE \STATE \CALL{Hello}{$n - 1$}
       \STATE print "hello"
-  \ELSE \STATE \CALL{Hello}{$n - 1$}
-  \STATE print "hello"
-  \STATE \CALL{Hello}{$n - 2$}
-  \ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-If you run algorithm ${\rm H{\small ELLO}}(5)$, how many times is the word "hello" printed?}
-
-questionf17m15pseudocode = %q{M15-F17-pseudo.png}
+      \STATE \CALL{Hello}{$n - 2$}
+      \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
+}
 
 f17m15 = MultipleChoiceQuestion.create!(
     title: 'f17m15',
@@ -3432,28 +3313,9 @@ w15f21 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionw15f09text = %q{Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-If we run algorithm ${\rm F{\small IB}}(77)$, how many calls are there to ${\rm F{\small IB}}(73)$?}
+questionw15f09text = %q{Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. If we run algorithm ${\rm F{\small IB}}(77)$, how many calls are there to ${\rm F{\small IB}}(73)$?}
 
 questionw15f09pseudocode = %q{
-<pre id="fib-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{Fib}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -3463,8 +3325,6 @@ questionw15f09pseudocode = %q{
 \STATE return $f$
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 w15f09 = MultipleChoiceQuestion.create!(
@@ -3819,43 +3679,20 @@ f17f24 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf16f09text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="hello-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Hello}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE print "hello"
-\ELSEIF{$n$ is even}
-  \STATE \CALL{Hello}{$n/2$}
-\ELSE \STATE \CALL{Hello}{$n-1$}
-  \STATE \CALL{Hello}{$n-2$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-If we run algorithm ${\rm H{\small ELLO}}(7)$, how many times is the word "hello" printed?}
+questionf16f09text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$, which takes as input an integer $n \geq 0$. If we run algorithm ${\rm H{\small ELLO}}(7)$, how many times is the word "hello" printed?}
 
 questionf16f09pseudocode = %q{
-<pre id="hello-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Hello}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE print "hello"
-\ELSEIF{$n$ is even}
-  \STATE \CALL{Hello}{$n/2$}
-\ELSE \STATE \CALL{Hello}{$n-1$}
-  \STATE \CALL{Hello}{$n-2$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
+    \begin{algorithmic}
+    \PROCEDURE{Hello}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE print "hello"
+    \ELSEIF{$n$ is even}
+      \STATE \CALL{Hello}{$n/2$}
+    \ELSE \STATE \CALL{Hello}{$n-1$}
+      \STATE \CALL{Hello}{$n-2$}
+    \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
 }
 
 f16f09 = MultipleChoiceQuestion.create!(
@@ -4607,43 +4444,20 @@ f17f05 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf17f10text = %q{Consider the recursive algorithm ${\rm IF{\small EEL}L{\small IKE}S{\small INGING}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="ifls-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{IFeelLikeSinging}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE sing \textit{O Canada}
-\ELSEIF{$n$ is odd}
-  \STATE \CALL{IFeelLikeSinging}{$n+1$}
-\ELSE \STATE \CALL{IFeelLikeSinging}{$\frac{n}{2}$}
-  \STATE \CALL{IFeelLikeSinging}{$\frac{n}{2} - 1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-If you run algorithm ${\rm IF{\small EEL}L{\small IKE}S{\small INGING}}(9)$, how many times do you sing <i>O Canada</i>?}
+questionf17f10text = %q{Consider the recursive algorithm ${\rm IF{\small EEL}L{\small IKE}S{\small INGING}}$, which takes as input an integer $n \geq 0$. If you run algorithm ${\rm IF{\small EEL}L{\small IKE}S{\small INGING}}(9)$, how many times do you sing <i>O Canada</i>?}
 
 questionf17f10pseudocode = %q{
-<pre id="ifls-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{IFeelLikeSinging}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE sing \textit{O Canada}
-\ELSEIF{$n$ is odd}
-  \STATE \CALL{IFeelLikeSinging}{$n+1$}
-\ELSE \STATE \CALL{IFeelLikeSinging}{$\frac{n}{2}$}
-  \STATE \CALL{IFeelLikeSinging}{$\frac{n}{2} - 1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
+    \begin{algorithmic}
+    \PROCEDURE{IFeelLikeSinging}{$n$}
+    \IF{$n = 0$ or $n = 1$}
+      \STATE sing \textit{O Canada}
+    \ELSEIF{$n$ is odd}
+      \STATE \CALL{IFeelLikeSinging}{$n+1$}
+    \ELSE \STATE \CALL{IFeelLikeSinging}{$\frac{n}{2}$}
+      \STATE \CALL{IFeelLikeSinging}{$\frac{n}{2} - 1$}
+    \ENDIF
+    \ENDPROCEDURE
+    \end{algorithmic}
 }
 
 f17f10 = MultipleChoiceQuestion.create!(
@@ -5038,38 +4852,10 @@ f14f17 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf17f22text = %q{Alexa and Shelly want to play the game of Monopoly. They use the following recursive algorithm to decide who goes first:
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="wgf-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{WhoGoesFirst}{$k$}
-  \STATE // $k \geq 1$, the die is fair, and all rolls are independent
-  \STATE Alexa rolls the die, let $a$ be the result
-  \STATE Shelly rolls the die, let $s$ be the result
-\IF{$a > s$}
-  \STATE print "Alexa goes first"
-      \STATE return $k$
-  \ENDIF
-\IF{$a < s$}
-  \STATE print "Shelly goes first"
-      \STATE return $k$
-  \ENDIF
-\IF{$a = s$}
-    \STATE \CALL{WhoGoesFirst}{$k+1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-The ladies run algorithm ${\rm W{\small HO}G{\small OES}F{\small IRST}}(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output of this algorithm. <br>
+questionf17f22text = %q{Alexa and Shelly want to play the game of Monopoly. They use the following recursive algorithm to decide who goes first. The ladies run algorithm ${\rm W{\small HO}G{\small OES}F{\small IRST}}(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output of this algorithm. <br>
 What is the expected value $\mathbb{E}(X)$ of the random variable $X$?}
 
 questionf17f22pseudocode = %q{
-<pre id="wgf-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{WhoGoesFirst}{$k$}
   \STATE // $k \geq 1$, the die is fair, and all rolls are independent
@@ -5088,8 +4874,6 @@ questionf17f22pseudocode = %q{
 \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 f17f22 = MultipleChoiceQuestion.create!(
@@ -5145,28 +4929,9 @@ w14f17 = MultipleChoiceQuestion.create!(
 )
 
 questionw14f11text = %q{The Fibonacci numbers are defined as follows: $f_0 = 0, f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for $n \geq 2$. <br>
-Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-For $n \geq 5$, run algorithm ${\rm F{\small IB}}(n)$ and let $a_n$ be the number of times that ${\rm F{\small IB}}(4)$ is called.}
+Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. For $n \geq 5$, run algorithm ${\rm F{\small IB}}(n)$ and let $a_n$ be the number of times that ${\rm F{\small IB}}(4)$ is called.}
 
 questionw14f11pseudocode = %q{
-<pre id="fib-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{Fib}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -5176,8 +4941,6 @@ questionw14f11pseudocode = %q{
 \STATE return $f$
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 w14f11 = MultipleChoiceQuestion.create!(
@@ -5444,30 +5207,9 @@ w18f15 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionw18f10text = %q{Consider the recursive algorithm ${\rm S{\small UNDAY}E{\small VENING}E{\small XAM}}$, which takes as input an integer $n \geq 1$:
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="see-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{SundayEveningExam}{$n$}
-\IF{$n = 1$}
-  \STATE print "I don't like Sunday evening exams"
-\ELSE \FOR{$i = 1$ to $n$}
-  \STATE print "I don't like Sunday evening exams"
-  \ENDFOR
-  \STATE \CALL{SundayEveningExam}{$n-1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-Let $P(n)$ be the number of times the line "I don't like Sunday evening exams" is printed when running algorithm ${\rm S{\small UNDAY}E{\small VENING}E{\small XAM}}(n)$. Which of the following is true for all $n \geq 1$?}
+questionw18f10text = %q{Consider the recursive algorithm ${\rm S{\small UNDAY}E{\small VENING}E{\small XAM}}$, which takes as input an integer $n \geq 1$. Let $P(n)$ be the number of times the line "I don't like Sunday evening exams" is printed when running algorithm ${\rm S{\small UNDAY}E{\small VENING}E{\small XAM}}(n)$. Which of the following is true for all $n \geq 1$?}
 
 questionw18f10pseudocode = %q{
-<pre id="see-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{SundayEveningExam}{$n$}
 \IF{$n = 1$}
@@ -5479,8 +5221,6 @@ questionw18f10pseudocode = %q{
 \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 w18f10 = MultipleChoiceQuestion.create!(
@@ -5742,29 +5482,9 @@ f18f03 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf14f23text = %q{Consider the following recursive algorithm ${\rm T{\small HREE}H{\small EADS}O{\small R}T{\small HREE}T{\small AILS}}$, which takes as input a positive integer $k$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="three-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{ThreeHeadsOrThreeTails}{$k$}
-\STATE //all coin flips made are mutually independent
-\STATE flip a fair coin three times
-\IF{the result is $HHH$ or $TTT$}
-  \STATE return $k$
-\ELSE \STATE \CALL{ThreeHeadsOrThreeTails}{$k+1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-You run algorithm ${\rm T{\small HREE}H{\small EADS}O{\small R}T{\small HREE}T{\small AILS}}(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output of this algorithm. What is the expected value of $X$?}
+questionf14f23text = %q{Consider the following recursive algorithm ${\rm T{\small HREE}H{\small EADS}O{\small R}T{\small HREE}T{\small AILS}}$, which takes as input a positive integer $k$. You run algorithm ${\rm T{\small HREE}H{\small EADS}O{\small R}T{\small HREE}T{\small AILS}}(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output of this algorithm. What is the expected value of $X$?}
 
 questionf14f23pseudocode = %q{
-<pre id="three-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{ThreeHeadsOrThreeTails}{$k$}
 \STATE //all coin flips made are mutually independent
@@ -5775,8 +5495,6 @@ questionf14f23pseudocode = %q{
 \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 f14f23 = MultipleChoiceQuestion.create!(
@@ -6029,36 +5747,10 @@ w17f08 = MultipleChoiceQuestion.create!(
 
 questionf18f22text = %q{Zoltan's Noodle House is a popular restaurant in downtown Ottawa. When you order the surprise dish, you get <i>Mi Quang</i> with probability $1/4$, <i>Bun Cha Ca</i> with probability $1/3$, and <i>Banh Xeo</i> with probability $5/12$. <br>
 Tri enjoys going to this restaurant, because the food reminds him of his mommy's food back home in Da Nang. <br>
-Tri runs the following recurisve algorithm: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="tih-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{TriIsHungry}{}
-\STATE // the results of all orders are independent
-\STATE Tri orders the surprise dish
-\IF{Tri gets \textit{Mi Quang}}
-  \STATE Tri eats the dish
-  \STATE \CALL{TriIsHungry}{}
-\ELSEIF{Tri gets \textit{Bun Cha Ca}}
-  \STATE Tri eats the dish
-  \STATE \CALL{TriIsHungry}{}
-\ELSE
-  \STATE Tri eats the dish
-  \State Tri pays the bill and goes home
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-Define the random variable $X$ to be the number of dishes that Tri eats when running algorithm ${\rm T{\small RI}I{\small S}H{\small UNGRY}}$. <br>
+Tri runs the following recurisve algorithm. Define the random variable $X$ to be the number of dishes that Tri eats when running algorithm ${\rm T{\small RI}I{\small S}H{\small UNGRY}}$. <br>
 What is the expected value $\mathbb{E}(X)$ of the random variable $X$?}
 
 questionf18f22pseudocode = %q{
-<pre id="tih-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{TriIsHungry}{}
 \STATE // the results of all orders are independent
@@ -6075,8 +5767,6 @@ questionf18f22pseudocode = %q{
 \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 f18f22 = MultipleChoiceQuestion.create!(
@@ -6101,28 +5791,9 @@ f14f12 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf14f11text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-If we run algorithm ${\rm F{\small IB}}(20)$, how many calls are there to ${\rm F{\small IB}}(16)$?}
+questionf14f11text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. If we run algorithm ${\rm F{\small IB}}(20)$, how many calls are there to ${\rm F{\small IB}}(16)$?}
 
 questionf14f11pseudocode = %q{
-<pre id="fib-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{Fib}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -6132,8 +5803,6 @@ questionf14f11pseudocode = %q{
 \STATE return $f$
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 f14f11 = MultipleChoiceQuestion.create!(
@@ -6359,31 +6028,9 @@ w17f11 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionw17f09text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="hello-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Hello}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE print "hello"
-\ELSEIF{$n$ is even}
-  \STATE \CALL{Hello}{$\frac{n}{2}$}
-      \STATE \CALL{Hello}{$\frac{n}{2} - 1$}
-\ELSE \STATE \CALL{Hello}{$n-1$}
-  \STATE \CALL{Hello}{$n-2$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-If we run algorithm ${\rm H{\small ELLO}}(7)$, how many times is the word "hello" printed?}
+questionw17f09text = %q{Consider the recursive algorithm ${\rm H{\small ELLO}}$, which takes as input an integer $n \geq 0$. If we run algorithm ${\rm H{\small ELLO}}(7)$, how many times is the word "hello" printed?}
 
 questionw17f09pseudocode = %q{
-<pre id="hello-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{Hello}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -6396,8 +6043,6 @@ questionw17f09pseudocode = %q{
 \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 w17f09 = MultipleChoiceQuestion.create!(
@@ -6632,30 +6277,10 @@ f15f08 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionw17f22text = %q{Consider the following recursive algorithm ${\rm T{\small WO}T{\small AILS}}$, which takes as input a positive integer $k$:
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="tt-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{TwoTails}{$k$}
-\STATE // all coin flips made are mutually independent
-\STATE flip a fair coin twice
-\IF{the coin came up heads exactly twice}
-  \STATE return $2^{k}$
-\ELSE \STATE \CALL{TwoTails}{$k+1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-You run algorithm ${\rm T{\small WO}T{\small AILS}}(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output of this algorithm. <br>
+questionw17f22text = %q{Consider the following recursive algorithm ${\rm T{\small WO}T{\small AILS}}$, which takes as input a positive integer $k$. You run algorithm ${\rm T{\small WO}T{\small AILS}}(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output of this algorithm. <br>
 Let $m \geq 1$ be an integer. What is $\text{Pr}(X = 2^{m})$?}
 
 questionw17f22pseudocode = %q{
-<pre id="tt-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{TwoTails}{$k$}
 \STATE // all coin flips made are mutually independent
@@ -6666,8 +6291,6 @@ questionw17f22pseudocode = %q{
 \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 w17f22 = MultipleChoiceQuestion.create!(
@@ -6780,28 +6403,9 @@ f15f03 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf15f09text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-If we run algorithm ${\rm F{\small IB}}(18)$, how many calls are there to ${\rm F{\small IB}}(14)$?}
+questionf15f09text = %q{Consider the following recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. If we run algorithm ${\rm F{\small IB}}(18)$, how many calls are there to ${\rm F{\small IB}}(14)$?}
 
 questionf15f09pseudocode = %q{
-<pre id="fib-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{Fib}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -6811,8 +6415,6 @@ questionf15f09pseudocode = %q{
 \STATE return $f$
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 f15f09 = MultipleChoiceQuestion.create!(
@@ -6948,28 +6550,9 @@ f13f01 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf15f24text = %q{Consider a coin that comes up heads with probability $1/3$ and, thus, tails with probability $2/3$. Consider the following recursive algorithm ${\rm H{\small EADS}}$, which takes as input a positive integer $k$: <br><br>
-<div id="pseudocode"></div>
-<br>
-
-<pre id="three-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Heads}{$k$}
-\STATE //all coin flips made are mutually independent
-\STATE flip the coin
-\IF{the coin came up heads}
-  \STATE return $k+1$
-\ELSE \STATE \CALL{Heads}{$k+1$}
-\ENDIF
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-You run algorithm ${\rm H{EADS}}(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output of this algorithm. Let $m \geq 1$ be an integer. What is $\text{Pr}(X = m+1)$?}
+questionf15f24text = %q{Consider a coin that comes up heads with probability $1/3$ and, thus, tails with probability $2/3$. Consider the following recursive algorithm ${\rm H{\small EADS}}$, which takes as input a positive integer $k$. You run algorithm ${\rm H{EADS}}(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output of this algorithm. Let $m \geq 1$ be an integer. What is $\text{Pr}(X = m+1)$?}
 
 questionf15f24pseudocode = %q{
-<pre id="three-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{Heads}{$k$}
 \STATE //all coin flips made are mutually independent
@@ -6980,8 +6563,6 @@ questionf15f24pseudocode = %q{
 \ENDIF
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 f15f24 = MultipleChoiceQuestion.create!(
@@ -7260,28 +6841,9 @@ f13f31 = MultipleChoiceQuestion.create!(
 )
 
 questionf13f13text = %q{The Fibonacci numbers are defined as follows: $f_0 = 0, f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for $n \geq 2$. <br>
-Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-For $n \geq 3$, run algorithm ${\rm F{\small IB}}(n)$ and let $a_n$ be the number of times that ${\rm F{\small IB}}(1)$ is called.}
+Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. For $n \geq 3$, run algorithm ${\rm F{\small IB}}(n)$ and let $a_n$ be the number of times that ${\rm F{\small IB}}(1)$ is called.}
 
 questionf13f13pseudocode = %q{
-<pre id="fib-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{Fib}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -7291,8 +6853,6 @@ questionf13f13pseudocode = %q{
 \STATE return $f$
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 f13f13 = MultipleChoiceQuestion.create!(
@@ -7303,28 +6863,9 @@ f13f13 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-questionf13f12text = %q{Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$: <br><br>
-
-<div id="pseudocode"></div>
-<br>
-
-<pre id="fib-code" style="display:none;">
-\begin{algorithmic}
-\PROCEDURE{Fib}{$n$}
-\IF{$n = 0$ or $n = 1$}
-  \STATE $f = n$
-\ELSE \STATE $f = $ \CALL{Fib}{$n - 1$} + \CALL{Fib}{$n - 2$}
-\ENDIF
-\STATE return $f$
-\ENDPROCEDURE
-\end{algorithmic}
-</textarea>
-</pre>
-
-When running ${\rm F{\small IB}}(7)$, how many calls are there to ${\rm F{\small IB}}(3)$?}
+questionf13f12text = %q{Consider the recursive algorithm ${\rm F{\small IB}}$, which takes as input an integer $n \geq 0$. When running ${\rm F{\small IB}}(7)$, how many calls are there to ${\rm F{\small IB}}(3)$?}
 
 questionf13f12pseudocode = %q{
-<pre id="fib-code" style="display:none;">
 \begin{algorithmic}
 \PROCEDURE{Fib}{$n$}
 \IF{$n = 0$ or $n = 1$}
@@ -7334,8 +6875,6 @@ questionf13f12pseudocode = %q{
 \STATE return $f$
 \ENDPROCEDURE
 \end{algorithmic}
-</textarea>
-</pre>
 }
 
 f13f12 = MultipleChoiceQuestion.create!(
