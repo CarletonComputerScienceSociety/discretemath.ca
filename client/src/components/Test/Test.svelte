@@ -31,18 +31,15 @@
 <style type="text/scss">
   .title {
     font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
     text-align: center;
   }
 
   .description {
     font-size: 1rem;
-    font-family: 'Nunito', sans-serif;
     text-align: center;
   }
   .score {
     font-size: 1.5rem;
-    font-family: 'Nunito', sans-serif;
     text-align: center;
     padding: 0.5rem;
     color: #0f5bd6;
