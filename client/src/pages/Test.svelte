@@ -39,6 +39,7 @@
         title={$data.title}
         description={$data.description}
         questions={$data.questions}
+        score={$data.score}
         {model}
       />
     </div>

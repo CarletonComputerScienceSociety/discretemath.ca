@@ -20,7 +20,7 @@
     ({letter})
   </div>
   <div class="body">
-    {body}
+    {@html body}
   </div>
 </div>
 

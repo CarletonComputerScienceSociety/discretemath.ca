@@ -25,12 +25,21 @@ class MultipleChoiceQuestion extends Question {
       );
       answers.push(answer);
     }
-
     return answers;
   }
 
   selectAnswer(answerIndex) {
     this.selectedAnswer = answerIndex;
+  }
+
+  isAnsweredCorrectly() {
+    if (this.selectedAnswer == -1) {
+      return false;
+    } else if (this.answers[this.selectedAnswer].correct) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   getComponentFormat(submitted: boolean) {

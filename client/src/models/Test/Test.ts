@@ -54,9 +54,29 @@ class Test {
     this.store.set(this.getComponentFormat());
   }
 
+  calculateScore(): number {
+    let score = 0;
+    if (this.submitted) {
+      this.questions.forEach(question => {
+        if (question instanceof MultipleChoiceQuestion) {
+          if (question.isAnsweredCorrectly()) {
+            score += 1;
+          }
+        } else {
+          score += 1;
+        }
+      });
+    }
+
+    return score;
+  }
+
   submit() {
+    console.log('submit button fired');
+    this.calculateScore();
     this.setSubmitted(true);
     this.store.set(this.getComponentFormat());
+    window.scrollTo(0, 0);
   }
 
   getComponentFormat() {
@@ -69,7 +89,8 @@ class Test {
     return {
       title: this.title,
       description: this.description,
-      questions: questions
+      questions: questions,
+      score: this.calculateScore()
     };
   }
 
