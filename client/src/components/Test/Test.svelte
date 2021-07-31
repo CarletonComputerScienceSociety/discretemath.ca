@@ -10,7 +10,10 @@
 <div class="test">
   <div class="title">{title}</div>
   <div class="description">{description}</div>
-  <div class="score">Score: {score} / {questions.length}</div>
+
+  {#if model.submitted}
+    <div class="score">Score: {score} / {questions.length}</div>
+  {/if}
 
   {#each questions as question}
     <MultipleChoiceQuestion

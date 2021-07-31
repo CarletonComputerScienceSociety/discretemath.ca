@@ -56,16 +56,23 @@ class Test {
 
   calculateScore(): number {
     let score = 0;
-    this.questions.forEach(question => {
-      let MCquestion = question as MultipleChoiceQuestion;
-      if (MCquestion.selectedAnswer == MCquestion.correctAnswer) {
-        score += 1;
-      }
-    });
+    if (this.submitted) {
+      this.questions.forEach(question => {
+        if (question instanceof MultipleChoiceQuestion) {
+          if (question.isAnsweredCorrectly()) {
+            score += 1;
+          }
+        } else {
+          score += 1;
+        }
+      });
+    }
+
     return score;
   }
 
   submit() {
+    console.log('submit button fired');
     this.calculateScore();
     this.setSubmitted(true);
     this.store.set(this.getComponentFormat());

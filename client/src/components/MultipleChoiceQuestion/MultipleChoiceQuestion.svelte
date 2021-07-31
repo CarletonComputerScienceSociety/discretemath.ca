@@ -9,7 +9,7 @@
 </script>
 
 <div class="multiple-choice-question">
-  <div>{number}. {body}</div>
+  <div>{number}. {@html body}</div>
   {#each answers as answer}
     <MultipleChoiceAnswer
       letter={answer.letter}
