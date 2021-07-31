@@ -1,38 +1,23 @@
 <script>
-  import {onMount, afterUpdate} from 'svelte';
-
   export let string;
   let pseudocode = String.raw`${string}`;
+  $: htmlPseudocode = '';
 
-  /*afterUpdate(async () => {
-    loadPseudocode();
-  });
-
+  // yes, this is a terrible code - pseudocode.js is a mess
   const loadPseudocode = () => {
-    let script = document.createElement('script');
-    script.src =
-      'https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.js';
-    document.head.append(script);
-    //window.pseudocode.renderElement(document.getElementById('pseudocode'));
+    setTimeout(function () {
+      let script = document.createElement('script');
+      script.src = 'http://localhost:5000/pseudocode.js';
+      document.head.append(script);
+      setTimeout(function () {
+        htmlPseudocode = window.pseudocode.render(pseudocode).innerHTML;
+      }, 1000);
+    }, 1000);
   };
-  */
 </script>
 
-<!--<svelte:window on:load={loadPseudocode} />-->
-<!--
-<svelte:head>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css"
-  />
-  <script
-    src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.js">
-  </script>
-</svelte:head>
--->
+<svelte:window on:load={loadPseudocode()} />
 
-<div>
-  <pre id="pseudocode" style="display:hidden;">
-    {pseudocode}
-  </pre>
+<div class="pseudocode">
+  {@html htmlPseudocode}
 </div>

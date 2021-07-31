@@ -1,15 +1,18 @@
+<!-- This is some of the worst code I've ever written -->
 <script>
   import {onMount, afterUpdate} from 'svelte';
 
   onMount(async () => {
-    console.log('onMount');
     loadMathjax();
   });
 
   afterUpdate(async () => {
-    console.log('afterUpdate');
     loadMathjax();
   });
+
+  const loadPage = async () => {
+    loadMathjax();
+  };
 
   const loadMathjax = () => {
     setTimeout(function () {
@@ -23,16 +26,18 @@
             inlineMath: [
               ['$', '$'],
               ['\\(', '\\)']
-            ]
+            ],
+            displayMath: [
+              ['$$', '$$'],
+              ['\\[', '\\]']
+            ],
+            processEscapes: true,
+            processEnvironments: true
           },
           svg: {fontCache: 'global'}
         };
       };
-    }, 2000);
-  };
-  const loadPage = () => {
-    console.log('load page');
-    loadMathjax();
+    }, 1000);
   };
 </script>
 
