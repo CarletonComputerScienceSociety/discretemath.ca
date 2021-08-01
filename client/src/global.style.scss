@@ -1,6 +1,21 @@
 :global(.course-page) {
-    margin-left: 6rem;
-    margin-right: 2rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 800px) {
+    :global(.course-page) {
+        margin-left: 6rem;
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    :global(.course-page) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
 
 :global(.ps-line) {

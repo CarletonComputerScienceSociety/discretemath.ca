@@ -49,6 +49,7 @@
 <style>
   .course-tests {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .course-test {

@@ -74,7 +74,6 @@ class Test {
   }
 
   submit() {
-    console.log('submit button fired');
     this.calculateScore();
     this.setSubmitted(true);
     this.store.set(this.getComponentFormat());
