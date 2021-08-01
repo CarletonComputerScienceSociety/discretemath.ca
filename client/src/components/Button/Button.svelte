@@ -26,6 +26,7 @@
     font-weight: bold;
     font-size: 16px;
     transition: all 0.15s;
+    cursor: pointer;
     .button_label {
       padding: 0.75rem 1.5rem;
     }

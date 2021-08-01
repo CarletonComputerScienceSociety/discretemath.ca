@@ -13,7 +13,13 @@
 
 <div class="course-navbar">
   <div class="course-logo">
-    <a href="/" use:link>D</a>
+    <a href="/" use:link
+      ><img
+        class="course-navbar-image"
+        alt="logo"
+        src="https://i.imgur.com/HzitjOR.png"
+      /></a
+    >
   </div>
   <div class="course-page-icons">
     <a href="/" use:link>
@@ -74,6 +80,10 @@
     a {
       color: white !important;
     }
+  }
+
+  .course-navbar-image {
+    height: 2.8rem;
   }
 
   .course-settings {
