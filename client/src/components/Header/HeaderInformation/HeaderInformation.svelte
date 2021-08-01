@@ -4,12 +4,13 @@
 </script>
 
 <div class="header-information">
+  <img class="header-image" alt="logo" src="https://i.imgur.com/P445zux.png" />
   <div class="header-title">Learn Without Limits.</div>
   <!--<div class="header-version">v1.0.0</div>-->
   <div class="header-description">
     Built by Carleton students, for Carleton students. DiscreteMath.ca is an
-    interactive platform for content from Carleton's discrete mathematics
-    courses.
+    interactive platform built specifically for content from Carleton's discrete
+    mathematics courses.
   </div>
   <div class="button-container">
     <a href="/comp1805" use:link><Button label="COMP 1805" /></a>
@@ -20,14 +21,18 @@
 <style type="text/scss">
   .header-information {
     font-family: 'Assistant', sans-serif;
-    max-width: 40rem;
-    margin-top: 3rem;
+    max-width: 50rem;
     margin-bottom: 1rem;
     text-align: center;
   }
 
+  .header-image {
+    height: 5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .header-title {
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 700;
     margin-bottom: 1rem;
   }
@@ -56,9 +61,16 @@
     margin-bottom: 0.75rem;
   }
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 800px) {
     .header-information {
       margin-top: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .header-image {
+      height: 3rem;
+      margin-bottom: 0.5rem;
     }
   }
 </style>

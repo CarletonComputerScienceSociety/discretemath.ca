@@ -6,11 +6,11 @@
   <div class="navbar-inner">
     <div class="navbar-logo">
       <a href="/" use:link
-        ><img
+        ><!--<img
           class="navbar-image"
           alt="logo"
-          src="https://i.imgur.com/HzitjOR.png"
-        /></a
+          src="https://i.imgur.com/P445zux.png"
+        />--></a
       >
     </div>
     <div class="navbar-items">
@@ -26,17 +26,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #ffab40;
-    height: 3.6rem;
-    min-height: 3.6rem;
+    // background-color: #ffab40;
+    height: 2rem;
+    min-height: 3.5rem;
     width: 100%;
     font-family: 'Assistant', sans-serif;
     a {
       padding: 0.25rem 0.5rem;
-      color: white;
+      color: black;
       text-decoration: none;
     }
-    box-shadow: 0 4px 12px -4px rgb(0 0 0 / 5%);
+    //box-shadow: 0 4px 12px -4px rgb(0 0 0 / 5%);
   }
 
   .navbar-inner {
@@ -50,7 +50,7 @@
   }
 
   .navbar-logo {
-    font-weight: bold;
+    font-style: normal;
   }
   .navbar-items {
     display: flex;
@@ -59,10 +59,13 @@
 
   .navbar-image {
     margin-top: 0.3rem;
-    height: 3.2rem;
+    height: 3rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
+    .navbar {
+      display: none;
+    }
     .navbar-items {
       display: none;
     }

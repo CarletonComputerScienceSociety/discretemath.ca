@@ -1,7 +1,14 @@
-<div class="footer">© 2021 Carleton Computer Science Society</div>
+<div class="footer">
+  <a href="https://ccss.carleton.ca">© 2021 Carleton Computer Science Society</a
+  >
+</div>
 
 <style type="text/scss">
   .footer {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
     position: absolute;
     width: 100%;
     height: 4rem;
@@ -10,8 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     bottom: 0;
     font-family: 'Assistant', sans-serif;
-    border-top: 2px solid #ffab40;
+    border-top: 3px solid #ffab40;
   }
 </style>
