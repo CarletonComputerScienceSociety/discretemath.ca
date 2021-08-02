@@ -6,4 +6,5 @@ class TrueOrFalseQuestion < ApplicationRecord
   validates :answer, presence: true
 
   belongs_to :course
+  has_one_attached :image
 end
