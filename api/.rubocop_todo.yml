@@ -169,3 +169,6 @@ Lint/MissingSuper:
 
 Metrics/BlockLength:
   Enabled: false
+
+RSpec/FilePath:
+  Enabled: false
