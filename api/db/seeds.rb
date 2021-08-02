@@ -265,7 +265,7 @@ w17m01 = MultipleChoiceQuestion.create!(
     course: comp2804
 )
 
-# w17m01.image.attach(io: File.open("assets/1.png"), filename: "1.png")
+# w17m01.image.attach(io: File.open("assets/images/demo/example.png"), filename: "example.png")
 
 questionf13m07text = %q{How many bitstrings of length 13 contain exactly 3 zeros?}
 

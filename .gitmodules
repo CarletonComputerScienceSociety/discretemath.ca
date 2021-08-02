@@ -1,0 +1,3 @@
+[submodule "api/assets"]
+	path = api/assets
+	url = https://github.com/CarletonComputerScienceSociety/assets.git
