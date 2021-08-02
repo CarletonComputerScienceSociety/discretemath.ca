@@ -19,7 +19,7 @@ jobs:
 
     - uses: jpetrucciani/black-check@master
       with:
-        path: '/dynamic'
+        path: './dynamic'
 
     - name: Install dependencies
       run: |
