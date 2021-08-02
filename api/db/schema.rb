@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_02_172048) do
+ActiveRecord::Schema.define(version: 2021_08_02_172940) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,27 @@ ActiveRecord::Schema.define(version: 2021_08_02_172048) do
     t.string "checksum", null: false
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "check_question_options", force: :cascade do |t|
+    t.text "body"
+    t.string "body_format"
+    t.boolean "correct"
+    t.bigint "check_questions_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["check_questions_id"], name: "index_check_question_options_on_check_questions_id"
+  end
+
+  create_table "check_questions", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.string "body_format"
+    t.text "pseudocode"
+    t.bigint "course_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_id"], name: "index_check_questions_on_course_id"
   end
 
   create_table "course_sessions", force: :cascade do |t|
@@ -183,6 +204,8 @@ ActiveRecord::Schema.define(version: 2021_08_02_172048) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "check_question_options", "check_questions", column: "check_questions_id"
+  add_foreign_key "check_questions", "courses"
   add_foreign_key "course_sessions", "courses"
   add_foreign_key "drill_questions", "drills"
   add_foreign_key "drills", "course_sessions"

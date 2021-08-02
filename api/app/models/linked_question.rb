@@ -4,7 +4,8 @@ class LinkedQuestion < ApplicationRecord
   validates :body_format, presence: true
 
   # Relations
-  has_many :linked_question_option, dependent: :delete_all
-  has_many :linked_question_option_answer, through: :linked_question_option
+  has_many :linked_question_options, dependent: :delete_all
+  has_many :linked_question_option_answers, through: :linked_question_option
   belongs_to :course
+  has_one_attached :image
 end
