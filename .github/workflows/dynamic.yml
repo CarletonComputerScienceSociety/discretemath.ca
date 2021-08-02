@@ -27,4 +27,4 @@ jobs:
         pip install -r dynamic/requirements.txt
     - name: Run PyTest
       run: |
-        pytest
+        pytest dynamic/
