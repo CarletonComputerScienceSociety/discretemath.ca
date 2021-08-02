@@ -13,29 +13,5 @@ RSpec.describe TestQuestion, type: :model do
         expect(result).to(be(false))
       end
     end
-
-    context 'when test question has no question type' do
-      before { test_question.question_type = nil }
-
-      it 'returns false' do
-        expect(result).to(be(false))
-      end
-    end
-
-    context 'when test question has no question id' do
-      before { test_question.question_id = nil }
-
-      it 'returns false' do
-        expect(result).to(be(false))
-      end
-    end
-
-    context 'when test question has no test id' do
-      before { test_question.test_id = nil }
-
-      it 'returns false' do
-        expect(result).to(be(false))
-      end
-    end
   end
 end
