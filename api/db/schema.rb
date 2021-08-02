@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_02_164528) do
+ActiveRecord::Schema.define(version: 2021_08_02_172048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,27 @@ ActiveRecord::Schema.define(version: 2021_08_02_164528) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "drill_questions", force: :cascade do |t|
+    t.integer "order"
+    t.boolean "disabled"
+    t.string "question_type"
+    t.bigint "question_id"
+    t.bigint "drill_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["drill_id"], name: "index_drill_questions_on_drill_id"
+    t.index ["question_type", "question_id"], name: "index_drill_questions_on_question_type_and_question_id"
+  end
+
+  create_table "drills", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.bigint "course_session_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_session_id"], name: "index_drills_on_course_session_id"
   end
 
   create_table "lectures", force: :cascade do |t|
@@ -163,6 +184,8 @@ ActiveRecord::Schema.define(version: 2021_08_02_164528) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "course_sessions", "courses"
+  add_foreign_key "drill_questions", "drills"
+  add_foreign_key "drills", "course_sessions"
   add_foreign_key "lectures", "course_sessions"
   add_foreign_key "linked_question_option_answers", "linked_question_options"
   add_foreign_key "linked_question_option_answers", "linked_questions"
