@@ -1,7 +1,7 @@
 class LinkedQuestion < ApplicationRecord
   # Validations
   validates :title, presence: true
-  validates :format, presence: true
+  validates :body_format, presence: true
 
   # Relations
   has_many :linked_question_option, dependent: :delete_all

@@ -15,23 +15,7 @@ RSpec.describe LinkedQuestionOptionAnswer, type: :model do
     end
 
     context 'when linked question option answer has no body format' do
-      before { linked_question_option_answer.body_format = nil }
-
-      it 'returns false' do
-        expect(result).to(be(false))
-      end
-    end
-
-    context 'when linked question option answer has no linked question option' do
-      before { linked_question_option_answer.linked_question_options = nil }
-
-      it 'returns false' do
-        expect(result).to(be(false))
-      end
-    end
-
-    context 'when linked question option answer has no linked question' do
-      before { linked_question_option_answer.linked_question = nil }
+      before { linked_question_option_answer.format = nil }
 
       it 'returns false' do
         expect(result).to(be(false))

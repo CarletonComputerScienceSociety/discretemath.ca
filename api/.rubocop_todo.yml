@@ -172,3 +172,6 @@ Metrics/BlockLength:
 
 RSpec/FilePath:
   Enabled: false
+
+Rails/BulkChangeTable:
+  Enabled: false

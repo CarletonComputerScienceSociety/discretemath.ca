@@ -1,6 +1,8 @@
 FactoryBot.define do
   factory :linked_question do
+    title { 'MyText' }
     body { 'MyText' }
-    format { 'MyString' }
+    body_format { 'MyString' }
+    pseudocode { 'MyText' }
   end
 end
