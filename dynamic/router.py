@@ -1,12 +1,11 @@
 from fastapi import APIRouter
-import generators
+import generators.demo.graph_theory.main as graph_theory_question_generator
 
 router = APIRouter(
-    prefix="/dynamic",
-    tags=["generate"],
-    responses={404:{"description": "Not found"}}
+    prefix="/api", tags=["generate"], responses={404: {"description": "Not found"}}
 )
 
-@router.get("/graphtheory")
-async def generate_graph_question():
-    return generators.generate_graph_theory()
+
+@router.get("/demo/graph-theory")
+async def generate_graph_theory_question():
+    return graph_theory_question_generator.start()
