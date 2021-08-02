@@ -14,6 +14,16 @@ local:
 #   region: us-east-1
 #   bucket: your_own_bucket
 
+
+minio:
+  service: S3
+  access_key_id: <%= ENV['MINIO_ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['MINIO_SECRET_ACCESS_KEY'] %>
+  region: us-east-1
+  bucket: <%= ENV['MINIO_BUCKET'] %>
+  endpoint: <%= ENV['MINIO_URL'] %>
+  force_path_style: true
+
 # Remember not to checkin your GCS keyfile to a repository
 # google:
 #   service: GCS

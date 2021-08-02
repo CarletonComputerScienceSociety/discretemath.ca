@@ -1,5 +1,6 @@
 node_modules
 /client/public/build/
 stories
+.env
 
 .DS_Store
