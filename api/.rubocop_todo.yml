@@ -169,3 +169,9 @@ Lint/MissingSuper:
 
 Metrics/BlockLength:
   Enabled: false
+
+RSpec/FilePath:
+  Enabled: false
+
+Rails/BulkChangeTable:
+  Enabled: false
