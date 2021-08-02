@@ -18,8 +18,8 @@ jobs:
         python-version: 3.7
 
     - uses: jpetrucciani/black-check@master
-    with:
-      path: '/dynamic'
+      with:
+        path: '/dynamic'
 
     - name: Install dependencies
       run: |
