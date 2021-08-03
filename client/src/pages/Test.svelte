@@ -38,7 +38,7 @@
 <Mathjax />
 <div class="course-page">
   {#if $response.loading}
-    <div class="loading-wrap"><Loading/></div>
+    <div class="loading-wrap"><Loading /></div>
   {/if}
 
   {#if $response.error}
