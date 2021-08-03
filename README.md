@@ -1,33 +1,27 @@
-# DiscreteMath.ca
+<img src="docs/logo.png" width="400px">
 
-# Client Setup
 
-## 1. Install Yarn
+<br />
 
-This [guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable) will describe the best setup for you're operating system.
+**Built by Carleton students, for Carleton students. DiscreteMath.ca is an interactive platform built specifically for content from Carleton's discrete mathematics courses.**
 
-## 2. Install Dependencies
+<hr>
 
-```bash
-yarn install
-```
+![API](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/api.yml/badge.svg) ![Client](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/client.yml/badge.svg) ![Dynamic](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/dynamic.yml/badge.svg)
 
-# Commands
+<hr>
 
-## Test
 
-```bash
-yarn run test
-```
+# Services
 
-## Format
+## Client
 
-```bash
-yarn run format
-```
+The user interface, written with Svelte. The user interface makes use of Mathjax and Pseudocode.js to render content provided from API.
 
-## Storybook
+## API
 
-```bash
-yarn storybook
-```
+The main service used to serve static data to the client. This is a GraphQL based api written with Ruby on Rails.
+
+## Dynamic
+
+The service responsible for algorithmically generating questions.
