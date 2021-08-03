@@ -11,7 +11,7 @@ DiscreteMath.ca is an interactive platform built specifically for content from C
 <hr>
 
 
-# Services
+# Projects
 
 ## Client
 
@@ -24,3 +24,7 @@ The main service used to serve static data to the client. This is a GraphQL base
 ## Dynamic
 
 The service responsible for algorithmically generating questions.
+
+## Data
+
+A collection of projects built to parse data.
