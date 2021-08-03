@@ -1,8 +1,8 @@
-import main as generate_graph_theory_question
+from .main import call
 
 
 def test():
-    assert generate_graph_theory_question.call() == {
+    assert call() == {
         "title": "Example Question",
         "body": "Generating graph theory question...",
         "body_format": "text",
