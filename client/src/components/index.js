@@ -5,6 +5,7 @@ export {Header} from './Header';
 export {Mathjax} from './Mathjax';
 export {LinkedQuestion} from './LinkedQuestion';
 export {LinkedQuestionOption} from './LinkedQuestionOption';
+export {Loading} from './Loading';
 export {MultipleChoiceAnswer} from './MultipleChoiceAnswer';
 export {MultipleChoiceQuestion} from './MultipleChoiceQuestion';
 export {Navbar} from './Navbar';
