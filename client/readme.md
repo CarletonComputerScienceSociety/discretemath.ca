@@ -1,4 +1,8 @@
+<img src="../docs/logo.png" width="400px">
+
 # Client
+
+# Setup
 
 ## 1. Install Yarn
 
@@ -8,6 +12,12 @@ This [guide](https://classic.yarnpkg.com/en/docs/install/#mac-stable) will descr
 
 ```bash
 yarn install
+```
+
+## 3. Start the app
+
+```bash
+yarn run dev
 ```
 
 # Commands
