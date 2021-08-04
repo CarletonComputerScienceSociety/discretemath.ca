@@ -55,3 +55,5 @@ class LinkedQuestion extends Question {
     return true;
   }
 }
+
+export {LinkedQuestion};
