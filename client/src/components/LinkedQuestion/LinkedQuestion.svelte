@@ -3,7 +3,7 @@
 
   export let number;
   export let body;
-  export let format;
+  export let bodyFormat;
   export let options;
   export let answers;
 </script>
@@ -15,7 +15,7 @@
       {#each options as option, index}
         <LinkedQuestionOption
           qnumber={number}
-          optionAmount={options.length}
+          optionAmount={answers.length}
           body={option}
           {index}
         />
