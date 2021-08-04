@@ -15,7 +15,7 @@
       {#each options as option, index}
         <LinkedQuestionOption
           qnumber={number}
-          optionAmount={options.length}
+          optionAmount={answers.length}
           body={option}
           {index}
         />
