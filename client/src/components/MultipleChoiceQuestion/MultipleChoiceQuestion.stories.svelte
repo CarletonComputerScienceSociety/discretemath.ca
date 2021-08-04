@@ -24,6 +24,7 @@
     number: 12,
     body: 'What is the runtime of binary search with respect to the size of the array?',
     body_format: 'mathjax',
+    pseudocode: '',
     answers: [
       {
         letter: 'a',
