@@ -1,6 +1,7 @@
 <script>
   import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
   import MultipleChoiceAnswer from './MultipleChoiceAnswer.svelte';
+  import {StorybookMathjax} from '../StorybookMathjax';
 </script>
 
 <Meta
@@ -19,6 +20,7 @@
 
 <Template let:args>
   <MultipleChoiceAnswer {...args} on:click={args.onClick} />
+  <StorybookMathjax />
 </Template>
 
 <Story
