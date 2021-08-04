@@ -8,11 +8,13 @@
   } from '../components';
   import {Test as Model} from '../models';
   import {getTest} from '../data';
+  import {onMount} from 'svelte';
 
   export let params = {};
 
   let data;
   let model;
+  let loading = true;
 
   const response = getTest(parseInt(params.id));
   $: {
@@ -21,26 +23,39 @@
       data = model.getStore();
     }
   }
-  // the worse code ever written
-  if (window.location.href.indexOf('reload') > -1) {
-    window.scrollTo(0, 0);
-    let id = parseInt(params.id);
-    setTimeout(function () {
-      window.location.href = window.location.origin + '/#/tests/' + id;
+
+  const loadMathjax = () => {
+    // the following code is specifically for dealing with mathjax - TLDR we can't await on mathajx to load
+    if (window.location.href.indexOf('reload') > -1) {
+      window.scrollTo(0, 0);
+      let id = parseInt(params.id);
       setTimeout(function () {
-        window.location.reload();
+        window.location.href = window.location.origin + '/#/tests/' + id;
+        setTimeout(function () {
+          window.location.reload();
+        }, 250);
       }, 250);
-    }, 500);
-  }
+    } else {
+      // if we have previously reloaded, wait for mathjax to finish rendering
+      setTimeout(function () {
+        loading = false;
+      }, 2000);
+    }
+  };
+
+  onMount(async () => {
+    loadMathjax();
+  });
 </script>
 
 <Navbar />
 <Mathjax />
-<div class="course-page">
-  {#if $response.loading}
-    <div class="loading-wrap"><Loading /></div>
-  {/if}
 
+{#if $response.loading || loading}
+  <div class="loading-wrap"><Loading /></div>
+{/if}
+
+<div class="course-page">
   {#if $response.error}
     <div>ERROR: {$response.error.message}</div>
   {/if}
