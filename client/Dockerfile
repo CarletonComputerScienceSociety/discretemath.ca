@@ -11,4 +11,4 @@ RUN yarn install \
     && yarn run build
 
 # Running the app
-CMD "yarn run dev"
+CMD ["/bin/bash/", "-c", "yarn", "run", "dev"]
