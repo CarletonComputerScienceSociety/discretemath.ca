@@ -11,12 +11,14 @@ development:
   database: discretemath_development
   username: postgres
   password: 1234
+  host: <%= ENV['DISCRETEMATH_API_DATABASE_HOST'] %>
 
 test:
   <<: *default
   database: discretemath_test
   username: postgres
   password: 1234
+  host: <%= ENV['DISCRETEMATH_API_DATABASE_HOST'] %>
 
 production:
   <<: *default
