@@ -11,4 +11,4 @@ RUN yarn install \
     && yarn run build
 
 # Running the app
-CMD "yarn start"
+CMD "yarn run dev"
