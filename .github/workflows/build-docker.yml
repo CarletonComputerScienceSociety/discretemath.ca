@@ -3,7 +3,7 @@ name: Build Docker Images
 on:
   push:
     branches:
-      - "master"
+      - "fa/add-nomad-setup"
 
 jobs:
   build-client-docker:
