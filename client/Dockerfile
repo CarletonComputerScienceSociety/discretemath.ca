@@ -11,4 +11,5 @@ RUN yarn install \
     && yarn run build
 
 # Running the app
+EXPOSE 5000
 CMD ["yarn", "start"]
