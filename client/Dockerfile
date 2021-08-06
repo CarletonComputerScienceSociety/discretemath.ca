@@ -12,4 +12,4 @@ RUN yarn install \
 
 # Running the app
 EXPOSE 5000
-CMD ["yarn", "start"]
+CMD ["yarn", "start", "--host"]
