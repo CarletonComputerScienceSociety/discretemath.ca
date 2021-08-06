@@ -10,7 +10,10 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN gem install bundler:2.1.4 \
-    && bundle install
+    && bundle install \
+    && chmod +x entrypoint.sh
 
 EXPOSE 3000
 ENTRYPOINT [ "/usr/src/app/entrypoint.sh" ]
+
+## Need to set up using 
