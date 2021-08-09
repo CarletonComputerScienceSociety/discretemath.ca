@@ -2,20 +2,30 @@
   export let number;
   export let body;
   export let bodyFormat;
+  export let model;
 </script>
 
 <div class="true-false-question">
   <div>{number}. {body}</div>
   <div class="true-false-container">
     <div class="true-false-option">
-      <input type="radio" name="question{number}" id="true{number}" />
+      <input
+        type="radio"
+        name="question{number}"
+        id="true{number}"
+        on:click={() => model.selectAnswer(true)}
+      />
       <label for="true{number}">True</label>
     </div>
     <div class="true-false-option">
-      <input type="radio" name="question{number}" id="fasle{number}" />
+      <input
+        type="radio"
+        name="question{number}"
+        id="fasle{number}"
+        on:click={() => model.selectAnswer(true)}
+      />
       <label for="fasle{number}">Fasle</label>
     </div>
-    <!-- Change value="true" to onclick function -->
   </div>
 </div>
 
@@ -25,14 +35,14 @@
     padding: 1rem;
   }
 
-  .true-false-container{
-      margin-top: 1rem;
-      display: flex;
-      gap: 10rem;
+  .true-false-container {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10rem;
   }
 
-  .true-false-option{
-      position: relative;
+  .true-false-option {
+    position: relative;
   }
 
   .true-false-option input,
@@ -42,13 +52,13 @@
     background-color: white;
   }
 
-  .true-false-option input{
-      display: none;
-      opacity: 0;
+  .true-false-option input {
+    display: none;
+    opacity: 0;
   }
 
-  .true-false-option input[type="radio"]:checked + label{
-      background-color: #99ccff;
+  .true-false-option input[type='radio']:checked + label {
+    background-color: #99ccff;
   }
 
   .true-false-option label {
@@ -63,7 +73,7 @@
     width: 8rem;
   }
 
-  .true-false-option label:hover{
-      background-color: #edfeff;
+  .true-false-option label:hover {
+    background-color: #edfeff;
   }
 </style>
