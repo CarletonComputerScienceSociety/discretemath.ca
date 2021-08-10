@@ -21,10 +21,10 @@
       <input
         type="radio"
         name="question{number}"
-        id="fasle{number}"
+        id="false{number}"
         on:click={() => model.selectAnswer(true)}
       />
-      <label for="fasle{number}">Fasle</label>
+      <label for="false{number}">False</label>
     </div>
   </div>
 </div>
