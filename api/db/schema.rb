@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_02_172940) do
+ActiveRecord::Schema.define(version: 2021_08_10_163101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -108,15 +108,24 @@ ActiveRecord::Schema.define(version: 2021_08_02_172940) do
     t.index ["course_session_id"], name: "index_lectures_on_course_session_id"
   end
 
-  create_table "linked_question_option_answers", force: :cascade do |t|
+  create_table "linked_question__links", force: :cascade do |t|
+    t.bigint "linked_question_option_id", null: false
+    t.bigint "linked_question_answer_id", null: false
+    t.bigint "linked_question_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["linked_question_answer_id"], name: "index_linked_question__links_on_linked_question_answer_id"
+    t.index ["linked_question_id"], name: "index_linked_question__links_on_linked_question_id"
+    t.index ["linked_question_option_id"], name: "index_linked_question__links_on_linked_question_option_id"
+  end
+
+  create_table "linked_question_answers", force: :cascade do |t|
     t.text "body"
     t.string "format"
     t.bigint "linked_question_id", null: false
-    t.bigint "linked_question_option_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["linked_question_id"], name: "index_linked_question_option_answers_on_linked_question_id"
-    t.index ["linked_question_option_id"], name: "linked_question_option_answers_on_linked_question_option_id"
+    t.index ["linked_question_id"], name: "index_linked_question_answers_on_linked_question_id"
   end
 
   create_table "linked_question_options", force: :cascade do |t|
@@ -210,8 +219,10 @@ ActiveRecord::Schema.define(version: 2021_08_02_172940) do
   add_foreign_key "drill_questions", "drills"
   add_foreign_key "drills", "course_sessions"
   add_foreign_key "lectures", "course_sessions"
-  add_foreign_key "linked_question_option_answers", "linked_question_options"
-  add_foreign_key "linked_question_option_answers", "linked_questions"
+  add_foreign_key "linked_question__links", "linked_question_answers"
+  add_foreign_key "linked_question__links", "linked_question_options"
+  add_foreign_key "linked_question__links", "linked_questions"
+  add_foreign_key "linked_question_answers", "linked_questions"
   add_foreign_key "linked_question_options", "linked_questions"
   add_foreign_key "multiple_choice_answers", "multiple_choice_questions"
   add_foreign_key "multiple_choice_questions", "courses"
