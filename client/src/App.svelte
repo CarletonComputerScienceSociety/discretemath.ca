@@ -38,7 +38,7 @@
   };
 
   const httpLink = createHttpLink({
-    uri: 'http://localhost:3000/graphql',
+    uri: process.env['API_URL'],
     headers: {
       'Content-Type': 'application/json'
     }

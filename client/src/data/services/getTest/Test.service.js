@@ -4,7 +4,8 @@ import {readable} from 'svelte/store';
 
 const getTest = id => {
   // ENV VAR TO HIT API INSTEAD OF MOCK
-  if (false) {
+
+  if (process.env['USE_API'] === 'true') {
     return query(TEST, {
       variables: {id: id}
     });
