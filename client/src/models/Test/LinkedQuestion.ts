@@ -31,10 +31,10 @@ class LinkedQuestion extends Question {
   }
 
   initAnswers(input): LinkedQuestionAnswer[] {
-    let answer = [];
+    let answers = [];
 
     for (let i = 0; i < input.length; i++) {
-      answer.push(
+      answers.push(
         new LinkedQuestionAnswer(
           input[i].body,
           input[i].format,
@@ -43,10 +43,10 @@ class LinkedQuestion extends Question {
       );
     }
 
-    return answer;
+    return answers;
   }
 
-  isAnsweredCorrectly() {
+  isAnsweredCorrectly(): boolean {
     for (let i = 0; i < this.options.length; i++) {
       if (this.answers[this.options[i].selectedAnswerIndex].optionIndex != i) {
         return false;
