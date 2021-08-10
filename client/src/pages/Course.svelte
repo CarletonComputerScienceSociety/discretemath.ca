@@ -19,6 +19,7 @@
   {#if !$response.loading && $response}
     <h1>{$response.data.course.displayName}</h1>
     <p>{$response.data.course.description}</p>
+    <!--
     <h2>Sessions</h2>
     <div class="course-tests">
       {#each $response.data.course.courseSessions as session}
@@ -27,8 +28,9 @@
         >
       {/each}
     </div>
+    -->
 
-    <h2>Tests</h2>
+    <!--<h2>Tests</h2>-->
     <div class="course-tests">
       {#each $response.data.course.tests as test}
         <a href={'#/tests/' + test.id + '/?reload=true'}
@@ -37,12 +39,14 @@
       {/each}
     </div>
 
+    <!--
     <h2>Lectures</h2>
     <div class="course-tests">
       {#each $response.data.course.lectures as lecture}
         <a href={lecture.url}><div class="course-test">{lecture.id}</div></a>
       {/each}
     </div>
+    -->
   {/if}
 </div>
 
