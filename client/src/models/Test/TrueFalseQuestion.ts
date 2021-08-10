@@ -20,7 +20,7 @@ class TrueFalseQuestion extends Question {
     this.selectedAnswer = bool;
   }
 
-  isAnsweredCorrectly() {
+  isAnsweredCorrectly(): boolean {
     return (this.selectedAnswer = this.actualAnswer);
   }
 }
