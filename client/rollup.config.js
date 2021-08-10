@@ -7,7 +7,6 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import replace from '@rollup/plugin-replace'
 
-
 const production = !process.env.ROLLUP_WATCH;
 
 function serve() {
