@@ -11,3 +11,4 @@ export {MultipleChoiceQuestion} from './MultipleChoiceQuestion';
 export {Navbar} from './Navbar';
 export {Pseudocode} from './Pseudocode';
 export {Test} from './Test';
+export {TrueFalseQuestion} from './TrueFalseQuestion';
