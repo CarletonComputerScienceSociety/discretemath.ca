@@ -1,4 +1,4 @@
-class CheckboxQuestionOption {
+class CheckQuestionOption {
   body: string;
   format: string;
   isCorrect: boolean;
@@ -16,4 +16,4 @@ class CheckboxQuestionOption {
   }
 }
 
-export {CheckboxQuestionOption};
+export {CheckQuestionOption};
