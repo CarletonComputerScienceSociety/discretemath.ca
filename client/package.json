@@ -2,7 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "renv-cmd ollup -c",
+    "build": "env-cmd rollup -c",
     "dev": "env-cmd rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
