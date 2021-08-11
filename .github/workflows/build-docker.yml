@@ -16,12 +16,9 @@ jobs:
         with:
           envkey_USE_API: false
           envkey_API_URL: ""
-          directory: "client"
-      - name: Cat env file
+      - name: Move env file
         run: |
-          ls client
-          stat client/.env
-          cat client/.env
+          mv .env ./client/
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
