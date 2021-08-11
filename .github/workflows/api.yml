@@ -2,6 +2,8 @@ name: API
 
 on:
   push:
+    paths:
+      - "api/**"
 
 jobs:
   test-api:
