@@ -2,8 +2,8 @@ name: Build Docker Images
 
 on:
   push:
-    branches:
-      - "master"
+    # branches:
+    #   - "master"
 
 jobs:
   build-client-docker:
@@ -16,6 +16,7 @@ jobs:
         with:
           envkey_USE_API: false
           envkey_API_URL: ""
+          directory: "client"
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
