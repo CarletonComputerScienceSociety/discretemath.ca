@@ -1,8 +1,8 @@
 import {Question} from './Question';
-import {CheckboxQuestionOption} from './CheckboxQuestionOption';
+import {CheckQuestionOption} from './CheckQuestionOption';
 
 class CheckboxQuestion extends Question {
-  options: CheckboxQuestionOption[];
+  options: CheckQuestionOption[];
 
   constructor(
     i: number, // Index
@@ -10,17 +10,17 @@ class CheckboxQuestion extends Question {
     b: string, // Q Body
     bf: string, // Q Body format
     p: string, // Pseudocode (if any)
-    o: CheckboxQuestionOption[] // Actual answer (true/false)
+    o: CheckQuestionOption[] // Actual answer (true/false)
   ) {
     super(i, n, b, bf, p);
     this.options = this.initOptions(o);
   }
 
-  initOptions(input): CheckboxQuestionOption[] {
+  initOptions(input): CheckQuestionOption[] {
     let options = [];
     for (let i = 0; i < input.length; i++) {
       options.push(
-        new CheckboxQuestionOption(
+        new CheckQuestionOption(
           input[i].body,
           input[i].format,
           input[i].isCorrect
