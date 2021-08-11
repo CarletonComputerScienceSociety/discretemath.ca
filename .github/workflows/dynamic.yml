@@ -6,7 +6,7 @@ on:
       - "dynamic/**"
 
 jobs:
-  build:
+  test-dynamic:
     runs-on: ubuntu-latest
 
     steps:
