@@ -2,8 +2,6 @@ name: Dynamic
 
 on:
   push:
-    paths:
-      - "dynamic/**"
 
 jobs:
   test-dynamic:
