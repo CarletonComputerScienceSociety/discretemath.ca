@@ -15,7 +15,7 @@ jobs:
         uses: SpicyPizza/create-envfile@v1
         with:
           envkey_USE_API: true
-          envkey_API_URL: "https://api.staging.discretemath.ca/graphql"
+          envkey_API_URL: "https://api.discretemath.ca/graphql"
       - name: Move env file
         run: |
           mv .env ./client/

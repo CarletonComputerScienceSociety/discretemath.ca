@@ -2,8 +2,6 @@ name: Client
 
 on:
   push:
-    paths:
-      - "client/**"
 
 jobs:
   test-client:
