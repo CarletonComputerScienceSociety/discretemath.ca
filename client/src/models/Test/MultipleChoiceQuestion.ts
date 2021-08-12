@@ -39,7 +39,7 @@ class MultipleChoiceQuestion extends Question {
     this.selectedAnswer = answerIndex;
   }
 
-  isAnsweredCorrectly() {
+  isAnsweredCorrectly(): boolean {
     if (this.selectedAnswer == -1) {
       return false;
     } else if (this.answers[this.selectedAnswer].correct) {
