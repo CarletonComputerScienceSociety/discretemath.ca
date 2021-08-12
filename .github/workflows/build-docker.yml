@@ -14,8 +14,8 @@ jobs:
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1
         with:
-          envkey_USE_API: false
-          envkey_API_URL: ""
+          envkey_USE_API: true
+          envkey_API_URL: "https://api.staging.discretemath.ca"
       - name: Move env file
         run: |
           mv .env ./client/
