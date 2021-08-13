@@ -1,6 +1,6 @@
 <script>
   import {Pseudocode} from '../../components';
-  import {MultipleChoiceAnswer} from './MultipleChoiceAnswer'
+  import {MultipleChoiceAnswer} from './MultipleChoiceAnswer';
 
   export let number;
   export let body;

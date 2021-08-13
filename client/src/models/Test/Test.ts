@@ -1,5 +1,8 @@
 import {Question} from './Question';
+import {CheckQuestion} from './CheckQuestion';
+import {LinkedQuestion} from './LinkedQuestion';
 import {MultipleChoiceQuestion} from './MultipleChoiceQuestion';
+import {TrueFalseQuestion} from './TrueFalseQuestion';
 import {writable} from 'svelte/store';
 
 class Test {
@@ -31,7 +34,26 @@ class Test {
   }
 
   initQuestion(index, testQuestion) {
-    if (testQuestion.questionType == 'MultipleChoiceQuestion') {
+    if ((testQuestion.questionType = 'CheckQuestion')) {
+      return new CheckQuestion(
+        index,
+        testQuestion.order,
+        testQuestion.question.body,
+        testQuestion.question.bodyFormat,
+        testQuestion.question.pseudocode,
+        testQuestion.question.checkQuestionOptions
+      );
+    } else if (testQuestion.questionType == 'LinkedQuestion') {
+      return new LinkedQuestion(
+        index,
+        testQuestion.order,
+        testQuestion.question.body,
+        testQuestion.question.bodyFormat,
+        testQuestion.question.pseudocode,
+        testQuestion.question.linkedQuestionOptions,
+        testQuestion.question.linkedQuestionAnswers
+      );
+    } else if (testQuestion.questionType == 'MultipleChoiceQuestion') {
       return new MultipleChoiceQuestion(
         index,
         testQuestion.order,
@@ -40,8 +62,16 @@ class Test {
         testQuestion.question.pseudocode,
         testQuestion.question.multipleChoiceAnswers
       );
+    } else if (testQuestion.questionType == 'TrueFalseQuestion') {
+      return new TrueFalseQuestion(
+        index,
+        testQuestion.order,
+        testQuestion.question.body,
+        testQuestion.question.bodyFormat,
+        testQuestion.question.pseudocode,
+        testQuestion.question.answer
+      );
     }
-
     return new Question(
       index,
       testQuestion.order,
