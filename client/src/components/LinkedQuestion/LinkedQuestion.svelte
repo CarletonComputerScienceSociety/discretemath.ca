@@ -1,5 +1,5 @@
 <script>
-  import {LinkedQuestionOption} from '../../components';
+  import {LinkedQuestionOption} from './LinkedQuestionOption';
 
   export let number;
   export let body;
