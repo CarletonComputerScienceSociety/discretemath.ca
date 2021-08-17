@@ -34,7 +34,7 @@ class Test {
   }
 
   initQuestion(index, testQuestion) {
-    if ((testQuestion.questionType = 'CheckQuestion')) {
+    if (testQuestion.questionType == 'CheckQuestion') {
       return new CheckQuestion(
         index,
         testQuestion.order,
