@@ -1,7 +1,7 @@
 import {Question} from './Question';
 import {CheckQuestionOption} from './CheckQuestionOption';
 
-class CheckboxQuestion extends Question {
+class CheckQuestion extends Question {
   options: CheckQuestionOption[];
 
   constructor(
@@ -39,3 +39,5 @@ class CheckboxQuestion extends Question {
     return true;
   }
 }
+
+export {CheckQuestion};
