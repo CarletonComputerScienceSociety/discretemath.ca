@@ -1,4 +1,5 @@
 export {Button} from './Button';
+export {ContentCard} from './ContentCard';
 export {CourseNavbar} from './CourseNavbar';
 export {Footer} from './Footer';
 export {Header} from './Header';
