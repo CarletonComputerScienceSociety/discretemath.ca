@@ -10,6 +10,6 @@ class CourseSession < ApplicationRecord
   has_many :lectures, dependent: :delete_all
 
   def display_name
-    "#{course.code}: #{term.capitalize} #{year}"
+    "#{term.capitalize} #{year}"
   end
 end

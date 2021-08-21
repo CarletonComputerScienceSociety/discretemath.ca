@@ -1,6 +1,6 @@
 <script>
   import {link} from 'svelte-spa-router';
-  import {CourseNavbar as Navbar} from '../components';
+  import {ContentCard, CourseNavbar as Navbar} from '../components';
   import {getCourse} from '../data';
   export let id;
   const response = getCourse(id);
@@ -20,28 +20,32 @@
     <h1>{$response.data.course.displayName}</h1>
     <p>{$response.data.course.description}</p>
     <!--
-    <h2>Sessions</h2>
-    <div class="course-tests">
+    <div class="content-container">
       {#each $response.data.course.courseSessions as session}
-        <a href={'/sessions/' + session.id} use:link
-          ><div class="course-test">{session.id}</div></a
-        >
+        <a href={'/sessions/' + session.id} use:link>
+          <ContentCard title={session.displayName} info={session.instructor} tag={"Session"} type="User"/>
+        </a>
       {/each}
     </div>
     -->
 
     <!--<h2>Tests</h2>-->
-    <div class="course-tests">
+    <div class="content-container">
       {#each $response.data.course.tests as test}
-        <a href={'#/tests/' + test.id + '/?reload=true'}
-          ><div class="course-test">{test.id}</div></a
-        >
+        <a href={'#/tests/' + test.id + '/?reload=true'}>
+          <ContentCard
+            title={test.title}
+            info={test.questionCount}
+            tag={'Test'}
+            type="Midterm"
+          />
+        </a>
       {/each}
     </div>
 
     <!--
     <h2>Lectures</h2>
-    <div class="course-tests">
+    <div class="content-container">
       {#each $response.data.course.lectures as lecture}
         <a href={lecture.url}><div class="course-test">{lecture.id}</div></a>
       {/each}
@@ -51,12 +55,15 @@
 </div>
 
 <style>
-  .course-tests {
+  .content-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
   }
 
-  .course-test {
-    margin: 1em;
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 </style>
