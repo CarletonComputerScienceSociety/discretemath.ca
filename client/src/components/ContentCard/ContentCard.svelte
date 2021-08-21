@@ -12,7 +12,8 @@
     faLightbulb, //Drill
     faClipboard, //Test
     faPencilAlt, //Midterm
-    faPenAlt //Exam
+    faPenAlt, //Exam
+    faUser // Person
   } from '@fortawesome/free-solid-svg-icons';
 
   const tagIcons = {
@@ -28,40 +29,91 @@
     Drill: faQuestion,
     Test: faQuestion,
     Midterm: faQuestion,
-    Exam: faQuestion
+    Exam: faQuestion,
+    User: faUser
   };
 </script>
 
-<div class="outer-test-card">
-  <div class="tag"><Fa icon={tagIcons[type]} /> {tag}</div>
-  <div class="test-card-title">{title}</div>
-  <div class="info"><Fa icon={infoIcons[type]} /> {info}</div>
+<div class="content-card">
+  <div class="content-card-tag">
+    <!--<Fa icon={tagIcons[type]} />-->
+    {tag}
+  </div>
+  <div class="content-card-title">{title}</div>
+  <div class="content-card-info">
+    <Fa icon={infoIcons[type]} />
+    <span class="content-card-info-spacing" />{info}
+  </div>
 </div>
 
-<style>
-  .outer-test-card {
-    font-family: 'Tahoma';
-    padding: 15px;
-    width: 150px;
-    height: 100px;
-    border-radius: 11%;
-    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+<style type="text/scss">
+  .content-card {
+    padding: 1rem;
+    min-width: 200px;
+    max-width: 250px;
+    height: 125px;
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.02),
+      0 6px 20px 0 rgba(0, 0, 0, 0.02);
+    transition: all 0.15s;
+    overflow: hidden;
+    font-family: 'Assistant', sans-serif;
   }
 
-  .tag {
-    margin-bottom: 10px;
-    color: #ffab04;
+  .content-card:hover {
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.035),
+      0 6px 20px 0 rgba(0, 0, 0, 0.035);
+    opacity: 1;
   }
 
-  .test-card-title {
+  .content-card-tag {
+    transition: all 0.15s;
+    background: #ffab0443;
+    margin-bottom: 1rem;
+    background: #ffab04;
+    color: white;
     font-weight: bold;
-    font-size: 17px;
-    margin-bottom: 10px;
-    min-height: 42px;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    padding: 0.25rem 0.7rem;
+    width: fit-content;
+    opacity: 0.8;
   }
 
-  .info {
+  .content-card-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    min-height: 60px;
+    width: 100%;
+    opacity: 0.6;
+    transition: all 0.15s;
+  }
+
+  .content-card-info {
     margin-bottom: 5px;
     color: #6c717a;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    transition: all 0.15s;
+  }
+
+  .content-card-info-spacing {
+    margin-left: 0.25rem;
+  }
+
+  .content-card:hover {
+    .content-card-info {
+      opacity: 1;
+    }
+
+    .content-card-title {
+      opacity: 1;
+    }
+
+    .content-card-tag {
+      background: #ffab04;
+      color: white;
+      opacity: 1;
+    }
   }
 </style>
