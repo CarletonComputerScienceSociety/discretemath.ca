@@ -60,8 +60,8 @@
   }
 
   .content-card:hover {
-    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.035),
-      0 6px 20px 0 rgba(0, 0, 0, 0.035);
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.05),
+      0 6px 20px 0 rgba(0, 0, 0, 0.05);
     opacity: 1;
   }
 
@@ -85,7 +85,7 @@
     margin-bottom: 10px;
     min-height: 60px;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.55;
     transition: all 0.15s;
   }
 
@@ -93,7 +93,7 @@
     margin-bottom: 5px;
     color: #6c717a;
     font-size: 0.9rem;
-    opacity: 0.6;
+    opacity: 0.55;
     transition: all 0.15s;
   }
 
