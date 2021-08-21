@@ -1,6 +1,6 @@
 <script>
   import {link} from 'svelte-spa-router';
-  import {ContentCard, CourseNavbar as Navbar} from '../components';
+  import {ContentCard, CourseNavbar as Navbar, Loading} from '../components';
   import {getCourse} from '../data';
   export let id;
   const response = getCourse(id);
@@ -9,7 +9,7 @@
 <Navbar />
 <div class="course-page">
   {#if $response.loading}
-    <div>Loading...</div>
+    <div class="loading-wrap"><Loading /></div>
   {/if}
 
   {#if $response.error}
