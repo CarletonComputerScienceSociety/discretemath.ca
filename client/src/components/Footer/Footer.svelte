@@ -9,7 +9,6 @@
       color: inherit;
       text-decoration: none;
     }
-    position: absolute;
     width: 100%;
     height: 4rem;
     background-color: black;
@@ -17,8 +16,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    bottom: 0;
     font-family: 'Assistant', sans-serif;
     border-top: 3px solid #ffab40;
   }
