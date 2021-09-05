@@ -14,9 +14,11 @@
       >
     </div>
     <div class="navbar-items">
-      <a href="/about" use:link>About</a>
-      <a href="/comp1805" use:link>Changelog</a>
-      <a href="/comp2804" use:link>Volunteer</a>
+      <a
+        href="https://github.com/CarletonComputerScienceSociety/discretemath.ca"
+        >Contribute</a
+      >
+      <a href="https://ccss.carleton.ca/volunteer/">Volunteer</a>
     </div>
   </div>
 </div>
