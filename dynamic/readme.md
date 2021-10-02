@@ -31,34 +31,36 @@ Contributing to the generator is really simple. The only files you need to reall
 ## generate_question() that returns in the following string data format:
 ## If your not using Latex within your question or body, replay "mathjax" with "text"
 
-* {
-*     "title": "f13m01",
-*     "body": "Let $A$ be a set of size 7 and let $B$ be a set of size 13. How many one-to-one functions $f: A \\rightarrow B$ are there?",
-*     "bodyFormat": "mathjax",
-*     "pseudocode": "",
-*     "multipleChoiceAnswers": [
-*         {
-*             "body": "$\\frac{6!}{13!}$",
-*             "bodyFormat": "mathjax",
-*             "correct": false,
-*         },
-*         {
-*             "body": "$\\frac{13!}{5!}$",
-*             "bodyFormat": "mathjax",
-*             "correct": false,
-*         },
-*         {
-*             "body": "$\\frac{13!}{6!}$",
-*             "bodyFormat": "mathjax",
-*             "correct": true,
-*         },
-*         {
-*             "body": "$\\frac{13!}{7!}$",
-*             "bodyFormat": "mathjax",
-*             "correct": false,
-*         }
-*     ],
-* } (edited)
+ {
+     "title": "f13m01",
+     "body": "Let $A$ be a set of size 7 and let $B$ be a set of size 13. How many one-to-one functions $f: A \\rightarrow B$ are there?",
+     "bodyFormat": "mathjax",
+     "pseudocode": "",
+     "multipleChoiceAnswers": [
+         {
+             "body": "$\\frac{6!}{13!}$",
+             "bodyFormat": "mathjax",
+             "correct": false,
+         },
+         {
+             "body": "$\\frac{13!}{5!}$",
+             "bodyFormat": "mathjax",
+             "correct": false,
+         },
+         {
+             "body": "$\\frac{13!}{6!}$",
+             "bodyFormat": "mathjax",
+             "correct": true,
+         },
+         {
+             "body": "$\\frac{13!}{7!}$",
+             "bodyFormat": "mathjax",
+             "correct": false,
+         }
+     ],
+ } 
+ 
+ (edited)
 
 ## Please note: If your generator is hard-coding or explicitly copying course materials
 ## or copyrighted content from external sources, (i.e. not creating an original generator)
