@@ -41,8 +41,5 @@ Contributing to the generator is really simple. The only files you need to reall
  
  (edited)
 
-## Please note: If your generator is hard-coding or explicitly copying course materials
-## or copyrighted content from external sources, (i.e. not creating an original generator)
-## you must receive permission from the course instructors or the original author.
-## (That said, since it is a generator, please avoid hard-coding pre-existing materials.)
-## You can be inspired by a problem type, but a generator should create original questions.
+## Please note: If your generator is hard-coding or explicitly copying course materials or copyrighted content from external sources, (i.e. not creating an original generator) you must receive permission from the course instructors or the original author.
+## (That said, since it is a generator, please avoid hard-coding pre-existing materials. You can be inspired by a problem type, but a generator should create original questions.)
