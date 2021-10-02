@@ -8,6 +8,7 @@ Contributing to the generator is really simple. The only files you need to reall
 
 ## To add a generator, make sure that your generator directory's main.py file has the function
 ## "call()"" that returns the "generate_question()," which returns in the following string data format:
+## If your not using Latex within your question or body, replay "mathjax" with "text"
 
  {
      "title": "f13m01",
@@ -38,7 +39,8 @@ Contributing to the generator is really simple. The only files you need to reall
      ],
  } (edited)
 
-## Please note: If your generator is hard-coding or explicitly using course materials
+## Please note: If your generator is hard-coding or explicitly copying course materials
 ## or copyrighted content from external sources, (i.e. not creating an original generator)
 ## you must receive permission from the course instructors or the original author.
 ## (That said, since it is a generator, please avoid hard-coding pre-existing materials.)
+## You can be inspired by a problem type, but a generator should create original questions.
