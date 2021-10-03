@@ -1,8 +1,14 @@
 import random
 
+question = "will be replaced with the correct string type question"
+answerschoices = []
+
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
 def generate_question():
+
+    global question
+    global answerchoices
 
     answerchoices =[]
 
@@ -27,7 +33,7 @@ def generate_question():
         # print(answerchoices)
 
         return {
-            "title": "books in shelves #1",
+            "title": "books in shelves",
             "body": question,
             "bodyFormat": "text",
             "pseudocode": "",
@@ -110,7 +116,7 @@ def generate_question():
         # print(answerchoices)
 
         return {
-            "title": "books in shelves #1",
+            "title": "books in shelves",
             "body": question,
             "bodyFormat": "text",
             "pseudocode": "",
@@ -194,7 +200,7 @@ def generate_question():
         # print(answerchoices)
 
         return {
-            "title": "books in shelves #1",
+            "title": "books in shelves",
             "body": question,
             "bodyFormat": "text",
             "pseudocode": "",
