@@ -9,11 +9,11 @@ def generate_question():
     a = random.randint(5,10) #number of books
     b = random.randint(3,10) #number of shelves
 
-    answer = "\\frac{"+str(a+b-1)+"!}{"+str((b-1))+"!}$"
+    answer = "$\\frac{"+str(a+b-1)+"!}{"+str((b-1))+"!}$"
     answerchoices.append(answer)
-    answerchoices.append("\\frac{"+str(a+b)+"!}{"+str((b-1))+"!}$")
-    answerchoices.append("\\frac{"+str(a+b-1)+"!}{"+str((b))+"!}$")
-    answerchoices.append("\\frac{"+str(a+b)+"!}{"+str((b))+"!}$")
+    answerchoices.append("$\\frac{"+str(a+b)+"!}{"+str((b-1))+"!}$")
+    answerchoices.append("$\\frac{"+str(a+b-1)+"!}{"+str((b))+"!}$")
+    answerchoices.append("$\\frac{"+str(a+b)+"!}{"+str((b))+"!}$")
 
     # the ruby side handles randomization of the order of answer choices.
     # random.shuffle(answerchoices)
@@ -21,7 +21,7 @@ def generate_question():
     return {
        "title": "books in shelves #1",
        "body": "How many ways are there to put " + str(a) + " number of books in " + str(b) + " number of shelves?",
-       "bodyFormat": "mathjax",
+       "bodyFormat": "text",
        "pseudocode": "",
        "multipleChoiceAnswers": [
            {
@@ -40,7 +40,7 @@ def generate_question():
                "correct": "false",
            },
            {
-               "body": "$\\frac{13!}{7!}$",
+               "body": answerchoices[3],
                "bodyFormat": "mathjax",
                "correct": "false",
            }
