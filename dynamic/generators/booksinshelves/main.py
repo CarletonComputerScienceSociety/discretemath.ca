@@ -22,8 +22,10 @@ def generate_question():
         answerchoices.append("$\\frac{"+str(a+b-1)+"!}{"+str((b))+"!}$")
         answerchoices.append("$\\frac{"+str(a+b)+"!}{"+str((b))+"!}$")
 
-        print(question)
-        print(answerchoices)
+        # for quick debugging
+        # print(question)
+        # print(answerchoices)
+
         return {
             "title": "books in shelves #1",
             "body": question,
@@ -103,12 +105,13 @@ def generate_question():
         # we will not randomize the order of these choices because that is handled in ruby?
         #random.shuffle(answerchoices)
 
-        print(question)
-        print(answerchoices)
+        # for quick debugging
+        # print(question)
+        # print(answerchoices)
 
         return {
             "title": "books in shelves #1",
-            "body": "How many ways are there to put " + str(a) + " number of books in " + str(b) + " number of shelves?",
+            "body": question,
             "bodyFormat": "text",
             "pseudocode": "",
             "multipleChoiceAnswers": [
@@ -186,12 +189,13 @@ def generate_question():
         # we will not randomize the order of these choices because that is handled in ruby?
         #random.shuffle(answerchoices)
 
-        print(question)
-        print(answerchoices)
+        # for quick debugging
+        # print(question)
+        # print(answerchoices)
 
         return {
             "title": "books in shelves #1",
-            "body": "How many ways are there to put " + str(a) + " number of books in " + str(b) + " number of shelves?",
+            "body": question,
             "bodyFormat": "text",
             "pseudocode": "",
             "multipleChoiceAnswers": [
