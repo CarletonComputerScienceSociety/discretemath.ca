@@ -61,7 +61,7 @@ def generate_question():
         a = random.randint(5,10) # number of books
         b = random.randint(5,10) # number of shelves
 
-        n = random.randint(b//2, b) #sub number of shelves that will be used to store books #btw, randint is inclusive on bounds
+        n = random.randint(b//2, b-1) #sub number of shelves that will be used to store books #btw, randint is inclusive on bounds
 
         question = "How many ways are there to organize " + str(a) + " number of books using " + str(n) + " out of " + str(b) + " number of bookshelves?"
 
