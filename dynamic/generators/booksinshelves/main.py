@@ -14,7 +14,7 @@ def generate_question():
         b = random.randint(5,10) # number of shelves
 
         ###
-        question = "How many ways are there to put " + str(a) + " number of books in " + str(b) + " number of shelves?"
+        question = "How many ways are there to put " + str(a) + " number of books in " + str(b) + " number of bookshelves?"
 
         answer = "$\\frac{"+str(a+b-1)+"!}{"+str((b-1))+"!}$"
         answerchoices.append(answer)
@@ -63,7 +63,7 @@ def generate_question():
 
         n = random.randint(b//2, b-1) #sub number of shelves that will be used to store books #btw, randint is inclusive on bounds
 
-        question = "How many ways are there to organize " + str(a) + " number of books using " + str(n) + " out of " + str(b) + " number of bookshelves?"
+        question = "How many ways are there to organize " + str(a) + " number of books using exactly " + str(n) + " shelves out of " + str(b) + " number of bookshelves?"
 
         answer = "$\\frac{"+str(a+n-1)+"!}{"+str((n-1))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n)+"!}$"
 
