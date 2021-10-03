@@ -1,11 +1,13 @@
 import math, random
 
+#generated_question = None
+
 def generate_question():
+
+    answerchoices = []
 
     a = random.randint(5,10) #number of books
     b = random.randint(3,10) #number of shelves
-
-    answerchoices = []
 
     answer = "\\frac{"+str(a+b-1)+"!}{"+str((b-1))+"!}$"
     answerchoices.append(answer)
@@ -45,9 +47,9 @@ def generate_question():
        ],
    }
 
-# this generate_answer currently has no use as of (October 2nd, 2021)
-def generate_answer():
-    return generate_question()
+def generate_answer(): #this function has no real use as of Oct 2nd 2021
+    return "answer was generated"
 
 def call():
-    return generate_question()
+    generated_question = generate_question()
+    return generated_question
