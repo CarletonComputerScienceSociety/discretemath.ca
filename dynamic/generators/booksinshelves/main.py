@@ -1,7 +1,7 @@
 import random
 
 question = "will be replaced with the correct string type question"
-answerschoices = []
+answerchoices = []
 
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
@@ -19,7 +19,6 @@ def generate_question():
         a = random.randint(5,10) # number of books
         b = random.randint(5,10) # number of shelves
 
-        ###
         question = "How many ways are there to put " + str(a) + " number of books in " + str(b) + " number of bookshelves?"
 
         answer = "$\\frac{"+str(a+b-1)+"!}{"+str((b-1))+"!}$"
@@ -27,10 +26,6 @@ def generate_question():
         answerchoices.append("$\\frac{"+str(a+b)+"!}{"+str((b-1))+"!}$")
         answerchoices.append("$\\frac{"+str(a+b-1)+"!}{"+str((b))+"!}$")
         answerchoices.append("$\\frac{"+str(a+b)+"!}{"+str((b))+"!}$")
-
-        # for quick debugging
-        # print(question)
-        # print(answerchoices)
 
         return {
             "title": "books in shelves",
@@ -62,12 +57,11 @@ def generate_question():
         }
 
     elif restriction == 1: # restriction about only using n number of shelves. This includes all shelves
-        ###
 
         a = random.randint(5,10) # number of books
         b = random.randint(5,10) # number of shelves
 
-        n = random.randint(b//2, b-1) #sub number of shelves that will be used to store books #btw, randint is inclusive on bounds
+        n = random.randint(b//2, b-1) # sub-number of shelves that will be used to store books #btw, randint is inclusive on bounds
 
         question = "How many ways are there to organize " + str(a) + " number of books using exactly " + str(n) + " shelves out of " + str(b) + " number of bookshelves?"
 
@@ -76,7 +70,7 @@ def generate_question():
         def vary_answers(a,b,n):
 
             out = []
-            keeptrack = [] #keep track of generated answers so that there is no overlap in answers
+            keeptrack = [] # keep track of generated answers so that there is no overlap in answers
             for i in range(3):
                 v, s, l = 0, 0, 0
                 while ([v,s,l] not in keeptrack):
@@ -88,17 +82,17 @@ def generate_question():
                 if l==1:
                     if s == 1:
                         out.append("$\\frac{"+str(a+n-1+v)+"!}{"+str((n-1))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n)+"!}$")
-                    else: #s==2
+                    else: # s==2
                         out.append("$\\frac{"+str(a+n-1-v)+"!}{"+str((n-1))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n)+"!}$")
                 elif l==2:
                     if s == 1:
                         out.append("$\\frac{"+str(a+n-1)+"!}{"+str((n-1+v))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n)+"!}$")
-                    else: #s==2
+                    else: # s==2
                         out.append("$\\frac{"+str(a+n-1)+"!}{"+str((n-1-v))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n)+"!}$")
-                else: #l==3
+                else: # l==3
                     if s == 1:
                         out.append("$\\frac{"+str(a+n-1)+"!}{"+str((n-1))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n+v)+"!}$")
-                    else: #s==2
+                    else: # s==2
                         out.append("$\\frac{"+str(a+n-1)+"!}{"+str((n-1))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n-v)+"!}$")
             return out
 
@@ -109,11 +103,7 @@ def generate_question():
         answerchoices.append(varying_answers[2])
 
         # we will not randomize the order of these choices because that is handled in ruby?
-        #random.shuffle(answerchoices)
-
-        # for quick debugging
-        # print(question)
-        # print(answerchoices)
+        # random.shuffle(answerchoices)
 
         return {
             "title": "books in shelves",
@@ -145,7 +135,6 @@ def generate_question():
         }
 
     else: # restriction == 2 --> all bookshelves must be used, no empty bookshelves
-        ###
 
         a = random.randint(5,10) # number of books
         b = random.randint(5,10) # number of shelves
@@ -160,7 +149,7 @@ def generate_question():
         def vary_answers(a,b,n):
 
             out = []
-            keeptrack = [] #keep track of generated answers so that there is no overlap in answers
+            keeptrack = [] # keep track of generated answers so that there is no overlap in answers
             for i in range(3):
                 v, s, l = 0, 0, 0
                 while ([v,s,l] not in keeptrack):
@@ -172,17 +161,17 @@ def generate_question():
                 if l==1:
                     if s == 1:
                         out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1+v)+"!}{"+str(a-b)+"! \\cdot "+str(b-1)+"!}$")
-                    else: #s==2
+                    else: # s==2
                         out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1-v)+"!}{"+str(a-b)+"! \\cdot "+str(b-1)+"!}$")
                 elif l==2:
                     if s == 1:
                         out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b+v)+"! \\cdot "+str(b-1)+"!}$")
-                    else: #s==2
+                    else: # s==2
                         out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b-v)+"! \\cdot "+str(b-1)+"!}$")
-                else: #l==3
+                else: # l==3
                     if s == 1:
                         out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b)+"! \\cdot "+str(b-1+v)+"!}$")
-                    else: #s==2
+                    else: # s==2
                         out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b)+"! \\cdot "+str(b-1-v)+"!}$")
             return out
 
@@ -192,12 +181,8 @@ def generate_question():
         answerchoices.append(varying_answers[1])
         answerchoices.append(varying_answers[2])
 
-        # we will not randomize the order of these choices because that is handled in ruby?
-        #random.shuffle(answerchoices)
-
-        # for quick debugging
-        # print(question)
-        # print(answerchoices)
+        # we will not randomize the order of these choices because that is handled in ruby side.
+        # random.shuffle(answerchoices)
 
         return {
             "title": "books in shelves",
@@ -228,7 +213,7 @@ def generate_question():
             ],
         }
 
-def generate_answer(): #this function has no real use as of Oct 2nd 2021
+def generate_answer(): # this function has no real use as of Oct 2nd 2021
     return "answer was generated"
 
 def call():
