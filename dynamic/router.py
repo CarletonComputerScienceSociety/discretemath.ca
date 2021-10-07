@@ -19,7 +19,7 @@ async def generate_graph_theory_question():
 @router.get("/books_shelves_random")
 async def generate_books_shelves_random_question():
     return books_shelves_random_generator.call()
-
+"""
 @router.get("/books_shelves_0")
 async def generate_books_shelves_0_question():
     return books_shelves_0_generator.call()
@@ -35,4 +35,5 @@ async def generate_books_shelves_2_question():
 @router.get("/books_shelves_3")
 async def generate_books_shelves_3_question():
     return books_shelves_3_generator.call()
+"""
 ######################################################
