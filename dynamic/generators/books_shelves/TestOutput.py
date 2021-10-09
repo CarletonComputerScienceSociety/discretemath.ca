@@ -1,5 +1,4 @@
-import sys
-import math
+""" This file contains tools for test_main.py to use. """
 
 def check_mathjax_compatible(output_string):
     # this will just return true for now ...
