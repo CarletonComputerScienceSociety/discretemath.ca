@@ -3,22 +3,17 @@
 
 import random
 
-question = "will be replaced with the correct string type question"
-answerchoices = []
-
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
 def generate_question():
 
-    global question
-    global answerchoices
-
-    answerchoices =[]
+    question_body = "will be replaced with the correct string type question"
+    answerchoices = []
 
     a = random.randint(5,10) # number of books
     b = random.randint(5,10) # number of shelves
 
-    question = "How many ways are there to organize " + str(a) + " number of books with " + str(b) + " number of bookshelves? (Not all shelves need to be used.)"
+    question_body = "How many ways are there to organize " + str(a) + " number of books with " + str(b) + " number of bookshelves? (Not all shelves need to be used.)"
 
     answer = "$\\frac{"+str(a+b-1)+"!}{"+str((b-1))+"!}$"
     answerchoices.append(answer)
@@ -28,7 +23,7 @@ def generate_question():
 
     return {
         "title": "books in shelves",
-        "body": question,
+        "body": question_body,
         "bodyFormat": "text",
         "pseudocode": "",
         "multipleChoiceAnswers": [

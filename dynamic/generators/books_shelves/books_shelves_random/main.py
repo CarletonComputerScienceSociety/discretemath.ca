@@ -2,17 +2,12 @@
 
 import random
 
-question = "will be replaced with the correct string type question"
-answerchoices = []
-
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
 def generate_question():
 
-    global question
-    global answerchoices
-
-    answerchoices =[]
+    question_body = "will be replaced with the correct string type question"
+    answerchoices = []
 
     restriction = random.randint(0,3) # default=0 + three different types of restrictions generated
 
@@ -21,7 +16,7 @@ def generate_question():
         a = random.randint(5,10) # number of books
         b = random.randint(5,10) # number of shelves
 
-        question = "How many ways are there to organize " + str(a) + " number of books when given " + str(b) + " number of bookshelves? (The order of books matter.)"
+        question_body = "How many ways are there to organize " + str(a) + " number of books when given " + str(b) + " number of bookshelves? (The order of books matter.)"
 
         answer = "$\\frac{"+str(a+b-1)+"!}{"+str((b-1))+"!}$"
         answerchoices.append(answer)
@@ -31,7 +26,7 @@ def generate_question():
 
         return {
             "title": "books in shelves",
-            "body": question,
+            "body": question_body,
             "bodyFormat": "text",
             "pseudocode": "",
             "multipleChoiceAnswers": [
@@ -65,7 +60,7 @@ def generate_question():
 
         n = random.randint(b//2, b-1) # sub-number of shelves that will be used to store books #btw, randint is inclusive on bounds
 
-        question = "How many ways are there to organize " + str(a) + " number of books using exactly " + str(n) + " shelves out of " + str(b) + " number of bookshelves? (The order of books matter.)"
+        question_body = "How many ways are there to organize " + str(a) + " number of books using exactly " + str(n) + " shelves out of " + str(b) + " number of bookshelves? (The order of books matter.)"
 
         answer = "$\\frac{"+str(a+n-1)+"!}{"+str((n-1))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n)+"!}$"
 
@@ -109,7 +104,7 @@ def generate_question():
 
         return {
             "title": "books in shelves",
-            "body": question,
+            "body": question_body,
             "bodyFormat": "text",
             "pseudocode": "",
             "multipleChoiceAnswers": [
@@ -142,7 +137,7 @@ def generate_question():
         b = random.randint(5,10) # number of shelves
         a+=b # update number of books so that it is more than the available shelves; for this restriction this is necessary.
 
-        question = "How many ways are there to organize " + str(a) + " number of books using " + str(b) + " number of bookshelves? (ALL shelves must be used AND The order of books matter.)"
+        question_body = "How many ways are there to organize " + str(a) + " number of books using " + str(b) + " number of bookshelves? (ALL shelves must be used AND The order of books matter.)"
 
         answer = "$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b)+"! \\cdot "+str(b-1)+"!}$"
 
@@ -186,7 +181,7 @@ def generate_question():
 
         return {
             "title": "books in shelves",
-            "body": question,
+            "body": question_body,
             "bodyFormat": "text",
             "pseudocode": "",
             "multipleChoiceAnswers": [
@@ -220,7 +215,7 @@ def generate_question():
 
         b = random.randint(5,10) # number of shelves
 
-        question = "How many ways are there to organize " + str(a) + " number of books when given " + str(b) + " number of bookshelves? " +str(c)+ " out of the " +str(a)+ " number of books are IDENTICAL. (The order of books matter.)"
+        question_body = "How many ways are there to organize " + str(a) + " number of books when given " + str(b) + " number of bookshelves? " +str(c)+ " out of the " +str(a)+ " number of books are IDENTICAL. (The order of books matter.)"
 
         answer = "$\\frac{"+str(a+b-1)+"!}{" +str(c)+ "! \\cdot "+str((b-1))+"!}$"
 
@@ -264,7 +259,7 @@ def generate_question():
 
         return {
             "title": "books in shelves",
-            "body": question,
+            "body": question_body,
             "bodyFormat": "text",
             "pseudocode": "",
             "multipleChoiceAnswers": [
