@@ -33,7 +33,7 @@ def generate_question():
     len_start = len(ran_starts[numA]) # length of start
     len_end = len(ran_ends[numB]) # length of end
 
-    question_body = "How may bitstrings of length " + str(bitstring_length) + " are there that start with " + ran_starts[numA] + " or end with " + ran_ends[numB] + "?"
+    question_body = "How may eqbitstrings of length " + str(bitstring_length) + " are there that start with " + ran_starts[numA] + " or end with " + ran_ends[numB] + "?"
 
     answer = "$2^{" + str(bitstring_length - len_start) + "} - 2^{" + str(bitstring_length - (len_start + len_end)) + "}$"
     answerchoices.append(answer)
