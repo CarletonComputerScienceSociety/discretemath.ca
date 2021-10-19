@@ -4,7 +4,6 @@ import test_output
 
 for i in range(0,4):
     sys.path.append("/books_shelves_"+str(i))
-sys.path.append("/books_shelves_random")
 
 import books_shelves_0.main as main_0
 import books_shelves_1.main as main_1

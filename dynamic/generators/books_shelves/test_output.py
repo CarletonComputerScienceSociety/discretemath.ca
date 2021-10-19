@@ -62,7 +62,7 @@ def test_output(out_dictionary):
             return False
 
         # checks "bodyFormat" key has the correct item types available as in the bodyFormat_options
-        if not (out_dictionary[keys_list[2]] in bodyFormat_options):
+        if not (out_dictionary["bodyFormat"] in bodyFormat_options):
             return False
 
         # if there is "pseudocode" key in the output dictionary, check that the item of "pseudocode" is a string type
