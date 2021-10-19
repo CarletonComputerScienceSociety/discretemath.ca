@@ -57,5 +57,3 @@ def generate_answer(): # this function has no real use as of Oct 2nd 2021
 
 def call():
     return generate_question()
-
-# print(type(call()))
