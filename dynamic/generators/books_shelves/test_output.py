@@ -5,10 +5,10 @@ def check_mathjax_compatible(output_string):
     # could change the conditions to accommodate more types of mathjax compatible examples ...
     return output_string[0] == "$" and output_string[len(output_string)-1] == "$"
 
+bodyFormat_options = ["text", "mathjax"] # can add more options in the future
+
 # returns True if the output dictionary is a valid output for the "ruby side" interpretation
 def test_output(out_dictionary):
-
-    bodyFormat_options = ["text", "mathjax"] # can add more options in the future
 
     if type(out_dictionary) != type({}):
         return False
