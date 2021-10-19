@@ -91,5 +91,4 @@ def generate_answer(): # this function has no real use as of Oct 2nd 2021
     return "answer was generated"
 
 def call():
-    generated_question = generate_question()
-    return generated_question
+    return generate_question()
