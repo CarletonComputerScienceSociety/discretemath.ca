@@ -33,11 +33,11 @@ def generate_question():
     len_start = len(ran_starts[numA]) # length of start
     len_end = len(ran_ends[numB]) # length of end
 
-    question_body = "How may eqbitstrings of length " + str(bitstring_length) + " are there that start with " + ran_starts[numA] + " or end with " + ran_ends[numB] + "?"
+    question_body = "How many bitstrings of length " + str(bitstring_length) + " are there that start with " + ran_starts[numA] + " or end with " + ran_ends[numB] + "?"
 
-    answer = "$2^{" + str(bitstring_length - len_start) + "} - 2^{" + str(bitstring_length - (len_start + len_end)) + "}$"
+    answer = "$2^{" + str(bitstring_length - len_start) + "} + 2^{" + str(bitstring_length - len_end) + "} - 2^{" + str(bitstring_length - (len_start + len_end)) + "}$"
     answerchoices.append(answer)
-    answerchoices.append("$2^{" + str(bitstring_length - (len_start + len_end)) + "}$")
+    answerchoices.append("$2^{" + str(bitstring_length) + "} - 2^{" + str(bitstring_length - len_end) + "} - 2^{" + str(bitstring_length - (len_start)) + "}$")
     answerchoices.append("$2^{" + str(bitstring_length - len_start) + "} - 2^{" + str(bitstring_length) + "}$")
     answerchoices.append("$2^{" + str(bitstring_length) + "} + 2^{" + str(bitstring_length + (len_start + len_end)) + "}$")
 
@@ -46,34 +46,29 @@ def generate_question():
         "body": question_body,
         "body_format": "text",
         "pseudocode": "",
-        "multipleChoiceAnswers": [
+        "multiple_choice_answers": [
             {
                 "body": answerchoices[0],
-                "bodyFormat": "mathjax",
+                "body_format": "mathjax",
                 "correct": "true",
             },
             {
                 "body": answerchoices[1],
-                "bodyFormat": "mathjax",
+                "body_format": "mathjax",
                 "correct": "false",
             },
             {
                 "body": answerchoices[2],
-                "bodyFormat": "mathjax",
+                "body_format": "mathjax",
                 "correct": "false",
             },
             {
                 "body": answerchoices[3],
-                "bodyFormat": "mathjax",
+                "body_format": "mathjax",
                 "correct": "false",
             }
         ],
     }
-
-
-def generate_answer():
-    return "test"
-
 
 def call():
     return generate_question()
