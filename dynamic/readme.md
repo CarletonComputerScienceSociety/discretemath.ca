@@ -35,7 +35,7 @@ Contributing to the generator is really simple. The only files you need to reall
 (If your not using Latex within your question or body, replay "mathjax" with "text.")
 
 
-'''python
+```python
  {
      "title": # description,
      "body": # the question in "text" or "mathjax" format,
@@ -64,4 +64,4 @@ Contributing to the generator is really simple. The only files you need to reall
          }
      ]
  }
-'''
+```
