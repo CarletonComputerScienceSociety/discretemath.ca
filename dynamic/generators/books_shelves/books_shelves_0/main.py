@@ -3,6 +3,11 @@
 
 import random
 
+import os, sys
+prev_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(prev_dir)
+import books_shelves_helperfunctions
+
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
 def generate_question():
@@ -10,16 +15,20 @@ def generate_question():
     question_body = "will be replaced with the correct string type question"
     answerchoices = []
 
-    a = random.randint(5,10) # number of books
-    b = random.randint(5,10) # number of shelves
+    books_shelves_count = books_shelves_helperfunctions.generate_books_shelves_count((5,10), (5,10))
+    a = books_shelves_count[0]
+    b = books_shelves_count[1]
 
     question_body = "How many ways are there to organize " + str(a) + " number of books with " + str(b) + " number of bookshelves? (Not all shelves need to be used.)"
 
-    answer = "$\\frac{"+str(a+b-1)+"!}{"+str((b-1))+"!}$"
-    answerchoices.append(answer)
-    answerchoices.append("$\\frac{"+str(a+b)+"!}{"+str((b-1))+"!}$")
-    answerchoices.append("$\\frac{"+str(a+b-1)+"!}{"+str((b))+"!}$")
-    answerchoices.append("$\\frac{"+str(a+b)+"!}{"+str((b))+"!}$")
+    num_denom_pairs = [[a+b-1, b-1]]
+
+    answer = books_shelves_helperfunctions.create_factorial_fraction_answer(num_denom_pairs)
+
+    varied_answers = books_shelves_helperfunctions.varied_answers(num_denom_pairs) # or something a little different
+
+    # we will not randomize the order of these choices because that is handled in ruby?
+    # random.shuffle(answerchoices)
 
     return {
         "title": "books in shelves",
@@ -28,28 +37,27 @@ def generate_question():
         "pseudocode": "",
         "multipleChoiceAnswers": [
             {
-                "body": answerchoices[0],
+                "body": answer,
                 "bodyFormat": "mathjax",
                 "correct": "true",
             },
             {
-                "body": answerchoices[1],
+                "body": varied_answers[0],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             },
             {
-                "body": answerchoices[2],
+                "body": varied_answers[1],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             },
             {
-                "body": answerchoices[3],
+                "body": varied_answers[2],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             }
-        ],
+        ]
     }
-
 
 
 def generate_answer(): # this function has no real use as of Oct 2nd 2021

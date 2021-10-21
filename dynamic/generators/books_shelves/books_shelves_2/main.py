@@ -3,6 +3,11 @@
 
 import random
 
+import os, sys
+prev_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(prev_dir)
+import books_shelves_helperfunctions
+
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
 def generate_question():
@@ -10,48 +15,18 @@ def generate_question():
     question_body = "will be replaced with the correct string type question"
     answerchoices = []
 
-    a = random.randint(5,10) # number of books
-    b = random.randint(5,10) # number of shelves
-    a+=b # update number of books so that it is more than the available shelves; for this restriction this is necessary.
+    books_shelves_count = books_shelves_helperfunctions.generate_books_shelves_count((5,10), (5,10))
+    books_shelves_count[0] += books_shelves_count[1] # update number of books so that it is more than the available shelves; for this restriction this is necessary.
+    a = books_shelves_count[0]
+    b = books_shelves_count[1]
 
     question_body = "How many ways are there to organize " + str(a) + " number of books using " + str(b) + " number of bookshelves? ALL shelves must be used. (The order of books matter.)"
 
-    answer = "$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b)+"! \\cdot "+str(b-1)+"!}$"
+    num_denom_pairs = [[a, a-b], [a-1, b-1]] # answer = "$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b)+"! \\cdot "+str(b-1)+"!}$"
 
-    def vary_answers(a,b):
+    answer = books_shelves_helperfunctions.create_factorial_fraction_answer(num_denom_pairs)
 
-        out = []
-        keeptrack = [] # keep track of generated answers so that there is no overlap in answers
-        for i in range(3):
-            v, s, l = 0, 0, 0
-            while ([v,s,l] not in keeptrack):
-                v = random.randint(1,2) # how much to vary (for now only going to vary a little bit)
-                s = random.randint(1,2) # whether to vary negatively or positively (1 is plus, 2 is minus)
-                l = random.randint(1,3) # location of where to vary
-                keeptrack.append([v,s,l])
-
-            if l==1:
-                if s == 1:
-                    out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1+v)+"!}{"+str(a-b)+"! \\cdot "+str(b-1)+"!}$")
-                else: # s==2
-                    out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1-v)+"!}{"+str(a-b)+"! \\cdot "+str(b-1)+"!}$")
-            elif l==2:
-                if s == 1:
-                    out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b+v)+"! \\cdot "+str(b-1)+"!}$")
-                else: # s==2
-                    out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b-v)+"! \\cdot "+str(b-1)+"!}$")
-            else: # l==3
-                if s == 1:
-                    out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b)+"! \\cdot "+str(b-1+v)+"!}$")
-                else: # s==2
-                    out.append("$\\frac{"+str(a)+"! \\cdot "+str(a-1)+"!}{"+str(a-b)+"! \\cdot "+str(b-1-v)+"!}$")
-        return out
-
-    varying_answers = vary_answers(a,b)
-    answerchoices.append(answer)
-    answerchoices.append(varying_answers[0])
-    answerchoices.append(varying_answers[1])
-    answerchoices.append(varying_answers[2])
+    varied_answers = books_shelves_helperfunctions.varied_answers(num_denom_pairs) # or something a little different
 
     # we will not randomize the order of these choices because that is handled in ruby side.
     # random.shuffle(answerchoices)
@@ -63,26 +38,26 @@ def generate_question():
         "pseudocode": "",
         "multipleChoiceAnswers": [
             {
-                "body": answerchoices[0],
+                "body": answer,
                 "bodyFormat": "mathjax",
                 "correct": "true",
             },
             {
-                "body": answerchoices[1],
+                "body": varied_answers[0],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             },
             {
-                "body": answerchoices[2],
+                "body": varied_answers[1],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             },
             {
-                "body": answerchoices[3],
+                "body": varied_answers[2],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             }
-        ],
+        ]
     }
 
 

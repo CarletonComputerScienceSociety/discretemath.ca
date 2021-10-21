@@ -3,56 +3,31 @@
 
 import random
 
+import os, sys
+prev_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(prev_dir)
+import books_shelves_helperfunctions
+
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
+
 def generate_question():
 
     question_body = "will be replaced with the correct string type question"
     answerchoices = []
 
-    a = random.randint(7,12) # total number of books
+    books_shelves_count = books_shelves_helperfunctions.generate_books_shelves_count((7,12), (5,10))
+    a = books_shelves_count[0]
+    b = books_shelves_count[1]
     c = a - random.randint(2, 5) # number of books that are identical
-
-    b = random.randint(5,10) # number of shelves
 
     question_body = "How many ways are there to organize " + str(a) + " number of books when given " + str(b) + " number of bookshelves? " +str(c)+ " out of the " +str(a)+ " number of books are IDENTICAL. (The order of books matter.)"
 
-    answer = "$\\frac{"+str(a+b-1)+"!}{" +str(c)+ "! \\cdot "+str((b-1))+"!}$"
+    num_denom_pairs = [[a+b-1, b-1], [1, c]] # answer = "$\\frac{"+str(a+b-1)+"!}{" +str(c)+ "! \\cdot "+str((b-1))+"!}$"
 
-    def vary_answers(a,b,c):
+    answer = books_shelves_helperfunctions.create_factorial_fraction_answer(num_denom_pairs)
 
-        out = []
-        keeptrack = [] # keep track of generated answers so that there is no overlap in answers
-        for i in range(3):
-            v, s, l = 0, 0, 0
-            while ([v,s,l] not in keeptrack):
-                v = random.randint(1,2) # how much to vary (for now only going to vary a little bit)
-                s = random.randint(1,2) # whether to vary negatively or positively (1 is plus, 2 is minus)
-                l = random.randint(1,3) # location of where to vary
-                keeptrack.append([v,s,l])
-
-            if l==1:
-                if s == 1:
-                    out.append("$\\frac{"+str(a+b-1+v)+"!}{" +str(c)+ "! \\cdot "+str((b-1))+"!}$")
-                else: # s==2
-                    out.append("$\\frac{"+str(a+b-1-v)+"!}{" +str(c)+ "! \\cdot "+str((b-1))+"!}$")
-            elif l==2:
-                if s == 1:
-                    out.append("$\\frac{"+str(a+b-1)+"!}{" +str(c+v)+ "! \\cdot "+str((b-1))+"!}$")
-                else: # s==2
-                    out.append("$\\frac{"+str(a+b-1)+"!}{" +str(c-v)+ "! \\cdot "+str((b-1))+"!}$")
-            else: # l==3
-                if s == 1:
-                    out.append("$\\frac{"+str(a+b-1)+"!}{" +str(c)+ "! \\cdot "+str((b-1)+v)+"!}$")
-                else: # s==2
-                    out.append("$\\frac{"+str(a+b-1)+"!}{" +str(c)+ "! \\cdot "+str((b-1)-v)+"!}$")
-        return out
-
-    varying_answers = vary_answers(a,b,c)
-    answerchoices.append(answer)
-    answerchoices.append(varying_answers[0])
-    answerchoices.append(varying_answers[1])
-    answerchoices.append(varying_answers[2])
+    varied_answers = books_shelves_helperfunctions.varied_answers(num_denom_pairs) # or something a little different
 
     # we will not randomize the order of these choices because that is handled in ruby side.
     # random.shuffle(answerchoices)
@@ -64,26 +39,26 @@ def generate_question():
         "pseudocode": "",
         "multipleChoiceAnswers": [
             {
-                "body": answerchoices[0],
+                "body": answer,
                 "bodyFormat": "mathjax",
                 "correct": "true",
             },
             {
-                "body": answerchoices[1],
+                "body": varied_answers[0],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             },
             {
-                "body": answerchoices[2],
+                "body": varied_answers[1],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             },
             {
-                "body": answerchoices[3],
+                "body": varied_answers[2],
                 "bodyFormat": "mathjax",
                 "correct": "false",
             }
-        ],
+        ]
     }
 
 def generate_answer(): # this function has no real use as of Oct 2nd 2021
