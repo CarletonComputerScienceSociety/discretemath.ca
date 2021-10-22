@@ -33,7 +33,7 @@ def generate_question():
                 "correct": "false",
             },
             {
-                "body": answerchoice_3(bitstring_length, length_start, length_end),
+                "body": answerchoice_3(bitstring_length, length_start),
                 "body_format": "mathjax",
                 "correct": "false",
             },
@@ -51,7 +51,7 @@ def answerchoice_1(bitstring_length, length_start, length_end):
 def answerchoice_2(bitstring_length, length_start, length_end):
     return "$2^{" + str(bitstring_length) + "} - 2^{" + str(bitstring_length - length_end) + "} - 2^{" + str(bitstring_length - (length_start)) + "}$"
 
-def answerchoice_3(bitstring_length, length_start, length_end):
+def answerchoice_3(bitstring_length, length_start):
     return "$2^{" + str(bitstring_length - length_start) + "} - 2^{" + str(bitstring_length) + "}$"
 
 def answerchoice_4(bitstring_length, length_start, length_end):
