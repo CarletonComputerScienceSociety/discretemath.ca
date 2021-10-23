@@ -14,7 +14,7 @@ def generate_question():
     length_start = len(ran_starts[numA]) # length of start
     length_end = len(ran_ends[numB]) # length of end
 
-    question_body = "How many bitstrings of length " + str(bitstring_length) + " are there that start with " + ran_starts[numA] + " or end with " + ran_ends[numB] + "?"
+    question_body = f"How many bitstrings of length {bitstring_length} are there that start with {ran_starts[numA]} or end with {ran_ends[numB]}?"
 
     return {
         "title": "bitstrings of length",
