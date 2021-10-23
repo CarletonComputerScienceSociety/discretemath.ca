@@ -1,3 +1,4 @@
+
 <script>
   import {Button} from '../../Button';
   import {link} from 'svelte-spa-router';
@@ -11,7 +12,6 @@
     Built by Carleton students, for Carleton students. DiscreteMath.ca is an
     interactive platform built specifically for content from Carleton's discrete
     mathematics courses.
-
   </div>
   <div class="button-container">
     <a href="/comp1805" use:link><Button label="COMP 1805" /></a>
@@ -26,30 +26,25 @@
     margin-bottom: 1rem;
     text-align: center;
   }
-
   .header-image {
     height: 5rem;
     margin-bottom: 1.5rem;
   }
-
   .header-title {
     font-size: 75px;
     font-weight: 700;
     margin-bottom: 1rem;
   }
-
   .header-description {
     max-width: 70rem;
     margin-bottom: 2rem;
     font-size: 20px;
   }
-
   .button-container {
     display: flex;
     gap: 1rem;
     justify-content: center;
   }
-
   .header-version {
     width: fit-content;
     margin: auto;
@@ -61,13 +56,11 @@
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
     margin-bottom: 0.75rem;
   }
-
   @media only screen and (max-width: 800px) {
     .header-information {
       margin-top: 1rem;
     }
   }
-
   @media only screen and (max-width: 500px) {
     .header-image {
       height: 3rem;
