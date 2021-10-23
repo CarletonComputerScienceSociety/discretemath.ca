@@ -1,4 +1,3 @@
-
 <script>
   import {Button} from '../../Button';
   import {link} from 'svelte-spa-router';
