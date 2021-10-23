@@ -14,6 +14,3 @@ def test():
     assert test_out.test_output(main_1.call())
     assert test_out.test_output(main_2.call())
     assert test_out.test_output(main_3.call())
-
-# test()
-# print("test passed")

@@ -11,6 +11,7 @@
     Built by Carleton students, for Carleton students. DiscreteMath.ca is an
     interactive platform built specifically for content from Carleton's discrete
     mathematics courses.
+
   </div>
   <div class="button-container">
     <a href="/comp1805" use:link><Button label="COMP 1805" /></a>

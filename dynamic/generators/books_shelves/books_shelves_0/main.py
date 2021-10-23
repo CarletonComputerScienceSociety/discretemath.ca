@@ -15,14 +15,14 @@ def generate_question():
     question_body = "will be replaced with the correct string type question"
     answerchoices = []
 
+    # not what was intended by the advice
     books_shelves_count = books_shelves_helperfunctions.generate_books_shelves_count((5,10), (5,10))
     a = books_shelves_count[0]
     b = books_shelves_count[1]
 
     question_body = "How many ways are there to organize " + str(a) + " number of books with " + str(b) + " number of bookshelves? (Not all shelves need to be used.)"
 
-    num_denom_pairs = [[a+b-1, b-1]]
-
+    num_denom_pairs = [[a+b-1, b-1]]  # [[1, 2], [3,4], [5, 6]] --> 1/2! * 3!/4! * 5!/6!
     answer = books_shelves_helperfunctions.create_factorial_fraction_answer(num_denom_pairs)
 
     varied_answers = books_shelves_helperfunctions.varied_answers(num_denom_pairs) # or something a little different
