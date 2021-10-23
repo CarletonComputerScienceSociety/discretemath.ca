@@ -6,11 +6,11 @@ def check_mathjax_compatible(output_string):
     return output_string[0] == "$" and output_string[len(output_string)-1] == "$"
 
 # returns True if the output dictionary is a valid output for the "ruby side" interpretation
-def test_output(out):
+def test_output(cache):
 
     bodyFormat_options = ["text", "mathjax"] # can add more options in the future
 
-    if type(out) != type({}):
+    if type(cache) != type({}):
         return False
     else:
 
@@ -45,7 +45,7 @@ def test_output(out):
 
 
         keys_list = list(answer_type.keys()) # the list of keys from the template answer_type dictionary
-        out_list = list(out.keys()) # the list of keys from the output dictionary that we are testing
+        out_list = list(cache.keys()) # the list of keys from the output dictionary that we are testing
 
         # checks if the output dictionary that is being tested has the correct type of keys as in the answer_type
         for i in range(len(out_list)):
@@ -54,24 +54,24 @@ def test_output(out):
 
         # if there is "title" key in the ouput dictionary, check that the item of "title" is string type
         if "title" in out_list:
-            if not type(out["title"])==type(""):
+            if not type(cache["title"])==type(""):
                 return False
 
         # check that the item of the key, "body", is string type
-        if not type(out["body"])==type(""):
+        if not type(cache["body"])==type(""):
             return False
 
         # checks "bodyFormat" key has the correct item types available as in the bodyFormat_options
-        if not (out["bodyFormat"] in bodyFormat_options):
+        if not (cache["bodyFormat"] in bodyFormat_options):
             return False
 
         # if there is "pseudocode" key in the output dictionary, check that the item of "pseudocode" is a string type
         if "pseudocode" in out_list:
-            if not type(out["pseudocode"])==type(""):
+            if not type(cache["pseudocode"])==type(""):
                 return False
 
         # tests the item of "multipleChoiceAnswers" key
-        mult_choice_answers = out[keys_list[4]]
+        mult_choice_answers = cache[keys_list[4]]
         if len(mult_choice_answers) != 4:
             return False
         else:
