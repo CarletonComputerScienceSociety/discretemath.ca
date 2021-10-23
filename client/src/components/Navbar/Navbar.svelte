@@ -14,7 +14,6 @@
       >
     </div>
     <div class="navbar-items">
-      <a href="https://people.scs.carleton.ca/~michiel/">Michiel</a>
       <a
         href="https://github.com/CarletonComputerScienceSociety/discretemath.ca"
         >Contribute</a
