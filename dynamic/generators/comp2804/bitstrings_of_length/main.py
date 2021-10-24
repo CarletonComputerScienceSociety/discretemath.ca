@@ -3,7 +3,7 @@ import random
 
 def generate_question():
 
-    question_body = " "
+    question_body = ""
 
     bitstring_length = random.randint(15, 99)
 
