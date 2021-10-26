@@ -11,6 +11,7 @@ router = APIRouter(
 async def generate_graph_theory_question():
     return graph_theory_question_generator.call()
 
+
 @router.get("/comp2804/set-theory")
 async def generate_set_theory_question():
     return set_theory_question_generator.call()
