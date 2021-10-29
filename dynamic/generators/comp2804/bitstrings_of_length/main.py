@@ -40,7 +40,7 @@ def generate_question():
                 "body": answerchoice_4(bitstring_length, length_start, length_end),
                 "body_format": "mathjax",
                 "correct": "false",
-            }
+            },
         ],
     }
 
@@ -49,26 +49,30 @@ def answerchoice_1(bitstring_length, length_start, length_end):
     return "$2^{{{first_part_len}}} + 2^{{{second_part_len}}} - 2^{{{third_part_len}}}$".format(
         first_part_len=(bitstring_length - length_start),
         second_part_len=(bitstring_length - length_end),
-        third_part_len=(bitstring_length - (length_start + length_end)),)
+        third_part_len=(bitstring_length - (length_start + length_end)),
+    )
 
 
 def answerchoice_2(bitstring_length, length_start, length_end):
     return "$2^{{{first_part_len}}} - 2^{{{second_part_len}}} - 2^{{{third_part_len}}}$".format(
         first_part_len=bitstring_length,
         second_part_len=(bitstring_length - length_end),
-        third_part_len=(bitstring_length - length_start),)
+        third_part_len=(bitstring_length - length_start),
+    )
 
 
 def answerchoice_3(bitstring_length, length_start):
     return "$2^{{{first_part_len}}} - 2^{{{second_part_len}}}$".format(
         first_part_len=(bitstring_length - length_start),
-        second_part_len=bitstring_length,)
+        second_part_len=bitstring_length,
+    )
 
 
 def answerchoice_4(bitstring_length, length_start, length_end):
     return "$2^{{{first_part_len}}} + 2^{{{second_part_len}}}$".format(
         first_part_len=bitstring_length,
-        second_part_len=(bitstring_length + (length_start + length_end)),)
+        second_part_len=(bitstring_length + (length_start + length_end)),
+    )
 
 
 def call():
