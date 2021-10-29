@@ -3,8 +3,6 @@ import random
 
 def generate_question():
 
-    question_body = ""
-
     bitstring_length = random.randint(15, 99)
 
     rand_starts = random.choice(["01", "101", "1010", "01101"])
