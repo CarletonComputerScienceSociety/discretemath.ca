@@ -2,18 +2,14 @@
 + str(b) + " number of bookshelves? (Not all shelves need to be used.)"""
 
 import random
-
-import os, sys
-prev_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-sys.path.append(prev_dir)
-import books_shelves_helperfunctions
+from .. import books_shelves_helperfunctions
 
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
 def generate_question():
-    books_shelves_count = books_shelves_helperfunctions.generate_books_shelves_count((5,10), (5,10))
-    a = books_shelves_count[0]
-    b = books_shelves_count[1]
+
+    a = random.randint(5,10)
+    b = random.randint(5,10)
 
     question_body = "How many ways are there to organize " + str(a) + " number of books with " + str(b) + " number of bookshelves? (Not all shelves need to be used.)"
 

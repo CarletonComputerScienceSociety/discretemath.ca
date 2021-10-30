@@ -1,6 +1,11 @@
 """ this file contains helper functions for the books_shelves generators """
 
-import copy, random
+import random
+import copy
+
+# takes in two tuples for ranges, first for the books, and second for the shelves
+def generate_books_shelves_count(r1, r2):
+    return [random.randint(r1[0], r1[1]), random.randint(r2[0], r2[1])]
 
 # takes in list of pairs of numerator string and denominator string and outputs a product of fractions accordingly
 # input argument list will have two element lists that contains the numerator and the denominator string to create product of fractions

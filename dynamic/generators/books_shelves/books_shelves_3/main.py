@@ -2,19 +2,14 @@
 " number of bookshelves? " +str(c)+ " out of the " +str(a)+ " number of books are IDENTICAL. (The order of books matter.)"""
 
 import random
-
-import os, sys
-prev_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-sys.path.append(prev_dir)
-import books_shelves_helperfunctions
+from .. import books_shelves_helperfunctions
 
 # generates three different kinds of books and shelves problem
 # the kind of problems are determined by the randomized three types of restrictions
 
 def generate_question():
-    books_shelves_count = books_shelves_helperfunctions.generate_books_shelves_count((7,12), (5,10))
-    a = books_shelves_count[0]
-    b = books_shelves_count[1]
+    a = random.randint(7,12)
+    b = random.randint(5,10)
     c = a - random.randint(2, 5) # number of books that are identical
 
     question_body = "How many ways are there to organize " + str(a) + " number of books when given " + str(b) + " number of bookshelves? " +str(c)+ " out of the " +str(a)+ " number of books are IDENTICAL. (The order of books matter.)"
