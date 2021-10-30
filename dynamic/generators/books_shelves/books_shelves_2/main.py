@@ -56,9 +56,5 @@ def generate_question():
         ]
     }
 
-
-def generate_answer(): # this function has no real use as of Oct 2nd 2021
-    return "answer was generated"
-
 def call():
     return generate_question()
