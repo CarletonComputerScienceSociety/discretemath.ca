@@ -12,10 +12,6 @@ import books_shelves_helperfunctions
 # the kind of problems are determined by the randomized three types of restrictions
 
 def generate_question():
-
-    question_body = "will be replaced with the correct string type question"
-    answerchoices = []
-
     books_shelves_count = books_shelves_helperfunctions.generate_books_shelves_count((7,12), (5,10))
     a = books_shelves_count[0]
     b = books_shelves_count[1]
