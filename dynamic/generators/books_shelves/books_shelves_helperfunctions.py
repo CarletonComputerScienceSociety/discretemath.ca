@@ -10,16 +10,6 @@ def create_factorial_fraction_answer(num_denom_pairs): # args[] has length 2 lis
         n = num_denom_pairs[i][0]
         d = num_denom_pairs[i][1]
         if i == 0:
-            """
-            if n==1:
-                out += "\\frac{" + str(n) + "}"
-            else:
-                out += "\\frac{" + str(n) + "!}"
-            if d==1:
-                out += "{" + str(d) + "}"
-            else:
-                out += "{" + str(d) + "!}"
-            """
             if n==1 and d==1:
                 out += ""
             elif n==1: # if only n was 1 and d was not 1
@@ -32,16 +22,6 @@ def create_factorial_fraction_answer(num_denom_pairs): # args[] has length 2 lis
                 out += "{" + str(d) + "!}"
 
         else:
-            """
-            if n==1:
-                out += " \\cdot \\frac{" + str(n) + "}"
-            else:
-                out += " \\cdot \\frac{" + str(n) + "!}"
-            if d==1:
-                out += "{" + str(d) + "}"
-            else:
-                out += "{" + str(d) + "!}"
-            """
             if n==1 and d==1:
                 out += ""
             elif n==1: # if only n was 1 and d was not 1
