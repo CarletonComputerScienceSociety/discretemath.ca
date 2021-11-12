@@ -8,21 +8,42 @@ router = APIRouter(
     prefix="/api", tags=["generate"], responses={404: {"description": "Not found"}}
 )
 
-@router.get("/demo/graph-theory")
+
+routes = {
+    'demo': {
+        'graph_theory': "/demo/graph-theory"
+    },
+    'comp2804': {
+        'bitstrings-of-length': "/comp2804/bitstrings-of-length",
+        'set-theory-question': "/comp2804/set-theory",
+        'num-of-functions': "/comp2804/num-of-functions"
+    }
+
+}
+
+
+@router.get("/")
+async def get_generators():
+    return routes
+
+
+@router.get(routes['demo']['graph_theory'])
 async def generate_graph_theory_question():
     return graph_theory_question_generator.call()
 
-@router.get("/comp2804/set-theory")
+
+@router.get(routes['comp2804']['set-theory-question'])
 async def generate_set_theory_question():
     return set_theory_question_generator.call()
 
-@router.get("/comp2804/num-of-functions")
+
+@router.get(routes['comp2804']['num-of-functions'])
 async def generate_num_of_functions_question(
     lower_range: int = 0, upper_range: int = 10
 ):
     return num_of_functions_generator.call(lower_range, upper_range)
-  
-@router.get("/comp2804/bitstrings-of-length")
+
+
+@router.get(routes['comp2804']['bitstrings-of-length'])
 async def bitstrings_of_length_question():
     return bitstrings_of_length_generator.call()
-  
