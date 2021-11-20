@@ -4,7 +4,7 @@ module Queries
     type [Types::DynamicTopicType], null: false
 
     def resolve
-      data = FetchDynamicRoutes.new.call
+      FetchDynamicRoutes.new.call
     end
   end
 end
