@@ -1,14 +1,16 @@
 """ This file contains tools for test_main.py to use. """
 
+
 def check_mathjax_compatible(output_string):
     # for now, checks that the answers start and end with the "$" to be conventionally compatible with mathjax
     # could change the conditions to accommodate more types of mathjax compatible examples ...
-    return output_string[0] == "$" and output_string[len(output_string)-1] == "$"
+    return output_string[0] == "$" and output_string[len(output_string) - 1] == "$"
+
 
 # returns True if the output dictionary is a valid output for the "ruby side" interpretation
 def test_output(cache):
 
-    bodyFormat_options = ["text", "mathjax"] # can add more options in the future
+    bodyFormat_options = ["text", "mathjax"]  # can add more options in the future
 
     if type(cache) != type({}):
         return False
@@ -17,7 +19,7 @@ def test_output(cache):
         answer_type = {
             "title": "",
             "body": "",
-            "bodyFormat": "text", # or "mathjax"
+            "bodyFormat": "text",  # or "mathjax"
             "pseudocode": "",
             "multipleChoiceAnswers": [
                 {
@@ -39,13 +41,16 @@ def test_output(cache):
                     "body": "",
                     "bodyFormat": "mathjax",
                     "correct": "false",
-                }
-            ]
+                },
+            ],
         }
 
-
-        keys_list = list(answer_type.keys()) # the list of keys from the template answer_type dictionary
-        out_list = list(cache.keys()) # the list of keys from the output dictionary that we are testing
+        keys_list = list(
+            answer_type.keys()
+        )  # the list of keys from the template answer_type dictionary
+        out_list = list(
+            cache.keys()
+        )  # the list of keys from the output dictionary that we are testing
 
         # checks if the output dictionary that is being tested has the correct type of keys as in the answer_type
         for i in range(len(out_list)):
@@ -54,11 +59,11 @@ def test_output(cache):
 
         # if there is "title" key in the ouput dictionary, check that the item of "title" is string type
         if "title" in out_list:
-            if not type(cache["title"])==type(""):
+            if not type(cache["title"]) == type(""):
                 return False
 
         # check that the item of the key, "body", is string type
-        if not type(cache["body"])==type(""):
+        if not type(cache["body"]) == type(""):
             return False
 
         # checks "bodyFormat" key has the correct item types available as in the bodyFormat_options
@@ -67,7 +72,7 @@ def test_output(cache):
 
         # if there is "pseudocode" key in the output dictionary, check that the item of "pseudocode" is a string type
         if "pseudocode" in out_list:
-            if not type(cache["pseudocode"])==type(""):
+            if not type(cache["pseudocode"]) == type(""):
                 return False
 
         # tests the item of "multipleChoiceAnswers" key
@@ -76,7 +81,7 @@ def test_output(cache):
             return False
         else:
 
-            for i in range(0,4):
+            for i in range(0, 4):
 
                 if type(mult_choice_answers[i]) != type({}):
                     return False
@@ -84,7 +89,10 @@ def test_output(cache):
                     return False
 
                 for j in range(len(list(mult_choice_answers[i].keys()))):
-                    if not (list(mult_choice_answers[i].keys())[j] in ["body", "bodyFormat", "correct"]):
+                    if not (
+                        list(mult_choice_answers[i].keys())[j]
+                        in ["body", "bodyFormat", "correct"]
+                    ):
                         return False
 
                 if not check_mathjax_compatible(mult_choice_answers[i]["body"]):
@@ -93,7 +101,10 @@ def test_output(cache):
                 if not (mult_choice_answers[i]["bodyFormat"] in bodyFormat_options):
                     return False
 
-                if not (mult_choice_answers[i]["correct"]=="true" or mult_choice_answers[i]["correct"]=="false"):
+                if not (
+                    mult_choice_answers[i]["correct"] == "true"
+                    or mult_choice_answers[i]["correct"] == "false"
+                ):
                     return False
 
         return True

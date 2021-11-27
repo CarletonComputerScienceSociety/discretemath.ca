@@ -8,18 +8,36 @@ from .. import books_shelves_helperfunctions
 # the kind of problems are determined by the randomized three types of restrictions
 def generate_question():
 
-    a = random.randint(5,10)
-    b = random.randint(5,10)
+    a = random.randint(5, 10)
+    b = random.randint(5, 10)
 
-    n = random.randint(b//2, b-1) # sub-number of shelves that will be used to store books #btw, randint is inclusive on bounds
+    n = random.randint(
+        b // 2, b - 1
+    )  # sub-number of shelves that will be used to store books #btw, randint is inclusive on bounds
 
-    question_body = "How many ways are there to organize " + str(a) + " number of books using exactly " + str(n) + " shelves out of " + str(b) + " number of bookshelves? (The order of books matter.)"
+    question_body = (
+        "How many ways are there to organize "
+        + str(a)
+        + " number of books using exactly "
+        + str(n)
+        + " shelves out of "
+        + str(b)
+        + " number of bookshelves? (The order of books matter.)"
+    )
 
-    num_denom_pairs = [[a+n-1, n-1], [b, b-n], [1, n]] # answer = "$\\frac{"+str(a+n-1)+"!}{"+str((n-1))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n)+"!}$"
+    num_denom_pairs = [
+        [a + n - 1, n - 1],
+        [b, b - n],
+        [1, n],
+    ]  # answer = "$\\frac{"+str(a+n-1)+"!}{"+str((n-1))+"!} \\cdot \\frac{"+str(b)+"!}{"+str(n)+"!"+str(b-n)+"!}$"
 
-    answer = books_shelves_helperfunctions.create_factorial_fraction_answer(num_denom_pairs)
+    answer = books_shelves_helperfunctions.create_factorial_fraction_answer(
+        num_denom_pairs
+    )
 
-    varied_answers = books_shelves_helperfunctions.varied_answers(num_denom_pairs) # or something a little different
+    varied_answers = books_shelves_helperfunctions.varied_answers(
+        num_denom_pairs
+    )  # or something a little different
 
     # we will not randomize the order of these choices because that is handled in ruby?
     # random.shuffle(answerchoices)
@@ -49,9 +67,10 @@ def generate_question():
                 "body": varied_answers[2],
                 "bodyFormat": "mathjax",
                 "correct": "false",
-            }
-        ]
+            },
+        ],
     }
+
 
 def call():
     return generate_question()
