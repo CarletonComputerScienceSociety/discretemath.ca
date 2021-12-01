@@ -31,7 +31,7 @@
     <a href="/" use:link>
       <Fa icon={faQuestion} />
     </a>
-    <a href="/" use:link>
+    <a href="/labs" use:link>
       <Fa icon={faVial} />
     </a>
     <a href="/" use:link>
