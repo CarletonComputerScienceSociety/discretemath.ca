@@ -19,7 +19,7 @@
   {#if !$response.loading && $response}
     <div class="content-container">
       <!-- GIVES ERROR: Error: {#each} only iterates over array-like objects. -->
-      {#each $response.data.dynamicRoutes.options as routes, i}
+      {#each $response.data.dynamicRoutes.options as routes}
         <a href={'#/labs'}>
           <ContentCard
             title={routes.name}
