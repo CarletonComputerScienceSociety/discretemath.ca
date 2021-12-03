@@ -7,6 +7,7 @@ const ROUTES = gql`
       options {
         name
         route
+        displayName
       }
     }
   }

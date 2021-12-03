@@ -16,15 +16,18 @@ const ROUTES_EXAMPLE_DATA = {
         options: [
           {
             name: 'bitstrings-of-length',
-            route: '/comp2804/bitstrings-of-length'
+            route: '/comp2804/bitstrings-of-length',
+            displayName: 'Bitstrings of Length'
           },
           {
             name: 'set-theory-question',
-            route: '/comp2804/set-theory'
+            route: '/comp2804/set-theory',
+            displayName: 'Set Theory'
           },
           {
             name: 'num-of-functions',
-            route: '/comp2804/num-of-functions'
+            route: '/comp2804/num-of-functions',
+            displayName: 'Number of Functions'
           }
         ]
       }

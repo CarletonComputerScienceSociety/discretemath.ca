@@ -3,7 +3,6 @@
   import {ContentCard, CourseNavbar as Navbar, Loading} from '../components';
   import {getRoutes} from '../data';
   const response = getRoutes();
-  console.log($response.data.dynamicRoutes.options)
 </script>
 
 <Navbar />
@@ -18,14 +17,13 @@
 
   {#if !$response.loading && $response}
     <div class="content-container">
-      <!-- GIVES ERROR: Error: {#each} only iterates over array-like objects. -->
-      {#each $response.data.dynamicRoutes.options as routes}
+      {#each $response.data.dynamicRoutes[1].options as routes}
         <a href={'#/labs'}>
           <ContentCard
-            title={routes.name}
-            info= {$response.data.dynamicRoutes.name}
-            tag={'Test'}
-            type="Test"
+            title={routes.displayName}
+            info="Lab"
+            tag={'Lab'}
+            type="Vial"
           />
         </a>
       {/each}
