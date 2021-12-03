@@ -13,7 +13,8 @@
     faClipboard, //Test
     faPencilAlt, //Midterm
     faPenAlt, //Exam
-    faUser // Person
+    faUser, // Person
+    faVial // Test Tube
   } from '@fortawesome/free-solid-svg-icons';
 
   const tagIcons = {
@@ -30,7 +31,8 @@
     Test: faQuestion,
     Midterm: faQuestion,
     Exam: faQuestion,
-    User: faUser
+    User: faUser,
+    Vial: faVial
   };
 </script>
 

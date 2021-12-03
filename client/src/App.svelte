@@ -7,6 +7,7 @@
     Home,
     COMP1805Home,
     COMP2804Home,
+    Labs,
     NotFound,
     Test
   } from './pages';
@@ -32,6 +33,9 @@
 
     // Test path
     '/sessions/:id': CourseSession,
+
+    // Labs path
+    '/labs': Labs,
 
     // Catch-all
     '*': NotFound
