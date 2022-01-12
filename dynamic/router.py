@@ -9,6 +9,8 @@ import generators.books_shelves.books_shelves_3.main as books_shelves_3_generato
 import generators.comp2804.set_theory_question.main as set_theory_question_generator
 import generators.comp2804.num_of_functions.main as num_of_functions_generator
 import generators.comp2804.bitstrings_of_length.main as bitstrings_of_length_generator
+import generators.comp2804.let_m_and_n.main as m_and_n_generator
+
 
 router = APIRouter(
     prefix="/api", tags=["generate"], responses={404: {"description": "Not found"}}
@@ -26,6 +28,7 @@ routes = {
         "bitstrings-of-length": "/comp2804/bitstrings-of-length",
         "set-theory-question": "/comp2804/set-theory",
         "num-of-functions": "/comp2804/num-of-functions",
+        "let-m-and-n-question": "/comp2804/let-m-and-n",
     },
 }
 
@@ -77,5 +80,10 @@ async def generate_num_of_functions_question(
 
 
 @router.get(routes["comp2804"]["bitstrings-of-length"])
-async def bitstrings_of_length_question():
+async def generate_bitstrings_of_length_question():
     return bitstrings_of_length_generator.call()
+
+
+@router.get(routes["comp2804"]["let-m-and-n-question"])
+async def generate_m_and_n_question():
+    return m_and_n_generator.call()
