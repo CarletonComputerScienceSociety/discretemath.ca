@@ -13,10 +13,10 @@ def generate_question():
 
     answer = f"-\genfrac(){{n}}{{y_exponent}}\cdot{a_coefficient}^{x_exponent}\cdot{b_coefficient}^{y_exponent}"
 
-    question_body = f"What is the coefficient of x^{x_exponent}y^{y_exponent} in the expansion of ({a_coefficient} - {b_coefficient}y)^{n}"
+    question_body = f"What is the coefficient of x^{x_exponent}y^{y_exponent} in the expansion of ({a_coefficient}x - {b_coefficient}y)^{n}"
 
     return {
-        "title": "bitstrings of length",
+        "title": "binomial expansion coefficient",
         "body": question_body,
         "body_format": "text",
         "pseudocode": "",
