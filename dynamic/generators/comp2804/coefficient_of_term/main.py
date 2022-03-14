@@ -1,21 +1,25 @@
-""" What is the coefficient of x^a * y^b for the expansion of (cx+dy)^n ? """
+""" What is the coefficient of x^a * y^b for the expansion of (cx^s+dy^t)^n ? """
 """ This generator creates a randomized problem of figure out the coefficient
-of a specific form x^{a}y^{b} for a given (cx+dy)^n """
+of a specific form x^{a}y^{b} for a given (cx^s+dy^t)^n """
 
 import random
 
 
 def generate_question():
 
-    a = random.randint(5, 15)
-    b = random.randint(5, 15)
+    s = random.randint(1, 5)
+    t = random.randint(1, 5)
+
+    multiply_s = random.randint(5, 15)
+    multiply_t = random.randint(5, 15)
+
+    a = s * multiply_s
+    b = t * multiply_t
+
     c = random.randint(2, 7)
     d = random.randint(2, 7)
 
-    n = a + b
-
-    variation_variable_1 = random.randint(1, 3)
-    variation_variable_2 = random.randint(1, 3)
+    n = multiply_s + multiply_t
 
     question_body = (
         "What is the coefficient of the term $x^{"
@@ -25,9 +29,14 @@ def generate_question():
         + "}$, in the expansion of "
         + "$("
         + str(c)
-        + "x + "
+        + " \\cdot x^{"
+        + str(s)
+        + "} + "
         + str(d)
-        + "y)^{"
+        + " \\cdot y^{"
+        + str(t)
+        + "})"
+        + "^{"
         + str(n)
         + "}$"
     )
@@ -36,22 +45,22 @@ def generate_question():
         "$\\binom{"
         + str(n)
         + "}{"
-        + str(a)
+        + str(multiply_s)
         + "} \\cdot "
         + str(c)
         + "^{"
-        + str(a)
+        + str(multiply_s)
         + "} \\cdot "
         + str(d)
         + "^{"
-        + str(b)
+        + str(multiply_t)
         + "}$"
     )
     varied_answer_1 = (
         "$\\binom{"
         + str(n)
         + "}{"
-        + str(a + variation_variable_1)
+        + str(multiply_s)
         + "} \\cdot "
         + str(c)
         + "^{"
@@ -66,30 +75,30 @@ def generate_question():
         "$\\binom{"
         + str(n)
         + "}{"
-        + str(a - variation_variable_2)
+        + str(s)
         + "} \\cdot "
         + str(c)
         + "^{"
-        + str(a + 1)
+        + str(s)
         + "} \\cdot "
         + str(d)
         + "^{"
-        + str(b + variation_variable_1)
+        + str(t)
         + "}$"
     )
     varied_answer_3 = (
         "$\\binom{"
         + str(n)
         + "}{"
-        + str(a)
+        + str(s)
         + "} \\cdot "
         + str(c)
         + "^{"
-        + str(a)
+        + str(multiply_s)
         + "} \\cdot "
         + str(d)
         + "^{"
-        + str(b - variation_variable_2)
+        + str(multiply_t)
         + "}$"
     )
 
