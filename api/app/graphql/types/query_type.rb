@@ -8,5 +8,6 @@ module Types
     field :tests, resolver: Queries::Tests
     field :multiple_choice_questions, resolver: Queries::MultipleChoiceQuestions
     field :questions, resolver: Queries::Questions
+    field :dynamic_routes, resolver: Queries::DynamicRoutes
   end
 end
