@@ -10,6 +10,8 @@ import generators.comp2804.set_theory_question.main as set_theory_question_gener
 import generators.comp2804.num_of_functions.main as num_of_functions_generator
 import generators.comp2804.bitstrings_of_length.main as bitstrings_of_length_generator
 
+import generators.comp2804.coefficient_of_term.main as coefficient_of_term_generator
+
 router = APIRouter(
     prefix="/api", tags=["generate"], responses={404: {"description": "Not found"}}
 )
@@ -26,6 +28,7 @@ routes = {
         "bitstrings-of-length": "/comp2804/bitstrings-of-length",
         "set-theory-question": "/comp2804/set-theory",
         "num-of-functions": "/comp2804/num-of-functions",
+        "coefficient_of_term": "/comp2804/coefficient_of_term",
     },
 }
 
@@ -79,3 +82,9 @@ async def generate_num_of_functions_question(
 @router.get(routes["comp2804"]["bitstrings-of-length"])
 async def bitstrings_of_length_question():
     return bitstrings_of_length_generator.call()
+
+
+##############
+@router.get(routes["comp2804"]["coefficient_of_term"])
+async def coefficient_of_term_question():
+    return coefficient_of_term_generator.call()
