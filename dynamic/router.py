@@ -26,9 +26,11 @@ routes = {
         "books_shelves_3": "/books_shelves/books_shelves_3",
     },
     "comp2804": {
-        "bitstrings-of-length": "/comp2804/bitstrings-of-length",
+        "binomial-expansion-coefficient": "/comp2804/binomial-expansion-coefficient",
         "set-theory-question": "/comp2804/set-theory",
         "num-of-functions": "/comp2804/num-of-functions",
+        "let-m-and-n-question": "/comp2804/let-m-and-n",
+        "bitstrings-of-length": "/comp2804/bitstrings-of-length",
         "coefficient_of_term": "/comp2804/coefficient_of_term",
         "probability_of_choice": "/comp2804/probability_of_choice",
     },
@@ -86,7 +88,16 @@ async def bitstrings_of_length_question():
     return bitstrings_of_length_generator.call()
 
 
-######################################################
+@router.get(routes["comp2804"]["let-m-and-n-question"])
+async def generate_m_and_n_question():
+    return m_and_n_generator.call()
+
+
+@router.get(routes["comp2804"]["binomial-expansion-coefficient"])
+async def generate_m_and_n_question():
+    return binomial_expansion_coefficient_generator.call()
+
+
 @router.get(routes["comp2804"]["coefficient_of_term"])
 async def coefficient_of_term_question():
     return coefficient_of_term_generator.call()
