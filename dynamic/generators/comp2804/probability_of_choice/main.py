@@ -17,7 +17,7 @@ class RGBEvent:
 
 
 def generate_question():
-    noun_choice = some_nouns[random.randint(0, len(some_nouns))]
+    noun_choice = some_nouns[random.randint(0, len(some_nouns)-1)]
     r = random.randint(5, 15)
     g = random.randint(5, 15)
     b = random.randint(5, 15)
