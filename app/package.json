@@ -17,7 +17,9 @@
     "svelte": "^3.48.0"
   },
   "dependencies": {
+    "commander": "^9.3.0",
     "mathjax": "^3.2.1",
+    "mathjax-full": "^3.2.1",
     "sass": "^1.49.9"
   }
 }
