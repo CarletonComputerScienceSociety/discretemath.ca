@@ -6,11 +6,18 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "check": "prettier --check '{public,src}/**/*.{scss,html,js,astro,svelte,md}'",
+    "format": "prettier --write '{public,src}/**/*.{scss,html,js,astro,svelte,md}'"
   },
   "devDependencies": {
     "@astrojs/svelte": "^0.1.4",
     "astro": "^1.0.0-beta.40",
+    "prettier-plugin-astro": "^0.0.12",
     "svelte": "^3.48.0"
+  },
+  "dependencies": {
+    "mathjax": "^3.2.1",
+    "sass": "^1.49.9"
   }
 }
