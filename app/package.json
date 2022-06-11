@@ -20,6 +20,7 @@
     "commander": "^9.3.0",
     "mathjax": "^3.2.1",
     "mathjax-full": "^3.2.1",
+    "prettier-plugin-svelte": "^2.7.0",
     "sass": "^1.49.9"
   }
 }

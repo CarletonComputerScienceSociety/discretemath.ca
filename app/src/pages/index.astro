@@ -1,8 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../components/Card.astro";
+import { Button } from "../components";
 ---
 
 <BaseLayout title="DiscreteMath.ca">
-  <div>Hello World!</div>
+  <img src="/images/home-page-logo.png" alt="DiscreteMath.ca" />
+  <div>Learn Without Limits.</div>
+  <div>
+    Built by Carleton students, for Carleton students. DiscreteMath.ca is an
+    interactive platform built specifically for content from Carleton's discrete
+    mathematics courses.
+  </div>
+  <div>
+    <Button label="comp 1805" />
+    <Button label="comp 2804" />
+  </div>
+  <div>"globe animation here"</div>
 </BaseLayout>

@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { CourseNavbar } from "../../components";
+
+import "./styles.scss";
+---
+
+<BaseLayout title="DiscreteMath.ca">
+  <div class="course-layout">
+    <CourseNavbar />
+    <div class="course-layout-content">
+      <slot />
+    </div>
+  </div>
+</BaseLayout>
