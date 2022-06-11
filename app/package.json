@@ -1,0 +1,26 @@
+{
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "prettier --check '{public,src}/**/*.{scss,html,js,astro,svelte,md,json}'",
+    "format": "prettier --write '{public,src}/**/*.{scss,html,js,astro,svelte,md,json}'"
+  },
+  "devDependencies": {
+    "@astrojs/svelte": "^0.1.4",
+    "astro": "^1.0.0-beta.40",
+    "prettier-plugin-astro": "^0.0.12",
+    "svelte": "^3.48.0"
+  },
+  "dependencies": {
+    "commander": "^9.3.0",
+    "mathjax": "^3.2.1",
+    "mathjax-full": "^3.2.1",
+    "prettier-plugin-svelte": "^2.7.0",
+    "sass": "^1.49.9"
+  }
+}

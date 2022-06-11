@@ -1,0 +1,28 @@
+{
+  "id": "f13m01",
+  "body": "Let $A$ be a set of size 7 and let $B$ be a set of size 13. How many one-to-one functions $f: A \\rightarrow B$ are there?",
+  "format": "MultipleChoice",
+  "render": "mathjax",
+  "options": [
+    {
+      "body": "$\\frac{6!}{13!}$",
+      "render": "mathjax",
+      "correct": false
+    },
+    {
+      "body": "$\\frac{13!}{5!}$",
+      "render": "mathjax",
+      "correct": false
+    },
+    {
+      "body": "$\\frac{13!}{6!}$",
+      "render": "mathjax",
+      "correct": true
+    },
+    {
+      "body": "$\\frac{13!}{7!}$",
+      "render": "mathjax",
+      "correct": false
+    }
+  ]
+}

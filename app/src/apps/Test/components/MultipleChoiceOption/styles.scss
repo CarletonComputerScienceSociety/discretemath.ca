@@ -1,0 +1,15 @@
+.multiple-choice-option {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 3rem;
+  border-style: solid;
+  border-radius: 0.6rem;
+  border-width: 0.1rem;
+  border-color: #c0c0c0;
+  margin: 1rem 0rem;
+}
+
+.multiple-choice-option-letter {
+  margin: 0.5rem;
+}
