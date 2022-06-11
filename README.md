@@ -17,6 +17,10 @@ DiscreteMath.ca is an interactive platform built specifically for content from C
 
 The user interface, written with Svelte. The user interface makes use of Mathjax and Pseudocode.js to render content provided from API.
 
+## App
+
+The in-development updated version of the client with improved mathjax handling.
+
 ## API
 
 The main service used to serve static data to the client. This is a GraphQL based api written with Ruby on Rails.
