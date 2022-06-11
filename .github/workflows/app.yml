@@ -1,0 +1,17 @@
+name: App
+
+on: [push, pull_request]
+
+jobs:
+  test-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: |
+          cd app
+          npm install
+      - name: Run Prettier
+        run: |
+          cd app
+          npm run check
