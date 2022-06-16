@@ -2,7 +2,7 @@ import { Question } from "../Question";
 
 class MultipleChoiceQuestion extends Question {
   selectedOptionIndex = -1;
- 
+
   // TODO: update foo to common question properties once Question contructor updated
   constructor(foo, options) {
     // TODO: init options as MultipleChoiceOption once that class exists
