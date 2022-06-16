@@ -7,8 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "prettier --check '{public,src}/**/*.{scss,html,js,astro,svelte,md,json}'",
-    "format": "prettier --write '{public,src}/**/*.{scss,html,js,astro,svelte,md,json}'"
+    "check": "prettier --check {public,src}/**/*.{scss,html,js,astro,svelte,md,json}",
+    "format": "prettier --write {public,src}/**/*.{scss,html,js,astro,svelte,md,json}"
   },
   "devDependencies": {
     "@astrojs/svelte": "^0.1.4",
