@@ -1,12 +1,12 @@
 <script>
   import "./styles.scss";
-  import {createEventDispatcher} from 'svelte';
+  import { createEventDispatcher } from "svelte";
   // props
   export let label;
   // onClick
   const dispatch = createEventDispatcher();
-  const onClick = event => {
-    dispatch('click', event);
+  const onClick = (event) => {
+    dispatch("click", event);
   };
 </script>
 
