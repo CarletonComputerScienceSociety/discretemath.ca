@@ -14,3 +14,5 @@ class Drill extends Examination {
     return questions;
   }
 }
+
+export { Drill };
