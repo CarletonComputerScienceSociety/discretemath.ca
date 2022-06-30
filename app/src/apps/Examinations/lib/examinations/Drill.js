@@ -1,12 +1,10 @@
-// Drill extends Examination
-// has array of questions
-// randomizes order of questions when they are added
-// has a "current question index"
 class Drill extends Examination {
+  questions = [];
+  currentQuestionIndex = -1;
+  
   constructor(title, author, questions) {
     super(title, author);
     this.questions = questions;
-    this.currentQuestionIndex = -1;
   }
 
   randomizeQuestions(questions) {
