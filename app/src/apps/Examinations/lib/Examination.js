@@ -8,7 +8,7 @@ class Examination {
   }
 
   constructQuestion(question) {
-    // TODO: switch on question type
+    // TODO: switch on question.format to create the desired question child class
     // ex: if question is a multiple choice question... create a multiple choice question
     throw "Not implemented";
   }
