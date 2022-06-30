@@ -1,11 +1,10 @@
 class Question {
-  // TODO: update to take common question properties
   body;
   number;
 
-  constructor(b, n) {
-    this.body = b;
-    this.number = n;
+  constructor(body, number) {
+    this.body = body;
+    this.number = number;
   }
 
   updateOption(event) {
