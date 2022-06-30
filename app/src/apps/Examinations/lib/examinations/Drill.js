@@ -1,7 +1,7 @@
 class Drill extends Examination {
   questions = [];
   currentQuestionIndex = -1;
-  
+
   constructor(title, author, questions) {
     super(title, author);
     this.questions = questions;
