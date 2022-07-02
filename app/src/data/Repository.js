@@ -28,7 +28,7 @@ class Repository {
   #loadTestQuestions = (questionFileNames) => {
     let questions = [];
 
-    for (file of questionFileNames) {
+    for (const file of questionFileNames) {
       // TODO: throw error if the file does not exist
       const xmlQuestion = parseXmlToJson(`questions/${file}`);
       const jsonQuestion = this.#transformXmlQuestionToJson(xmlQuestion);
