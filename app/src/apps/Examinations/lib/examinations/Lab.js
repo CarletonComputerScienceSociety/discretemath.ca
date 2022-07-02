@@ -2,6 +2,7 @@ import { Examination } from "../Examination";
 import { HowManyFunctions } from "../factories/HowManyFunctions";
 
 class Lab extends Examination {
+  // TODO: was a list to avoid "null" issue when question was generated, can be removed?
   questions = [];
 
   constructor(lab) {
