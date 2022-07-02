@@ -1,0 +1,27 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import { CourseNavbar } from "../components";
+---
+
+<BaseLayout title="DiscreteMath.ca">
+  <div class="course-layout">
+    <CourseNavbar />
+    <div class="course-layout-content">
+      <slot />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .course-layout {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+
+  .course-layout-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+</style>
