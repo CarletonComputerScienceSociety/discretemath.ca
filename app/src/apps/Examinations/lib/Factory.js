@@ -4,4 +4,4 @@ class Factory {
   }
 }
 
-export { Factory };
+export { Factory as default };

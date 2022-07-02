@@ -1,0 +1,14 @@
+---
+import ExaminationLayout from "../../layouts/ExaminationLayout.astro";
+import { Lab } from "../../apps";
+
+const { lab } = Astro.params;
+
+export function getStaticPaths() {
+  return [{ params: { lab: "has-many-functions" } }];
+}
+---
+
+<ExaminationLayout>
+  <Lab client:load name={lab} />
+</ExaminationLayout>
