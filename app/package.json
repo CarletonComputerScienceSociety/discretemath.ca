@@ -21,6 +21,7 @@
     "mathjax": "^3.2.1",
     "mathjax-full": "^3.2.1",
     "prettier-plugin-svelte": "^2.7.0",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "xml2js": "^0.4.23"
   }
 }
