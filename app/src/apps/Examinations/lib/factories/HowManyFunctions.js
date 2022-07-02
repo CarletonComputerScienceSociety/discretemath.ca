@@ -61,7 +61,7 @@ class HowManyFunctions extends Factory {
 
   generateOptionTwo(setASize, setBSize) {
     return {
-      body: String.raw`$\frac{${setASize}}!{${setBSize}!}$`,
+      body: String.raw`$\frac{${setASize}!}{${setBSize}!}$`,
       correct: false,
     };
   }
