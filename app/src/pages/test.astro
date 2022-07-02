@@ -1,13 +1,11 @@
 ---
 import TestLayout from "../layouts/CourseLayout/TestLayout/TestLayout.astro";
 import { Test } from "../apps";
+import { Repository } from "../data";
 
-import midtermFall2013 from "../data/tests/comp2804/midterm-fall-2013.json";
-const questions = await Astro.glob(
-  `../data/questions/comp2804/midterm-fall-2013/*.json`
-);
+const data = new Repository().fetchTest("comp2804/midterm-fall-2013");
 ---
 
 <TestLayout title="DiscreteMath.ca">
-  <Test client:load data={midtermFall2013} {questions} />
+  <Test client:load {data} />
 </TestLayout>

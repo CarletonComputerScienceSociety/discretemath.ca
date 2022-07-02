@@ -9,9 +9,7 @@
 
   import "./styles.scss";
 
-  // TODO: data should have questions underneath it's questions key
   export let data;
-  export let questions;
 
   const optionLetterMap = {
     0: "a",
@@ -31,7 +29,7 @@
 
 <div class="test-application">
   <Header title={data.title} description={"description"} />
-  {#each questions as question, i}
+  {#each data.questions as question, i}
     <MultipleChoiceQuestion>
       <div>{i + 1}. {@html question.body}</div>
       <div>
