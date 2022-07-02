@@ -8,16 +8,19 @@
   export let name;
 
   let lab = new Lab(name);
-  let question;
 
   const handleNextQuestion = () => {
     // HACK: mathjax typeset messes with svelte dom, so we need to reload to fix it
     location.reload();
   };
 
+  const updateLab = () => {
+    lab = lab;
+  };
+
   onMount(async () => {
     lab.generateNewQuestion();
-    question = lab.getCurrentQuestion();
+    updateLab();
     mathjaxLoad();
   });
 
@@ -30,8 +33,8 @@
 </script>
 
 <div class="lab-application">
-  {#if question}
-    <Question {question} />
+  {#if lab.getCurrentQuestion()}
+    <Question question={lab.getCurrentQuestion()} on:update={updateLab} />
   {:else}
     <!-- TODO: add loading animation -->
     <div>Loading...</div>
