@@ -1,4 +1,4 @@
-import "mathjax/es5/tex-svg-full";
+import "mathjax/es5/tex-svg-full.js";
 
 const mathjaxLoad = () => {
   if (!window.MathJax.config.tex.inlineMath) {
