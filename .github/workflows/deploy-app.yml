@@ -1,0 +1,36 @@
+name: deploy-app
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      # Install dependencies with npm
+      - name: Install dependencies
+        run: |
+          cd app
+          npm ci
+
+      # Build the project and add .nojekyll file to supress default behaviour
+      - name: Build
+        run: |
+          cd app
+          npm run build
+          touch ./dist/.nojekyll
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./app/dist
