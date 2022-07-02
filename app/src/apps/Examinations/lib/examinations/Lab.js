@@ -15,7 +15,7 @@ class Lab extends Examination {
 
   contructfactory(name) {
     switch (name) {
-      case "has-many-functions":
+      case "how-many-functions":
         return new HowManyFunctions();
       default:
         throw "ERROR: Unsupported lab name.";
