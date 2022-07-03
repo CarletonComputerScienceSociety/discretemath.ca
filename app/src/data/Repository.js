@@ -1,6 +1,19 @@
 import { parseXmlToJson } from "../utilities/xml";
 
 class Repository {
+  fetchCourse = (courseCode) => {
+    let courseJson = this.#loadCourse(courseCode);
+    let tests = this.#loadCourseContent(courseCode, "tests");
+    let labs = this.#loadCourseContent(courseCode, "labs");
+
+    // TODO: this is kinda hacky, but it works for now
+    courseJson.tests = tests;
+    courseJson.labs = labs;
+
+    return courseJson;
+  };
+
+  // TODO: update this method to take a course code and test id
   fetchTest = (testFilePath) => {
     // load the test from the data folder
     let testJson = this.#loadTest(testFilePath);
@@ -15,11 +28,25 @@ class Repository {
     return testJson;
   };
 
+  // TODO: update this method to take a course code and lab id
   fetchLab = (labFilePath) => {
     return this.#loadLab(labFilePath);
   };
 
   // private ------------------------------------------------------------
+
+  #loadCourseContent = (courseCode, resource) => {
+    let resources = [];
+    fs.readdirSync(`./src/data/${resource}/${courseCode}`).forEach(function (
+      file
+    ) {
+      let data = fs.readFileSync(
+        `./src/data/${resource}/${courseCode}/${file}`
+      );
+      resources.push(JSON.parse(data.toString()));
+    });
+    return resources;
+  };
 
   // loads json test data
   #loadTest = (testFilePath) => {
@@ -73,6 +100,13 @@ class Repository {
   #loadLab = (labsFilePath) => {
     // TODO: throw error if the file does not exist
     let data = fs.readFileSync(`./src/data/labs/${labsFilePath}.json`);
+    return JSON.parse(data.toString());
+  };
+
+  // loads json course data
+  #loadCourse = (courseFilePath) => {
+    // TODO: throw error if the file does not exist
+    let data = fs.readFileSync(`./src/data/courses/${courseFilePath}.json`);
     return JSON.parse(data.toString());
   };
 }

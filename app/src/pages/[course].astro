@@ -1,5 +1,6 @@
 ---
 import CourseLayout from "../layouts/CourseLayout.astro";
+import { Repository } from "../data";
 
 export function getStaticPaths() {
   return [
@@ -9,8 +10,27 @@ export function getStaticPaths() {
 }
 
 const { course } = Astro.params;
+const data = new Repository().fetchCourse(course);
 ---
 
 <CourseLayout>
-  <h1>{course}</h1>
+  <div>
+    <h1>{data.code}: {data.title}</h1>
+    <p>{data.description}</p>
+    <h3>Tests:</h3>
+    <!-- TODO: remove base link -->
+    <div>
+      {data.tests.map((test) => (
+        <a href={`/discretemath.ca/${data.id}/tests/${test.id}`}>
+          {test.title}
+        </a>
+      ))}
+    </div>
+    <h3>Labs:</h3>
+    <div>
+      {data.labs.map((lab) => (
+        <a href={`/discretemath.ca/${data.id}/labs/${lab.id}`}>{lab.title}</a>
+      ))}
+    </div>
+  </div>
 </CourseLayout>
