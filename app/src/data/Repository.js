@@ -15,6 +15,10 @@ class Repository {
     return testJson;
   };
 
+  fetchLab = (labFilePath) => {
+    return this.#loadLab(labFilePath);
+  };
+
   // private ------------------------------------------------------------
 
   // loads json test data
@@ -63,6 +67,13 @@ class Repository {
       body: xmlOption._,
       correct: xmlOption["$"].correct === "true",
     };
+  };
+
+  // loads json lab data
+  #loadLab = (labsFilePath) => {
+    // TODO: throw error if the file does not exist
+    let data = fs.readFileSync(`./src/data/labs/${labsFilePath}.json`);
+    return JSON.parse(data.toString());
   };
 }
 

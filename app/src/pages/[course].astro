@@ -1,0 +1,16 @@
+---
+import CourseLayout from "../layouts/CourseLayout.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { course: "comp1805" } },
+    { params: { course: "comp2804" } },
+  ];
+}
+
+const { course } = Astro.params;
+---
+
+<CourseLayout>
+  <h1>{course}</h1>
+</CourseLayout>

@@ -13,10 +13,23 @@ import { Button } from "../components";
       interactive platform built specifically for content from Carleton's
       discrete mathematics courses.
     </div>
-    <div>
-      <Button label="comp 1805" />
-      <Button label="comp 2804" />
+    <div class="home-buttons">
+      <!-- TODO: remove ./ -->
+      <a href="./comp1805">
+        <Button label="comp 1805" />
+      </a>
+      <a href="./comp2804">
+        <Button label="comp 2804" />
+      </a>
     </div>
     <div>"globe animation here"</div>
   </HomeLayout>
 </BaseLayout>
+
+<style lang="scss">
+  .home-buttons {
+    a {
+      text-decoration: none;
+    }
+  }
+</style>

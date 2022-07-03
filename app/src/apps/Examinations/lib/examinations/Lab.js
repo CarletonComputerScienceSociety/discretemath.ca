@@ -5,17 +5,20 @@ class Lab extends Examination {
   // TODO: was a list to avoid "null" issue when question was generated, can be removed?
   questions = [];
 
-  constructor(lab) {
+  constructor(title, author, factories) {
     // TODO: do labs need titles and authors ???
-    super("tbd", "tbd");
+    super(title, author);
 
-    this.id = lab;
-    this.factory = this.contructfactory(lab);
+    this.factories = this.contructFactories(factories);
   }
 
-  contructfactory(name) {
+  contructFactories(factories) {
+    return factories.map((factory) => this.constructFactory(factory));
+  }
+
+  constructFactory(name) {
     switch (name) {
-      case "how-many-functions":
+      case "HowManyFunctions":
         return new HowManyFunctions();
       default:
         throw "ERROR: Unsupported lab name.";
@@ -23,7 +26,10 @@ class Lab extends Examination {
   }
 
   generateNewQuestion() {
-    const question = this.factory.create();
+    const factory =
+      this.factories[Math.floor(Math.random() * this.factories.length)];
+
+    const question = factory.create();
     this.questions.push(question);
   }
 

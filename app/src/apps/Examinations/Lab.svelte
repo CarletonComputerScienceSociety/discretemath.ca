@@ -5,9 +5,9 @@
   import { Button } from "../../components";
   import Lab from "./lib/examinations/Lab";
 
-  export let name;
+  export let data;
 
-  let lab = new Lab(name);
+  let lab = new Lab(data.title, data.author, data.factories);
 
   const handleNextQuestion = () => {
     // HACK: mathjax typeset messes with svelte dom, so we need to reload to fix it
