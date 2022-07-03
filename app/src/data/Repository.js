@@ -37,15 +37,19 @@ class Repository {
 
   #loadCourseContent = (courseCode, resource) => {
     let resources = [];
-    fs.readdirSync(`./src/data/${resource}/${courseCode}`).forEach(function (
-      file
-    ) {
-      let data = fs.readFileSync(
-        `./src/data/${resource}/${courseCode}/${file}`
-      );
-      resources.push(JSON.parse(data.toString()));
-    });
-    return resources;
+    try {
+      fs.readdirSync(`./src/data/${resource}/${courseCode}`).forEach(function (
+        file
+      ) {
+        let data = fs.readFileSync(
+          `./src/data/${resource}/${courseCode}/${file}`
+        );
+        resources.push(JSON.parse(data.toString()));
+      });
+      return resources;
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   // loads json test data
