@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+    <![CDATA[
+        Let $A$ be a set of size 6 and let $B$ be a set of size 25. How many one-to-one functions
+        $f : A \rightarrow B$ are there?
+    ]]>
+    <option correct="false">$25^6$</option>
+    <option correct="false">$\frac{25!}{6!}$</option>
+    <option correct="true">$\frac{25!}{19!}$</option>
+    <option correct="false">$\frac{25!}{20!}$</option>
+</question>

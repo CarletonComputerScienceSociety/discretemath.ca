@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		A jar contains 7 red balls and 9 blue balls. We choose, uniformly at random and without replacement,
+		5 balls. Let $A$ be the event
+		[defs]
+			A = "exactly 2 of the balls are red or exactly 3 of the balls are blue".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	<option correct="false">$\frac{{7 \choose 2}}{{16 \choose 5}}$</option>
+	<option correct="false">$\frac{2 \cdot {7 \choose 2}{9 \choose 3}}{{16 \choose 5}}$</option>
+	<option correct="true">$\frac{{7 \choose 2}{ 9 \choose 3}}{{16 \choose 5}}$</option>
+	<option correct="false">$\frac{{7 \choose 2} + {9 \choose 3}}{{16 \choose 5}}$</option>
+</question>

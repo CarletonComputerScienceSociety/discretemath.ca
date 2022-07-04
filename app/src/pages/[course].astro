@@ -21,15 +21,19 @@ const data = new Repository().fetchCourse(course);
     <!-- TODO: remove base link -->
     <div>
       {data.tests.map((test) => (
-        <a href={`/discretemath.ca/${data.id}/tests/${test.id}`}>
-          {test.title}
-        </a>
+        <div>
+          <a href={`/discretemath.ca/${data.id}/tests/${test.id}`}>
+            {test.title}
+          </a>
+      </div>
       ))}
     </div>
     <h3>Labs:</h3>
     <div>
       {data.labs.map((lab) => (
-        <a href={`/discretemath.ca/${data.id}/labs/${lab.id}`}>{lab.title}</a>
+        <div>
+          <a href={`/discretemath.ca/${data.id}/labs/${lab.id}`}>{lab.title}</a>
+        </div>
       ))}
     </div>
   </div>

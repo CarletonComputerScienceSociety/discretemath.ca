@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		True or false: If $X$ and $Y$ are random variables, then
+		$$
+			E(\max(X,Y)) = \max(E(X), E(Y)).
+		$$
+	]]>
+	<option correct="false">True</option>
+	<option correct="true">False</option>
+</question>

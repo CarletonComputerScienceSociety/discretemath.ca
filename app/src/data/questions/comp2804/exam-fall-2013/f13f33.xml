@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		How do you feel?
+	]]>
+	<option correct="true">I need a beer.</option>
+</question>

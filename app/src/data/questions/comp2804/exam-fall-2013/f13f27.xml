@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		Consider a coin that comes up heads with probability $p$ and tails with probability $1-p$. We flip
+		this coin (independently) and stop as soon as it comes up heads for the fifth time. Let $X$ be the
+		random variable whose value is the total number of times we flip the coin. What is the expected
+		value $E(X)$ of $X$?
+	]]>
+	<option correct="true">$5/p$</option>
+	<option correct="false">$5p$</option>
+	<option correct="false">$1/p^{5}$</option>
+	<option correct="false">$p^{5}$</option>
+</question>

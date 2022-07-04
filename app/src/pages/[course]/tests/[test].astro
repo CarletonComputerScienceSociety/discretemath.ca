@@ -5,7 +5,10 @@ import { Repository } from "../../../data";
 
 // TODO: move params data into data folder?
 export function getStaticPaths() {
-  return [{ params: { course: "comp2804", test: "midterm-fall-2013" } }];
+  return [
+    { params: { course: "comp2804", test: "midterm-fall-2013" } },
+    { params: { course: "comp2804", test: "exam-fall-2013" } },
+  ];
 }
 
 const { course, test } = Astro.params;

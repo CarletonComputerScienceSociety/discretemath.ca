@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		A jar contains 17 red balls and 22 blue balls. How many ways are there to choose, without
+		replacement, 8 balls from the jar?
+	]]>
+	<option correct="false">${17 \choose 8}{22 \choose 8}$</option>
+	<option correct="false">$\sum_{k=0}^{8} \bigl( {17 \choose k} + {22 \choose 8-k} \bigr)$</option>
+	<option correct="true">${39 \choose 8}$</option>
+	<option correct="false">${39 \choose 8} 8!$</option>
+</question>
