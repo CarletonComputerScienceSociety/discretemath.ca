@@ -1,12 +1,12 @@
 ---
-    const { Content, frontmatter } = Astro.props.mdx; 
+const { Content, frontmatter } = Astro.props.mdx;
 ---
 
 <div>
-    <h1>{frontmatter.title}</h1>
-    <h2>Authored by: {frontmatter.author}</h2>
-    <h3>Last updated on: {frontmatter.last_updated}</h3>
+  <h1>{frontmatter.title}</h1>
+  <h2>Authored by: {frontmatter.author}</h2>
+  <h3>Last updated on: {frontmatter.last_updated}</h3>
 </div>
 <div>
-    <Content />
+  <Content />
 </div>
