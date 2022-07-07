@@ -82,6 +82,7 @@ class Repository {
         return {
           body: xmlQuestion.question._,
           type: questionData.type,
+          lab: questionData.lab,
           factory: questionData.factory,
           options: xmlQuestion.question.option.map((xmlOption) =>
             this.#transformXmlOptionToJson(xmlOption)
