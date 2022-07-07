@@ -19,9 +19,6 @@ class Examination {
     switch (question.format) {
       case "MultipleChoice":
         return new MultipleChoiceQuestion(question.body, question.options);
-
-      default:
-        throw "Not implemented";
     }
   }
 }
