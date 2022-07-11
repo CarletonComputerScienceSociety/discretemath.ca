@@ -15,12 +15,12 @@ class Examination {
   }
 
   constructQuestion(question) {
-    // TEMPORARY: hardcoded to always be MultipleChoice, see below
-    return new MultipleChoiceQuestion(question.body, question.options);
-
     // TODO: switch on question.format to create the desired question child class
     // ex: if question is a multiple choice question... create a multiple choice question
-    throw "Not implemented";
+    switch (question.format) {
+      case "MultipleChoice":
+        return new MultipleChoiceQuestion(question.body, question.options);
+    }
   }
 
   // Change state of examination to submitted
