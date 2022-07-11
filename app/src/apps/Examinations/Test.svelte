@@ -4,6 +4,7 @@
   import { Header, Question } from "./components";
   import Test from "./lib/examinations/Test";
   import "./styles.scss";
+  import Button from "../../components/Button/Button.svelte";
 
   export let data;
 
@@ -27,4 +28,5 @@
   {#each test.questions as question, questionIndex}
     <Question {question} number={questionIndex + 1} on:update={updateTest} />
   {/each}
+  <Button label={"Submit"}/>
 </div>
