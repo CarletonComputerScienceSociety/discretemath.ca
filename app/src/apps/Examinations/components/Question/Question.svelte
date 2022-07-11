@@ -15,5 +15,10 @@
 </script>
 
 {#if question instanceof MultipleChoiceQuestionObject}
-  <MultipleChoiceQuestion {question} {number} {submitted} on:update={updateExamination} />
+  <MultipleChoiceQuestion
+    {question}
+    {number}
+    {submitted}
+    on:update={updateExamination}
+  />
 {/if}
