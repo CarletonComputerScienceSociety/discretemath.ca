@@ -5,6 +5,7 @@
 
   export let question;
   export let number;
+  export let submitted;
 
   const dispatch = createEventDispatcher();
 
@@ -14,5 +15,10 @@
 </script>
 
 {#if question instanceof MultipleChoiceQuestionObject}
-  <MultipleChoiceQuestion {question} {number} on:update={updateExamination} />
+  <MultipleChoiceQuestion
+    {question}
+    {number}
+    {submitted}
+    on:update={updateExamination}
+  />
 {/if}

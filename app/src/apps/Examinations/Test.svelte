@@ -4,6 +4,7 @@
   import { Header, Question } from "./components";
   import Test from "./lib/examinations/Test";
   import "./styles.scss";
+  import Button from "../../components/Button/Button.svelte";
 
   export let data;
 
@@ -20,11 +21,22 @@
   afterUpdate(() => {
     mathjaxTypeset();
   });
+
+  const submit = () => {
+    test.submit();
+    updateTest();
+  };
 </script>
 
 <div class="test-application">
   <Header title={test.title} description={"description"} />
   {#each test.questions as question, questionIndex}
-    <Question {question} number={questionIndex + 1} on:update={updateTest} />
+    <Question
+      {question}
+      number={questionIndex + 1}
+      submitted={test.submitted}
+      on:update={updateTest}
+    />
   {/each}
+  <Button label={"Submit"} on:click={submit} />
 </div>

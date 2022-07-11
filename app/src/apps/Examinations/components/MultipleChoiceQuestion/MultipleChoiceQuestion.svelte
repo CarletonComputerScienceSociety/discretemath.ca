@@ -5,6 +5,7 @@
 
   export let question;
   export let number;
+  export let submitted;
 
   const LETTER_OPTIONS = {
     0: "a",
@@ -33,6 +34,8 @@
         <MultipleChoiceOption
           letter={LETTER_OPTIONS[optionIndex]}
           selected={question.selectedOptionIndex === optionIndex}
+          {submitted}
+          correct={option.correct}
         >
           {@html option.body}</MultipleChoiceOption
         >

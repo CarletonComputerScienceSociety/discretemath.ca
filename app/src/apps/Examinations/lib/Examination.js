@@ -3,6 +3,7 @@ import { MultipleChoiceQuestion } from "./questions/MultipleChoiceQuestion";
 class Examination {
   title;
   author;
+  submitted = false;
 
   constructor(title, author) {
     this.title = title;
@@ -20,6 +21,11 @@ class Examination {
     // TODO: switch on question.format to create the desired question child class
     // ex: if question is a multiple choice question... create a multiple choice question
     throw "Not implemented";
+  }
+
+  // Change state of examination to submitted
+  submit() {
+    this.submitted = true;
   }
 }
 
