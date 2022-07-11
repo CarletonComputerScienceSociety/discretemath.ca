@@ -21,12 +21,17 @@
   afterUpdate(() => {
     mathjaxTypeset();
   });
+
+  const submit = () => {
+    test.submit();
+    updateTest();
+  }
 </script>
 
 <div class="test-application">
   <Header title={test.title} description={"description"} />
   {#each test.questions as question, questionIndex}
-    <Question {question} number={questionIndex + 1} on:update={updateTest} />
+    <Question {question} number={questionIndex + 1} submitted={test.submitted} on:update={updateTest} />
   {/each}
-  <Button label={"Submit"}/>
+  <Button label={"Submit"} on:click={submit}/>
 </div>
