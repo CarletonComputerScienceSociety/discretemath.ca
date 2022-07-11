@@ -15,15 +15,14 @@ class Examination {
   }
 
   constructQuestion(question) {
-    // TODO: switch on question.format to create the desired question child class
-    // ex: if question is a multiple choice question... create a multiple choice question
-    switch (question.format) {
+    switch (question.type) {
       case "MultipleChoice":
         return new MultipleChoiceQuestion(question.body, question.options);
+      default:
+        throw "ERROR: Unsupported question type.";
     }
   }
 
-  // Change state of examination to submitted
   submit() {
     this.submitted = true;
   }
