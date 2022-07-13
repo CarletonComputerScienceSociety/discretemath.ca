@@ -1,6 +1,7 @@
 ---
 import CourseLayout from "../layouts/CourseLayout.astro";
 import { Repository } from "../data";
+import Graph from "../apps/Graphs/Graph.svelte";
 
 export function getStaticPaths() {
   return [
@@ -36,5 +37,8 @@ const data = new Repository().fetchCourse(course);
         </div>
       ))}
     </div>
+    <br />
+    <h3>Temporary Graph Demo:</h3>
+    <Graph client:load />
   </div>
 </CourseLayout>
