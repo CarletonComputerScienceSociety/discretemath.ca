@@ -1,5 +1,5 @@
 {
   "id": "how-many-functions",
   "title": "How Many Functions",
-  "factories": ["HowManyFunctions"]
+  "factories": ["HowManyFunctions", "HowManyNonOneToOneFunctions"]
 }
