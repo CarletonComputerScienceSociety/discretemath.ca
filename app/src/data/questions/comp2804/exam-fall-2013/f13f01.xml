@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice" lab="HowManyFunctions" factory="HowManyFunctions">
+    <![CDATA[
+        Let $A$ be a set of size 25 and let $B$ be a set of size 17. How many functions $f : A \rightarrow B$
+        are there?
+    ]]>
+    <option correct="false">$17!$</option>
+    <option correct="false">$\frac{25!}{17!}$</option>
+    <option correct="true">$17^{25}$</option>
+    <option correct="false">$25^{17}$</option>
+</question>

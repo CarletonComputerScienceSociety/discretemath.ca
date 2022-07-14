@@ -1,0 +1,44 @@
+---
+import CourseLayout from "../layouts/CourseLayout.astro";
+import { Repository } from "../data";
+import Graph from "../apps/Graphs/Graph.svelte";
+
+export function getStaticPaths() {
+  return [
+    { params: { course: "comp1805" } },
+    { params: { course: "comp2804" } },
+  ];
+}
+
+const { course } = Astro.params;
+const data = new Repository().fetchCourse(course);
+---
+
+<CourseLayout>
+  <div>
+    <h1>{data.code}: {data.title}</h1>
+    <p>{data.description}</p>
+    <h3>Tests:</h3>
+    <!-- TODO: remove base link -->
+    <div>
+      {data.tests.map((test) => (
+        <div>
+          <a href={`/discretemath.ca/${data.id}/tests/${test.id}`}>
+            {test.title}
+          </a>
+        </div>
+      ))}
+    </div>
+    <h3>Labs:</h3>
+    <div>
+      {data.labs.map((lab) => (
+        <div>
+          <a href={`/discretemath.ca/${data.id}/labs/${lab.id}`}>{lab.title}</a>
+        </div>
+      ))}
+    </div>
+    <br />
+    <h3>Temporary Graph Demo:</h3>
+    <Graph client:load />
+  </div>
+</CourseLayout>

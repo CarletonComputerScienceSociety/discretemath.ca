@@ -1,10 +1,8 @@
 class Question {
   body;
-  number;
 
-  constructor(body, number) {
+  constructor(body) {
     this.body = body;
-    this.number = number;
   }
 
   updateOption(event) {

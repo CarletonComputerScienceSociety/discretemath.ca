@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		<div hidden>
+			$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+		</div>
+		
+		Consider the following recursive algorithm $\Fib$, which takes as input an
+		integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ f = n$ <br>
+			$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+			$\mathbf{endif};$ <br>
+			$\mathbf{return}\ f$ <br>
+		</p>
+		
+		When running $\Fib(7)$, how many calls are there to $\Fib(3)$?
+	]]>
+	<option correct="false">4</option>
+	<option correct="true">5</option>
+	<option correct="false">6</option>
+	<option correct="false">7</option>
+</question>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		How many solutions are there to the equation $x_1 + x_2 + x_3 = 16$, where $x_1 \geq 0$, $x_2 \geq 0$,
+		$x_3 \geq 0$ are integers?
+	]]>
+	<option correct="true">${18 \choose 2}$</option>
+	<option correct="false">${18 \choose 3}$</option>
+	<option correct="false">${19 \choose 2}$</option>
+	<option correct="false">${19 \choose 3}$</option>
+</question>

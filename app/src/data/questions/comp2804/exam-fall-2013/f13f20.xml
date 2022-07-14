@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		Assume that a newborn baby is a girl with probability $p$ and a boy with probability $1 - p$. Also
+		assume that the genders of different newborns are independent of each other. Consider a person who
+		has two children. Define the following two events:
+		[defs]
+			A = "both children are girls"
+			B = "at least one of the children is a girl"
+		[/defs]
+		What is the conditional probability $\Pr(A|B)$?
+	]]>
+	<option correct="true">$\frac{p}{2-p}$</option>
+	<option correct="false">$\frac{2-p}{p}$</option>
+	<option correct="false">$p$</option>
+	<option correct="false">$\frac{1}{p}$</option>
+</question>

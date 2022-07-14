@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+    <![CDATA[
+        Let $A$ be a set of size 5 and let $B$ be a set of size 14. How many functions $f : A \rightarrow B$
+        are there that are <strong>not</strong> one-to-one?
+    ]]>
+    <option correct="false">$14^5 - \frac{14!}{8!}$</option>
+    <option correct="true">$14^5 - \frac{14!}{9!}$</option>
+    <option correct="false">$\frac{14!}{9!} - 14^5$</option>
+    <option correct="false">$5^{14} - \frac{14!}{9!}$</option>
+</question>

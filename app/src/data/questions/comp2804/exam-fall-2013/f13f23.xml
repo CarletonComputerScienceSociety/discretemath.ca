@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		We flip a fair coin (independently) two times. Define the following three events:
+		[defs]
+			A = "the number of heads is odd"
+			B = "the first coin comes up heads"
+			C = "the second coin comes up tails"
+		[/defs]
+		True or false: The events $A$, $B$ and $C$ are independent.
+	]]>
+	<option correct="false">True</option>
+	<option correct="true">False</option>
+</question>

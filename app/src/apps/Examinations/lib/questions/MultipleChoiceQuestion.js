@@ -4,23 +4,19 @@ class MultipleChoiceQuestion extends Question {
   selectedOptionIndex = -1;
   options = [];
 
-  constructor(body, number, options) {
-    super(body, number);
-
-    options.forEach((option) => {
-      this.addMultipleChoiceOption(
-        new MultipleChoiceOption(option.body, option.correct)
-      );
-    });
+  constructor(body, options) {
+    super(body);
+    this.options = this.constructOptions(options);
   }
 
-  addMultipleChoiceOption(option) {
-    this.options.push(option);
+  constructOptions(options) {
+    return options.map(
+      (option) => new MultipleChoiceOption(option.body, option.correct)
+    );
   }
 
-  updateSelectedOption(event) {
-    // TODO: may need to be updated based on the event
-    this.selectedOptionIndex = event.detail.index;
+  updateSelectedOption(index) {
+    this.selectedOptionIndex = index;
   }
 
   isAnsweredCorrectly() {

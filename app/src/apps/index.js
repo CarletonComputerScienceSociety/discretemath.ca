@@ -1,1 +1,1 @@
-export { Test } from "./Examinations";
+export { Lab, Test } from "./Examinations";

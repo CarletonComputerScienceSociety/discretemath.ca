@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		What is the coefficient of $x^{111}y^{222}$ in the expansion of $(7x+14y)^{333}$?
+	]]>
+	<option correct="false">${333 \choose 222} (7x)^{222} (14y)^{111}$</option>
+	<option correct="false">${333 \choose 222} (7x)^{111} (14y)^{222}$</option>
+	<option correct="false">${333 \choose 222} 7^{222} 14^{111}$</option>
+	<option correct="true">${333 \choose 222} 7^{111} 14^{222}$</option>
+</question>

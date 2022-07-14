@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		You are given 6 distinct books and 5 <em>identical</em> blocks of wood.
+		How many ways are there to arrange these books and blocks in a straight line?
+	]]>
+	<option correct="false">$\frac{11!}{4!}$</option>
+	<option correct="true">$\frac{11!}{5!}$</option>
+	<option correct="false">$\frac{11!}{6!}$</option>
+	<option correct="false">${11 \choose 6}$</option>
+</question>

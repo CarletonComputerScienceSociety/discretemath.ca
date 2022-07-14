@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		We flip a fair coin (independently) 100 times. What is the probability that the coin comes up heads
+		exactly 37 times?
+	]]>
+	<option correct="false">${100 \choose 37} (1/2)^{37}$</option>
+	<option correct="true">${100 \choose 37} (1/2)^{100}$</option>
+	<option correct="false">$\frac{1}{{100 \choose 37}}$</option>
+	<option correct="false">${100 \choose 37}$</option>
+</question>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		The number of different strings that can be made by reordering the 10 letters of the word HELLOHELLO
+		is
+	]]>
+	<option correct="false">$10!$</option>
+	<option correct="false">$4!2!2!2!$</option>
+	<option correct="false">${10 \choose 4}{6 \choose 2}{4 \choose 2}{3 \choose 2}$</option>
+	<option correct="true">none of the above.</option>
+</question>

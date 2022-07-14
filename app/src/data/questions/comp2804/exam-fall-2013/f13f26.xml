@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		We flip a fair coin (independently) three times. Let $X$ be the random variable whose value is the
+		number of times the coin comes up heads. What is the expected value $E(X)$ of $X$?
+	]]>
+	<option correct="false">1</option>
+	<option correct="false">5/4</option>
+	<option correct="true">3/2</option>
+	<option correct="false">2</option>
+</question>

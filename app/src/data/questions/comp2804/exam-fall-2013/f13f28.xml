@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		A jar contains 17 red balls and 5 blue balls. Repeat the following 12 times: Choose one ball
+		uniformly at random (and leave it in the jar). Let $X$ be the random variable whose value is the
+		number of blue balls that we choose. What is the expected value $E(X)$ of $X$?
+	]]>
+	<option correct="true">$\frac{30}{11}$</option>
+	<option correct="false">$6$</option>
+	<option correct="false">$12 \cdot \frac{5}{17}$</option>
+	<option correct="false">$12 \cdot \frac{17}{5}$</option>
+</question>
