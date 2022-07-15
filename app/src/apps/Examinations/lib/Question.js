@@ -1,8 +1,10 @@
 class Question {
   body;
+  labId;
 
-  constructor(body) {
+  constructor(body, labId) {
     this.body = body;
+    this.labId = labId;
   }
 
   updateOption(event) {
