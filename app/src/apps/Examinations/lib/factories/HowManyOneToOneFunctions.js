@@ -21,7 +21,7 @@ class HowManyOneToOneFunctions extends Factory {
   }
 
   generateQuestionBody(setASize, setBSize) {
-    return String.raw`Let $A$ be a set of size 6 and let $B$ be a set of size 25. How many one-to-one functions $f : A \rightarrow B$ are there?`;
+    return String.raw`Let $A$ be a set of size ${setASize} and let $B$ be a set of size ${setBSize}. How many one-to-one functions $f : A \rightarrow B$ are there?`;
   }
 
   generateSetSizes() {
@@ -32,7 +32,7 @@ class HowManyOneToOneFunctions extends Factory {
       setB = this.getRandomSetSize();
     }
 
-    if (setA > setB) {
+    if (setA < setB) {
       return [setA, setB];
     }
 
@@ -42,7 +42,7 @@ class HowManyOneToOneFunctions extends Factory {
   generateQuestionOptions(setASize, setBSize) {
     let options = [];
 
-    options.push(this.generateOptionOne(setBSize));
+    options.push(this.generateOptionOne(setASize, setBSize));
     options.push(this.generateOptionTwo(setASize, setBSize));
     options.push(this.generateOptionThree(setASize, setBSize));
     options.push(this.generateOptionFour(setASize, setBSize));
@@ -54,7 +54,7 @@ class HowManyOneToOneFunctions extends Factory {
 
   generateOptionOne(setASize, setBSize) {
     return {
-      body: String.raw`$ {${setBSize}}^{${setASize}} $`,
+      body: String.raw`$ {${setASize}}^{${setBSize}} $`,
       correct: false,
     };
   }
@@ -75,7 +75,7 @@ class HowManyOneToOneFunctions extends Factory {
 
   generateOptionFour(setASize, setBSize) {
     return {
-      body: String.raw`$\frac{${setBSize}!}{${this.getRandomSetSize()}!}$`,
+      body: String.raw`$\frac{${setBSize}!}{${setBSize - setASize + 1}!}$`,
       correct: false,
     };
   }
