@@ -4,8 +4,8 @@ class MultipleChoiceQuestion extends Question {
   selectedOptionIndex = -1;
   options = [];
 
-  constructor(body, options) {
-    super(body);
+  constructor(body, labId, options) {
+    super(body, labId);
     this.options = this.constructOptions(options);
   }
 
