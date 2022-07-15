@@ -36,7 +36,7 @@
   />
 {/if}
 
-{#if typeof question.labId !== 'undefined'}
+{#if typeof question.labId !== "undefined"}
   <a href="/discretemath.ca/comp2804/labs/{question.labId}"
     >Go to the associated Lab!</a
   >
