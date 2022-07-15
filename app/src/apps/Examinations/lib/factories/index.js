@@ -1,2 +1,2 @@
-export { HowManyFunctions } from "./HowManyFunctions"
-export { HowManyOneToOneFunctions } from "./HowManyOneToOneFunctions"
+export { HowManyFunctions } from "./HowManyFunctions";
+export { HowManyOneToOneFunctions } from "./HowManyOneToOneFunctions";
