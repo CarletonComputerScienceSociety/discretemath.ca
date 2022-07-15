@@ -46,3 +46,9 @@
     on:update={updateExamination}
   />
 {/if}
+
+{#if question.labId === "how-many-functions"}
+  <a href="/discretemath.ca/comp2804/labs/how-many-functions"
+    >Go to the associated Lab!</a
+  >
+{/if}
