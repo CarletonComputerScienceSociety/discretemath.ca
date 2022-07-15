@@ -1,5 +1,5 @@
 import { Examination } from "../Examination";
-import { HowManyFunctions } from "../factories/HowManyFunctions";
+import { HowManyNonOneToOneFunctions, HowManyFunctions } from "../factories";
 
 class Lab extends Examination {
   // TODO: was a list to avoid "null" issue when question was generated, can be removed?
@@ -20,6 +20,8 @@ class Lab extends Examination {
     switch (name) {
       case "HowManyFunctions":
         return new HowManyFunctions();
+      case "HowManyNonOneToOneFunctions":
+        return new HowManyNonOneToOneFunctions();
       default:
         throw "ERROR: Unsupported lab name.";
     }

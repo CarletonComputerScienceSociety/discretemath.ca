@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<question type="MultipleChoice" lab="HowManyFunctions" factory="HowManyFunctions">
+<question type="MultipleChoice" lab="how-many-functions" factory="HowManyFunctions">
     <![CDATA[
         Let $A$ be a set of size 25 and let $B$ be a set of size 17. How many functions $f : A \rightarrow B$
         are there?

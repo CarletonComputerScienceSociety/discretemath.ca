@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<question type="MultipleChoice">
+<question type="MultipleChoice" lab="how-many-functions" factory="HowManyNonOneToOneFunctions">
     <![CDATA[
         Let $A$ be a set of size 5 and let $B$ be a set of size 14. How many functions $f : A \rightarrow B$
         are there that are <strong>not</strong> one-to-one?
