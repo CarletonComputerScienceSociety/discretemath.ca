@@ -1,5 +1,7 @@
 import { Examination } from "../Examination";
 import {
+  DesmosAsymtopicAnalysis,
+  DesmosAsymtopicAnalysisPolynomial,
   HowManyFunctions,
   HowManyNonOneToOneFunctions,
   HowManyOneToOneFunctions,
@@ -22,6 +24,10 @@ class Lab extends Examination {
 
   constructFactory(name) {
     switch (name) {
+      case "DesmosAsymtopicAnalysis":
+        return new DesmosAsymtopicAnalysis();
+      case "DesmosAsymtopicAnalysisPolynomial":
+        return new DesmosAsymtopicAnalysisPolynomial();
       case "HowManyFunctions":
         return new HowManyFunctions();
       case "HowManyNonOneToOneFunctions":
