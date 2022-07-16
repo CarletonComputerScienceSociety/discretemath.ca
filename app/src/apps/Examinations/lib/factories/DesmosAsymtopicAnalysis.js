@@ -61,7 +61,7 @@ class DesmosAsymtopicAnalysis extends Factory {
     const functionData = functionTemplate.generator();
     const expression = functionTemplate.display(functionData);
     const parentFunction = this.generateParentFunction();
-    const body = this.generateBody(expression, parentFunction);
+    const body = this.generateBody(expression, parentFunction.expression);
 
     const question = new DesmosAsymtopicAnalysisQuestion(
       body,
