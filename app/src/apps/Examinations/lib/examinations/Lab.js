@@ -1,5 +1,11 @@
 import { Examination } from "../Examination";
-import { HowManyFunctions } from "../factories/HowManyFunctions";
+import {
+  DesmosAsymtopicAnalysis,
+  DesmosAsymtopicAnalysisPolynomial,
+  HowManyFunctions,
+  HowManyNonOneToOneFunctions,
+  HowManyOneToOneFunctions,
+} from "../factories";
 
 class Lab extends Examination {
   // TODO: was a list to avoid "null" issue when question was generated, can be removed?
@@ -18,8 +24,16 @@ class Lab extends Examination {
 
   constructFactory(name) {
     switch (name) {
+      case "DesmosAsymtopicAnalysis":
+        return new DesmosAsymtopicAnalysis();
+      case "DesmosAsymtopicAnalysisPolynomial":
+        return new DesmosAsymtopicAnalysisPolynomial();
       case "HowManyFunctions":
         return new HowManyFunctions();
+      case "HowManyNonOneToOneFunctions":
+        return new HowManyNonOneToOneFunctions();
+      case "HowManyOneToOneFunctions":
+        return new HowManyOneToOneFunctions();
       default:
         throw "ERROR: Unsupported lab name.";
     }

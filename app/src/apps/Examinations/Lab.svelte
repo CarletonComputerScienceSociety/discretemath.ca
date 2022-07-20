@@ -30,14 +30,24 @@
       mathjaxTypeset();
     }, 1);
   });
+
+  const submit = () => {
+    lab.submit();
+    updateLab();
+  };
 </script>
 
 <div class="lab-application">
   {#if lab.getCurrentQuestion()}
-    <Question question={lab.getCurrentQuestion()} on:update={updateLab} />
+    <Question
+      question={lab.getCurrentQuestion()}
+      submitted={lab.submitted}
+      on:update={updateLab}
+    />
   {:else}
     <!-- TODO: add loading animation -->
     <div>Loading...</div>
   {/if}
+  <Button on:click={submit} label={"Submit"} />
   <Button on:click={handleNextQuestion} label={"Next"} />
 </div>

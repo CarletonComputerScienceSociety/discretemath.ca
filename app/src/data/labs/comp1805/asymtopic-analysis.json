@@ -1,0 +1,5 @@
+{
+  "id": "asymtopic-analysis",
+  "title": "Practice Asymtopic Analysis",
+  "factories": ["DesmosAsymtopicAnalysis", "DesmosAsymtopicAnalysisPolynomial"]
+}
