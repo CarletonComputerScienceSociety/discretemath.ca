@@ -5,7 +5,6 @@
   import { Header, Question } from "./components";
   import Test from "./lib/examinations/Test";
   import "./styles.scss";
-  import Button from "../../components/Button/Button.svelte";
 
   export let data;
 
