@@ -1,6 +1,7 @@
 <script>
   import { onMount, afterUpdate } from "svelte";
   import { mathjaxLoad, mathjaxTypeset } from "../../utilities";
+  import { Button } from "../../components";
   import { Header, Question } from "./components";
   import Test from "./lib/examinations/Test";
   import "./styles.scss";
