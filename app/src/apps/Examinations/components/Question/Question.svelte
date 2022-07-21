@@ -35,3 +35,9 @@
     on:update={updateExamination}
   />
 {/if}
+
+{#if typeof question.labId !== "undefined"}
+  <a href="/discretemath.ca/comp2804/labs/{question.labId}"
+    >Go to the associated Lab!</a
+  >
+{/if}
