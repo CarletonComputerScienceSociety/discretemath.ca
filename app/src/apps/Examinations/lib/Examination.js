@@ -26,6 +26,11 @@ class Examination {
   submit() {
     this.submitted = true;
   }
+
+  // Change state of examination to submitted
+  submit() {
+    this.submitted = true;
+  }
 }
 
 export { Examination };
