@@ -17,7 +17,11 @@ class Examination {
   constructQuestion(question) {
     switch (question.type) {
       case "MultipleChoice":
-        return new MultipleChoiceQuestion(question.body, question.options);
+        return new MultipleChoiceQuestion(
+          question.body,
+          question.lab,
+          question.options
+        );
       default:
         throw "ERROR: Unsupported question type.";
     }
