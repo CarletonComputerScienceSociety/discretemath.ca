@@ -3,6 +3,7 @@
   import { mathjaxLoad, mathjaxTypeset } from "../../utilities";
   import { Question } from "./components";
   import { Button } from "../../components";
+  import { LoadingAnimation } from "../../components/LoadingAnimation";
   import Lab from "./lib/examinations/Lab";
 
   export let data;
@@ -45,8 +46,7 @@
       on:update={updateLab}
     />
   {:else}
-    <!-- TODO: add loading animation -->
-    <div>Loading...</div>
+    <LoadingAnimation />
   {/if}
   <Button on:click={submit} label={"Submit"} />
   <Button on:click={handleNextQuestion} label={"Next"} />
