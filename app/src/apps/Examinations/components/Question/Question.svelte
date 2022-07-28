@@ -16,6 +16,7 @@
   export let question;
   export let number;
   export let submitted;
+  export let displayLab;
 
   const dispatch = createEventDispatcher();
 
@@ -47,7 +48,7 @@
   />
 {/if}
 
-{#if typeof question.labId !== "undefined"}
+{#if displayLab && question.labId != null}
   <a href="/discretemath.ca/comp2804/labs/{question.labId}"
     >Go to the associated Lab!</a
   >
