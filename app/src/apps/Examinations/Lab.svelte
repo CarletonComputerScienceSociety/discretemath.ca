@@ -2,8 +2,7 @@
   import { onMount, afterUpdate } from "svelte";
   import { mathjaxLoad, mathjaxTypeset } from "../../utilities";
   import { Question } from "./components";
-  import { Button } from "../../components";
-  import { LoadingAnimation } from "../../components/LoadingAnimation";
+  import { Button, LoadingAnimation } from "../../components";
   import Lab from "./lib/examinations/Lab";
 
   export let data;
