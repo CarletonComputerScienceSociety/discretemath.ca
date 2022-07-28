@@ -2,11 +2,15 @@
   import {
     DesmosAsymtopicAnalysisQuestion,
     MultipleChoiceQuestion,
+    WrittenQuestion,
   } from "../../components";
+
   import {
     DesmosAsymtopicAnalysisQuestion as DesmosAsymtopicAnalysisQuestionObject,
     MultipleChoiceQuestion as MultipleChoiceQuestionObject,
+    WrittenQuestion as WrittenQuestionObject,
   } from "../../lib/questions";
+
   import { createEventDispatcher } from "svelte";
 
   export let question;
@@ -29,6 +33,13 @@
   />
 {:else if question instanceof DesmosAsymtopicAnalysisQuestionObject}
   <DesmosAsymtopicAnalysisQuestion
+    {question}
+    {number}
+    {submitted}
+    on:update={updateExamination}
+  />
+{:else if question instanceof WrittenQuestionObject}
+  <WrittenQuestion
     {question}
     {number}
     {submitted}
