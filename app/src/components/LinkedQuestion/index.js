@@ -1,1 +1,1 @@
-export { default as LinkedQuestion } from './LinkedQuestion.svelte';
+export { default as LinkedQuestion } from "./LinkedQuestion.svelte";
