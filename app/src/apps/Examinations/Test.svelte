@@ -35,6 +35,7 @@
       {question}
       number={questionIndex + 1}
       submitted={test.submitted}
+      displayLab={true}
       on:update={updateTest}
     />
   {/each}

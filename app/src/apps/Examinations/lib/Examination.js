@@ -19,8 +19,8 @@ class Examination {
       case "MultipleChoice":
         return new MultipleChoiceQuestion(
           question.body,
-          question.lab,
-          question.options
+          question.options,
+          question.lab
         );
       default:
         throw "ERROR: Unsupported question type.";

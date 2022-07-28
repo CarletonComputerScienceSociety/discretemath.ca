@@ -43,6 +43,7 @@
     <Question
       question={lab.getCurrentQuestion()}
       submitted={lab.submitted}
+      displayLab={false}
       on:update={updateLab}
     />
   {:else}

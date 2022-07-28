@@ -10,7 +10,7 @@ class DesmosAsymtopicAnalysisQuestion extends Question {
     parentFunction,
     parentFunctionRank
   ) {
-    super(body);
+    super(body, null);
     this.expression = expression;
     this.parentFunction = parentFunction;
     this.desmosExpressions = this.generateDesmosExpressions(
