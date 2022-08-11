@@ -2,7 +2,7 @@
   import { onMount, afterUpdate } from "svelte";
   import { mathjaxLoad, mathjaxTypeset } from "../../utilities";
   import { Question } from "./components";
-  import { Button } from "../../components";
+  import { Button, LoadingAnimation } from "../../components";
   import Lab from "./lib/examinations/Lab";
 
   export let data;
@@ -42,11 +42,11 @@
     <Question
       question={lab.getCurrentQuestion()}
       submitted={lab.submitted}
+      displayLab={false}
       on:update={updateLab}
     />
   {:else}
-    <!-- TODO: add loading animation -->
-    <div>Loading...</div>
+    <LoadingAnimation />
   {/if}
   <Button on:click={submit} label={"Submit"} />
   <Button on:click={handleNextQuestion} label={"Next"} />

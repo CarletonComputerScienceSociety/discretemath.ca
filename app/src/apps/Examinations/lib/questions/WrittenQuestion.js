@@ -4,7 +4,7 @@ class WrittenQuestion extends Question {
   input = "";
 
   constructor(body, expression, answer) {
-    super(body);
+    super(body, null);
     this.expression = expression;
     this.answer = answer;
   }
