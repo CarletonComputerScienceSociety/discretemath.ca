@@ -16,8 +16,8 @@ class SelectManyQuestions extends Question {
 
   constructOptions(options) {
     return options.map(
-      (option) => new SelectManyQuestionsOption(option.body, option.correct)
-    );
+      (option) => new MultipleChoiceOption(option.body, option.correct)
+    )
   }
 
   /* Adds a index to the selectedOptionIndex if it's not been selected currently */
@@ -53,13 +53,13 @@ class SelectManyQuestions extends Question {
   }
 }
 
-class SelectManyQuestionsOption {
-  body;
-  correct;
+class MultipleChoiceOption {
+  body
+  correct
 
   constructor(body, correct) {
-    this.body = body;
-    this.correct = correct;
+    this.body = body
+    this.correct = correct
   }
 }
 
