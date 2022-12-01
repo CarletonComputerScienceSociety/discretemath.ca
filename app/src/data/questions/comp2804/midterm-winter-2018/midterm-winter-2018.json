@@ -1,0 +1,23 @@
+{ 
+    "id": "midterm-winter-2018",
+    "title": "Winter 2018 Midterm",
+    "Author": "Michiel Smid",
+    "questions": [
+		"comp2804/midterm-winter-2018/w18m01.xml",
+		"comp2804/midterm-winter-2018/w18m02.xml",
+		"comp2804/midterm-winter-2018/w18m03.xml",
+		"comp2804/midterm-winter-2018/w18m04.xml",
+		"comp2804/midterm-winter-2018/w18m05.xml",
+		"comp2804/midterm-winter-2018/w18m06.xml",
+		"comp2804/midterm-winter-2018/w18m07.xml",
+		"comp2804/midterm-winter-2018/w18m08.xml",
+		"comp2804/midterm-winter-2018/w18m09.xml",
+		"comp2804/midterm-winter-2018/w18m10.xml",
+		"comp2804/midterm-winter-2018/w18m11.xml",
+		"comp2804/midterm-winter-2018/w18m12.xml",
+		"comp2804/midterm-winter-2018/w18m13.xml",
+		"comp2804/midterm-winter-2018/w18m14.xml",
+		"comp2804/midterm-winter-2018/w18m15.xml",
+		"comp2804/midterm-winter-2018/w18m16.xml"
+	]
+}

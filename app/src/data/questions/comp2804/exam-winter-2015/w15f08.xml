@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider the following recursive function:
+		[defs]
+		  f(0) = $7$,
+		  f(n) = $f(n - 1) + 6n - 3\; \ \text{for all}$ $\mathrm{integers}\ n \geq 1$.
+		[/defs]
+		Which of the following is true??
+	]]>
+	</question>
+	<answer correct="false">For all $n \geq 0$: $f(n) = 2n^2 + 7$</answer>
+	<answer correct="true">For all $n \geq 0$: $f(n) = 3n^2 + 7$</answer>
+	<answer correct="false">For all $n \geq 0$: $f(n) = 4n^2 + 7$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

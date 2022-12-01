@@ -1,0 +1,24 @@
+{ 
+    "id": "midterm-fall-2019",
+    "title": "Fall 2019 Midterm",
+    "Author": "Michiel Smid",
+    "questions": [
+		"comp2804/midterm-fall-2019/f19m01.xml",
+		"comp2804/midterm-fall-2019/f19m02.xml",
+		"comp2804/midterm-fall-2019/f19m03.xml",
+		"comp2804/midterm-fall-2019/f19m04.xml",
+		"comp2804/midterm-fall-2019/f19m05.xml",
+		"comp2804/midterm-fall-2019/f19m06.xml",
+		"comp2804/midterm-fall-2019/f19m07.xml",
+		"comp2804/midterm-fall-2019/f19m08.xml",
+		"comp2804/midterm-fall-2019/f19m09.xml",
+		"comp2804/midterm-fall-2019/f19m10.xml",
+		"comp2804/midterm-fall-2019/f19m11.xml",
+		"comp2804/midterm-fall-2019/f19m12.xml",
+		"comp2804/midterm-fall-2019/f19m13.xml",
+		"comp2804/midterm-fall-2019/f19m14.xml",
+		"comp2804/midterm-fall-2019/f19m15.xml",
+		"comp2804/midterm-fall-2019/f19m16.xml",
+		"comp2804/midterm-fall-2019/f19m17.xml"
+	]
+}

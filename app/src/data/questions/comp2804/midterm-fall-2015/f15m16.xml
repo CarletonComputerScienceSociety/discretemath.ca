@@ -1,0 +1,19 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You roll a fair 6-sided die twice. Define the events
+		[defs]
+		  A = "the sum of the results of the two rolls is 7"
+		[/defs]
+		and
+		[defs]
+		  B = "the result of the first roll is 3".
+		[/defs]
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="true">$\Pr(A) = \Pr(B)$</answer>
+	<answer correct="false">$\Pr(A) &lt; \Pr(B)$</answer>
+	<answer correct="false">$\Pr(A) &gt; \Pr(B)$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

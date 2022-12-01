@@ -1,0 +1,20 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given a fair red die and a fair blue die. You roll each die once, independently of each
+		other. Let $(i,j)$ be the outcome, where $i$ is the result of the red die and $j$ is the result of
+		the blue die. Define the random variables
+		$$
+			X = i + j
+		$$
+		and
+		$$
+			Y = i - j.
+		$$
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">The random variables $X$ and $Y$ are independent.</answer>
+	<answer correct="true">The random variables $X$ and $Y$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

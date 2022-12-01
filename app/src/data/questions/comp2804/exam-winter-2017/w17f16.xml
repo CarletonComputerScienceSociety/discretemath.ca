@@ -1,0 +1,19 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $A$ and $B$ be two events in some sample space. You are given that
+		$$
+			\begin{align}
+			\Pr(A|B) &= \Pr(B|A), \\
+			\Pr(A \cup B) &= 1, \\
+			\Pr(A \cap B) &> 0.
+			\end{align}
+		$$
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">$\Pr(A) &lt; 1/2$</answer>
+	<answer correct="true">$\Pr(A) > 1/2$</answer>
+	<answer correct="false">$\Pr(A) &lt; 1$</answer>
+	<answer correct="false">$\Pr(A) > 0$</answer>
+</multiple-choice>

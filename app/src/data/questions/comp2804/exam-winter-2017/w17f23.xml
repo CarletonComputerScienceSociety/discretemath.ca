@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Is the following statement true or false?
+		<p align="center">
+			For any two random variables $X$ and $Y$,
+			$\mathbb{E}(X \cdot Y) = \mathbb{E}(X) \cdot \mathbb{E}(Y)$.
+		</p>
+	]]>
+	</question>
+	<answer correct="false">The statement is true.</answer>
+	<answer correct="true">The statement is false.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

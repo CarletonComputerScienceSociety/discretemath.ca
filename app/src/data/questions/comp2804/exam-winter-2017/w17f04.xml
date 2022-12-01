@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A bitstring $b_1b_2 \dots b_n$ is called a palindrome if $b_1b_2 \dots b_n = b_nb_{n-1} \dots b_1$, i.e.,
+		reading the string from left to right gives the same result as reading it from right to left. Let
+		$n \geq 3$ be an odd integer. How many palindromes of length $n$ are there?
+	]]>
+	</question>
+	<answer correct="false">$2^{n-1}$</answer>
+	<answer correct="false">$2^{n-2}$</answer>
+	<answer correct="false">$2^{(n-1)/2}$</answer>
+	<answer correct="true">$2^{(n+1)/2}$</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 13$ be an integer. What is the number of bitstrings of length $n$ that have exactly
+		seven 0's or exactly five 1's?
+	]]>
+	</question>
+	<answer correct="false">${n \choose 12} \cdot {12 \choose 7}$</answer>
+	<answer correct="true">${n \choose 7} + {n \choose 5}$</answer>
+	<answer correct="false">${n \choose 7} + {n \choose 5} - {n \choose 5} \cdot {n - 5 \choose 7}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

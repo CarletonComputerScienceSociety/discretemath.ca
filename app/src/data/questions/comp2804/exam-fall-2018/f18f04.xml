@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of length 70, in which each character is one of the letters $a, b, c$. How many
+		such strings have at least 3 letters $c$?
+	]]>
+	</question>
+	<answer correct="false">$3^{70} - 2^{70} - 70 \cdot 2^{69}$</answer>
+	<answer correct="true">$3^{70} - 2^{70} - 70 \cdot 2^{69} - {70 \choose 2} \cdot 2^{68}$</answer>
+	<answer correct="false">$\sum_{k=4}^{70} {70 \choose k} \cdot 2^{k}$</answer>
+	<answer correct="false">$\sum_{k=4}^{70} {70 \choose k} \cdot 2^{70-k}$</answer>
+</multiple-choice>

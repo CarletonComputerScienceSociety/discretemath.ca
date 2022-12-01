@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the coefficient of $x^{4}y^{11}$ in the expansion of $(2x - 7y)^{15}$?
+	]]>
+	</question>
+	<answer correct="false">${15 \choose 11} \cdot 2^4 \cdot 7^{11}$</answer>
+	<answer correct="true">$- {15 \choose 11} \cdot 2^4 \cdot 7^{11}$</answer>
+	<answer correct="false">${15 \choose 11} \cdot 2^{11} \cdot 7^4$</answer>
+	<answer correct="false">$- {15 \choose 11} \cdot 2^{11} \cdot 7^4$</answer>
+</multiple-choice>

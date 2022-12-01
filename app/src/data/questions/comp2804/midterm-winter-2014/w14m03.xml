@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S$ be a set of size 37, and let $x$, $y$, and $z$ be three distinct elements of $S$. How many subsets
+		of $S$ are there that contain $x$ <em>and</em> $y$, but do not contain $z$?
+	]]>
+	</question>
+	<answer correct="false">$2^{33}$</answer>
+	<answer correct="true">$2^{34}$</answer>
+	<answer correct="false">$2^{35}$</answer>
+	<answer correct="false">$2^{37} - 2^{35} - 2^{36}$</answer>
+</multiple-choice>

@@ -1,0 +1,33 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		<div hidden>
+			$\newcommand{\Silly}{{\rm S \scriptsize ILLY}}
+			 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+		</div>
+		
+		Consider the following recursive algorithm $\Silly$, which takes as input an integer $n \geq 1$ which is a power of 2:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Silly(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 1$ <br>
+			$\mathbf{then}\ \text{drink one pint of beer}$ <br>
+			$\mathbf{else}\ \mathbf{if}\ n = 2$ <br>
+			$\elsesp \mathbf{then}\ \text{fart once}$ <br>
+			$\elsesp \mathbf{else}\ \text{fart once};$ <br>
+			$\elsesp \elsesp \Silly(n / 2);$ <br>
+			$\elsesp \elsesp \text{fart once}$ <br>
+			$\elsesp \mathbf{endif}$ <br>
+			$\mathbf{endif}$
+		</p>
+		
+		For $n$ a power of 2, let $F(n)$ be the number of times you fart when running algorithm $\Silly(n)$.
+		Which of the following is true? <br>
+		(n.b., $\log$ denotes the base-2 logarithm)
+	]]>
+	</question>
+	<answer correct="false">$F(n) = \log n\ \mathrm{for}\ n \geq 1.$</answer>
+	<answer correct="false">$F(n) = 2 \log n\ \mathrm{for}\ n \geq 1.$</answer>
+	<answer correct="false">$F(n) = (2 \log n) - 1\ \mathrm{for}\ n \geq 1.$</answer>
+	<answer correct="true">$F(n) = (2 \log n) - 1\ \mathrm{for}\ n \geq 2.$</answer>
+</multiple-choice>

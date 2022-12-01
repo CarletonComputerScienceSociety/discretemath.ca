@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question><![CDATA[
+		Consider strings of length 85, in which each character is one of the letters $a,b,c,d$. <br>
+		How many such strings have exactly 15 letters $a$ or exactly 30 letters $d$?
+	]]></question>
+	<answer correct="false">${85 \choose 15} \cdot 3^{70} + {85 \choose 30} \cdot 3^{55}$</answer>
+	<answer correct="true">
+		${85 \choose 15} \cdot 3^{70} + {85 \choose 30} \cdot 3^{55} - {85 \choose 15} \cdot {70 \choose 30} \cdot 2^{40}$
+	</answer>
+	<answer correct="false">${85 \choose 15} \cdot 4^{70} + {85 \choose 30} \cdot 4^{55}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

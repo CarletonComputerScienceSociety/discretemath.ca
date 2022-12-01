@@ -1,0 +1,32 @@
+{ 
+    "id": "exam-fall-2018",
+    "title": "Fall 2018 Exam",
+    "Author": "Michiel Smid",
+    "questions": [
+		"comp2804/exam-fall-2018/f18f01.xml",
+		"comp2804/exam-fall-2018/f18f02.xml",
+		"comp2804/exam-fall-2018/f18f03.xml",
+		"comp2804/exam-fall-2018/f18f04.xml",
+		"comp2804/exam-fall-2018/f18f05.xml",
+		"comp2804/exam-fall-2018/f18f06.xml",
+		"comp2804/exam-fall-2018/f18f07.xml",
+		"comp2804/exam-fall-2018/f18f08.xml",
+		"comp2804/exam-fall-2018/f18f09.xml",
+		"comp2804/exam-fall-2018/f18f10.xml",
+		"comp2804/exam-fall-2018/f18f11.xml",
+		"comp2804/exam-fall-2018/f18f12.xml",
+		"comp2804/exam-fall-2018/f18f13.xml",
+		"comp2804/exam-fall-2018/f18f14.xml",
+		"comp2804/exam-fall-2018/f18f15.xml",
+		"comp2804/exam-fall-2018/f18f16.xml",
+		"comp2804/exam-fall-2018/f18f17.xml",
+		"comp2804/exam-fall-2018/f18f18.xml",
+		"comp2804/exam-fall-2018/f18f19.xml",
+		"comp2804/exam-fall-2018/f18f20.xml",
+		"comp2804/exam-fall-2018/f18f21.xml",
+		"comp2804/exam-fall-2018/f18f22.xml",
+		"comp2804/exam-fall-2018/f18f23.xml",
+		"comp2804/exam-fall-2018/f18f24.xml",
+		"comp2804/exam-fall-2018/f18f25.xml"
+	]
+}

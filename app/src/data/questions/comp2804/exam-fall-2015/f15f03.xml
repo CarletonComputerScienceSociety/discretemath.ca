@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many bitstrings $s_1s_2 \dots s_{20}$ of length 20 have the property that $s_1s_2s_3 = 000$ or
+		$s_2s_3s_4 = 000$?
+	]]>
+	</question>
+	<answer correct="false">$2^{17} - 2^{15}$</answer>
+	<answer correct="false">$2^{17} - 2^{16}$</answer>
+	<answer correct="true">$2^{18} - 2^{16}$</answer>
+	<answer correct="false">$2^{18} - 2^{17}$</answer>
+</multiple-choice>

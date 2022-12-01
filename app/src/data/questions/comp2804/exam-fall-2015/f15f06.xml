@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of characters, each character being $a$, $b$, or $c$, that contain at least one $a$.
+		Let $S_n$ be the number of such strings having length $n$. Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">$S_n = n \cdot 2^{n-1}$</answer>
+	<answer correct="false">$S_n = n \cdot 3^{n-1}$</answer>
+	<answer correct="false">$S_n = 3^{n} - n$</answer>
+	<answer correct="true">$S_n = 3^{n} - 2^{n}$</answer>
+</multiple-choice>

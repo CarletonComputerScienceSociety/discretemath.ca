@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A password consists of 12 or 13 characters, each character being one of the 10 digits $0,1,2,\dots,9$.
+		A password must contain the digit 7 at least once. How many passwords are there?
+	]]>
+	</question>
+	<answer correct="true">$10^{12} + 10^{13} - 9^{12} - 9^{13}$</answer>
+	<answer correct="false">$12^{10} + 13^{10} - 12^{9} - 13^{9}$</answer>
+	<answer correct="false">$10^{12} + 10^{13} - 7^{12} - 7^{13}$</answer>
+	<answer correct="false">$12^{10} + 13^{10} - 12^{7} - 13^{7}$</answer>
+</multiple-choice>

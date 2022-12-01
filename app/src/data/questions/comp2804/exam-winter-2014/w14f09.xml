@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 777$, where $x_1 \geq 0$, $x_2 \geq 0$,
+		$x_3 \geq 0$, $x_4 \geq 0$ are integers?
+	]]>
+	</question>
+	<answer correct="true">${780 \choose 3}$</answer>
+	<answer correct="false">${780 \choose 4}$</answer>
+	<answer correct="false">${781 \choose 3}$</answer>
+	<answer correct="false">${781 \choose 4}$</answer>
+</multiple-choice>

@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a
+		sum of 2's and 4's; the order in which the 2's and 4's occur in the sum matters. For example, $S_6 =
+		3$, because
+		$$
+			6 = 2 + 2 + 2 = 2 + 4 = 4 + 2.
+		$$
+		Which of the following is true for any integer $n \geq 6$?
+	]]>
+	</question>
+	<answer correct="true">$S_n = S_{n-2} + S_{n-4}$</answer>
+	<answer correct="false">$S_n = 2 \cdot S_{n-2} + S_{n-4}$</answer>
+	<answer correct="false">$S_n = S_{n-2} + 4 \cdot S_{n-4}$</answer>
+	<answer correct="false">$S_n = 2 \cdot S_{n-2} + 4 \cdot S_{n-4}$</answer>
+</multiple-choice>

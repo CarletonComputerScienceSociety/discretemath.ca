@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a set $A$ having size 7 and a set $B$ having size 9. How many functions $f : A \rightarrow B$
+		are there?
+	]]>
+	</question>
+	<answer correct="false">$7^9$</answer>
+	<answer correct="true">$9^7$</answer>
+	<answer correct="false">$7!$</answer>
+	<answer correct="false">$9!$</answer>
+</multiple-choice>

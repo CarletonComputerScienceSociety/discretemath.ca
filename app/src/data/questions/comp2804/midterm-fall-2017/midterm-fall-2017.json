@@ -1,0 +1,24 @@
+{ 
+    "id": "midterm-fall-2017",
+    "title": "Fall 2017 Midterm",
+    "Author": "Michiel Smid",
+    "questions": [
+		"comp2804/midterm-fall-2017/f17m01.xml",
+		"comp2804/midterm-fall-2017/f17m02.xml",
+		"comp2804/midterm-fall-2017/f17m03.xml",
+		"comp2804/midterm-fall-2017/f17m04.xml",
+		"comp2804/midterm-fall-2017/f17m05.xml",
+		"comp2804/midterm-fall-2017/f17m06.xml",
+		"comp2804/midterm-fall-2017/f17m07.xml",
+		"comp2804/midterm-fall-2017/f17m08.xml",
+		"comp2804/midterm-fall-2017/f17m09.xml",
+		"comp2804/midterm-fall-2017/f17m10.xml",
+		"comp2804/midterm-fall-2017/f17m11.xml",
+		"comp2804/midterm-fall-2017/f17m12.xml",
+		"comp2804/midterm-fall-2017/f17m13.xml",
+		"comp2804/midterm-fall-2017/f17m14.xml",
+		"comp2804/midterm-fall-2017/f17m15.xml",
+		"comp2804/midterm-fall-2017/f17m16.xml",
+		"comp2804/midterm-fall-2017/f17m17.xml"
+	]
+}

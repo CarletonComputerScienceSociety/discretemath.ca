@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider three people, each one having a uniformly random birthday (out of 365 days; we ignore leap
+		years). What is the probability that at least two of them have the same birthday?
+	]]>
+	</question>
+	<answer correct="false">$1 - \frac{365^2}{364 \cdot 363}$</answer>
+	<answer correct="true">$1 - \frac{364 \cdot 363}{365^2}$</answer>
+	<answer correct="false">$1 - \left. {3 \choose 2} \middle/ 365^3 \right.$</answer>
+	<answer correct="false">$1 - \left. \bigl\{ {3\choose 2} + {3 \choose 3} \bigr\} \middle/ 365^3 \right.$</answer>
+</multiple-choice>

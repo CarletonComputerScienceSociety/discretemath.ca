@@ -1,0 +1,10 @@
+<multiple-choice>
+	<question><![CDATA[
+		Consider strings of length 85, in which each character is one of the letters $a, b, c, d$.
+		How many such strings have exactly 5 letters $c$?
+	]]></question>
+	<answer correct="true">${85 \choose 5} \cdot 3^{80}$</answer>
+	<answer correct="false">${85 \choose 5} \cdot 3^{85}$</answer>
+	<answer correct="false">${85 \choose 5} \cdot 4^{80}$</answer>
+	<answer correct="false">${85 \choose 5} \cdot 4^{85}$</answer>
+</multiple-choice>

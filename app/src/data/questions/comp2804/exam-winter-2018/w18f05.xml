@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $m \geq 2$ and $n \geq 2$ be integers. What does
+		$$
+			{m \choose 2} + {n \choose 2} + m \cdot n
+		$$
+		count?
+	]]>
+	</question>
+	<answer correct="false">The number of ways to choose a subset from a set consisting of $m + n$ elements.</answer>
+	<answer correct="false">The number of ways to choose an ordered pair of 2 elements from a set consisting of $m + n$ elements.</answer>
+	<answer correct="true">The number of ways to choose a 2-element subset from a set consisting of $m + n$ elements.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

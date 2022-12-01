@@ -1,0 +1,22 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		After having proctored the midterm, Alexa, Farah, May, and Shelly decide to go trick-or-treating.
+		For any house that the ladies visit, if they do not receive candy, they throw rotten eggs at the
+		house. <br>
+		
+		Let $m \geq 7$ and $n \geq 7$ be integers. There are $m$ houses whose owners hand out candy and
+		there are $n$ houses whose owners do not hand out candy. <br>
+		
+		The ladies choose a uniformly random subset of 7 houses and visit these 7 houses. Define the event
+		[defs]
+		  A = "the ladies throw rotten eggs at exactly 2 of the 7 chosen houses".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{{m \choose 5} + {n \choose 2}}{{m+n \choose 7}}$</answer>
+	<answer correct="true">$\frac{{m \choose 5} \cdot {n \choose 2}}{{m+n \choose 7}}$</answer>
+	<answer correct="false">$\frac{{7 \choose 2}}{{m \choose 5} \cdot {n \choose 2}}$</answer>
+	<answer correct="false">$\frac{{7 \choose 2}}{{m+n \choose 7}}$</answer>
+</multiple-choice>

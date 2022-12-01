@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You flip a fair coin 15 times. Define the event
+		[defs]
+		  A = "the result of the first three flips are equal".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">1/2</answer>
+	<answer correct="true">1/4</answer>
+	<answer correct="false">1/6</answer>
+	<answer correct="false">1/8</answer>
+</multiple-choice>

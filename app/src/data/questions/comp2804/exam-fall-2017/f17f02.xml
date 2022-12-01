@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 2$ be an even integer. A permutation $a_1,a_2,\dots,a_n$ of the set $\{1,2,\dots,n\}$ is
+		called <em>awesome</em> if $a_2 = 2 \cdot a_1$. <br>
+		
+		For example, if $n = 6$, then the permutation $3,6,4,1,5,2$ is awesome, whereas the permutation
+		$3,5,4,1,6,2$ is not awesome. <br>
+		
+		How many awesome permutations of the set $\{1,2,\dots,n\}$ are there?
+	]]>
+	</question>
+	<answer correct="false">$n \cdot (n-1)!$</answer>
+	<answer correct="false">$n \cdot (n-2)!$</answer>
+	<answer correct="false">${\frac{n}{2}} \cdot (n-1)!$</answer>
+	<answer correct="true">${\frac{n}{2}} \cdot (n-2)!$</answer>
+</multiple-choice>

@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of characters, each character being $a$ or $b$, that contain exactly two $a$'s and
+		these two $a$'s are not next to each other. Let $S_n$ be the number of such strings having length
+		$n$. Which of the following is true for $n \geq 4$?
+	]]>
+	</question>
+	<answer correct="false">$S_n = {n \choose 2}$</answer>
+	<answer correct="false">$S_n = {n \choose 2} - n - 1$</answer>
+	<answer correct="false">$S_n = {n \choose 2} - n$</answer>
+	<answer correct="true">$S_n = {n \choose 2} - n + 1$</answer>
+</multiple-choice>

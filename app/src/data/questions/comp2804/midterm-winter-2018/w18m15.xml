@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given a fair die and roll it 12 times. Define the event
+		[defs]
+		  A = "there are exactly two 6's in the sequence of 12 rolls".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="true">${12 \choose 2} \cdot \left. 5^{10} \middle/ 6^{12} \right.$</answer>
+	<answer correct="false">$12^{2} \cdot \left. 5^{10} \middle/ 6^{12} \right.$</answer>
+	<answer correct="false">${12 \choose 2} \cdot \left. 5^{12} \middle/ 6^{12} \right.$</answer>
+	<answer correct="false">$12^{2} \cdot \left. 5^{12} \middle/ 6^{12} \right.$</answer>
+</multiple-choice>

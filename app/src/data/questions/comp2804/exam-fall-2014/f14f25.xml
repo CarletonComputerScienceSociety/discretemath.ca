@@ -1,0 +1,7 @@
+<multiple-choice>
+	<question>Who invented the Fibonacci numbers?</question>
+	<answer correct="false">Justin Bieber</answer>
+	<answer correct="false">Britney Spears</answer>
+	<answer correct="true">Fibonacci</answer>
+	<answer correct="false">Carl Friedrich Gauss</answer>
+</multiple-choice>

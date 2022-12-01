@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a group consisting of 7 girls and 6 boys. Elisa is one of the girls. How many ways are
+		there to arrange these 13 people on a horizontal line such that Elisa has 2 neighbors, both of whom
+		are girls? (The order on the line matters.)
+	]]>
+	</question>
+	<answer correct="false">$11 \cdot {6 \choose 2} \cdot 10!$</answer>
+	<answer correct="true">$11 \cdot 6 \cdot 5 \cdot 10!$</answer>
+	<answer correct="false">$12 \cdot 6 \cdot 5 \cdot 10!$</answer>
+	<answer correct="false">$13 \cdot 6 \cdot 5 \cdot 10!$</answer>
+</multiple-choice>

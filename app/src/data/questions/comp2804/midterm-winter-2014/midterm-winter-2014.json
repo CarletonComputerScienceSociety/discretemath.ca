@@ -1,0 +1,24 @@
+{ 
+    "id": "midterm-winter-2014",
+    "title": "Winter 2014 Midterm",
+    "Author": "Michiel Smid",
+    "questions": [
+		"comp2804/midterm-winter-2014/w14m01.xml",
+		"comp2804/midterm-winter-2014/w14m02.xml",
+		"comp2804/midterm-winter-2014/w14m03.xml",
+		"comp2804/midterm-winter-2014/w14m04.xml",
+		"comp2804/midterm-winter-2014/w14m05.xml",
+		"comp2804/midterm-winter-2014/w14m06.xml",
+		"comp2804/midterm-winter-2014/w14m07.xml",
+		"comp2804/midterm-winter-2014/w14m08.xml",
+		"comp2804/midterm-winter-2014/w14m09.xml",
+		"comp2804/midterm-winter-2014/w14m10.xml",
+		"comp2804/midterm-winter-2014/w14m11.xml",
+		"comp2804/midterm-winter-2014/w14m12.xml",
+		"comp2804/midterm-winter-2014/w14m13.xml",
+		"comp2804/midterm-winter-2014/w14m14.xml",
+		"comp2804/midterm-winter-2014/w14m15.xml",
+		"comp2804/midterm-winter-2014/w14m16.xml",
+		"comp2804/midterm-winter-2014/w14m17.xml"
+	]
+}

@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a group of $n$ people, let $k$ be an integer with $1 \leq k \leq n$, and consider a
+		circular table with $k$ chairs around it. We select $k$ people and seat them around this table. How
+		many different seating arrangements are there? (Two seating arrangements $A$ and $B$ are the same if
+		for each person, the clockwise neighbor in $A$ is the same as the clockwise neighbor in $B$, and the
+		counterclockwise neighbor in $A$ is the same as the counterclockwise neighbor in $B$.)
+	]]>
+	</question>
+	<answer correct="true">$\frac{n!}{k(n-k)!}$</answer>
+	<answer correct="false">$\frac{n!}{k!(n-k)!}$</answer>
+	<answer correct="false">$\frac{n!}{(n-k)!}$</answer>
+	<answer correct="false">$\frac{2 \cdot n!}{(n-k)!}$</answer>
+</multiple-choice>

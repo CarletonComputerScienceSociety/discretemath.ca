@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You flip a fair coin 5 times. What is the probability that the first flip results in heads or the
+		fifth flip results in heads?
+	]]>
+	</question>
+	<answer correct="false">1/4</answer>
+	<answer correct="false">1/2</answer>
+	<answer correct="true">3/4</answer>
+	<answer correct="false">1</answer>
+</multiple-choice>

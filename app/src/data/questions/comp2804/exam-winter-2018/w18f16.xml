@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You flip a fair coin five times; these five flips are independent. Define the events
+		[defs]
+		  A = "the first three flips result in $HHH$",
+		  B = "the number of $T$ in these five flips is at least two".
+		[/defs]
+		Which of the following is correct?
+	]]>
+	</question>
+	<answer correct="false">The events $A$ and $B$ are independent.</answer>
+	<answer correct="true">The events $A$ and $B$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+	<answer correct="false">All of the above.</answer>
+</multiple-choice>

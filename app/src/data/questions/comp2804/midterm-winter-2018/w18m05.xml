@@ -1,0 +1,20 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In a group of 100 people,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				60 do not like Donald Trump and do not like Kim Jong Un, and
+			</li>
+			<li>
+				25 like Kim Jong Un.
+			</li>
+		</ul>
+		How many people in this group like Donald Trump and do not like Kim Jong Un?
+	]]>
+	</question>
+	<answer correct="false">10</answer>
+	<answer correct="true">15</answer>
+	<answer correct="false">20</answer>
+	<answer correct="false">25</answer>
+</multiple-choice>

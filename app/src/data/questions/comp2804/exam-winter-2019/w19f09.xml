@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question><![CDATA[
+		Consider bitstrings that do not contain 011 and have 1 at every even position.
+		(The positions are numbered $1,2,3,...$). Let $S_n$ be the number of such strings having
+		length $n$. Which of the following is true for any $n \geq 3$?
+	]]></question>
+	<answer correct="false">$S_n = 1 + S_{n - 1}$</answer>
+	<answer correct="true">$S_n = 1 + S_{n - 2}$</answer>
+	<answer correct="false">$S_n = S_{n - 1} + S_{n - 3}$</answer>
+	<answer correct="false">$S_n = S_{n - 2} + S_{n - 3}$</answer>
+</multiple-choice>

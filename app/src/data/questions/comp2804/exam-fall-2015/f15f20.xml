@@ -1,0 +1,19 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You repeatedly, and independently, flip three fair coins, until there are exactly two heads among
+		the three flips. Define the random variable $X$ to be the total number of coin flips.
+		For example, if the coin flips result in
+		$$
+		(TTT), (THT), (HHH), (HTH),
+		$$
+		then $X = 12$. <br>
+		
+		What is the expected value $\mathbb{E}(X)$ of $X$?
+	]]>
+	</question>
+	<answer correct="false">3/8</answer>
+	<answer correct="false">8/3</answer>
+	<answer correct="true">8</answer>
+	<answer correct="false">12</answer>
+</multiple-choice>

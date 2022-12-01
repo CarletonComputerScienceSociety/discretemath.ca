@@ -1,0 +1,28 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider the set $S = \{1,2,3,...,10\}$. You choose a uniformly random element $z$ in $S$.
+		Define the random variables
+		$$
+			X = 
+			\begin{cases}
+			0\; \ \text{if \(z\) is even}, \\
+			1\; \ \text{if \(z\) is odd}
+			\end{cases}
+		$$
+		and
+		$$
+			Y = 
+			\begin{cases}
+			0\; \ \mathrm{if}\ z \in \{1,2\}, \\
+			1\; \ \mathrm{if}\ z \in \{3,4,5,6\}, \\
+			2\; \ \mathrm{if}\ z \in \{7,8,9,10\}.
+			\end{cases}
+		$$
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="true">The random variables $X$ and $Y$ are independent.</answer>
+	<answer correct="false">The random variables $X$ and $Y$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

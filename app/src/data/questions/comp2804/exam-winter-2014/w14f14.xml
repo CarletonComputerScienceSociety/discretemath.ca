@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We flip a fair coin repeatedly and independently, resulting in a sequence of heads ($H$) and tails
+		($T$). We stop flipping the coin as soon as this sequence contains $H$ or $TTTT$. What is the
+		probability that this sequence contains at most two $T$s?
+	]]>
+	</question>
+	<answer correct="false">4/8</answer>
+	<answer correct="false">5/8</answer>
+	<answer correct="false">6/8</answer>
+	<answer correct="true">7/8</answer>
+</multiple-choice>

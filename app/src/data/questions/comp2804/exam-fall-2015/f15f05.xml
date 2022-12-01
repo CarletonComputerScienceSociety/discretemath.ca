@@ -1,0 +1,23 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In a group of 30 people,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				10 are blond,
+			</li>
+			<li>
+				20 have green eyes,
+			</li>
+			<li>
+				9 are not blond and do not have green eyes.
+			</li>
+		</ul>
+		How many people in this group are blond and have green eyes?
+	]]>
+	</question>
+	<answer correct="false">8</answer>
+	<answer correct="true">9</answer>
+	<answer correct="false">10</answer>
+	<answer correct="false">11</answer>
+</multiple-choice>

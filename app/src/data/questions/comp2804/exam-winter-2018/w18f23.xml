@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider the following statement: For any three random variables $X$, $Y$, and $Z$,
+		
+		[defs]
+		  \mathbb{E}(\min(X,Y,Z)) = $\min(\mathbb{E}(X), \mathbb{E}(Y),$ $\mathbb{E}(Z)).$
+		[/defs]
+		
+		Which of the following is correct?
+	]]>
+	</question>
+	<answer correct="false">The statement is true.</answer>
+	<answer correct="true">The statement is false.</answer>
+	<answer correct="false">None of the above.</answer>
+	<answer correct="false">All of the above.</answer>
+</multiple-choice>

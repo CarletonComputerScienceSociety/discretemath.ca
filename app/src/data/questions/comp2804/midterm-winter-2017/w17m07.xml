@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $m \geq 2$ and $n \geq 2$ be integers. What does
+		$$
+			{m \choose 2} + {n \choose 2} + mn
+		$$
+		count?
+	]]>
+	</question>
+	<answer correct="false">The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ must be a man and $y$ must be a woman.</answer>
+	<answer correct="false">The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ and $y$ cannot both be men.</answer>
+	<answer correct="false">The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women, where at least one man must be chosen.</answer>
+	<answer correct="true">The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women.</answer>
+</multiple-choice>

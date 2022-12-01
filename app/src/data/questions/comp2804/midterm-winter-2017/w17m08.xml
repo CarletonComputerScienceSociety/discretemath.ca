@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Each student has a student number which is a string of five digits, in which no digit occurs more
+		than once. Thus, 94631 is a valid student number, whereas 94641 is not valid. <br>
+		
+		What is the minimum number of students such that we can guarantee that at least two of them have the
+		same student number?
+	]]>
+	</question>
+	<answer correct="false">$1 + 10^{5}$</answer>
+	<answer correct="false">$1 + 5^{10}$</answer>
+	<answer correct="true">$1 + \frac{10!}{5!}$</answer>
+	<answer correct="false">$1 + \frac{5!}{10!}$</answer>
+</multiple-choice>

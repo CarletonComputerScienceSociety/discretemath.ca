@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of length six consisting of the characters $a$, $b$, $c$, and $d$. How many such
+		strings are there that start with $abc$ or end with $cccc$?
+	]]>
+	</question>
+	<answer correct="true">79</answer>
+	<answer correct="false">80</answer>
+	<answer correct="false">81</answer>
+	<answer correct="false">82</answer>
+</multiple-choice>

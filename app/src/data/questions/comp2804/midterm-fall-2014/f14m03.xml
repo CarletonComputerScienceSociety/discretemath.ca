@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider 17 boys and 17 girls. How many ways are there to arrange them on a line if all boys are
+		standing next to each other and all girls are standing next to each other?
+	]]>
+	</question>
+	<answer correct="false">$17! + 17!$</answer>
+	<answer correct="false">$2(17! + 17!)$</answer>
+	<answer correct="false">$(17!)^2$</answer>
+	<answer correct="true">$2(17!)^2$</answer>
+</multiple-choice>

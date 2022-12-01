@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many strings can be obtained by rearranging the letters of the word
+		<p style="text-align: center;">
+			POOPERSCOOPER
+		</p>
+	]]>
+	</question>
+	<answer correct="false">$13!$</answer>
+	<answer correct="false">${13 \choose 4}{13 \choose 3}{13 \choose 2}{13 \choose 2}{13 \choose 1}$</answer>
+	<answer correct="false">${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}$</answer>
+	<answer correct="true">${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}{2 \choose 1}$</answer>
+</multiple-choice>

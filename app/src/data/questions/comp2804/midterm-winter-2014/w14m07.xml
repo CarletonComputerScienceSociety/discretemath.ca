@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the coefficient of $x^{9}y^{16}$ in the expansion of $(7x + 21y)^{25}$?
+	]]>
+	</question>
+	<answer correct="false">${25 \choose 16} 7^{16}21^{9}$</answer>
+	<answer correct="false">${16 \choose 25} 7^{9}21^{16}$</answer>
+	<answer correct="true">${25 \choose 16} 7^{25}3^{16}$</answer>
+	<answer correct="false">none of the above</answer>
+</multiple-choice>

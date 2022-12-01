@@ -1,0 +1,24 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings consisting of 40 characters, where each character is one of the letters $a$, $b$, and
+		$c$. Such a string is called <em>cool</em> if
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				it contains exactly 8 many $a$'s
+			</li>
+		</ul>
+		or
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				it contains exactly 7 many $b$'s.
+			</li>
+		</ul>
+		How many cool strings are there?
+	]]>
+	</question>
+	<answer correct="false">${{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33}}$</answer>
+	<answer correct="false">${{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33} - {40 \choose 15} \cdot {15 \choose 8} \cdot 2^{25}}$</answer>
+	<answer correct="true">${{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33} - {40 \choose 15} \cdot {15 \choose 8}}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

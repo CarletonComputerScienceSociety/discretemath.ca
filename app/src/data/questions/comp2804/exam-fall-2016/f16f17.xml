@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $X = \{1,2,\dots,100\}$. We choose a uniformly random subset $Y$ of $X$ having size 17. Define the event
+		[defs]
+		  A = "$4 \in Y$ or $7 \in Y$".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">$1 - \frac{{98}\choose{15}}{{100}\choose{17}}$</answer>
+	<answer correct="false">$1 - \frac{{100 \choose 2} \cdot {98 \choose 15}}{100 \choose 17}$</answer>
+	<answer correct="false">$\frac{2 \cdot {99 \choose 16}}{100 \choose 17}$</answer>
+	<answer correct="true">$\frac{2 \cdot {99 \choose 16} - {98 \choose 15}}{100 \choose 17}$</answer>
+</multiple-choice>

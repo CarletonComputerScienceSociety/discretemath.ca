@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider two events $A$ and $B$ in a sample space $S$. You are given that $\Pr(B) = 2/3$ and
+		$\Pr(A|B) = 4/5$. What is $\Pr(A \cap B)$?
+	]]>
+	</question>
+	<answer correct="false">5/15</answer>
+	<answer correct="false">6/15</answer>
+	<answer correct="false">7/15</answer>
+	<answer correct="true">8/15</answer>
+</multiple-choice>

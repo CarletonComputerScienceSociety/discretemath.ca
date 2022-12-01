@@ -1,0 +1,19 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		<div hidden>
+			$\newcommand{\Silly}{{\rm S \scriptsize ILLY}}$
+		</div>
+		
+		What does
+		$$
+			\sum_{k=2}^{n-1} (k-1)(n-k)
+		$$
+		count?
+	]]>
+	</question>
+	<answer correct="false">The number of 3-element subsets of an $(n-1)$-element set.</answer>
+	<answer correct="true">The number of 3-element subsets of an $n$-element set.</answer>
+	<answer correct="false">The number of 3-element subsets of an $(n+1)$-element set.</answer>
+	<answer correct="false">The number of times you fart when running algorithm $\Silly(n)$.</answer>
+</multiple-choice>

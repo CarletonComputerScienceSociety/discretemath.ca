@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the coefficient of $x^{24}y^{26}$ in the expansion of $(5x - 7y)^{50}$?
+	]]>
+	</question>
+	<answer correct="false">$- {50 \choose 24} \cdot 5^{26} \cdot 7^{24}$</answer>
+	<answer correct="false">$- {50 \choose 26} \cdot 5^{24} \cdot 7^{26}$</answer>
+	<answer correct="false">${50 \choose 24} \cdot 5^{26} \cdot 7^{24}$</answer>
+	<answer correct="true">${50 \choose 26} \cdot 5^{24} \cdot 7^{26}$</answer>
+</multiple-choice>

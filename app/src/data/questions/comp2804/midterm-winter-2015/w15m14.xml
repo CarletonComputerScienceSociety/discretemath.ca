@@ -1,0 +1,31 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		<div hidden>
+			$\newcommand{\NationalAnthem}{{\rm N {\scriptsize ATIONAL} A {\scriptsize NTHEM}}}
+			 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+		</div>
+		
+		Consider the following recursive algorithm $\NationalAnthem$, which takes as input an integer $n \geq 1$,
+		which is a power of 2:
+		
+		<p>
+			$\mathbf{Algorithm}\ \NationalAnthem(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 1$ <br>
+			$\mathbf{then}\ \mathrm{sing}\ {\it O\ Canada}\ \mathrm{once}$ <br>
+			$\mathbf{else}\ \NationalAnthem(n / 2);$ <br>
+			$\elsesp \mathrm{sing}\ {\it O\ Canada}\ \mathrm{once};$ <br>
+			$\elsesp \NationalAnthem(n / 2)$ <br>
+			$\mathbf{endif}$
+		</p>
+		
+		For $n$ a power of 2, let $S(n)$ be the number of times you sing <em>O Canada</em> when running algorithm
+		$\NationalAnthem(n)$. Which of the following is true? <br>
+		(n.b., $\log$ denotes the base-2 logarithm)
+	]]>
+	</question>
+	<answer correct="false">$S(n) = 1 + \log n$</answer>
+	<answer correct="false">$S(n) = 1 + n \log n$</answer>
+	<answer correct="false">$S(n) = 2n + 1$</answer>
+	<answer correct="true">$S(n) = 2n - 1$</answer>
+</multiple-choice>

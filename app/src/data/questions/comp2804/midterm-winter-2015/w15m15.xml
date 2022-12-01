@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You flip a fair coin 5 times. Define the event
+		[defs]
+		  A = "the number of heads is odd".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">3/8</answer>
+	<answer correct="true">4/8</answer>
+	<answer correct="false">5/8</answer>
+	<answer correct="false">6/8</answer>
+</multiple-choice>

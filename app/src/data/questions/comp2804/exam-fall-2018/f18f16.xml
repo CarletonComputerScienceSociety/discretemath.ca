@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You flip a fair coin three times; these three flips are independent. Define the events
+		[defs]
+		  A = "the number of heads in these three flips is even",
+		  B = "the number of tails in these three flips is at most one".
+		[/defs]
+		(Remember that 0 is even.) Which of the following is correct?
+	]]>
+	</question>
+	<answer correct="false">The events $A$ and $B$ are independent.</answer>
+	<answer correct="true">The events $A$ and $B$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+	<answer correct="false">All of the above.</answer>
+</multiple-choice>

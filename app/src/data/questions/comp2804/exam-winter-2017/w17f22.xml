@@ -1,0 +1,38 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		<div hidden>
+			$\newcommand{\TwoTails}{{\rm T {\scriptsize WO} T {\scriptsize AILS}}}$
+		</div>
+		
+		Consider the following recursive algorithm $\TwoTails$, which takes as input a positive integer $k$:
+		
+		<div style="margin: 1rem 0;">
+			$\mathbf{Algorithm}\ \TwoTails(k)\mathrm{:}$ <br>
+			<table>
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$//$</td>
+						<td>
+							$\text{all coin flips made are mutually}$ $\text{independent}$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			$\text{flip a fair coin twice};$ <br>
+			$\mathbf{if}\ \text{the coin came up heads exactly twice}$ <br>
+			$\mathbf{then}\ \mathrm{return}\ 2^k$ <br>
+			$\mathbf{else}\ \TwoTails(k + 1)$ <br>
+			$\mathbf{endif}$ <br>
+		</div>
+		
+		You run algorithm $\TwoTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the
+		output of this algorithm. <br>
+		Let $m \geq 1$ be an integer. What is $\Pr(X = 2^m)$?
+	]]>
+	</question>
+	<answer correct="false">$(1/4)^{m} \cdot 3/4$</answer>
+	<answer correct="false">$(1/4)^{m-1} \cdot 3/4$</answer>
+	<answer correct="false">$(3/4)^{m} \cdot 1/4$</answer>
+	<answer correct="true">$(3/4)^{m-1} \cdot 1/4$</answer>
+</multiple-choice>

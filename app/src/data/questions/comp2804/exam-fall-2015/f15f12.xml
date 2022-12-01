@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A bowl contains 5 red balls and 7 blue balls. We choose a uniformly random subset of 3 balls. Define the event
+		[defs]
+		  A = "exactly 2 of the chosen balls are red".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{{5 \choose 2}}{{12 \choose 3}}$</answer>
+	<answer correct="false">$\frac{5 \cdot {7 \choose 2}}{{12 \choose 3}}$</answer>
+	<answer correct="true">$\frac{{5 \choose 2} \cdot 7}{{12 \choose 3}}$</answer>
+	<answer correct="false">$\frac{{7 \choose 2}}{{12 \choose 3}}$</answer>
+</multiple-choice>

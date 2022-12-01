@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What does
+		$$
+			\sum_{k=1}^{m} {m \choose k}
+		$$
+		count?
+	]]>
+	</question>
+	<answer correct="true">The number of non-empty subsets of a set of size $m$.</answer>
+	<answer correct="false">The number of subsets of a set of size $m$.</answer>
+	<answer correct="false">The number of bitstrings of length $m$ having exactly $k$ many 1s.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

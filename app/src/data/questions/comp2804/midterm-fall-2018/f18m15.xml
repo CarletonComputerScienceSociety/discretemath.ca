@@ -1,0 +1,29 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The Carleton Computer Science Society is organizing their annual Halloween party. At this party,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				one student is dressed up as Donald Trump,
+			</li>
+			<li>
+				one student is dressed up as Kim Jong Un,
+			</li>
+			<li>
+				the remaining 57 students are dressed up as Kim Kardashian.
+			</li>
+		</ul>
+		These students are arranged, uniformly at random, on a line.
+		<br/>
+		Define the event,
+		[defs]
+		  A = "Donald Trump is standing next to Kim Jong Un".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">1/58</answer>
+	<answer correct="false">2/58</answer>
+	<answer correct="false">1/59</answer>
+	<answer correct="true">2/59</answer>
+</multiple-choice>

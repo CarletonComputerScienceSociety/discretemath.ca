@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the coefficient of $x^{20}y^{80}$ in the expansion of $(5x - 3y)^{100}$?
+	]]>
+	</question>
+	<answer correct="false">$-{100 \choose 80} 5^{20}3^{80}$</answer>
+	<answer correct="true">${100 \choose 80} 5^{20}3^{80}$</answer>
+	<answer correct="false">${100 \choose 80} 5^{80}3^{20}$</answer>
+	<answer correct="false">${80 \choose 100} 5^{20}3^{80}$</answer>
+</multiple-choice>

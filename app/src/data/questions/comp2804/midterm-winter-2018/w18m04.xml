@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $b \geq 1$ and $c \geq 1$ be integers. Elisa Kazan's neighborhood pub serves $b$ different types
+		of beer and $c$ different types of cider. Elisa invites 6 friends to this pub and orders 7 drinks,
+		one drink (beer or cider) for each friend, and one cider for herself. Different people may get the
+		same type of beer or cider. <br>
+		
+		In how many ways can Elisa place these orders, such that exactly 4 people get a beer?
+	]]>
+	</question>
+	<answer correct="false">${6 \choose 4} \cdot b^{4} \cdot c^{2}$</answer>
+	<answer correct="true">${6 \choose 4} \cdot b^{4} \cdot c^{3}$</answer>
+	<answer correct="false">${7 \choose 4} \cdot b^{4} \cdot c^{3}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

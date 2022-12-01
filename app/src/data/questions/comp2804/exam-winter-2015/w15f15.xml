@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S$ be a set of 100 integers; 30 of these are positive and the other 70 integers in $S$ are
+		negative. We choose, uniformly at random, a 20-element subset of $S$. Let $x$ be the product of the
+		integers in the chosen subset. What is the probability that $x &gt; 0$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{1}{{100 \choose 20}} \sum_{k=0}^{20} \left({70 \choose k} + {30 \choose 20 - k}\right)$</answer>
+	<answer correct="false">$\frac{1}{{100 \choose 20}} \sum_{k=0}^{20} {70 \choose k}{30 \choose 20 - k}$</answer>
+	<answer correct="false">$\frac{1}{{100 \choose 20}} \sum_{k=0}^{10} \left({70 \choose 2k} + {30 \choose 20 - 2k}\right)$</answer>
+	<answer correct="true">$\frac{1}{{100 \choose 20}} \sum_{k=0}^{10} {70 \choose 2k}{30 \choose 20 - 2k}$</answer>
+</multiple-choice>

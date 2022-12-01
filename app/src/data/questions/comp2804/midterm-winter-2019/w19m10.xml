@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A bitstring is called 00-<em>free</em>, if it does not contain two 0's next to each other.
+		In class, we have seen that for any $m \geq 1$,
+		the number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number
+		$f_{m+2}$. <br>
+		What is the number of 00-free bitstrings of length 77 that have 0 at position 59? (The positions are numbered $1,2,\dots,77$.)
+	]]>
+	</question>
+	<answer correct="false">$f_{17} \cdot f_{57}$</answer>
+	<answer correct="false">$f_{18} \cdot f_{58}$</answer>
+	<answer correct="true">$f_{19} \cdot f_{59}$</answer>
+	<answer correct="false">$f_{20} \cdot f_{60}$</answer>
+</multiple-choice>

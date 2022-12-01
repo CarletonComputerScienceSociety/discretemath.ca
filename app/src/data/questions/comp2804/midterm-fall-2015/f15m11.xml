@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S_n$ be the number of bitstrings of length $n$ that contain the substring 0000. Which of the
+		following is true?
+	]]>
+	</question>
+	<answer correct="false">$S_n = S_{n-1} + S_{n-2} + S_{n-3} + S_{n-4}$</answer>
+	<answer correct="true">$S_n = S_{n-1} + S_{n-2} + S_{n-3} + S_{n-4}\ +$ $ 2^{n-4}$</answer>
+	<answer correct="false">$S_n = S_{n-1} + S_{n-2} + S_{n-3}$</answer>
+	<answer correct="false">$S_n = S_{n-1} + S_{n-2} + S_{n-3} + 2^{n-3}$</answer>
+</multiple-choice>

@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider $m \geq 7$ blue balls $B_1,B_2,\dots,B_m$ and $n \geq 7$ red balls $R_1,R_2,\dots,R_n$.
+		We pick 7 balls of the same color and arrange them on a horizontal line. (The order on the line
+		matters.) How many arrangements are there?
+	]]>
+	</question>
+	<answer correct="true">$7!{m \choose 7} + 7!{n \choose 7}$</answer>
+	<answer correct="false">$m!{m \choose 7} + n!{n \choose 7}$</answer>
+	<answer correct="false">$7!{m + n \choose 7}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

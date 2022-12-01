@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+		$$
+			\begin{align}
+			f(0) &= 8 \\
+			f(n) &= f(n - 1) + 6n - 8\; \ \mathrm{for}\ n \geq 1
+			\end{align}
+		$$
+		What is $f(n)$?
+	]]>
+	</question>
+	<answer correct="false">$f(n) = 2n^{2} - 5n + 7$</answer>
+	<answer correct="false">$f(n) = 2n^{2} - 5n + 8$</answer>
+	<answer correct="true">$f(n) = 3n^{2} - 5n + 8$</answer>
+	<answer correct="false">$f(n) = 4n^{2} - 5n + 8$</answer>
+</multiple-choice>

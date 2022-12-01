@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $A = \{1,2,3,\dots,100\}$. Let $x$, $y$, and $z$ be elements in $A$ that are chosen independently
+		and uniformly at random. What is the probability that $x = y = z$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{1}{100}$</answer>
+	<answer correct="false">$\frac{1}{100 \cdot 99}$</answer>
+	<answer correct="true">$\frac{1}{100 \cdot 100}$</answer>
+	<answer correct="false">$\frac{1}{{100 \choose 2}}$</answer>
+</multiple-choice>

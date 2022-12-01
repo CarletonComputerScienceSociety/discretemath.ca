@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We choose a bitstring of length 25 uniformly at random. What is the probability that this string
+		contains at least two 1s?
+	]]>
+	</question>
+	<answer correct="true">$1 - (1/2)^{25} - 25(1/2)^{25}$</answer>
+	<answer correct="false">$1 + (1/2)^{25} - 25(1/2)^{25}$</answer>
+	<answer correct="false">$\sum_{k=2}^{25} {{25}\choose{k}}(1/2)^{k}$</answer>
+	<answer correct="false">none of the above</answer>
+</multiple-choice>

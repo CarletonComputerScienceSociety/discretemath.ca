@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question><![CDATA[
+		A string that is obtained by rearranging the letters of the word BOOGER is called <em>awesome</em>, if
+		the string does not contain the substring OO. Thus, GEOROB is awesome, whereas GREOOB is not awesome.
+		What is the number of awesome strings?
+	]]></question>
+	<answer correct="false">$6 \cdot {5 \choose 2} \cdot 3 \cdot 2$</answer>
+	<answer correct="true">$(6 \cdot {5 \choose 2} \cdot 3 \cdot 2) - 5!$</answer>
+	<answer correct="false">$6! - 5!$</answer>
+	<answer correct="false">$(6 \cdot {5 \choose 2} \cdot 3) - 5!$</answer>
+</multiple-choice>

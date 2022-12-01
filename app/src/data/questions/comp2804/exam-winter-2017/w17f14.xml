@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 3$ be an integer. Consider a uniformly random permutation $a_1a_2 \dots a_n$ of the set
+		$\{1,2,\dots,n\}$. Define the events
+		[defs]
+		  A = "$a_n = n$",
+		  B = "$a_2 > a_1$".
+		[/defs]
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="true">The events $A$ and $B$ are independent.</answer>
+	<answer correct="false">The events $A$ and $B$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

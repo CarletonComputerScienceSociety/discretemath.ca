@@ -1,0 +1,32 @@
+{ 
+    "id": "exam-winter-2015",
+    "title": "Winter 2015 Exam",
+    "Author": "Michiel Smid",
+    "questions": [
+		"comp2804/exam-winter-2015/w15f01.xml",
+		"comp2804/exam-winter-2015/w15f02.xml",
+		"comp2804/exam-winter-2015/w15f03.xml",
+		"comp2804/exam-winter-2015/w15f04.xml",
+		"comp2804/exam-winter-2015/w15f05.xml",
+		"comp2804/exam-winter-2015/w15f06.xml",
+		"comp2804/exam-winter-2015/w15f07.xml",
+		"comp2804/exam-winter-2015/w15f08.xml",
+		"comp2804/exam-winter-2015/w15f09.xml",
+		"comp2804/exam-winter-2015/w15f10.xml",
+		"comp2804/exam-winter-2015/w15f11.xml",
+		"comp2804/exam-winter-2015/w15f12.xml",
+		"comp2804/exam-winter-2015/w15f13.xml",
+		"comp2804/exam-winter-2015/w15f14.xml",
+		"comp2804/exam-winter-2015/w15f15.xml",
+		"comp2804/exam-winter-2015/w15f16.xml",
+		"comp2804/exam-winter-2015/w15f17.xml",
+		"comp2804/exam-winter-2015/w15f18.xml",
+		"comp2804/exam-winter-2015/w15f19.xml",
+		"comp2804/exam-winter-2015/w15f20.xml",
+		"comp2804/exam-winter-2015/w15f21.xml",
+		"comp2804/exam-winter-2015/w15f22.xml",
+		"comp2804/exam-winter-2015/w15f23.xml",
+		"comp2804/exam-winter-2015/w15f24.xml",
+		"comp2804/exam-winter-2015/w15f25.xml"
+	]
+}

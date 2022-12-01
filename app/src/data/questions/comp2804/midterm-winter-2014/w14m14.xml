@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A standard deck of 52 cards has 4 Kings. Consider a hand of 9 cards, chosen uniformly at random.
+		What is the probability that there are exactly two Kings in this hand?
+	]]>
+	</question>
+	<answer correct="false">$1 - \left. {48 \choose 7} \middle/ {52 \choose 9} \right.$</answer>
+	<answer correct="false">$\left. \bigl\{ {4 \choose 2} + {48 \choose 7} \bigr\} \middle/ {52 \choose 9} \right.$</answer>
+	<answer correct="false">$\left. {52 \choose 9} \middle/ \bigl\{ {4 \choose 2}{48 \choose 7} \bigr\} \right.$</answer>
+	<answer correct="true">$\left. {4 \choose 2}{48 \choose 7} \middle/ {52 \choose 9} \right.$</answer>
+</multiple-choice>

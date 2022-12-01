@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $V$ be a set consisting of 12 even integers and 8 odd integers. We choose a uniformly random
+		subset $W$ of $V$ having size 7. Define the event
+		[defs]
+		  A = "exactly 4 of the elements of $W$ are even".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{{12 \choose 4}+{8 \choose 3}}{20 \choose 7}$</answer>
+	<answer correct="true">$\frac{{12 \choose 4}{8 \choose 3}}{20 \choose 7}$</answer>
+	<answer correct="false">$\frac{{20 \choose 3}{17 \choose 4}}{20 \choose 7}$</answer>
+	<answer correct="false">$\frac{{20 \choose 4}{16 \choose 3}}{20 \choose 7}$</answer>
+</multiple-choice>

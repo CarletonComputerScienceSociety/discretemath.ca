@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $X = \{1,2,3,\dots,10\}$. Let $Y$ be a uniformly random subset of $X$. Define the events
+		[defs]
+		  A = "$Y$ contains at least 4 elements",
+		  B = "all elements of $Y$ are even".
+		[/defs]
+		What is $\Pr(A|B)$?
+	]]>
+	</question>
+	<answer correct="true">3/16</answer>
+	<answer correct="false">4/16</answer>
+	<answer correct="false">5/16</answer>
+	<answer correct="false">6/16</answer>
+</multiple-choice>

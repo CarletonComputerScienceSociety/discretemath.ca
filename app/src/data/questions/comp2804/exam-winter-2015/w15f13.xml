@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider three events, $A$, $B$, and $C$ in a sample space $S$. Is the following true or false?
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$\Pr\bigl(A \cup (\overline{B} \cap \overline{C})\bigr) = $</td>
+					<td>$\Pr(A) + \Pr(B)\ - $ $\Pr(C).$</td>
+				</tr>
+			</tbody>
+		</table>
+	]]>
+	</question>
+	<answer correct="false">True</answer>
+	<answer correct="true">False</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

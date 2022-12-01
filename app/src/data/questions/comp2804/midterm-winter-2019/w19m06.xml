@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 1$ be an integer. A group of $n$ students write an exam. Each student receives a grade,
+		which is an element of the set $\{A, B, C, D, F\}$. <br>
+		What is the minimum value for $n$, such that there must be at least four students who receive the same grade?
+	]]>
+	</question>
+	<answer correct="false">14</answer>
+	<answer correct="false">15</answer>
+	<answer correct="true">16</answer>
+	<answer correct="false">17</answer>
+</multiple-choice>

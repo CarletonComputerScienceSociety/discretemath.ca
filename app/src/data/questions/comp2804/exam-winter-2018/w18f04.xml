@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings consisting of 40 characters, where each character is an element of $\{a,b,c,d\}$.
+		How many such strings contain exactly five $a$'s or exactly five $c$'s?
+	]]>
+	</question>
+	<answer correct="true">$2 \cdot {40 \choose 5} \cdot 3^{35} - {40 \choose 5} \cdot {35 \choose 5} \cdot 2^{30}$</answer>
+	<answer correct="false">$2 \cdot {40 \choose 5} \cdot 3^{35}$</answer>
+	<answer correct="false">${40 \choose 5} + {35 \choose 5} - {40 \choose 5} \cdot {35 \choose 5}$</answer>
+	<answer correct="false">$2 \cdot {40 \choose 5} - {40 \choose 5} \cdot {35 \choose 5}$</answer>
+</multiple-choice>
