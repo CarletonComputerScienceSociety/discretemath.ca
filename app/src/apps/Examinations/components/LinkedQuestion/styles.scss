@@ -1,0 +1,120 @@
+.linked-question {
+  font-family: "Helvetica Neue", serif;
+  margin-left: 0.25rem;
+  width: 50rem;
+}
+
+.linked-question h2 {
+  margin-bottom: 0.5rem;
+}
+
+.linked-question-text {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+.linked-question-body {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+}
+
+.linked-question-prompts {
+  min-height: 90%;
+  margin: 5% 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.linked-question-prompt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.linked-question-prompt div.correct-option {
+  position: absolute;
+  font-weight: bold;
+  height: 100%;
+  top: 0;
+  left: -15%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(56, 232, 51);
+  font-size: 1.35rem;
+}
+
+.linked-question-prompt-body {
+  margin-left: 1rem;
+}
+
+// Style div surrounding each select element
+.select-wrapper {
+  background-color: transparent;
+  width: 4.5rem;
+  height: 2.5rem;
+  font-family: inherit;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.35rem;
+}
+
+.select-wrapper.correct {
+  background: rgb(70, 255, 60);
+}
+
+.select-wrapper.incorrect {
+  background: rgb(255, 69, 69);
+}
+
+.select-wrapper select {
+  width: 100%;
+  height: 100%;
+  padding-left: 15%;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  border: 2px solid rgb(157, 157, 157);
+  border-radius: inherit;
+  appearance: none;
+  z-index: 1;
+}
+
+.select-wrapper svg {
+  width: 20px;
+  height: 20px;
+  margin-left: -40%;
+}
+
+.select-wrapper select:focus {
+  border-radius: inherit;
+  border: 3px solid rgb(31, 107, 249);
+}
+
+.linked-question-options {
+  width: 50%;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.linked-question-options li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.linked-question-options li p {
+  font-weight: bold;
+  margin-right: 1rem;
+}

@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HomeLayout from "../layouts/HomeLayout.astro";
 import { Button } from "../components";
+import { GlobeAnimation } from "../components/GlobeAnimation";
 ---
 
 <BaseLayout title="DiscreteMath.ca">
@@ -22,7 +23,7 @@ import { Button } from "../components";
         <Button label="comp 2804" />
       </a>
     </div>
-    <div>"globe animation here"</div>
+    <GlobeAnimation client:load />
   </HomeLayout>
 </BaseLayout>
 

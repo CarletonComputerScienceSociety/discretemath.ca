@@ -17,6 +17,7 @@
     "svelte": "^3.49.0"
   },
   "dependencies": {
+    "@lottiefiles/svelte-lottie-player": "^0.2.0",
     "commander": "^9.3.0",
     "d3": "^7.6.1",
     "mathjax": "^3.2.1",
