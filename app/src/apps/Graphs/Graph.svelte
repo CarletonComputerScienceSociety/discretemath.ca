@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import * as d3 from "d3";
   import "./styles.scss";
+  import Graph from "./lib/Graph";
 
   let element;
 
@@ -12,6 +13,9 @@
     { source: 0, target: 2 },
     { source: 1, target: 2 },
   ];
+
+  // initial
+  let graph = new Graph(nodes, links);
 
   // TODO make this a component take width and height as props?
   const width = 800;
@@ -52,6 +56,11 @@
       let coordinates = d3.pointer(e, e.currentTarget);
       let newNode = { x: coordinates[0], y: coordinates[1], id: ++lastNodeId };
       nodes.push(newNode);
+
+      //test-1
+      graph.addNode(newNode);
+      console.log(graph.nodes);
+
       restart();
     }
   };
@@ -71,12 +80,24 @@
     });
 
     e.preventDefault();
+
+    //test-3
+    console.log(d);
+    graph.deleteNode(d);
+    console.log(graph.nodes, graph.links);
+
     restart();
   };
 
   const removeEdge = (e, d) => {
     links.splice(links.indexOf(d), 1);
     e.preventDefault();
+
+    //test-4
+    console.log(d);
+    graph.deleteEdge(d);
+    console.log(graph.links);
+
     restart();
   };
 
@@ -141,6 +162,10 @@
 
     let newLink = { source: mousedownNode, target: d };
     links.push(newLink);
+
+    //test-2
+    graph.addEdge(newLink);
+    console.log(graph.links);
   };
 
   const keydown = (e) => {
