@@ -6,30 +6,71 @@ import { Button } from "../components";
 
 <BaseLayout title="DiscreteMath.ca">
   <HomeLayout>
-    <img src="./images/home-page-logo.png" alt="DiscreteMath.ca" />
-    <div>Learn Without Limits.</div>
-    <div>
-      Built by Carleton students, for Carleton students. DiscreteMath.ca is an
-      interactive platform built specifically for content from Carleton's
-      discrete mathematics courses.
+    <div class="header-information">
+      <img
+        class="header-image"
+        src="./images/home-page-logo.png"
+        alt="DiscreteMath.ca"
+      />
+      <div class="header-title">Learn Without Limits.</div>
+      <div class="header-description">
+        Built by Carleton students, for Carleton students. DiscreteMath.ca is an
+        interactive platform built specifically for content from Carleton's
+        discrete mathematics courses.
+      </div>
+      <div class="home-buttons">
+        <!-- TODO: remove ./ -->
+        <a href="./comp1805">
+          <Button label="comp 1805" />
+        </a>
+        <a href="./comp2804">
+          <Button label="comp 2804" />
+        </a>
+      </div>
+      <div>"globe animation here"</div>
     </div>
-    <div class="home-buttons">
-      <!-- TODO: remove ./ -->
-      <a href="./comp1805">
-        <Button label="comp 1805" />
-      </a>
-      <a href="./comp2804">
-        <Button label="comp 2804" />
-      </a>
-    </div>
-    <div>"globe animation here"</div>
   </HomeLayout>
 </BaseLayout>
 
 <style lang="scss">
+  .header-information {
+    font-family: "Assistant", sans-serif;
+    max-width: 50rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .header-image {
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .header-title {
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .header-description {
+    max-width: 70rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+  }
   .home-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
     a {
       text-decoration: none;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .header-information {
+      margin-top: 1rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .header-image {
+      height: 3rem;
+      margin-bottom: 0.5rem;
     }
   }
 </style>
