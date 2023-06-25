@@ -6,7 +6,7 @@ DiscreteMath.ca is an interactive platform built specifically for content from C
 
 <hr>
 
-![API](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/api.yml/badge.svg) ![Client](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/client.yml/badge.svg) ![Dynamic](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/dynamic.yml/badge.svg)
+![API](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/api.yml/badge.svg) ![Client](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/app.yml/badge.svg) ![Dynamic](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/dynamic.yml/badge.svg)
 
 <hr>
 
