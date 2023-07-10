@@ -2,6 +2,7 @@
 import CourseLayout from "../layouts/CourseLayout.astro";
 import { Repository } from "../data";
 import Graph from "../apps/Graphs/Graph.svelte";
+import { ContentCard } from "../components";
 
 export function getStaticPaths() {
   return [
@@ -20,21 +21,19 @@ const data = new Repository().fetchCourse(course);
     <p>{data.description}</p>
     <h3>Tests:</h3>
     <!-- TODO: remove base link -->
-    <div>
+    <div class="content-container">
       {data.tests.map((test) => (
-        <div>
-          <a href={`/discretemath.ca/${data.id}/tests/${test.id}`}>
-            {test.title}
-          </a>
-        </div>
+        <a href={`/discretemath.ca/${data.id}/tests/${test.id}`}>
+          <ContentCard title={test.title} tag={"Test"} />
+        </a>
       ))}
     </div>
     <h3>Labs:</h3>
-    <div>
+    <div class="content-container">
       {data.labs.map((lab) => (
-        <div>
-          <a href={`/discretemath.ca/${data.id}/labs/${lab.id}`}>{lab.title}</a>
-        </div>
+        <a href={`/discretemath.ca/${data.id}/labs/${lab.id}`}>
+          <ContentCard title={lab.title} tag={"Lab"} />
+        </a>
       ))}
     </div>
     <br />
@@ -42,3 +41,26 @@ const data = new Repository().fetchCourse(course);
     <Graph client:load />
   </div>
 </CourseLayout>
+
+<style lang="scss">
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h1 {
+    font-family: Arial;
+  }
+
+  h3 {
+    font-family: Arial;
+  }
+
+  p {
+    font-family: Arial;
+  }
+</style>
