@@ -1,0 +1,549 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("c3sdC", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"exam-winter-2015","title":"Winter 2015 Exam","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tConsider a set $S$ consisting of 20 integers; 5 of these are even and the other 15 integers in $S$\n\t\tare odd. What is the number of 7-element subsets of $S$ having exactly 3 even integers?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${20 \\choose 7}$","correct":false},{"body":"${5\\choose 3} + {15 \\choose 4}$","correct":false},{"body":"${5 \\choose 3}{15 \\choose 4}$","correct":true},{"body":"${5 \\choose 4}{15 \\choose 3}$","correct":false}]},{"body":["\n\t\n\t\tConsider a set $S$ consisting of 20 integers; 5 of them are even and the other 15 integers in $S$\n\t\tare odd. What is the number of 7-element subsets of $S$ having at least 5 even integers or at least\n\t\t5 odd integers?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"\n\t\t${5 \\choose 5}{15 \\choose 2} + {5 \\choose 2}{15 \\choose 5} + {5 \\choose 1}{15 \\choose 6} + {5 \\choose 0}{15 \\choose 7}$\n\t","correct":true},{"body":"${5 \\choose 5}{15 \\choose 2} + {5 \\choose 2}{15 \\choose 5} - {5 \\choose 5}{15 \\choose 5}$","correct":false},{"body":"${20 \\choose 7} - {5 \\choose 4}{15 \\choose 4}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tHow many bitstrings of length 77 start with 1111 or end with 0000?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$2^{73} + 2^{73}$","correct":false},{"body":"$2^{74} - 2^{69}$","correct":true},{"body":"$2^{77} - 2^{69}$","correct":false},{"body":"$2^{77} - 2^{73} - 2^{73}$","correct":false}]},{"body":["\n\t\n\t\tWhat is the coefficient of $x^{4}y^{11}$ in the expansion of $(2x - 7y)^{15}$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${15 \\choose 11} \\cdot 2^4 \\cdot 7^{11}$","correct":false},{"body":"$- {15 \\choose 11} \\cdot 2^4 \\cdot 7^{11}$","correct":true},{"body":"${15 \\choose 11} \\cdot 2^{11} \\cdot 7^4$","correct":false},{"body":"$- {15 \\choose 11} \\cdot 2^{11} \\cdot 7^4$","correct":false}]},{"body":["\n\t\n\t\tIn a group of 20 people,\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t6 are blond,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t7 have green eyes,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t11 are not blond and do not have green eyes.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tHow many people in this group are blond and have green eyes?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"3","correct":false},{"body":"4","correct":true},{"body":"5","correct":false},{"body":"6","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 7$ be an integer. Why does the following equality hold:\n\t\t$\n\t\t\t{n \\choose 5}{n - 5 \\choose 2} = {n \\choose 2}{n - 2 \\choose 5}\n\t\t$\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"Because both sides count the number of pairs $(A,B)$ of subsets of the $n$ people, such that $|A| = 2$, $|B| = 5$, and $A \\subseteq B$.","correct":false},{"body":"Because both sides count the number of pairs $(A,B)$ of subsets of the $n$ people, such that $|A| = 5$, $|B| = 2$, and $A \\subseteq B$.","correct":false},{"body":"Because both sides count the number of ways to choose 2 committees in a group of $n$ people, one committee has 5 members, the other committee has 2 members, and a person can be on both committees.","correct":false},{"body":"\n\t\n\t\tBecause both sides count the number of ways to choose 2 committees in a group of $n$ people, one committee has 5 members, the other committee has 2 members, and \u003Cstrong\u003Eno\u003C\u002Fstrong\u003E person can be on both committees.\n\t\n\t","correct":true}]},{"body":["\n\t\n\t\tConsider strings of characters, each character being $a$, $b$, or $c$, that contain an odd number of\n\t\t$a$s. Let $S_n$ be the number of such strings having length $n$. Which of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = S_{n-1} + S_{n-2}$","correct":false},{"body":"$S_n = 2 \\cdot S_{n-1} + S_{n-2}$","correct":false},{"body":"$S_n = S_{n-1} + (3^{n-1} - S_{n-1})$","correct":false},{"body":"$S_n = 2 \\cdot S_{n-1} + (3^{n-1} - S_{n-1})$","correct":true}]},{"body":["\n\t\n\t\tConsider the following recursive function:\n\t\t[defs]\n\t\t  f(0) = $7$,\n\t\t  f(n) = $f(n - 1) + 6n - 3\\; \\ \\text{for all}$ $\\mathrm{integers}\\ n \\geq 1$.\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true??\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"For all $n \\geq 0$: $f(n) = 2n^2 + 7$","correct":false},{"body":"For all $n \\geq 0$: $f(n) = 3n^2 + 7$","correct":true},{"body":"For all $n \\geq 0$: $f(n) = 4n^2 + 7$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\Fib}{{\\rm F \\scriptsize IB}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the recursive algorithm $\\Fib$, which takes as input an\n\t\tinteger $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\Fib(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ f = n$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ f = \\Fib(n - 1) + \\Fib(n - 2)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{return}\\ f$ \u003Cbr\u003E\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tIf we run algorithm $\\Fib(77)$, how many calls are there to $\\Fib(73)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"3","correct":false},{"body":"4","correct":false},{"body":"5","correct":true},{"body":"6","correct":false}]},{"body":["\n\t\n\t\tLet $S$ be the set of ordered pairs of integers that is recursively defined in the following way:\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t$(1,6) \\in S$.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tIf $(a,b) \\in S$ then $(a+3, b+4) \\in S$.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tIf $(a,b) \\in S$ then $(a+5, b+2) \\in S$.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"For every element $(a,b)$ in $S$, $a + b$ is divisible by 7.","correct":true},{"body":"For every element $(a,b)$ in $S$, $a + b$ is not divisible by 7.","correct":false},{"body":"$S = \\{(a,b) : a \u003E 0$ and $b \u003E 0$ are integers and $a + b$ is divisible by 7$\\}$.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tHow many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 99$, where $x_1 \\geq 0$,\n\t\t$x_2 \\geq 0$, $x_3 \\geq 0$, $x_4 \\geq 0$ are integers?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${102 \\choose 3}$","correct":true},{"body":"${102 \\choose 4}$","correct":false},{"body":"${103 \\choose 3}$","correct":false},{"body":"${103 \\choose 4}$","correct":false}]},{"body":["\n\t\n\t\tConsider two events $A$ and $B$ in a sample space $S$. You are given that $\\Pr(B) = 2\u002F3$ and\n\t\t$\\Pr(A|B) = 4\u002F5$. What is $\\Pr(A \\cap B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"5\u002F15","correct":false},{"body":"6\u002F15","correct":false},{"body":"7\u002F15","correct":false},{"body":"8\u002F15","correct":true}]},{"body":["\n\t\n\t\tConsider three events, $A$, $B$, and $C$ in a sample space $S$. Is the following true or false?\n\t\t\u003Ctable style=\"margin: 1rem auto;\"\u003E\n\t\t\t\u003Ctbody\u003E\n\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$\\Pr\\bigl(A \\cup (\\overline{B} \\cap \\overline{C})\\bigr) = $\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003Ctd\u003E$\\Pr(A) + \\Pr(B)\\ - $ $\\Pr(C).$\u003C\u002Ftd\u003E\n\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\u003C\u002Ftbody\u003E\n\t\t\u003C\u002Ftable\u003E\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"True","correct":false},{"body":"False","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $S$ be a set of 100 integers; 30 of these are positive and the other 70 integers in $S$ are\n\t\tnegative. We choose, uniformly at random, a 20-element subset of $S$. What is the probability that\n\t\tat least one of the elements in this subset is positive?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\left. {30 \\choose 1} \\middle\u002F {100 \\choose 20} \\right.$","correct":false},{"body":"$\\left. {30 \\choose 1}{70 \\choose 19} \\middle\u002F {100 \\choose 20} \\right.$","correct":false},{"body":"$1 - \\left. {70 \\choose 20} \\middle\u002F {100 \\choose 20} \\right.$","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $S$ be a set of 100 integers; 30 of these are positive and the other 70 integers in $S$ are\n\t\tnegative. We choose, uniformly at random, a 20-element subset of $S$. Let $x$ be the product of the\n\t\tintegers in the chosen subset. What is the probability that $x &gt; 0$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{1}{{100 \\choose 20}} \\sum_{k=0}^{20} \\left({70 \\choose k} + {30 \\choose 20 - k}\\right)$","correct":false},{"body":"$\\frac{1}{{100 \\choose 20}} \\sum_{k=0}^{20} {70 \\choose k}{30 \\choose 20 - k}$","correct":false},{"body":"$\\frac{1}{{100 \\choose 20}} \\sum_{k=0}^{10} \\left({70 \\choose 2k} + {30 \\choose 20 - 2k}\\right)$","correct":false},{"body":"$\\frac{1}{{100 \\choose 20}} \\sum_{k=0}^{10} {70 \\choose 2k}{30 \\choose 20 - 2k}$","correct":true}]},{"body":["\n\t\n\t\tConsider a bitstring of length 77, in which each bit is 0 with probability 1\u002F3 (and, thus, 1 with\n\t\tprobability 2\u002F3), independently of the other bits. What is the probability that there are exactly\n\t\t15 0s in this bitstring?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${77 \\choose 15}(1\u002F3)^{15}(2\u002F3)^{62}$","correct":true},{"body":"${77 \\choose 15}((1\u002F3)^{15} + (2\u002F3)^{62})$","correct":false},{"body":"${77 \\choose 15}(1\u002F3)^{62}(2\u002F3)^{15}$","correct":false},{"body":"${77 \\choose 15}((1\u002F3)^{62} + (2\u002F3)^{15})$","correct":false}]},{"body":["\n\t\n\t\tConsider a uniformly random bitstring of length 5. Define the events\n\t\t[defs]\n\t\t  A = \"the bitstring contains exactly two 0s\",\n\t\t  B = \"the bitstring contains an even number of 0s\".\n\t\t[\u002Fdefs]\n\t\t(Note that zero is even.) What is the conditional probability $\\Pr(A|B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\left. {5 \\choose 2} \\middle\u002F 2^3 \\right.$","correct":false},{"body":"$\\left. {5 \\choose 2} \\middle\u002F 2^4 \\right.$","correct":true},{"body":"$\\left. {5 \\choose 2} \\middle\u002F 2^5 \\right.$","correct":false},{"body":"$\\left. 2^5 \\middle\u002F {5 \\choose 2} \\right.$","correct":false}]},{"body":["\n\t\n\t\tConsider a uniformly random bitstring of length 5. Define the events\n\t\t[defs]\n\t\t  A = \"the bitstring contains an odd number of 0s\"\n\t\t[\u002Fdefs]\n\t\tand\n\t\t[defs]\n\t\t  B = \"the first three bits in the bitstring are 111\".\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":true},{"body":"The events $A$ and $B$ are not independent.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tI flip a fair coin, independently, $n$ times. For each heads, you win \\$3, whereas for each tails,\n\t\tyou lose \\$1. Define the random variable $X$ to be the amount of dollars that you win. What is the\n\t\texpected value of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$n\u002F2$","correct":false},{"body":"$n$","correct":true},{"body":"$3n\u002F2$","correct":false},{"body":"$2n$","correct":false}]},{"body":["\n\t\n\t\tLet $G = (V,E)$ be a graph with vertex set $V$ and edge set $E$, let $n$ be the size of $V$, and let\n\t\t$m$ be the size of $E$. For each vertex of $V$, flip a fair and independent coin. Let $V'$ be the\n\t\tsubset of $V$ consisting of all vertices of $V$ whose coin flip resulted in heads. Let $E'$ be the\n\t\tset consisting of all edges $(u,v)$ in $E$ for which both $u$ and $v$ are in $V'$. Define the random\n\t\tvariable $X$ to be the number of edges in $E'$. What is the expected value of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$m\u002F2$","correct":false},{"body":"$m\u002F4$","correct":true},{"body":"$m\u002F8$","correct":false},{"body":"$m\u002F16$","correct":false}]},{"body":["\n\t\n\t\tConsider a bitstring of length 5, in which each bit is 0 with probability 1\u002F2 (and, thus, 1 with\n\t\tprobability 1\u002F2), independently of the other bits. Define the random variables $X$ and $Y$ as\n\t\tfollows:\n\t\t[defs]\n\t\t  X = the number of 0s in this bitstring\n\t\t[\u002Fdefs]\n\t\tand\n\t\t[defs]\n\t\t  Y = the value of the first bit in this bitstring.\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The random variables $X$ and $Y$ are independent.","correct":false},{"body":"The random variables $X$ and $Y$ are not independent.","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tOne of Lindsay and Simon is chosen uniformly at random. The person that is chosen wins \\$100.\n\t\tDefine the random variables $L$ and $S$ as follows:\n\t\t[defs]\n\t\t  L = the amount that Lindsay wins\n\t\t[\u002Fdefs]\n\t\tand\n\t\t[defs]\n\t\t  S = the amount that Simon wins.\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\mathbb{E}(L) = 50$ and $\\mathbb{E}(\\max(L,S)) = 50$.","correct":false},{"body":"$\\mathbb{E}(L) = 100$ and $\\mathbb{E}(\\max(L,S)) = 100$.","correct":false},{"body":"$\\mathbb{E}(L) = 50$ and $\\mathbb{E}(\\max(L,S)) = 100$.","correct":true},{"body":"$\\mathbb{E}(L) = 100$ and $\\mathbb{E}(\\max(L,S)) = 50$.","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\TwoTails}{{\\rm T {\\scriptsize WO} T {\\scriptsize AILS}}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the following recursive algorithm $\\TwoTails$, which takes as input a positive integer $k$:\n\t\t\n\t\t\u003Cdiv style=\"margin: 1rem 0;\"\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\TwoTails(k)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t\u003Ctable\u003E\n\t\t\t\t\u003Ctbody\u003E\n\t\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$\u002F\u002F$\u003C\u002Ftd\u003E\n\t\t\t\t\t\t\u003Ctd\u003E\n\t\t\t\t\t\t\t$\\text{all coin flips made are mutually}$ $\\text{independent}$\n\t\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\t\u003C\u002Ftbody\u003E\n\t\t\t\u003C\u002Ftable\u003E\n\t\t\t$\\text{flip a fair coin twice};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ \\text{the coin came up heads exactly twice}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\mathrm{return}\\ 2^k$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\TwoTails(k + 1)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$ \u003Cbr\u003E\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tYou run algorithm $\\TwoTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the\n\t\toutput of this algorithm.\n\t\tLet $k \\geq 1$ be an integer. What is $\\Pr(X = 2^k)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$(1\u002F4)^{k} \\cdot 3\u002F4$","correct":false},{"body":"$(1\u002F4)^{k-1} \\cdot 3\u002F4$","correct":false},{"body":"$(3\u002F4)^{k} \\cdot 1\u002F4$","correct":false},{"body":"$(3\u002F4)^{k-1} \\cdot 1\u002F4$","correct":true}]},{"body":["\n\t\n\t\tYou repeatedly, and independently, roll two fair dice, until the sum of the values of the two dice\n\t\tis equal to 12. Define the random variable $X$ to be the number of times you roll the pair of dice.\n\t\tWhat is the expected value of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"36","correct":true},{"body":"30","correct":false},{"body":"20","correct":false},{"body":"12","correct":false}]},{"body":["Who is Lindsay Bangs?"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"A world-renowned rapper.","correct":false},{"body":"\n\t\n\t\tGoalie of the Ottawa Senators, her nickname is \u003Cem\u003EThe Hamburglar\u003C\u002Fem\u003E.\n\t\n\t","correct":false},{"body":"President of the Carleton Computer Science Society.","correct":true},{"body":"\n\t\n\t\tOwner of the brewery that produces \u003Cem\u003ELeo's Early Breakfast IPA\u003C\u002Fem\u003E.\n\t\n\t","correct":false}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="c3sdC"><div class="test-application"><div class="test-header"><div>Winter 2015 Exam</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		Consider a set $S$ consisting of 20 integers; 5 of these are even and the other 15 integers in $S$
+		are odd. What is the number of 7-element subsets of $S$ having exactly 3 even integers?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${20 \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${5\choose 3} + {15 \choose 4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${5 \choose 3}{15 \choose 4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${5 \choose 4}{15 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Consider a set $S$ consisting of 20 integers; 5 of them are even and the other 15 integers in $S$
+		are odd. What is the number of 7-element subsets of $S$ having at least 5 even integers or at least
+		5 odd integers?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		${5 \choose 5}{15 \choose 2} + {5 \choose 2}{15 \choose 5} + {5 \choose 1}{15 \choose 6} + {5 \choose 0}{15 \choose 7}$
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${5 \choose 5}{15 \choose 2} + {5 \choose 2}{15 \choose 5} - {5 \choose 5}{15 \choose 5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${20 \choose 7} - {5 \choose 4}{15 \choose 4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		How many bitstrings of length 77 start with 1111 or end with 0000?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{73} + 2^{73}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{74} - 2^{69}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{77} - 2^{69}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{77} - 2^{73} - 2^{73}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		What is the coefficient of $x^{4}y^{11}$ in the expansion of $(2x - 7y)^{15}$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${15 \choose 11} \cdot 2^4 \cdot 7^{11}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$- {15 \choose 11} \cdot 2^4 \cdot 7^{11}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${15 \choose 11} \cdot 2^{11} \cdot 7^4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$- {15 \choose 11} \cdot 2^{11} \cdot 7^4$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		In a group of 20 people,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				6 are blond,
+			</li>
+			<li>
+				7 have green eyes,
+			</li>
+			<li>
+				11 are not blond and do not have green eyes.
+			</li>
+		</ul>
+		How many people in this group are blond and have green eyes?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 7$ be an integer. Why does the following equality hold:
+		$$
+			{n \choose 5}{n - 5 \choose 2} = {n \choose 2}{n - 2 \choose 5}
+		$$
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Because both sides count the number of pairs $(A,B)$ of subsets of the $n$ people, such that $|A| = 2$, $|B| = 5$, and $A \subseteq B$.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Because both sides count the number of pairs $(A,B)$ of subsets of the $n$ people, such that $|A| = 5$, $|B| = 2$, and $A \subseteq B$.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Because both sides count the number of ways to choose 2 committees in a group of $n$ people, one committee has 5 members, the other committee has 2 members, and a person can be on both committees.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+	
+		Because both sides count the number of ways to choose 2 committees in a group of $n$ people, one committee has 5 members, the other committee has 2 members, and <strong>no</strong> person can be on both committees.
+	
+	<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		Consider strings of characters, each character being $a$, $b$, or $c$, that contain an odd number of
+		$a$s. Let $S_n$ be the number of such strings having length $n$. Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-1} + S_{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + (3^{n-1} - S_{n-1})$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-1} + (3^{n-1} - S_{n-1})$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		Consider the following recursive function:
+		[defs]
+		  f(0) = $7$,
+		  f(n) = $f(n - 1) + 6n - 3\; \ \text{for all}$ $\mathrm{integers}\ n \geq 1$.
+		[/defs]
+		Which of the following is true??
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For all $n \geq 0$: $f(n) = 2n^2 + 7$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For all $n \geq 0$: $f(n) = 3n^2 + 7$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For all $n \geq 0$: $f(n) = 4n^2 + 7$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+		</div>
+		
+		Consider the recursive algorithm $\Fib$, which takes as input an
+		integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ f = n$ <br>
+			$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+			$\mathbf{endif};$ <br>
+			$\mathbf{return}\ f$ <br>
+		</p>
+		
+		If we run algorithm $\Fib(77)$, how many calls are there to $\Fib(73)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		Let $S$ be the set of ordered pairs of integers that is recursively defined in the following way:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				$(1,6) \in S$.
+			</li>
+			<li>
+				If $(a,b) \in S$ then $(a+3, b+4) \in S$.
+			</li>
+			<li>
+				If $(a,b) \in S$ then $(a+5, b+2) \in S$.
+			</li>
+		</ul>
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For every element $(a,b)$ in $S$, $a + b$ is divisible by 7.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For every element $(a,b)$ in $S$, $a + b$ is not divisible by 7.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S = \{(a,b) : a > 0$ and $b > 0$ are integers and $a + b$ is divisible by 7$\}$.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 99$, where $x_1 \geq 0$,
+		$x_2 \geq 0$, $x_3 \geq 0$, $x_4 \geq 0$ are integers?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${102 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${102 \choose 4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${103 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${103 \choose 4}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		Consider two events $A$ and $B$ in a sample space $S$. You are given that $\Pr(B) = 2/3$ and
+		$\Pr(A|B) = 4/5$. What is $\Pr(A \cap B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/15<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6/15<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->7/15<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->8/15<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		Consider three events, $A$, $B$, and $C$ in a sample space $S$. Is the following true or false?
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$\Pr\bigl(A \cup (\overline{B} \cap \overline{C})\bigr) = $</td>
+					<td>$\Pr(A) + \Pr(B)\ - $ $\Pr(C).$</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->True<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->False<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		Let $S$ be a set of 100 integers; 30 of these are positive and the other 70 integers in $S$ are
+		negative. We choose, uniformly at random, a 20-element subset of $S$. What is the probability that
+		at least one of the elements in this subset is positive?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {30 \choose 1} \middle/ {100 \choose 20} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {30 \choose 1}{70 \choose 19} \middle/ {100 \choose 20} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - \left. {70 \choose 20} \middle/ {100 \choose 20} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		Let $S$ be a set of 100 integers; 30 of these are positive and the other 70 integers in $S$ are
+		negative. We choose, uniformly at random, a 20-element subset of $S$. Let $x$ be the product of the
+		integers in the chosen subset. What is the probability that $x &gt; 0$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{{100 \choose 20}} \sum_{k=0}^{20} \left({70 \choose k} + {30 \choose 20 - k}\right)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{{100 \choose 20}} \sum_{k=0}^{20} {70 \choose k}{30 \choose 20 - k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{{100 \choose 20}} \sum_{k=0}^{10} \left({70 \choose 2k} + {30 \choose 20 - 2k}\right)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{{100 \choose 20}} \sum_{k=0}^{10} {70 \choose 2k}{30 \choose 20 - 2k}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		Consider a bitstring of length 77, in which each bit is 0 with probability 1/3 (and, thus, 1 with
+		probability 2/3), independently of the other bits. What is the probability that there are exactly
+		15 0s in this bitstring?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${77 \choose 15}(1/3)^{15}(2/3)^{62}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${77 \choose 15}((1/3)^{15} + (2/3)^{62})$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${77 \choose 15}(1/3)^{62}(2/3)^{15}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${77 \choose 15}((1/3)^{62} + (2/3)^{15})$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		Consider a uniformly random bitstring of length 5. Define the events
+		[defs]
+		  A = "the bitstring contains exactly two 0s",
+		  B = "the bitstring contains an even number of 0s".
+		[/defs]
+		(Note that zero is even.) What is the conditional probability $\Pr(A|B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {5 \choose 2} \middle/ 2^3 \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {5 \choose 2} \middle/ 2^4 \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {5 \choose 2} \middle/ 2^5 \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. 2^5 \middle/ {5 \choose 2} \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>18. <!-- HTML_TAG_START -->
+	
+		Consider a uniformly random bitstring of length 5. Define the events
+		[defs]
+		  A = "the bitstring contains an odd number of 0s"
+		[/defs]
+		and
+		[defs]
+		  B = "the first three bits in the bitstring are 111".
+		[/defs]
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>19. <!-- HTML_TAG_START -->
+	
+		I flip a fair coin, independently, $n$ times. For each heads, you win \$3, whereas for each tails,
+		you lose \$1. Define the random variable $X$ to be the amount of dollars that you win. What is the
+		expected value of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n/2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$3n/2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2n$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>20. <!-- HTML_TAG_START -->
+	
+		Let $G = (V,E)$ be a graph with vertex set $V$ and edge set $E$, let $n$ be the size of $V$, and let
+		$m$ be the size of $E$. For each vertex of $V$, flip a fair and independent coin. Let $V'$ be the
+		subset of $V$ consisting of all vertices of $V$ whose coin flip resulted in heads. Let $E'$ be the
+		set consisting of all edges $(u,v)$ in $E$ for which both $u$ and $v$ are in $V'$. Define the random
+		variable $X$ to be the number of edges in $E'$. What is the expected value of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$m/2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$m/4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$m/8$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$m/16$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>21. <!-- HTML_TAG_START -->
+	
+		Consider a bitstring of length 5, in which each bit is 0 with probability 1/2 (and, thus, 1 with
+		probability 1/2), independently of the other bits. Define the random variables $X$ and $Y$ as
+		follows:
+		[defs]
+		  X = the number of 0s in this bitstring
+		[/defs]
+		and
+		[defs]
+		  Y = the value of the first bit in this bitstring.
+		[/defs]
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The random variables $X$ and $Y$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The random variables $X$ and $Y$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>22. <!-- HTML_TAG_START -->
+	
+		One of Lindsay and Simon is chosen uniformly at random. The person that is chosen wins \$100.
+		Define the random variables $L$ and $S$ as follows:
+		[defs]
+		  L = the amount that Lindsay wins
+		[/defs]
+		and
+		[defs]
+		  S = the amount that Simon wins.
+		[/defs]
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\mathbb{E}(L) = 50$ and $\mathbb{E}(\max(L,S)) = 50$.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\mathbb{E}(L) = 100$ and $\mathbb{E}(\max(L,S)) = 100$.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\mathbb{E}(L) = 50$ and $\mathbb{E}(\max(L,S)) = 100$.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\mathbb{E}(L) = 100$ and $\mathbb{E}(\max(L,S)) = 50$.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>23. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\TwoTails}{{\rm T {\scriptsize WO} T {\scriptsize AILS}}}$
+		</div>
+		
+		Consider the following recursive algorithm $\TwoTails$, which takes as input a positive integer $k$:
+		
+		<div style="margin: 1rem 0;">
+			$\mathbf{Algorithm}\ \TwoTails(k)\mathrm{:}$ <br>
+			<table>
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$//$</td>
+						<td>
+							$\text{all coin flips made are mutually}$ $\text{independent}$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			$\text{flip a fair coin twice};$ <br>
+			$\mathbf{if}\ \text{the coin came up heads exactly twice}$ <br>
+			$\mathbf{then}\ \mathrm{return}\ 2^k$ <br>
+			$\mathbf{else}\ \TwoTails(k + 1)$ <br>
+			$\mathbf{endif}$ <br>
+		</div>
+		
+		You run algorithm $\TwoTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the
+		output of this algorithm.
+		Let $k \geq 1$ be an integer. What is $\Pr(X = 2^k)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(1/4)^{k} \cdot 3/4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(1/4)^{k-1} \cdot 3/4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(3/4)^{k} \cdot 1/4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(3/4)^{k-1} \cdot 1/4$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>24. <!-- HTML_TAG_START -->
+	
+		You repeatedly, and independently, roll two fair dice, until the sum of the values of the two dice
+		is equal to 12. Define the random variable $X$ to be the number of times you roll the pair of dice.
+		What is the expected value of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->36<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->30<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->20<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->12<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>25. <!-- HTML_TAG_START -->Who is Lindsay Bangs?<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->A world-renowned rapper.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+	
+		Goalie of the Ottawa Senators, her nickname is <em>The Hamburglar</em>.
+	
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->President of the Carleton Computer Science Society.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+	
+		Owner of the brewery that produces <em>Leo's Early Breakfast IPA</em>.
+	
+	<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

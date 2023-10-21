@@ -1,0 +1,578 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("ZhUjTf", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"exam-fall-2018","title":"Fall 2018 Exam","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tConsider strings of length 70, in which each character is one of the letters $a,b,c$. How many\n\t\tsuch strings have exactly 1 letter $c$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$70 \\cdot 2^{69}$","correct":true},{"body":"$70 \\cdot 3^{69}$","correct":false},{"body":"$70 \\cdot 2^{70}$","correct":false},{"body":"$70 \\cdot 3^{70}$","correct":false}]},{"body":["\n\t\n\t\tConsider strings of length 70, in which each character is one of the letters $a, b, c$. How many\n\t\tsuch strings have exactly 12 letters $c$ \u003Cem\u003Eand\u003C\u002Fem\u003E exactly 30 letters $b$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${70 \\choose 12} + {58 \\choose 30}$","correct":false},{"body":"${70 \\choose 12} \\cdot {58 \\choose 30}$","correct":true},{"body":"${70 \\choose 12} \\cdot {58 \\choose 30} \\cdot 2^{28}$","correct":false},{"body":"${70 \\choose 12} \\cdot {58 \\choose 30} \\cdot 3^{28}$","correct":false}]},{"body":["\n\t\n\t\tConsider strings of length 70, in which each character is one of the letters $a, b, c$. How many\n\t\tsuch strings have exactly 12 letters $c$ \u003Cem\u003Eor\u003C\u002Fem\u003E exactly 30 letters $b$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${70 \\choose 12} + {70 \\choose 30} - {58 \\choose 30}$","correct":false},{"body":"${70 \\choose 12} \\cdot 2^{58} + {70 \\choose 30} \\cdot 2^{40}$","correct":false},{"body":"${70 \\choose 12} \\cdot 2^{58} + {70 \\choose 30} \\cdot 2^{40} - {70 \\choose 12} \\cdot {58 \\choose 30}$","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tConsider strings of length 70, in which each character is one of the letters $a, b, c$. How many\n\t\tsuch strings have at least 3 letters $c$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$3^{70} - 2^{70} - 70 \\cdot 2^{69}$","correct":false},{"body":"$3^{70} - 2^{70} - 70 \\cdot 2^{69} - {70 \\choose 2} \\cdot 2^{68}$","correct":true},{"body":"$\\sum_{k=4}^{70} {70 \\choose k} \\cdot 2^{k}$","correct":false},{"body":"$\\sum_{k=4}^{70} {70 \\choose k} \\cdot 2^{70-k}$","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 2$ be an integer and consider the set $S = \\{1,2,\\dots,n\\}$. What does\n\t\t$\n\t\t\t\\sum_{k=2}^{n} {n \\choose k}\n\t\t$ count?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The number of subsets of $S$ that are non-empty.","correct":false},{"body":"The number of subsets of $S$ that contain at least two elements.","correct":true},{"body":"The number of bitstrings of length $n$ that contain at least one 0.","correct":false},{"body":"The number of bitstrings of length $n$ that contain at least three 0's.","correct":false}]},{"body":["\n\t\n\t\tWhat is the coefficient of $x^{20}y^{35}$ in the expansion of $(5x - 3y)^{55}$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${55 \\choose 20} \\cdot 5^{35} \\cdot 3^{20}$","correct":false},{"body":"$- {55 \\choose 20} \\cdot 5^{35} \\cdot 3^{20}$","correct":false},{"body":"${55 \\choose 35} \\cdot 5^{20} \\cdot 3^{35}$","correct":false},{"body":"$- {55 \\choose 35} \\cdot 5^{20} \\cdot 3^{35}$","correct":true}]},{"body":["\n\t\n\t\tA string that is obtained by rearranging the letters of the word\n\t\t\u003Cp style=\"text-align: center;\"\u003E\n\t\t\tSUCCESS\n\t\t\u003C\u002Fp\u003E\n\t\tis called \u003Cem\u003Eawesome\u003C\u002Fem\u003E, if the string contains the substring UE or EU.\n\t\tThus, both SCUESCS and SCSEUCS are awesome, whereas SUCCESS is not awesome.\n\t\tWhat is the number of awesome strings?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"30","correct":false},{"body":"60","correct":false},{"body":"90","correct":false},{"body":"120","correct":true}]},{"body":["\n\t\n\t\tLet $n \\geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a\n\t\tsum of 2's and 4's; the order in which the 2's and 4's occur in the sum matters. For example, $S_6 =\n\t\t3$, because\n\t\t$\n\t\t\t6 = 2 + 2 + 2 = 2 + 4 = 4 + 2.\n\t\t$\n\t\tWhich of the following is true for any integer $n \\geq 6$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = S_{n-2} + S_{n-4}$","correct":true},{"body":"$S_n = 2 \\cdot S_{n-2} + S_{n-4}$","correct":false},{"body":"$S_n = S_{n-2} + 4 \\cdot S_{n-4}$","correct":false},{"body":"$S_n = 2 \\cdot S_{n-2} + 4 \\cdot S_{n-4}$","correct":false}]},{"body":["\n\t\n\t\tConsider bitstrings that do not contain 110. Let $S_n$ be the number of such strings having length\n\t\t$n$. Which of the following is true for any $n \\geq 4$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = S_{n-1} + S_{n-2} + 1$","correct":true},{"body":"$S_n = S_{n-1} + S_{n-2} + 2^{n-2}$","correct":false},{"body":"$S_n = S_{n-1} + S_{n-2} + 2^{n-3}$","correct":false},{"body":"$S_n = S_{n-1} + S_{n-2} + S_{n-3}$","correct":false}]},{"body":["\n\t\n\t\tThe function $T : \\mathbb{N} \\rightarrow \\mathbb{N}$ is recursively defined as follows:\n\t\t$\n\t\t\t\\begin{align}\n\t\t\tT(0) &= 2, \\\\\n\t\t\tT(n) &= 3 \\cdot T(n - 1) + 1,\\ \\ \\mathrm{if}\\ n \\geq 1.\n\t\t\t\\end{align}\n\t\t$\n\t\tWhich of the following is true for all integers $n \\geq 0$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$T(n) = \\frac{5}{2} \\cdot 3^{n} - 1$","correct":false},{"body":"$T(n) = \\frac{3}{2} \\cdot 3^{n} - \\frac{1}{2}$","correct":false},{"body":"$T(n) = \\frac{5}{2} \\cdot 3^{n} - \\frac{1}{2}$","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tYou flip a fair coin 5 times; the flips are independent of each other. What is the probability that\n\t\tin these 5 coin flips, the coin comes up heads an odd number of times?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"2\u002F3","correct":false},{"body":"1\u002F2","correct":true},{"body":"1\u002F3","correct":false},{"body":"1\u002F4","correct":false}]},{"body":["\n\t\n\t\tIn a standard deck of 52 cards, each card has a \u003Cem\u003Esuit\u003C\u002Fem\u003E and a \u003Cem\u003Erank\u003C\u002Fem\u003E.\n\t\tThere are four suits (spades ♠, hearts ♡, clubs ♣, and diamonds ♢),\n\t\tand 13 ranks (Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, and King). \u003Cbr\u003E\n\t\tAssume you get a uniformly random hand consisting of 5 cards. What is the probability that the 5\n\t\tcards in this hand are all of the same suit?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\left. {13 \\choose 5} \\middle\u002F {52 \\choose 5} \\right.$","correct":false},{"body":"$\\left. {52 \\choose 5} \\middle\u002F {13 \\choose 5} \\right.$","correct":false},{"body":"$4 \\cdot \\left. {13 \\choose 5} \\middle\u002F {52 \\choose 5} \\right.$","correct":true},{"body":"$4 \\cdot \\left. {52 \\choose 5} \\middle\u002F {13 \\choose 5} \\right.$","correct":false}]},{"body":["\n\t\n\t\tYou are given a fair die that has six faces. One face has the letter $a$ on it, two faces have the\n\t\tletter $b$ on them, and three faces have the letter $c$ on them. Assume you roll this die twice,\n\t\tindependently of each other. Define the events\n\t\t[defs]\n\t\t  A = \"both rolls result in the same letter\",\n\t\t  B = \"at least one of the rolls results in the letter $a$\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A|B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"2\u002F7","correct":false},{"body":"1\u002F7","correct":false},{"body":"2\u002F11","correct":false},{"body":"1\u002F11","correct":true}]},{"body":["\n\t\n\t\tLet $n$ and $k$ be integers with $1 \\leq k \\leq n$. \u003Cbr\u003E\n\t\tYou are given two bitstrings $a_1,a_2,\\dots,a_n$ and $b_1,b_2,\\dots,b_n$ of length $n$. In both\n\t\tbitstrings, each bit is 0 with probability 1\u002F2, and 1 with probability 1\u002F2 (independent of all\n\t\tother bits). \u003Cbr\u003E\n\t\tConsider the bitstring\n\t\t$\n\t\t\ta_1 \\cdot b_1,a_2 \\cdot b_2,\\dots,a_n \\cdot b_n\n\t\t$\n\t\twhere $a_i \\cdot b_i$ is the result of multiplying the two bits $a_i$ and $b_i$. What is the probability that this\n\t\tbitstring contains exactly $k$ many 1's?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${n \\choose k} \\cdot \\left. 3^{n - k} \\middle\u002F 4^n \\right.$","correct":true},{"body":"${n \\choose k} \\cdot \\left. 4^{n - k} \\middle\u002F 3^n \\right.$","correct":false},{"body":"${n \\choose k} \\cdot \\left. 4^{n - k} \\middle\u002F 3^k \\right.$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tConsider a uniformly random permutation $a_1,a_2,a_3,a_4$ of the set $\\{1,2,3,4\\}$.\n\t\tDefine the events\n\t\t[defs]\n\t\t  A = \"$a_1 \u003E a_2$\",\n\t\t  B = \"$a_4 \u003E a_3$\".\n\t\t[\u002Fdefs]\n\t\tWhich of the following is correct?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":true},{"body":"The events $A$ and $B$ are not independent.","correct":false},{"body":"None of the above.","correct":false},{"body":"All of the above.","correct":false}]},{"body":["\n\t\n\t\tYou flip a fair coin three times; these three flips are independent. Define the events\n\t\t[defs]\n\t\t  A = \"the number of heads in these three flips is even\",\n\t\t  B = \"the number of tails in these three flips is at most one\".\n\t\t[\u002Fdefs]\n\t\t(Remember that 0 is even.) Which of the following is correct?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":false},{"body":"The events $A$ and $B$ are not independent.","correct":true},{"body":"None of the above.","correct":false},{"body":"All of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $A$ and $B$ be two independent events in some sample space $S$.\n\t\tYou are given that $\\Pr(A) = 1\u002F4$ and $\\Pr(B) = 2\u002F3$. What is $\\Pr(A \\cup B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"5\u002F6","correct":false},{"body":"2\u002F3","correct":false},{"body":"3\u002F4","correct":true},{"body":"1\u002F3","correct":false}]},{"body":["\n\t\n\t\tA red box contains the numbers 0, 1, and 2, and a blue box also contains the numbers 0, 1, and 2.\n\t\tYou choose a uniformly random element from the red box and a uniformly random element from the blue\n\t\tbox; these two choices are independent of each other. Define the random variables\n\t\t[defs]\n\t\t  X = the number you choose from the red box,\n\t\t  Y = the number you choose from the blue box,\n\t\t  Z = $\\max(X, Y)$.\n\t\t[\u002Fdefs]\n\t\tWhat is the expected value $\\mathbb{E}(Z)$ of the random variable $Z$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"9\u002F13","correct":false},{"body":"13\u002F9","correct":true},{"body":"8\u002F9","correct":false},{"body":"9\u002F8","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 2$ be an integer. Consider a string $c_1,c_2,\\dots,c_n$ of length $n$, in which each\n\t\tcharacter $c_i$ is a uniformly random element of the set $\\{\\alpha, \\beta, \\gamma, \\delta, \\epsilon\\}$\n\t\t(independently of all other characters). \u003Cbr\u003E\n\t\tDefine the random variable $X$ to be the number of indices $i$ with $1 \\leq i \u003C n$\n\t\tfor which $c_i = c_{i+1}$. \u003Cbr\u003E\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of the random variable $X$? \u003Cbr\u003E\n\t\t\u003Cem\u003EHint:\u003C\u002Fem\u003E Use indicator random variables.\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\left. n \\middle\u002F 25 \\right.$","correct":false},{"body":"$\\left. (n - 1) \\middle\u002F 25 \\right.$","correct":false},{"body":"$\\left. n \\middle\u002F 5 \\right.$","correct":false},{"body":"$\\left. (n - 1) \\middle\u002F 5 \\right.$","correct":true}]},{"body":["\n\t\n\t\tLet $n \\geq 2$ be an integer. You are given $n$ beer bottles $B_1,B_2,\\dots,B_n$ and two cider\n\t\tbottles $C_1$ and $C_2$. You choose a uniformly random 3-element subset of the set of these $n+2$\n\t\tbottles. Define the random variable $X$ to be\n\t\t[defs]\n\t\t  X = the number of cider bottles in the chosen subset.\n\t\t[\u002Fdefs]\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of the random variable $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{2 {{n}\\choose{2}} + n}{{{n+2}\\choose{3}}}$","correct":false},{"body":"$\\frac{2 {{n}\\choose{2}} + n + 1}{{{n+2}\\choose{3}}}$","correct":false},{"body":"$\\frac{2 {{n}\\choose{2}} + 2n}{{{n+2}\\choose{3}}}$","correct":true},{"body":"$\\frac{2 {{n}\\choose{2}} + n - 1}{{{n+2}\\choose{3}}}$","correct":false}]},{"body":["\n\t\n\t\tYou are given two independent random variables $X$ and $Y$, where\n\t\t\n\t\t\u003Ctable style=\"margin: 1rem auto;\"\u003E\n\t\t\t\u003Ctbody\u003E\n\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$\\Pr(X = 0)$\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003Ctd\u003E\n\t\t\t\t\t\t$= \\Pr(X = 1) = \\Pr(Y = 0)$\n\t\t\t\t\t\t$= \\Pr(Y = 1) = 1\u002F2.$\n\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\u003C\u002Ftbody\u003E\n\t\t\u003C\u002Ftable\u003E\n\t\t\n\t\tDefine the random variable\n\t\t$\n\t\t\tZ = (X + Y)\\ \\mathrm{mod}\\ 2.\n\t\t$\n\t\tWhich of the following is correct?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The random variables $X$ and $Z$ are independent.","correct":true},{"body":"The random variables $X$ and $Z$ are not independent.","correct":false},{"body":"None of the above.","correct":false},{"body":"All of the above.","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\TriIsHungry}{{\\rm T {\\scriptsize RI} I {\\scriptsize S} H {\\scriptsize UNGRY}}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tZoltan's Noodle House is a popular restaurant in downtown Ottawa. When you order the surprise dish,\n\t\tyou get \u003Cem\u003EMi Quang\u003C\u002Fem\u003E with probability 1\u002F4, \u003Cem\u003EBun Cha Ca\u003C\u002Fem\u003E with probability 1\u002F3, and\n\t\t\u003Cem\u003EBanh Xeo\u003C\u002Fem\u003E with probability 5\u002F12. \u003Cbr\u003E\n\t\tTri enjoys going to this restaurant, because the food reminds him of his mommy's food back home in Da Nang. \u003Cbr\u003E\n\t\tTri runs the following recursive algorithm:\n\t\t\n\t\t\u003C!-- this markup is messy to enable correctly-aligned word wrapping on horizontally constrained devices --\u003E\n\t\t\u003Cdiv style=\"margin: 1rem 0;\"\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\TriIsHungry\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t\u003Ctable\u003E\n\t\t\t\t\u003Ctbody\u003E\n\t\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$\u002F\u002F$\u003C\u002Ftd\u003E\n\t\t\t\t\t\t\u003Ctd\u003E\n\t\t\t\t\t\t\t$\\text{the results of all}$ $\\text{orders are independent}$\n\t\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\t\u003C\u002Ftbody\u003E\n\t\t\t\u003C\u002Ftable\u003E\n\t\t\t$\\text{Tri orders the surprise dish;}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ \\mathrm{Tri}\\ \\mathrm{gets}\\ \\mathit{Mi}\\ \\mathit{Quang}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\text{Tri eats the dish;}$ \u003Cbr\u003E\n\t\t\t$\\qquad\\ \\ \\TriIsHungry$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\mathbf{if}\\ \\mathrm{Tri}\\ \\mathrm{gets}\\ \\mathit{Bun}\\ \\mathit{Cha}\\ \\mathit{Ca}$ \u003Cbr\u003E\n\t\t\t$\\qquad\\, \\mathbf{then}\\ \\text{Tri eats the dish;}$ \u003Cbr\u003E\n\t\t\t$\\qquad \\qquad\\ \\ \\, \\TriIsHungry$ \u003Cbr\u003E\n\t\t\t$\\qquad\\, \\mathbf{else}\\ \\text{Tri eats the dish;}$ \u003Cbr\u003E\n\t\t\t\u003Ctable\u003E\n\t\t\t\t\u003Ctbody\u003E\n\t\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\t\u003Ctd style=\"padding: 0;\"\u003E$\\hspace{4.05em}$\u003C\u002Ftd\u003E\n\t\t\t\t\t\t\u003Ctd style=\"padding: 0;\"\u003E$\\text{Tri pays the bill}$ $\\text{and goes home}$\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\t\u003C\u002Ftbody\u003E\n\t\t\t\u003C\u002Ftable\u003E\n\t\t\t$\\qquad\\, \\mathbf{endif}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$ \u003Cbr\u003E\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tDefine the random variable $X$ to be the number of dishes that Tri eats when running algorithm $\\TriIsHungry$. \u003Cbr\u003E\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of the random variable $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"5\u002F12","correct":false},{"body":"12\u002F5","correct":true},{"body":"5\u002F7","correct":false},{"body":"7\u002F5","correct":false}]},{"body":["\n\t\n\t\tThe final exam for COMP 2804 has 25 multiple-choice questions. For each question, there are 4\n\t\tpossible answers, exactly one of which is correct. Michiel chooses a positive real number $z$ and\n\t\tuses the following marking scheme: For each correct answer, a student receives 1 mark, whereas for\n\t\teach incorrect answer, the student receives $-z$ marks. \u003Cbr\u003E\n\t\t\n\t\tJim is one of the students and answers the 25 questions, by choosing a uniformly random answer for\n\t\teach question; the choices are independent of each other. \u003Cbr\u003E\n\t\t\n\t\tDefine the random variable\n\t\t[defs]\n\t\t  X = the number of marks that Jim recevies.\n\t\t[\u002Fdefs]\n\t\tFor what value of $z$ is the expected value $\\mathbb{E}(X)$ equal to 0? \u003Cbr\u003E\n\t\t\n\t\t\u003Cem\u003EHint:\u003C\u002Fem\u003E Use the Linearity of Expectation.\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$z = 1\u002F4$","correct":false},{"body":"$z = 1\u002F3$","correct":true},{"body":"$z = 1\u002F2$","correct":false},{"body":"$z = 3\u002F4$","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 2$ be an integer. There are $n$ students $S_1,S_2,\\dots,S_n$ writing this exam. Each\n\t\tstudent has brought one backpack with them. Before the exam starts, all students have to leave their\n\t\tbackpacks at the front of the examination room. \u003Cbr\u003E\n\t\t\n\t\tAt the end of the exam, the proctor places the backpacks in a uniformly random order $b_1,b_2,\\dots,b_n$,\n\t\tand, for each $i = 1, 2, ..., n$, gives backpack $b_i$ to student $S_i$. \u003Cbr\u003E\n\t\t\n\t\tDefine the following random variable $X$:\n\t\t[defs]\n\t\t  X = the number of students who get their own backpack.\n\t\t[\u002Fdefs]\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of the random variable $X$? \u003Cbr\u003E\n\t\t\u003Cem\u003EHint:\u003C\u002Fem\u003E Use indicator random variables.\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"1","correct":true},{"body":"2","correct":false},{"body":"$\\left. (n + 1) \\middle\u002F n \\right.$","correct":false},{"body":"$\\left. (n - 1) \\middle\u002F n \\right.$","correct":false}]},{"body":["\n\t\n\t\tWho discovered the Vandermonde Identity?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"Professor Identity","correct":false},{"body":"Donald Trump","correct":false},{"body":"Alexandre-Théophile Vandermonde","correct":true},{"body":"Justin Bieber","correct":false}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="ZhUjTf"><div class="test-application"><div class="test-header"><div>Fall 2018 Exam</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		Consider strings of length 70, in which each character is one of the letters $a,b,c$. How many
+		such strings have exactly 1 letter $c$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$70 \cdot 2^{69}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$70 \cdot 3^{69}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$70 \cdot 2^{70}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$70 \cdot 3^{70}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Consider strings of length 70, in which each character is one of the letters $a, b, c$. How many
+		such strings have exactly 12 letters $c$ <em>and</em> exactly 30 letters $b$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${70 \choose 12} + {58 \choose 30}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${70 \choose 12} \cdot {58 \choose 30}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${70 \choose 12} \cdot {58 \choose 30} \cdot 2^{28}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${70 \choose 12} \cdot {58 \choose 30} \cdot 3^{28}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		Consider strings of length 70, in which each character is one of the letters $a, b, c$. How many
+		such strings have exactly 12 letters $c$ <em>or</em> exactly 30 letters $b$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${70 \choose 12} + {70 \choose 30} - {58 \choose 30}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${70 \choose 12} \cdot 2^{58} + {70 \choose 30} \cdot 2^{40}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${70 \choose 12} \cdot 2^{58} + {70 \choose 30} \cdot 2^{40} - {70 \choose 12} \cdot {58 \choose 30}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		Consider strings of length 70, in which each character is one of the letters $a, b, c$. How many
+		such strings have at least 3 letters $c$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$3^{70} - 2^{70} - 70 \cdot 2^{69}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$3^{70} - 2^{70} - 70 \cdot 2^{69} - {70 \choose 2} \cdot 2^{68}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\sum_{k=4}^{70} {70 \choose k} \cdot 2^{k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\sum_{k=4}^{70} {70 \choose k} \cdot 2^{70-k}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 2$ be an integer and consider the set $S = \{1,2,\dots,n\}$. What does
+		$$
+			\sum_{k=2}^{n} {n \choose k}
+		$$ count?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of subsets of $S$ that are non-empty.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of subsets of $S$ that contain at least two elements.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of bitstrings of length $n$ that contain at least one 0.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of bitstrings of length $n$ that contain at least three 0's.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		What is the coefficient of $x^{20}y^{35}$ in the expansion of $(5x - 3y)^{55}$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${55 \choose 20} \cdot 5^{35} \cdot 3^{20}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$- {55 \choose 20} \cdot 5^{35} \cdot 3^{20}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${55 \choose 35} \cdot 5^{20} \cdot 3^{35}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$- {55 \choose 35} \cdot 5^{20} \cdot 3^{35}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		A string that is obtained by rearranging the letters of the word
+		<p style="text-align: center;">
+			SUCCESS
+		</p>
+		is called <em>awesome</em>, if the string contains the substring UE or EU.
+		Thus, both SCUESCS and SCSEUCS are awesome, whereas SUCCESS is not awesome.
+		What is the number of awesome strings?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->30<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->60<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->90<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->120<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a
+		sum of 2's and 4's; the order in which the 2's and 4's occur in the sum matters. For example, $S_6 =
+		3$, because
+		$$
+			6 = 2 + 2 + 2 = 2 + 4 = 4 + 2.
+		$$
+		Which of the following is true for any integer $n \geq 6$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-2} + S_{n-4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-2} + S_{n-4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-2} + 4 \cdot S_{n-4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-2} + 4 \cdot S_{n-4}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		Consider bitstrings that do not contain 110. Let $S_n$ be the number of such strings having length
+		$n$. Which of the following is true for any $n \geq 4$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + 2^{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + 2^{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		The function $T : \mathbb{N} \rightarrow \mathbb{N}$ is recursively defined as follows:
+		$$
+			\begin{align}
+			T(0) &= 2, \\
+			T(n) &= 3 \cdot T(n - 1) + 1,\ \ \mathrm{if}\ n \geq 1.
+			\end{align}
+		$$
+		Which of the following is true for all integers $n \geq 0$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$T(n) = \frac{5}{2} \cdot 3^{n} - 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$T(n) = \frac{3}{2} \cdot 3^{n} - \frac{1}{2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$T(n) = \frac{5}{2} \cdot 3^{n} - \frac{1}{2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		You flip a fair coin 5 times; the flips are independent of each other. What is the probability that
+		in these 5 coin flips, the coin comes up heads an odd number of times?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/4<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		In a standard deck of 52 cards, each card has a <em>suit</em> and a <em>rank</em>.
+		There are four suits (spades ♠, hearts ♡, clubs ♣, and diamonds ♢),
+		and 13 ranks (Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, and King). <br>
+		Assume you get a uniformly random hand consisting of 5 cards. What is the probability that the 5
+		cards in this hand are all of the same suit?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {13 \choose 5} \middle/ {52 \choose 5} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {52 \choose 5} \middle/ {13 \choose 5} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4 \cdot \left. {13 \choose 5} \middle/ {52 \choose 5} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4 \cdot \left. {52 \choose 5} \middle/ {13 \choose 5} \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		You are given a fair die that has six faces. One face has the letter $a$ on it, two faces have the
+		letter $b$ on them, and three faces have the letter $c$ on them. Assume you roll this die twice,
+		independently of each other. Define the events
+		[defs]
+		  A = "both rolls result in the same letter",
+		  B = "at least one of the rolls results in the letter $a$".
+		[/defs]
+		What is $\Pr(A|B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/7<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/7<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/11<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/11<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		Let $n$ and $k$ be integers with $1 \leq k \leq n$. <br>
+		You are given two bitstrings $a_1,a_2,\dots,a_n$ and $b_1,b_2,\dots,b_n$ of length $n$. In both
+		bitstrings, each bit is 0 with probability 1/2, and 1 with probability 1/2 (independent of all
+		other bits). <br>
+		Consider the bitstring
+		$$
+			a_1 \cdot b_1,a_2 \cdot b_2,\dots,a_n \cdot b_n
+		$$
+		where $a_i \cdot b_i$ is the result of multiplying the two bits $a_i$ and $b_i$. What is the probability that this
+		bitstring contains exactly $k$ many 1's?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} \cdot \left. 3^{n - k} \middle/ 4^n \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} \cdot \left. 4^{n - k} \middle/ 3^n \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} \cdot \left. 4^{n - k} \middle/ 3^k \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		Consider a uniformly random permutation $a_1,a_2,a_3,a_4$ of the set $\{1,2,3,4\}$.
+		Define the events
+		[defs]
+		  A = "$a_1 > a_2$",
+		  B = "$a_4 > a_3$".
+		[/defs]
+		Which of the following is correct?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->All of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		You flip a fair coin three times; these three flips are independent. Define the events
+		[defs]
+		  A = "the number of heads in these three flips is even",
+		  B = "the number of tails in these three flips is at most one".
+		[/defs]
+		(Remember that 0 is even.) Which of the following is correct?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->All of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		Let $A$ and $B$ be two independent events in some sample space $S$.
+		You are given that $\Pr(A) = 1/4$ and $\Pr(B) = 2/3$. What is $\Pr(A \cup B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3/4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/3<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>18. <!-- HTML_TAG_START -->
+	
+		A red box contains the numbers 0, 1, and 2, and a blue box also contains the numbers 0, 1, and 2.
+		You choose a uniformly random element from the red box and a uniformly random element from the blue
+		box; these two choices are independent of each other. Define the random variables
+		[defs]
+		  X = the number you choose from the red box,
+		  Y = the number you choose from the blue box,
+		  Z = $\max(X, Y)$.
+		[/defs]
+		What is the expected value $\mathbb{E}(Z)$ of the random variable $Z$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->9/13<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->13/9<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->8/9<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->9/8<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>19. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 2$ be an integer. Consider a string $c_1,c_2,\dots,c_n$ of length $n$, in which each
+		character $c_i$ is a uniformly random element of the set $\{\alpha, \beta, \gamma, \delta, \epsilon\}$
+		(independently of all other characters). <br>
+		Define the random variable $X$ to be the number of indices $i$ with $1 \leq i < n$
+		for which $c_i = c_{i+1}$. <br>
+		What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
+		<em>Hint:</em> Use indicator random variables.
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. n \middle/ 25 \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. (n - 1) \middle/ 25 \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. n \middle/ 5 \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. (n - 1) \middle/ 5 \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>20. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 2$ be an integer. You are given $n$ beer bottles $B_1,B_2,\dots,B_n$ and two cider
+		bottles $C_1$ and $C_2$. You choose a uniformly random 3-element subset of the set of these $n+2$
+		bottles. Define the random variable $X$ to be
+		[defs]
+		  X = the number of cider bottles in the chosen subset.
+		[/defs]
+		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{2 {{n}\choose{2}} + n}{{{n+2}\choose{3}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{2 {{n}\choose{2}} + n + 1}{{{n+2}\choose{3}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{2 {{n}\choose{2}} + 2n}{{{n+2}\choose{3}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{2 {{n}\choose{2}} + n - 1}{{{n+2}\choose{3}}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>21. <!-- HTML_TAG_START -->
+	
+		You are given two independent random variables $X$ and $Y$, where
+		
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$\Pr(X = 0)$</td>
+					<td>
+						$= \Pr(X = 1) = \Pr(Y = 0)$
+						$= \Pr(Y = 1) = 1/2.$
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		Define the random variable
+		$$
+			Z = (X + Y)\ \mathrm{mod}\ 2.
+		$$
+		Which of the following is correct?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The random variables $X$ and $Z$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The random variables $X$ and $Z$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->All of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>22. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\TriIsHungry}{{\rm T {\scriptsize RI} I {\scriptsize S} H {\scriptsize UNGRY}}}$
+		</div>
+		
+		Zoltan's Noodle House is a popular restaurant in downtown Ottawa. When you order the surprise dish,
+		you get <em>Mi Quang</em> with probability 1/4, <em>Bun Cha Ca</em> with probability 1/3, and
+		<em>Banh Xeo</em> with probability 5/12. <br>
+		Tri enjoys going to this restaurant, because the food reminds him of his mommy's food back home in Da Nang. <br>
+		Tri runs the following recursive algorithm:
+		
+		<!-- this markup is messy to enable correctly-aligned word wrapping on horizontally constrained devices -->
+		<div style="margin: 1rem 0;">
+			$\mathbf{Algorithm}\ \TriIsHungry\mathrm{:}$ <br>
+			<table>
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$//$</td>
+						<td>
+							$\text{the results of all}$ $\text{orders are independent}$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			$\text{Tri orders the surprise dish;}$ <br>
+			$\mathbf{if}\ \mathrm{Tri}\ \mathrm{gets}\ \mathit{Mi}\ \mathit{Quang}$ <br>
+			$\mathbf{then}\ \text{Tri eats the dish;}$ <br>
+			$\qquad\ \ \TriIsHungry$ <br>
+			$\mathbf{else}\ \mathbf{if}\ \mathrm{Tri}\ \mathrm{gets}\ \mathit{Bun}\ \mathit{Cha}\ \mathit{Ca}$ <br>
+			$\qquad\, \mathbf{then}\ \text{Tri eats the dish;}$ <br>
+			$\qquad \qquad\ \ \, \TriIsHungry$ <br>
+			$\qquad\, \mathbf{else}\ \text{Tri eats the dish;}$ <br>
+			<table>
+				<tbody>
+					<tr>
+						<td style="padding: 0;">$\hspace{4.05em}$</td>
+						<td style="padding: 0;">$\text{Tri pays the bill}$ $\text{and goes home}$</td>
+					</tr>
+				</tbody>
+			</table>
+			$\qquad\, \mathbf{endif}$ <br>
+			$\mathbf{endif}$ <br>
+		</div>
+		
+		Define the random variable $X$ to be the number of dishes that Tri eats when running algorithm $\TriIsHungry$. <br>
+		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/12<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->12/5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/7<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->7/5<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>23. <!-- HTML_TAG_START -->
+	
+		The final exam for COMP 2804 has 25 multiple-choice questions. For each question, there are 4
+		possible answers, exactly one of which is correct. Michiel chooses a positive real number $z$ and
+		uses the following marking scheme: For each correct answer, a student receives 1 mark, whereas for
+		each incorrect answer, the student receives $-z$ marks. <br>
+		
+		Jim is one of the students and answers the 25 questions, by choosing a uniformly random answer for
+		each question; the choices are independent of each other. <br>
+		
+		Define the random variable
+		[defs]
+		  X = the number of marks that Jim recevies.
+		[/defs]
+		For what value of $z$ is the expected value $\mathbb{E}(X)$ equal to 0? <br>
+		
+		<em>Hint:</em> Use the Linearity of Expectation.
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$z = 1/4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$z = 1/3$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$z = 1/2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$z = 3/4$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>24. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 2$ be an integer. There are $n$ students $S_1,S_2,\dots,S_n$ writing this exam. Each
+		student has brought one backpack with them. Before the exam starts, all students have to leave their
+		backpacks at the front of the examination room. <br>
+		
+		At the end of the exam, the proctor places the backpacks in a uniformly random order $b_1,b_2,\dots,b_n$,
+		and, for each $i = 1, 2, ..., n$, gives backpack $b_i$ to student $S_i$. <br>
+		
+		Define the following random variable $X$:
+		[defs]
+		  X = the number of students who get their own backpack.
+		[/defs]
+		What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
+		<em>Hint:</em> Use indicator random variables.
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. (n + 1) \middle/ n \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. (n - 1) \middle/ n \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>25. <!-- HTML_TAG_START -->
+	
+		Who discovered the Vandermonde Identity?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Professor Identity<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Donald Trump<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Alexandre-Théophile Vandermonde<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Justin Bieber<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

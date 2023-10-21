@@ -1,0 +1,370 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("kxOSr", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"midterm-winter-2017","title":"Winter 2017 Midterm","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tCarleton's Computer Science program has $f$ female students and $m$ male students, where $f \\geq 1$\n\t\tand $f + m \\geq 8$. The Carleton Computer Science Society has a Board of Directors consisting of a\n\t\tPresident, five Vice-Presidents, and two Cider-Presidents (whose task is to buy cider for the\n\t\tPresident). All members of the Board of Directors are Computer Science students. The President is\n\t\tfemale, cannot be Vice-President, and cannot be Cider-President. A Vice-President cannot be Cider-President.\n\t\tIn how many ways can a Board of Directors be chosen?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$f \\cdot {f+m-1 \\choose 7}$","correct":false},{"body":"$f + {f+m-1 \\choose 5} + {f+m-6 \\choose 2}$","correct":false},{"body":"$f \\cdot {f+m-1 \\choose 5} \\cdot {f+m-6 \\choose 2}$","correct":true},{"body":"$f \\cdot {f+m \\choose 5} \\cdot {f+m \\choose 2}$","correct":false}]},{"body":["\n\t\n\t\tLet $b \\geq 1$ and $g \\geq 1$ be integers. Consider $b$ boys and $g$ girls. How many ways are there\n\t\tto arrange these kids on a line such that the leftmost kid is a girl?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$(b + g)!$","correct":false},{"body":"$g \\cdot (b + g - 1)!$","correct":true},{"body":"$(b + g)! \u002F b$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $b \\geq 1$ and $g \\geq 1$ be integers. Consider $b$ boys and $g$ girls. How many ways are there\n\t\tto arrange these kids on a line such that the leftmost kid is a girl or the rightmost kid is a boy?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$(b+g)!$","correct":false},{"body":"$(b+g)! - b \\cdot (b+g-1)! -\\ $ $ g \\cdot (b+g-1)!$","correct":false},{"body":"$g \\cdot (b+g-1)! + b \\cdot (b+g-1)!\\ -$ $ b \\cdot g \\cdot (b+g-1)!$","correct":false},{"body":"$g \\cdot (b+g-1)! + b \\cdot (b+g-1)!\\ -$ $ b \\cdot g \\cdot (b+g-2)!$","correct":true}]},{"body":["\n\t\n\t\tLet $n \\geq 13$ be an integer. What is the number of bitstrings of length $n$ that have exactly\n\t\tseven 0's or exactly five 1's?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${n \\choose 12} \\cdot {12 \\choose 7}$","correct":false},{"body":"${n \\choose 7} + {n \\choose 5}$","correct":true},{"body":"${n \\choose 7} + {n \\choose 5} - {n \\choose 5} \\cdot {n - 5 \\choose 7}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tConsider strings of length six consisting of the characters $a$, $b$, $c$, and $d$. How many such\n\t\tstrings are there that start with $abc$ or end with $cccc$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"79","correct":true},{"body":"80","correct":false},{"body":"81","correct":false},{"body":"82","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 4$ be an integer and consider strings of length $n$ consisting of the characters $a$, $b$,\n\t\t$c$, and $d$. How many such strings are there that start with $ab$ or start with $abc$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$4^{n}$","correct":false},{"body":"$4^{n-1}$","correct":false},{"body":"$4^{n-2}$","correct":true},{"body":"$4^{n-3}$","correct":false}]},{"body":["\n\t\n\t\tLet $m \\geq 2$ and $n \\geq 2$ be integers. What does\n\t\t$\n\t\t\t{m \\choose 2} + {n \\choose 2} + mn\n\t\t$\n\t\tcount?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ must be a man and $y$ must be a woman.","correct":false},{"body":"The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ and $y$ cannot both be men.","correct":false},{"body":"The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women, where at least one man must be chosen.","correct":false},{"body":"The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women.","correct":true}]},{"body":["\n\t\n\t\tEach student has a student number which is a string of five digits, in which no digit occurs more\n\t\tthan once. Thus, 94631 is a valid student number, whereas 94641 is not valid. \u003Cbr\u003E\n\t\t\n\t\tWhat is the minimum number of students such that we can guarantee that at least two of them have the\n\t\tsame student number?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$1 + 10^{5}$","correct":false},{"body":"$1 + 5^{10}$","correct":false},{"body":"$1 + \\frac{10!}{5!}$","correct":true},{"body":"$1 + \\frac{5!}{10!}$","correct":false}]},{"body":["\n\t\n\t\tWhat is the coefficient of $x^{20}y^{80}$ in the expansion of $(7x-13y)^{100}$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${100 \\choose 80} \\cdot 7^{20} \\cdot 13^{80}$","correct":true},{"body":"$- {100 \\choose 80} \\cdot 7^{20} \\cdot 13^{80}$","correct":false},{"body":"${100 \\choose 20} \\cdot 7^{80} \\cdot 13^{20}$","correct":false},{"body":"$- {100 \\choose 20} \\cdot 7^{80} \\cdot 13^{20}$","correct":false}]},{"body":["\n\t\n\t\tHow many strings can be obtained by rearranging the letters of the word\n\t\t\u003Cp style=\"text-align: center;\"\u003E\n\t\t\tPOOPERSCOOPER\n\t\t\u003C\u002Fp\u003E\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$13!$","correct":false},{"body":"${13 \\choose 4}{13 \\choose 3}{13 \\choose 2}{13 \\choose 2}{13 \\choose 1}$","correct":false},{"body":"${13 \\choose 4}{9 \\choose 3}{6 \\choose 2}{4 \\choose 2}$","correct":false},{"body":"${13 \\choose 4}{9 \\choose 3}{6 \\choose 2}{4 \\choose 2}{2 \\choose 1}$","correct":true}]},{"body":["\n\t\n\t\tA bitstring is called 00-\u003Cem\u003Efree\u003C\u002Fem\u003E if it does not contain two 0's next to each other.\n\t\tIn class, we have seen that for any $m \\geq 1$,\n\t\tthe number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number $f_{m+2}$. \u003Cbr\u003E\n\t\t\n\t\tLet $n \\geq 3$ be an integer. What is the number of 00-free bitstrings of length $3n-1$ that have 0 at position $n$\n\t\tand 1 at position $2n$? (The positions are numbered $1,2,\\dots,3n-1)$. \u003Cbr\u003E\n\t\t(n.b., $f^2_x = f_x \\cdot f_x$)\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${f^2_{n+1}} \\cdot f_n$","correct":false},{"body":"${f^2_{n}} \\cdot f_{n+1}$","correct":true},{"body":"${f^2_{n+2}} \\cdot f_{n+1}$","correct":false},{"body":"${f^2_{n+1}} \\cdot f_{n+2}$","correct":false}]},{"body":["\n\t\n\t\tThe function $f : \\{1,2,3,\\dots\\} \\rightarrow \\mathbb{R}$ is defined by\n\t\t$\n\t\t\t\\begin{align}\n\t\t\tf(1) &= 2, \\\\\n\t\t\tf(n) &= 2 \\left( \\frac{n - 1}{n} \\right)^2 \\cdot f(n - 1)\\ \\mathrm{if}\\ n \\geq 2.\n\t\t\t\\end{align}\n\t\t$\n\t\tWhat is $f(n)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$f(n) = \\frac{2^{n}}{(n-1)^{2}}$","correct":false},{"body":"$f(n) = \\frac{2^{n-1}}{n^{2}}$","correct":false},{"body":"$f(n) = \\frac{2^{n}}{n^{2}}$","correct":true},{"body":"$f(n) = \\frac{n^{2}}{2^{n}}$","correct":false}]},{"body":["\n\t\n\t\tFor any integer $n \\geq 1$, let $B_n$ be the number of bitstrings of length $n$ that do not contain\n\t\tthe substring 10. Which of the following is true for any $n \\geq 4$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$B_n = n$","correct":false},{"body":"$B_n = n+1$","correct":true},{"body":"$B_n = f_{n+1}$, the $(n+1)$-st Fibonacci number.","correct":false},{"body":"$B_n = f_{n+2}$, the $(n+2)$-nd Fibonacci number.","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 1$ be an integer, and let $S_n$ be the number of ways in which $n$ can be written\n\t\tas a sum of 3's and 4's, such that the order in which the 3's and 4's occur in the sum matters.\n\t\tFor example, $S_5 = 0$, because 5 cannot be written as a sum of 3's and 4's.\n\t\tWe have $S_{11} = 3$, because\n\t\t\n\t\t\u003Ctable style=\"margin: 1rem auto;\"\u003E\n\t\t\t\u003Ctbody\u003E\n\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$11$\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003Ctd\u003E\n\t\t\t\t\t\t$= 3 + 4 + 4 = 4 + 3 + 4$\n\t\t\t\t\t\t$= 4 + 4 + 3.$\n\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\u003C\u002Ftbody\u003E\n\t\t\u003C\u002Ftable\u003E\n\t\t\n\t\tWhich of the following is true for any $n \\geq 5$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = 2 \\cdot S_{n - 1}$","correct":false},{"body":"$S_n = S_{n - 1} + S_{n - 2}$","correct":false},{"body":"$S_n = S_{n - 2} + S_{n - 3}$","correct":false},{"body":"$S_n = S_{n - 3} + S_{n - 4}$","correct":true}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\Hello}{{\\rm H {\\scriptsize ELLO}}}\n\t\t\t \\newcommand{\\elsesp}{\\phantom{\\mathbf{else}\\ }}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the recursive algorithm $\\Hello$, which takes as input an integer $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\Hello(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\text{print ``hello''}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\mathbf{if}\\ n\\ \\mathrm{is}\\ \\mathrm{even}$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\mathbf{then}\\ \\Hello(n \u002F 2)$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\mathbf{else}\\ \\Hello(n - 1);$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\elsesp \\Hello(n - 2)$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tIf we run algorithm $\\Hello(7)$, how many times is the word \"hello\" printed?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"4","correct":false},{"body":"5","correct":true},{"body":"6","correct":false},{"body":"7","correct":false}]},{"body":["\n\t\n\t\tYou flip a fair coin 15 times. Define the event\n\t\t[defs]\n\t\t  A = \"the result of the first three flips are equal\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"1\u002F2","correct":false},{"body":"1\u002F4","correct":true},{"body":"1\u002F6","correct":false},{"body":"1\u002F8","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 1$ be an integer. A bag contains $n$ red balls and $n$ blue balls. We choose a uniformly\n\t\trandom subset of two balls. Define the event\n\t\t[defs]\n\t\t  A = \"this subset consists of one red ball and one blue ball\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\left. n^2 \\middle\u002F {2n \\choose 2} \\right.$","correct":true},{"body":"$\\left. {2n \\choose 2} \\middle\u002F n^2 \\right.$","correct":false},{"body":"$\\left. n^2 \\middle\u002F {n \\choose 2} \\right.$","correct":false},{"body":"$\\left. {n \\choose 2} \\middle\u002F n^2 \\right.$","correct":false}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="kxOSr"><div class="test-application"><div class="test-header"><div>Winter 2017 Midterm</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		Carleton's Computer Science program has $f$ female students and $m$ male students, where $f \geq 1$
+		and $f + m \geq 8$. The Carleton Computer Science Society has a Board of Directors consisting of a
+		President, five Vice-Presidents, and two Cider-Presidents (whose task is to buy cider for the
+		President). All members of the Board of Directors are Computer Science students. The President is
+		female, cannot be Vice-President, and cannot be Cider-President. A Vice-President cannot be Cider-President.
+		In how many ways can a Board of Directors be chosen?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f \cdot {f+m-1 \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f + {f+m-1 \choose 5} + {f+m-6 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f \cdot {f+m-1 \choose 5} \cdot {f+m-6 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f \cdot {f+m \choose 5} \cdot {f+m \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Let $b \geq 1$ and $g \geq 1$ be integers. Consider $b$ boys and $g$ girls. How many ways are there
+		to arrange these kids on a line such that the leftmost kid is a girl?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(b + g)!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$g \cdot (b + g - 1)!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(b + g)! / b$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		Let $b \geq 1$ and $g \geq 1$ be integers. Consider $b$ boys and $g$ girls. How many ways are there
+		to arrange these kids on a line such that the leftmost kid is a girl or the rightmost kid is a boy?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(b+g)!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(b+g)! - b \cdot (b+g-1)! -\ $ $ g \cdot (b+g-1)!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$g \cdot (b+g-1)! + b \cdot (b+g-1)!\ -$ $ b \cdot g \cdot (b+g-1)!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$g \cdot (b+g-1)! + b \cdot (b+g-1)!\ -$ $ b \cdot g \cdot (b+g-2)!$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 13$ be an integer. What is the number of bitstrings of length $n$ that have exactly
+		seven 0's or exactly five 1's?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose 12} \cdot {12 \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose 7} + {n \choose 5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose 7} + {n \choose 5} - {n \choose 5} \cdot {n - 5 \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		Consider strings of length six consisting of the characters $a$, $b$, $c$, and $d$. How many such
+		strings are there that start with $abc$ or end with $cccc$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->79<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->80<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->81<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->82<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 4$ be an integer and consider strings of length $n$ consisting of the characters $a$, $b$,
+		$c$, and $d$. How many such strings are there that start with $ab$ or start with $abc$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^{n}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^{n-1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		Let $m \geq 2$ and $n \geq 2$ be integers. What does
+		$$
+			{m \choose 2} + {n \choose 2} + mn
+		$$
+		count?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ must be a man and $y$ must be a woman.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ and $y$ cannot both be men.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women, where at least one man must be chosen.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		Each student has a student number which is a string of five digits, in which no digit occurs more
+		than once. Thus, 94631 is a valid student number, whereas 94641 is not valid. <br>
+		
+		What is the minimum number of students such that we can guarantee that at least two of them have the
+		same student number?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 + 10^{5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 + 5^{10}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 + \frac{10!}{5!}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 + \frac{5!}{10!}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		What is the coefficient of $x^{20}y^{80}$ in the expansion of $(7x-13y)^{100}$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${100 \choose 80} \cdot 7^{20} \cdot 13^{80}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$- {100 \choose 80} \cdot 7^{20} \cdot 13^{80}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${100 \choose 20} \cdot 7^{80} \cdot 13^{20}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$- {100 \choose 20} \cdot 7^{80} \cdot 13^{20}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		How many strings can be obtained by rearranging the letters of the word
+		<p style="text-align: center;">
+			POOPERSCOOPER
+		</p>
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$13!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${13 \choose 4}{13 \choose 3}{13 \choose 2}{13 \choose 2}{13 \choose 1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}{2 \choose 1}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		A bitstring is called 00-<em>free</em> if it does not contain two 0's next to each other.
+		In class, we have seen that for any $m \geq 1$,
+		the number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number $f_{m+2}$. <br>
+		
+		Let $n \geq 3$ be an integer. What is the number of 00-free bitstrings of length $3n-1$ that have 0 at position $n$
+		and 1 at position $2n$? (The positions are numbered $1,2,\dots,3n-1)$. <br>
+		(n.b., $f^2_x = f_x \cdot f_x$)
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${f^2_{n+1}} \cdot f_n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${f^2_{n}} \cdot f_{n+1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${f^2_{n+2}} \cdot f_{n+1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${f^2_{n+1}} \cdot f_{n+2}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		The function $f : \{1,2,3,\dots\} \rightarrow \mathbb{R}$ is defined by
+		$$
+			\begin{align}
+			f(1) &= 2, \\
+			f(n) &= 2 \left( \frac{n - 1}{n} \right)^2 \cdot f(n - 1)\ \mathrm{if}\ n \geq 2.
+			\end{align}
+		$$
+		What is $f(n)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = \frac{2^{n}}{(n-1)^{2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = \frac{2^{n-1}}{n^{2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = \frac{2^{n}}{n^{2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = \frac{n^{2}}{2^{n}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		For any integer $n \geq 1$, let $B_n$ be the number of bitstrings of length $n$ that do not contain
+		the substring 10. Which of the following is true for any $n \geq 4$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = n+1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = f_{n+1}$, the $(n+1)$-st Fibonacci number.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = f_{n+2}$, the $(n+2)$-nd Fibonacci number.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 1$ be an integer, and let $S_n$ be the number of ways in which $n$ can be written
+		as a sum of 3's and 4's, such that the order in which the 3's and 4's occur in the sum matters.
+		For example, $S_5 = 0$, because 5 cannot be written as a sum of 3's and 4's.
+		We have $S_{11} = 3$, because
+		
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$11$</td>
+					<td>
+						$= 3 + 4 + 4 = 4 + 3 + 4$
+						$= 4 + 4 + 3.$
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		Which of the following is true for any $n \geq 5$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n - 1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 1} + S_{n - 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 2} + S_{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 3} + S_{n - 4}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\Hello}{{\rm H {\scriptsize ELLO}}}
+			 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+		</div>
+		
+		Consider the recursive algorithm $\Hello$, which takes as input an integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Hello(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ \text{print ``hello''}$ <br>
+			$\mathbf{else}\ \mathbf{if}\ n\ \mathrm{is}\ \mathrm{even}$ <br>
+			$\elsesp \mathbf{then}\ \Hello(n / 2)$ <br>
+			$\elsesp \mathbf{else}\ \Hello(n - 1);$ <br>
+			$\elsesp \elsesp \Hello(n - 2)$ <br>
+			$\elsesp \mathbf{endif};$ <br>
+			$\mathbf{endif}$
+		</p>
+		
+		If we run algorithm $\Hello(7)$, how many times is the word "hello" printed?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->7<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		You flip a fair coin 15 times. Define the event
+		[defs]
+		  A = "the result of the first three flips are equal".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/8<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 1$ be an integer. A bag contains $n$ red balls and $n$ blue balls. We choose a uniformly
+		random subset of two balls. Define the event
+		[defs]
+		  A = "this subset consists of one red ball and one blue ball".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. n^2 \middle/ {2n \choose 2} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {2n \choose 2} \middle/ n^2 \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. n^2 \middle/ {n \choose 2} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {n \choose 2} \middle/ n^2 \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

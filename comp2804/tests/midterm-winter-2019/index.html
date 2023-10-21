@@ -1,0 +1,800 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("ZKN0s", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"midterm-winter-2019","title":"Winter 2019 Midterm","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tConsider bitstrings of length 13. The positions in these strings are numbered as $1,2,3,\\dots,13$.\n\t\tHow many such bitstrings have the property that all bits at the odd positions are equal?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"32","correct":false},{"body":"64","correct":false},{"body":"128","correct":true},{"body":"256","correct":false}]},{"body":["\n\t\n\t\tConsider permutations of the set $\\{a,b,c,d,e,f,g\\}$ that do not contain $bge$ (in this order). \u003Cbr\u003E\n\t\tHow many such permutations are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$7! - 6!$","correct":false},{"body":"$7! - 5!$","correct":true},{"body":"$7! - 4!$","correct":false},{"body":"$7! - 3!$","correct":false}]},{"body":["\n\t\n\t\tConsider strings of length 15, where each character is a lowercase letter or an uppercase letter.\n\t\tHow many such strings contain at least one lowercase letter and at least one uppercase letter?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$52^{15} - 26^{15}$","correct":false},{"body":"$52^{15} - 2 \\cdot 26^{15}$","correct":true},{"body":"$52^{15} - 3 \\cdot 26^{15}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 8$ be an even integer and let $k$ be an integer with $2 \\leq k \\leq n\u002F2$. Consider\n\t\t$k$-element subsets of the set $S = \\{1,2,\\dots,n\\}$. How many such subsets contain at least two even\n\t\tnumbers?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${n \\choose k} - {n\u002F2 \\choose k - 1} - \\frac{n}{2} \\cdot {n\u002F2 \\choose k}$","correct":false},{"body":"${n \\choose k} - {n\u002F2 \\choose k - 1} - \\frac{n}{2} \\cdot {n\u002F2 \\choose k - 1}$","correct":false},{"body":"${n \\choose k} - {n\u002F2 \\choose k} - \\frac{n}{2} \\cdot {n\u002F2 \\choose k}$","correct":false},{"body":"${n \\choose k} - {n\u002F2 \\choose k} - \\frac{n}{2} \\cdot {n\u002F2 \\choose k - 1}$","correct":true}]},{"body":["\n\t\n\t\tIn a group of 100 students,\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t37 students like beer,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t18 students like cider,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t55 students do not like beer and do not like cider.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tHow many students like beer and cider?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"8","correct":false},{"body":"9","correct":false},{"body":"10","correct":true},{"body":"11","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 1$ be an integer. A group of $n$ students write an exam. Each student receives a grade,\n\t\twhich is an element of the set $\\{A, B, C, D, F\\}$. \u003Cbr\u003E\n\t\tWhat is the minimum value for $n$, such that there must be at least four students who receive the same grade?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"14","correct":false},{"body":"15","correct":false},{"body":"16","correct":true},{"body":"17","correct":false}]},{"body":["\n\t\n\t\tConsider 17-element subsets of the set $\\{1,2,3,\\dots,45\\}$. \u003Cbr\u003E\n\t\tHow many such subsets have the property that the largest element in the subset is equal to 30?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${{29}\\choose{16}}$","correct":true},{"body":"${29 \\choose 17}$","correct":false},{"body":"${30 \\choose 16}$","correct":false},{"body":"${30 \\choose 17}$","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 4$ be an integer. What does\n\t\t$\n\t\t\t3 \\cdot { n\\choose 3} + 6n \\cdot {n \\choose 2} + n^3\n\t\t$\n\t\tcount?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"\n\t\n\t\tThe number of ways to choose an ordered triple\n\t\t\u003Cp style=\"text-align: center; margin: 0.5rem 0;\"\u003E\n\t\t\t(beer bottle, cider bottle, wine bottle)\n\t\t\u003C\u002Fp\u003E\n\t\tin a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.\n\t\n\t","correct":false},{"body":"\n\t\tThe number of ways to choose a 3-element subset of a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.\n\t","correct":true},{"body":"\n\t\tThe number of ways to choose 3 elements (with repetitions allowed) in a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.\n\t","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 4$ be an even integer and let $k$ be an integer with $1 \\leq k \\leq n\u002F2$. Consider\n\t\tstrings consisting of $n$ characters, such that\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\teach character is an element of $\\{a, b, c\\}$,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tthe number of $a</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="ZKN0s"><div class="test-application"><div class="test-header"><div>Winter 2019 Midterm</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		Consider bitstrings of length 13. The positions in these strings are numbered as $1,2,3,\dots,13$.
+		How many such bitstrings have the property that all bits at the odd positions are equal?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->32<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->64<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->128<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->256<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Consider permutations of the set $\{a,b,c,d,e,f,g\}$ that do not contain $bge$ (in this order). <br>
+		How many such permutations are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7! - 6!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7! - 5!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7! - 4!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7! - 3!$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		Consider strings of length 15, where each character is a lowercase letter or an uppercase letter.
+		How many such strings contain at least one lowercase letter and at least one uppercase letter?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$52^{15} - 26^{15}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$52^{15} - 2 \cdot 26^{15}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$52^{15} - 3 \cdot 26^{15}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 8$ be an even integer and let $k$ be an integer with $2 \leq k \leq n/2$. Consider
+		$k$-element subsets of the set $S = \{1,2,\dots,n\}$. How many such subsets contain at least two even
+		numbers?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n/2 \choose k - 1} - \frac{n}{2} \cdot {n/2 \choose k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n/2 \choose k - 1} - \frac{n}{2} \cdot {n/2 \choose k - 1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n/2 \choose k} - \frac{n}{2} \cdot {n/2 \choose k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n/2 \choose k} - \frac{n}{2} \cdot {n/2 \choose k - 1}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		In a group of 100 students,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				37 students like beer,
+			</li>
+			<li>
+				18 students like cider,
+			</li>
+			<li>
+				55 students do not like beer and do not like cider.
+			</li>
+		</ul>
+		How many students like beer and cider?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->8<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->9<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->10<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->11<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 1$ be an integer. A group of $n$ students write an exam. Each student receives a grade,
+		which is an element of the set $\{A, B, C, D, F\}$. <br>
+		What is the minimum value for $n$, such that there must be at least four students who receive the same grade?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->14<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->15<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->16<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->17<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		Consider 17-element subsets of the set $\{1,2,3,\dots,45\}$. <br>
+		How many such subsets have the property that the largest element in the subset is equal to 30?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${{29}\choose{16}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${29 \choose 17}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${30 \choose 16}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${30 \choose 17}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 4$ be an integer. What does
+		$$
+			3 \cdot { n\choose 3} + 6n \cdot {n \choose 2} + n^3
+		$$
+		count?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+	
+		The number of ways to choose an ordered triple
+		<p style="text-align: center; margin: 0.5rem 0;">
+			(beer bottle, cider bottle, wine bottle)
+		</p>
+		in a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+	
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose a 3-element subset of a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose 3 elements (with repetitions allowed) in a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 4$ be an even integer and let $k$ be an integer with $1 \leq k \leq n/2$. Consider
+		strings consisting of $n$ characters, such that
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				each character is an element of $\{a, b, c\}$,
+			</li>
+			<li>
+				the number of $a$'s is equal to $k$, and
+			</li>
+			<li>
+				each $a$ is at an even position.
+			</li>
+		</ul>
+		How many such strings are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n/2 \choose k} \cdot 2^{n-k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n/2 \choose k} \cdot 2^{n/2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} \cdot 2^{n-k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} \cdot 2^{n/2}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		A bitstring is called 00-<em>free</em>, if it does not contain two 0's next to each other.
+		In class, we have seen that for any $m \geq 1$,
+		the number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number
+		$f_{m+2}$. <br>
+		What is the number of 00-free bitstrings of length 77 that have 0 at position 59? (The positions are numbered $1,2,\dots,77$.)
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f_{17} \cdot f_{57}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f_{18} \cdot f_{58}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f_{19} \cdot f_{59}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f_{20} \cdot f_{60}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is recursively defined as follows:
+		$$
+			\begin{align}
+			f(0) &= 6, \\
+			f(n) &= 4 \cdot f(n-1) + 2^{n} \ \ \mathrm{if}\ n \geq 1.
+			\end{align}
+		$$
+		Which of the following is true for all integers $n \geq 0$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 6 \cdot 4^{n} - 2^{n}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 7 \cdot 4^{n} - 2^{n}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 8 \cdot 4^{n} - 2^{n+1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		Consider strings of characters, where each character is an element of the set $\{a, b, c\}$. Such a
+		string is called <em>awesome</em>, if it does not contain $aa$, and does not contain $aba$, and does not contain $abb$. <br>
+		For any integer $n \geq 1$, let $A_n$ be the number of awesome strings of length $n$. <br>
+		Which of the following is true for any integer $n \geq 4$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$A_n = A_{n-1} + 2 \cdot A_{n-2} + 2 \cdot A_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$A_n = A_{n-1} + 2 \cdot A_{n-2} + A_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$A_n = 2 \cdot A_{n-1} + A_{n-2} + 2 \cdot A_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$A_n = 2 \cdot A_{n-1} + A_{n-2} + A_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		We consider binary $2 \times n$ matrices, i.e., matrices with 2 rows and $n$ columns, in which each
+		entry is 0 or 1. A column in such a matrix is called a <span class="sticky">$1 \atop 1$-<em>column</em>,</span>
+		if both bits in the column are 1. <br>
+		For any integer $n \geq 1$ and integer $k$ with $0 \leq k \leq n$, let $M(n,k)$ be the number of binary $2 \times n$ matrices
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				that do not contain any $1 \atop 1$-column, and
+			</li>
+			<li>
+				contain exactly $k$ many 1's.
+			</li>
+		</ul>
+		Which of the following is true for all <span class="sticky">integers $n \geq 2$</span> and $k$ with $1 \leq k \leq n-1$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$M(n,k) = M(n-1,k)\ +$$\ M(n-1,k-1)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$M(n,k) = M(n-1,k)\ +$$\ 2 \cdot M(n-1,k-1)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$M(n,k) = M(n,k-1)\ +$$\ M(n-1,k-1)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$M(n,k) = M(n,k-1)\ +$$\ 2 \cdot M(n-1,k-1)$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		<div hidden>$\newcommand{\HelloWorld}{{\rm H {\scriptsize ELLO} W {\scriptsize ORLD}}}$</div>
+		
+		Consider the recursive algorithm $\HelloWorld$, which takes as input an integer $n \geq 0$:
+		<p>
+			$\mathbf{Algorithm}\ \HelloWorld(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ \mathrm{print}\ \mathit{Hello}\ \mathit{World}$ <br>
+			$\mathbf{else}\ \mathbf{if}\ n \text{ is a multiple of } 3$ <br>
+			$\qquad \mathbf{then}\ \HelloWorld\left( n \middle/ 3 \right);$ <br>
+			$\qquad \qquad \ \ \mathrm{print}\ \mathit{Hello}\ \mathit{World};$ <br>
+			$\qquad \qquad \ \ \HelloWorld\left( 2n \middle/ 3 \right)$ <br>
+			$\qquad \mathbf{else}\ \HelloWorld(n + 1)$ <br>
+			$\qquad \mathbf{endif};$ <br>
+			$\mathbf{endif}$
+		</p>
+		Which of the following is correct?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For any integer $n \geq 0$, algorithm $\HelloWorld(n)$ terminates.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->There exists an integer $n \geq 0$, for which algorithm $\HelloWorld(n)$ does not terminate.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->All of the above.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		The Carleton Computer Science Society (CCSS) is organizing their annual Saint Patrick's Day party.
+		The CCSS has bought three types of drinks:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				Porterhouse Brewing Co. Oyster Stout,
+			</li>
+			<li>
+				Guinness Extra Stout,
+			</li>
+			<li>
+				Magners Original Irish Cider.
+			</li>
+		</ul>
+		There is an unlimited supply for each of these types. <br>
+		There are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. <br>
+		Let $A$ be the event
+		[defs]
+		  A = "exactly 50 students get Magners Original Irish Cider".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{ 75 \choose 50 } \cdot 2^{25}}{3^{75}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{3^{75}}{{75 \choose 50} \cdot 2^{25}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{75 \choose 50}{3^{75}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{75 \choose 50} \cdot 3^{25}}{3^{75}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		Consider a standard 6-sided fair die. We roll this die 8 times. Let $A$ be the event
+		[defs]
+		  A = "there are at least two 5's in the sequence of 8 rolls".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - {\frac{8 \cdot 5^{7}}{6^{8}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - {\frac{6^{8}}{5^{8} + 8 \cdot 5^{7}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - {\frac{5^{8} + 8 \cdot 5^{7}}{6^{8}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - {\frac{8^{5} + 8 \cdot 7^{5}}{8^{6}}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		This midterm has 17 questions. For each question, four options are given, exactly one of which is
+		correct. Assume that you answer each question, by choosing one of the four options uniformly at random. <br>
+		Let A be the event
+		[defs]
+		  A = "you answer at least 16 questions correctly".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{4^{17}}{52}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{51}{4^{17}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{49}{4^{17}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{52}{4^{17}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+
+s is equal to $k$, and\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\teach $a$ is at an even position.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tHow many such strings are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${n\u002F2 \\choose k} \\cdot 2^{n-k}$","correct":true},{"body":"${n\u002F2 \\choose k} \\cdot 2^{n\u002F2}$","correct":false},{"body":"${n \\choose k} \\cdot 2^{n-k}$","correct":false},{"body":"${n \\choose k} \\cdot 2^{n\u002F2}$","correct":false}]},{"body":["\n\t\n\t\tA bitstring is called 00-\u003Cem\u003Efree\u003C\u002Fem\u003E, if it does not contain two 0's next to each other.\n\t\tIn class, we have seen that for any $m \\geq 1$,\n\t\tthe number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number\n\t\t$f_{m+2}$. \u003Cbr\u003E\n\t\tWhat is the number of 00-free bitstrings of length 77 that have 0 at position 59? (The positions are numbered $1,2,\\dots,77$.)\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$f_{17} \\cdot f_{57}$","correct":false},{"body":"$f_{18} \\cdot f_{58}$","correct":false},{"body":"$f_{19} \\cdot f_{59}$","correct":true},{"body":"$f_{20} \\cdot f_{60}$","correct":false}]},{"body":["\n\t\n\t\tThe function $f : \\mathbb{N} \\rightarrow \\mathbb{N}$ is recursively defined as follows:\n\t\t$\n\t\t\t\\begin{align}\n\t\t\tf(0) &= 6, \\\\\n\t\t\tf(n) &= 4 \\cdot f(n-1) + 2^{n} \\ \\ \\mathrm{if}\\ n \\geq 1.\n\t\t\t\\end{align}\n\t\t$\n\t\tWhich of the following is true for all integers $n \\geq 0$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$f(n) = 6 \\cdot 4^{n} - 2^{n}$","correct":false},{"body":"$f(n) = 7 \\cdot 4^{n} - 2^{n}$","correct":true},{"body":"$f(n) = 8 \\cdot 4^{n} - 2^{n+1}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tConsider strings of characters, where each character is an element of the set $\\{a, b, c\\}$. Such a\n\t\tstring is called \u003Cem\u003Eawesome\u003C\u002Fem\u003E, if it does not contain $aa$, and does not contain $aba$, and does not contain $abb$. \u003Cbr\u003E\n\t\tFor any integer $n \\geq 1$, let $A_n$ be the number of awesome strings of length $n$. \u003Cbr\u003E\n\t\tWhich of the following is true for any integer $n \\geq 4$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$A_n = A_{n-1} + 2 \\cdot A_{n-2} + 2 \\cdot A_{n-3}$","correct":false},{"body":"$A_n = A_{n-1} + 2 \\cdot A_{n-2} + A_{n-3}$","correct":false},{"body":"$A_n = 2 \\cdot A_{n-1} + A_{n-2} + 2 \\cdot A_{n-3}$","correct":false},{"body":"$A_n = 2 \\cdot A_{n-1} + A_{n-2} + A_{n-3}$","correct":true}]},{"body":["\n\t\n\t\tWe consider binary $2 \\times n$ matrices, i.e., matrices with 2 rows and $n$ columns, in which each\n\t\tentry is 0 or 1. A column in such a matrix is called a \u003Cspan class=\"sticky\"\u003E$1 \\atop 1$-\u003Cem\u003Ecolumn\u003C\u002Fem\u003E,\u003C\u002Fspan\u003E\n\t\tif both bits in the column are 1. \u003Cbr\u003E\n\t\tFor any integer $n \\geq 1$ and integer $k$ with $0 \\leq k \\leq n$, let $M(n,k)$ be the number of binary $2 \\times n$ matrices\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tthat do not contain any $1 \\atop 1$-column, and\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tcontain exactly $k$ many 1's.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tWhich of the following is true for all \u003Cspan class=\"sticky\"\u003Eintegers $n \\geq 2$\u003C\u002Fspan\u003E and $k$ with $1 \\leq k \\leq n-1$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$M(n,k) = M(n-1,k)\\ +$\\ M(n-1,k-1)$","correct":false},{"body":"$M(n,k) = M(n-1,k)\\ +$\\ 2 \\cdot M(n-1,k-1)$","correct":true},{"body":"$M(n,k) = M(n,k-1)\\ +$\\ M(n-1,k-1)$","correct":false},{"body":"$M(n,k) = M(n,k-1)\\ +$\\ 2 \\cdot M(n-1,k-1)$","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E$\\newcommand{\\HelloWorld}{{\\rm H {\\scriptsize ELLO} W {\\scriptsize ORLD}}}$\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the recursive algorithm $\\HelloWorld$, which takes as input an integer $n \\geq 0$:\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\HelloWorld(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\mathrm{print}\\ \\mathit{Hello}\\ \\mathit{World}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\mathbf{if}\\ n \\text{ is a multiple of } 3$ \u003Cbr\u003E\n\t\t\t$\\qquad \\mathbf{then}\\ \\HelloWorld\\left( n \\middle\u002F 3 \\right);$ \u003Cbr\u003E\n\t\t\t$\\qquad \\qquad \\ \\ \\mathrm{print}\\ \\mathit{Hello}\\ \\mathit{World};$ \u003Cbr\u003E\n\t\t\t$\\qquad \\qquad \\ \\ \\HelloWorld\\left( 2n \\middle\u002F 3 \\right)$ \u003Cbr\u003E\n\t\t\t$\\qquad \\mathbf{else}\\ \\HelloWorld(n + 1)$ \u003Cbr\u003E\n\t\t\t$\\qquad \\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$\n\t\t\u003C\u002Fp\u003E\n\t\tWhich of the following is correct?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"For any integer $n \\geq 0$, algorithm $\\HelloWorld(n)$ terminates.","correct":false},{"body":"There exists an integer $n \\geq 0$, for which algorithm $\\HelloWorld(n)$ does not terminate.","correct":true},{"body":"All of the above.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tThe Carleton Computer Science Society (CCSS) is organizing their annual Saint Patrick's Day party.\n\t\tThe CCSS has bought three types of drinks:\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tPorterhouse Brewing Co. Oyster Stout,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tGuinness Extra Stout,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tMagners Original Irish Cider.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tThere is an unlimited supply for each of these types. \u003Cbr\u003E\n\t\tThere are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. \u003Cbr\u003E\n\t\tLet $A$ be the event\n\t\t[defs]\n\t\t  A = \"exactly 50 students get Magners Original Irish Cider\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{{ 75 \\choose 50 } \\cdot 2^{25}}{3^{75}}$","correct":true},{"body":"$\\frac{3^{75}}{{75 \\choose 50} \\cdot 2^{25}}$","correct":false},{"body":"$\\frac{75 \\choose 50}{3^{75}}$","correct":false},{"body":"$\\frac{{75 \\choose 50} \\cdot 3^{25}}{3^{75}}$","correct":false}]},{"body":["\n\t\n\t\tConsider a standard 6-sided fair die. We roll this die 8 times. Let $A$ be the event\n\t\t[defs]\n\t\t  A = \"there are at least two 5's in the sequence of 8 rolls\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$1 - {\\frac{8 \\cdot 5^{7}}{6^{8}}}$","correct":false},{"body":"$1 - {\\frac{6^{8}}{5^{8} + 8 \\cdot 5^{7}}}$","correct":false},{"body":"$1 - {\\frac{5^{8} + 8 \\cdot 5^{7}}{6^{8}}}$","correct":true},{"body":"$1 - {\\frac{8^{5} + 8 \\cdot 7^{5}}{8^{6}}}$","correct":false}]},{"body":["\n\t\n\t\tThis midterm has 17 questions. For each question, four options are given, exactly one of which is\n\t\tcorrect. Assume that you answer each question, by choosing one of the four options uniformly at random. \u003Cbr\u003E\n\t\tLet A be the event\n\t\t[defs]\n\t\t  A = \"you answer at least 16 questions correctly\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{4^{17}}{52}$","correct":false},{"body":"$\\frac{51}{4^{17}}$","correct":false},{"body":"$\\frac{49}{4^{17}}$","correct":false},{"body":"$\\frac{52}{4^{17}}$","correct":true}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="ZKN0s"><div class="test-application"><div class="test-header"><div>Winter 2019 Midterm</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		Consider bitstrings of length 13. The positions in these strings are numbered as $1,2,3,\dots,13$.
+		How many such bitstrings have the property that all bits at the odd positions are equal?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->32<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->64<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->128<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->256<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Consider permutations of the set $\{a,b,c,d,e,f,g\}$ that do not contain $bge$ (in this order). <br>
+		How many such permutations are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7! - 6!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7! - 5!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7! - 4!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7! - 3!$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		Consider strings of length 15, where each character is a lowercase letter or an uppercase letter.
+		How many such strings contain at least one lowercase letter and at least one uppercase letter?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$52^{15} - 26^{15}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$52^{15} - 2 \cdot 26^{15}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$52^{15} - 3 \cdot 26^{15}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 8$ be an even integer and let $k$ be an integer with $2 \leq k \leq n/2$. Consider
+		$k$-element subsets of the set $S = \{1,2,\dots,n\}$. How many such subsets contain at least two even
+		numbers?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n/2 \choose k - 1} - \frac{n}{2} \cdot {n/2 \choose k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n/2 \choose k - 1} - \frac{n}{2} \cdot {n/2 \choose k - 1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n/2 \choose k} - \frac{n}{2} \cdot {n/2 \choose k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n/2 \choose k} - \frac{n}{2} \cdot {n/2 \choose k - 1}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		In a group of 100 students,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				37 students like beer,
+			</li>
+			<li>
+				18 students like cider,
+			</li>
+			<li>
+				55 students do not like beer and do not like cider.
+			</li>
+		</ul>
+		How many students like beer and cider?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->8<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->9<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->10<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->11<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 1$ be an integer. A group of $n$ students write an exam. Each student receives a grade,
+		which is an element of the set $\{A, B, C, D, F\}$. <br>
+		What is the minimum value for $n$, such that there must be at least four students who receive the same grade?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->14<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->15<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->16<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->17<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		Consider 17-element subsets of the set $\{1,2,3,\dots,45\}$. <br>
+		How many such subsets have the property that the largest element in the subset is equal to 30?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${{29}\choose{16}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${29 \choose 17}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${30 \choose 16}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${30 \choose 17}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 4$ be an integer. What does
+		$$
+			3 \cdot { n\choose 3} + 6n \cdot {n \choose 2} + n^3
+		$$
+		count?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+	
+		The number of ways to choose an ordered triple
+		<p style="text-align: center; margin: 0.5rem 0;">
+			(beer bottle, cider bottle, wine bottle)
+		</p>
+		in a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+	
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose a 3-element subset of a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose 3 elements (with repetitions allowed) in a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 4$ be an even integer and let $k$ be an integer with $1 \leq k \leq n/2$. Consider
+		strings consisting of $n$ characters, such that
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				each character is an element of $\{a, b, c\}$,
+			</li>
+			<li>
+				the number of $a$'s is equal to $k$, and
+			</li>
+			<li>
+				each $a$ is at an even position.
+			</li>
+		</ul>
+		How many such strings are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n/2 \choose k} \cdot 2^{n-k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n/2 \choose k} \cdot 2^{n/2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} \cdot 2^{n-k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} \cdot 2^{n/2}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		A bitstring is called 00-<em>free</em>, if it does not contain two 0's next to each other.
+		In class, we have seen that for any $m \geq 1$,
+		the number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number
+		$f_{m+2}$. <br>
+		What is the number of 00-free bitstrings of length 77 that have 0 at position 59? (The positions are numbered $1,2,\dots,77$.)
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f_{17} \cdot f_{57}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f_{18} \cdot f_{58}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f_{19} \cdot f_{59}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f_{20} \cdot f_{60}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is recursively defined as follows:
+		$$
+			\begin{align}
+			f(0) &= 6, \\
+			f(n) &= 4 \cdot f(n-1) + 2^{n} \ \ \mathrm{if}\ n \geq 1.
+			\end{align}
+		$$
+		Which of the following is true for all integers $n \geq 0$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 6 \cdot 4^{n} - 2^{n}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 7 \cdot 4^{n} - 2^{n}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 8 \cdot 4^{n} - 2^{n+1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		Consider strings of characters, where each character is an element of the set $\{a, b, c\}$. Such a
+		string is called <em>awesome</em>, if it does not contain $aa$, and does not contain $aba$, and does not contain $abb$. <br>
+		For any integer $n \geq 1$, let $A_n$ be the number of awesome strings of length $n$. <br>
+		Which of the following is true for any integer $n \geq 4$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$A_n = A_{n-1} + 2 \cdot A_{n-2} + 2 \cdot A_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$A_n = A_{n-1} + 2 \cdot A_{n-2} + A_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$A_n = 2 \cdot A_{n-1} + A_{n-2} + 2 \cdot A_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$A_n = 2 \cdot A_{n-1} + A_{n-2} + A_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		We consider binary $2 \times n$ matrices, i.e., matrices with 2 rows and $n$ columns, in which each
+		entry is 0 or 1. A column in such a matrix is called a <span class="sticky">$1 \atop 1$-<em>column</em>,</span>
+		if both bits in the column are 1. <br>
+		For any integer $n \geq 1$ and integer $k$ with $0 \leq k \leq n$, let $M(n,k)$ be the number of binary $2 \times n$ matrices
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				that do not contain any $1 \atop 1$-column, and
+			</li>
+			<li>
+				contain exactly $k$ many 1's.
+			</li>
+		</ul>
+		Which of the following is true for all <span class="sticky">integers $n \geq 2$</span> and $k$ with $1 \leq k \leq n-1$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$M(n,k) = M(n-1,k)\ +$$\ M(n-1,k-1)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$M(n,k) = M(n-1,k)\ +$$\ 2 \cdot M(n-1,k-1)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$M(n,k) = M(n,k-1)\ +$$\ M(n-1,k-1)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$M(n,k) = M(n,k-1)\ +$$\ 2 \cdot M(n-1,k-1)$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		<div hidden>$\newcommand{\HelloWorld}{{\rm H {\scriptsize ELLO} W {\scriptsize ORLD}}}$</div>
+		
+		Consider the recursive algorithm $\HelloWorld$, which takes as input an integer $n \geq 0$:
+		<p>
+			$\mathbf{Algorithm}\ \HelloWorld(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ \mathrm{print}\ \mathit{Hello}\ \mathit{World}$ <br>
+			$\mathbf{else}\ \mathbf{if}\ n \text{ is a multiple of } 3$ <br>
+			$\qquad \mathbf{then}\ \HelloWorld\left( n \middle/ 3 \right);$ <br>
+			$\qquad \qquad \ \ \mathrm{print}\ \mathit{Hello}\ \mathit{World};$ <br>
+			$\qquad \qquad \ \ \HelloWorld\left( 2n \middle/ 3 \right)$ <br>
+			$\qquad \mathbf{else}\ \HelloWorld(n + 1)$ <br>
+			$\qquad \mathbf{endif};$ <br>
+			$\mathbf{endif}$
+		</p>
+		Which of the following is correct?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For any integer $n \geq 0$, algorithm $\HelloWorld(n)$ terminates.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->There exists an integer $n \geq 0$, for which algorithm $\HelloWorld(n)$ does not terminate.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->All of the above.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		The Carleton Computer Science Society (CCSS) is organizing their annual Saint Patrick's Day party.
+		The CCSS has bought three types of drinks:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				Porterhouse Brewing Co. Oyster Stout,
+			</li>
+			<li>
+				Guinness Extra Stout,
+			</li>
+			<li>
+				Magners Original Irish Cider.
+			</li>
+		</ul>
+		There is an unlimited supply for each of these types. <br>
+		There are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. <br>
+		Let $A$ be the event
+		[defs]
+		  A = "exactly 50 students get Magners Original Irish Cider".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{ 75 \choose 50 } \cdot 2^{25}}{3^{75}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{3^{75}}{{75 \choose 50} \cdot 2^{25}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{75 \choose 50}{3^{75}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{75 \choose 50} \cdot 3^{25}}{3^{75}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		Consider a standard 6-sided fair die. We roll this die 8 times. Let $A$ be the event
+		[defs]
+		  A = "there are at least two 5's in the sequence of 8 rolls".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - {\frac{8 \cdot 5^{7}}{6^{8}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - {\frac{6^{8}}{5^{8} + 8 \cdot 5^{7}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - {\frac{5^{8} + 8 \cdot 5^{7}}{6^{8}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - {\frac{8^{5} + 8 \cdot 7^{5}}{8^{6}}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		This midterm has 17 questions. For each question, four options are given, exactly one of which is
+		correct. Assume that you answer each question, by choosing one of the four options uniformly at random. <br>
+		Let A be the event
+		[defs]
+		  A = "you answer at least 16 questions correctly".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{4^{17}}{52}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{51}{4^{17}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{49}{4^{17}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{52}{4^{17}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

@@ -1,0 +1,534 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Qjo1u", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"exam-fall-2014","title":"Fall 2014 Exam","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tA password consists of 13 characters, each character being one of the ten digits $0,1,2,\\dots,9$. \u003Cbr\u003E\n\t\tA password must contain exactly one odd digit. How many passwords are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$13 \\cdot 5^{12}$","correct":false},{"body":"$13 \\cdot 5^{13}$","correct":true},{"body":"$13 \\cdot 9^{12}$","correct":false},{"body":"$13 \\cdot 5 \\cdot 9^{12}$","correct":false}]},{"body":["\n\t\n\t\tA password consists of 13 characters, each character being one of the ten digits $0,1,2,\\dots,9$. \u003Cbr\u003E\n\t\tA password must contain at least one odd digit and at most two even digits. How many passwords are\n\t\tthere?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$5^{12} + 13 \\cdot 5^{12} + {13 \\choose 2}5^{12}$","correct":false},{"body":"$5^{13} + 13 \\cdot 9^{12} + {13 \\choose 2}9^{12}$","correct":false},{"body":"$5^{13} + 13 \\cdot 5^{13} + {13 \\choose 2}5^{13}$","correct":true},{"body":"$5 \\cdot 9^{12} + 13 \\cdot 5 \\cdot 9^{12} + {13 \\choose 2}5 \\cdot 9^{12}$","correct":false}]},{"body":["\n\t\n\t\tWhat is\n\t\t$\n\t\t\t\\sum_{k = 0}^{45} {45 \\choose k}(-3)^{2k}.\n\t\t$\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$(-2)^{45}$","correct":false},{"body":"$4^{45}$","correct":false},{"body":"$(-8)^{45}$","correct":false},{"body":"$10^{45}$","correct":true}]},{"body":["\n\t\n\t\tHow many bitstings of length 13 start with 010 or end with 11?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$2^{10} + 2^{11}$","correct":false},{"body":"$3 \\cdot 2^{10} - 2^{8}$","correct":true},{"body":"$2^{13} - (2^{10} + 2^{11})$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $S_n$ be the number of bitstrings of length $n$ that do not contain the substring 11. Which of\n\t\tthe following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = S_{n-1} + S_{n-2}\\ \\mathrm{for}\\ n \\geq 3.$","correct":true},{"body":"$S_n = S_{n-1} + S_{n-3}\\ \\mathrm{for}\\ n \\geq 3.$","correct":false},{"body":"$S_n = S_{n-1} + S_{n-2} + S_{n-3}\\ \\mathrm{for}\\ n \\geq 3.$","correct":false},{"body":"$S_n = 2 \\cdot S_{n-1}\\ \\mathrm{for}\\ n \\geq 3.$","correct":false}]},{"body":["\n\t\n\t\tIn a group of 100 students,\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t40 like 8:30am classes,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t30 like the course COMP 2804,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t50 do not like 8:30am classes and do not like the course COMP 2804.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tHow many students in this group like 8:30am classes and like the course COMP 2804?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"10","correct":false},{"body":"20","correct":true},{"body":"30","correct":false},{"body":"40","correct":false}]},{"body":["\n\t\n\t\tConsider $m \\geq 7$ blue balls $B_1,B_2,\\dots,B_m$ and $n \\geq 7$ red balls $R_1,R_2,\\dots,R_n$.\n\t\tWe pick 7 balls of the same color and arrange them on a horizontal line. (The order on the line\n\t\tmatters.) How many arrangements are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$7!{m \\choose 7} + 7!{n \\choose 7}$","correct":true},{"body":"$m!{m \\choose 7} + n!{n \\choose 7}$","correct":false},{"body":"$7!{m + n \\choose 7}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tThe number of different strings that can be made by reordering the 10 letters of the word AAABBCCCCC is\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$10!$","correct":false},{"body":"$\\frac{10!}{2!3!5!}$","correct":true},{"body":"${10 \\choose 3}{10 \\choose 2}{10 \\choose 5}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tHow many solutions are there to the equation $x_1 + x_2 + x_3 = 13$, where $x_1 \\geq 0$, $x_2 \\geq 0$,\n\t\t$x_3 \\geq 0$ are integers?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${13 \\choose 2}$","correct":false},{"body":"${14 \\choose 2}$","correct":false},{"body":"${15 \\choose 2}$","correct":true},{"body":"${16 \\choose 2}$","correct":false}]},{"body":["\n\t\n\t\tConsider the following recursive function:\n\t\t\u003Ctable style=\"margin: 1rem auto;\"\u003E\n\t\t\t\u003Ctbody\u003E\n\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$f(0) = $\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003Ctd\u003E$-17,$\u003C\u002Ftd\u003E\n\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$f(n) = $\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003Ctd\u003E$f(n - 1) + 8n - 2\\; \\ \\text{for all}$ $\\text{integers}\\ n \\geq 1.$\u003C\u002Ftd\u003E\n\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\u003C\u002Ftbody\u003E\n\t\t\u003C\u002Ftable\u003E\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"for all $n \\geq 0$: $f(n) = 3n^{2} - n - 17$","correct":false},{"body":"for all $n \\geq 0$: $f(n) = 3n^{2} + n - 17$","correct":false},{"body":"for all $n \\geq 0$: $f(n) = 4n^{2} - 2n - 17$","correct":false},{"body":"for all $n \\geq 0$: $f(n) = 4n^{2} + 2n - 17$","correct":true}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\Fib}{{\\rm F \\scriptsize IB}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the recursive algorithm $\\Fib$, which takes as input an\n\t\tinteger $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\Fib(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ f = n$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ f = \\Fib(n - 1) + \\Fib(n - 2)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{return}\\ f$ \u003Cbr\u003E\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tIf we run algorithm $\\Fib(20)$, how many calls are there to $\\Fib(16)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"4","correct":false},{"body":"5","correct":true},{"body":"6","correct":false},{"body":"7","correct":false}]},{"body":["\n\t\n\t\tA bowl contains 5 blue balls, 4 red balls, and 6 green balls. We choose 2 balls uniformly at random.\n\t\tWhat is the probability that these 2 balls have the same color?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{{5 \\choose 2} + {4 \\choose 2} + {6 \\choose 2}}{{15 \\choose 2}}$","correct":true},{"body":"$\\frac{{15 \\choose 2}}{{5 \\choose 2} + {4 \\choose 2} + {6 \\choose 2}}$","correct":false},{"body":"$\\frac{{5 \\choose 2}{4 \\choose 2}{6 \\choose 2}}{{15 \\choose 2}}$","correct":false},{"body":"$\\frac{{15 \\choose 2}}{{5 \\choose 2}{4 \\choose 2}{6 \\choose 2}}$","correct":false}]},{"body":["\n\t\n\t\tAnnie, Boris, and Charlie have random and independent birthdays. (We ignore leap years, so that a\n\t\tyear has 365 days.) What is the probability that Annie, Boris, and Charlie have the same birthday?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{1}{364 \\cdot 365}$","correct":false},{"body":"$\\frac{1}{365^2}$","correct":true},{"body":"$\\frac{365}{364^{2}}$","correct":false},{"body":"$\\frac{1}{365^{3}}$","correct":false}]},{"body":["\n\t\n\t\tWe flip a fair coin repeatedly and independently, resulting in a sequence of heads ($H$) and tails\n\t\t($T$). We stop flipping the coin as soon as this sequence contains one $H$ or eight $T$s. What is\n\t\tthe probability that this sequence contains at most 7 $T$s?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$1 - (1\u002F2)^{7}$","correct":false},{"body":"$\\sum_{k=0}^{7} (1\u002F2)^{k}$","correct":false},{"body":"$\\sum_{k=0}^{7} (1\u002F2)^{k+1}$","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tA bowl contains 5 blue balls and 4 red balls. We choose 2 balls uniformly at random. Define the\n\t\tevents\n\t\t[defs]\n\t\t  A = \"both balls are red\",\n\t\t  B = \"both balls have the same color\".\n\t\t[\u002Fdefs]\n\t\tWhat is the conditional probability $\\Pr(A|B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{{4 \\choose 2}}{{5 \\choose 2} + {4 \\choose 2}}$","correct":true},{"body":"$\\frac{{5 \\choose 2} + {4 \\choose 2}}{{4 \\choose 2}}$","correct":false},{"body":"$\\frac{{4 \\choose 2}}{{9 \\choose 2}}$","correct":false},{"body":"$\\frac{{4 \\choose 2}}{{5 \\choose 2}{4 \\choose 2}}$","correct":false}]},{"body":["\n\t\n\t\tWe choose an element $x$ uniformly at random from the set $\\{1,2,3,\\dots,10\\}$. Define the events\n\t\t[defs]\n\t\t  A = \"$x$ is even\",\n\t\t  B = \"$x$ is divisible by 3\".\n\t\t[\u002Fdefs]\n\t\tWhat is the conditional probability $\\Pr(A|B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"3\u002F10","correct":false},{"body":"1\u002F3","correct":true},{"body":"1\u002F2","correct":false},{"body":"2\u002F3","correct":false}]},{"body":["\n\t\n\t\tWe choose an element $x$ uniformly at random from the set $\\{1,2,3,\\dots,10\\}$. Define the events\n\t\t[defs]\n\t\t  A = \"$x$ is even\"\n\t\t[\u002Fdefs]\n\t\tand\n\t\t[defs]\n\t\t  B = \"$1 \\leq x \\leq 5$\".\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":false},{"body":"The events $A$ and $B$ are not independent.","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tWe choose an element $x$ uniformly at random from the set $\\{1,2,3,\\dots,10\\}$. Define the events\n\t\t[defs]\n\t\t  A = \"$x$ is even\"\n\t\t[\u002Fdefs]\n\t\tand\n\t\t[defs]\n\t\t  B = \"$1 \\leq x \\leq 6$\".\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":true},{"body":"The events $A$ and $B$ are not independent.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tWhen a couple has a child, this child is a boy with probability 1\u002F2 and a girl with probability\n\t\t1\u002F2, independent of the gender of previous children. A couple stops having children as soon as\n\t\tthey have a child that has the same gender as their first child. Define the events\n\t\t[defs]\n\t\t  A = \"the second child is a boy\"\n\t\t[\u002Fdefs]\n\t\tand\n\t\t[defs]\n\t\t  B = \"the couple has at least three children and the third child is a boy\".\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":true},{"body":"The events $A$ and $B$ are not independent.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tAssume you answer the first question in this exam by choosing one of the four answers uniformly at random.\n\t\tYou answer the second question by choosing, again uniformly at random, one of the three answers you did not choose in\n\t\tthe first question. What is the probability that you answer the second question correctly?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{1}{3}$","correct":false},{"body":"$\\frac{1}{4}$","correct":true},{"body":"$\\frac{1}{4} \\cdot \\frac{1}{3} + \\frac{3}{4} \\cdot \\frac{1}{4}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tI flip two fair and independent coins. If the first coin comes up tails, you lose \\$1 (i.e., you win -\\$1).\n\t\tIf the second coin comes up heads, you win \\$2. (Thus, if the first coin comes up tails and the second coin\n\t\tcomes up heads, you win \\$1.) Define the random variable $X$ to be the amount of dollars that you win. \n\t\tWhat is the expected value of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"2","correct":false},{"body":"1","correct":false},{"body":"1\u002F4","correct":false},{"body":"1\u002F2","correct":true}]},{"body":["\n\t\n\t\tI flip a fair coin, independently, 6 times, resulting in a sequence of heads ($H$) and tails ($T$).\n\t\tFor each (consecutive) $HTH$ in this sequence, you win \\$5.\n\t\tDefine the random variable $X$ to be the amount of dollars that you win. For example, if the\n\t\tsequence is\n\t\t$\n\t\t\tTHTHTH,\n\t\t$\n\t\tthen $X = 10$. What is the expected value of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"2\u002F5","correct":false},{"body":"2","correct":false},{"body":"5\u002F2","correct":true},{"body":"5","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\ThreeHeadsOrThreeTails}{{\\rm T {\\scriptsize HREE} H {\\scriptsize EADS} O {\\scriptsize R} T {\\scriptsize HREE} T {\\scriptsize AILS}}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the following recursive algorithm $\\ThreeHeadsOrThreeTails$, which takes as input a positive integer $k$:\n\t\t\n\t\t\u003Cdiv style=\"margin: 1rem 0;\"\u003E\n\t\t\t$\\mathbf{Algorithm}$ $\\ThreeHeadsOrThreeTails(k)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t\u003Ctable\u003E\n\t\t\t\t\u003Ctbody\u003E\n\t\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$\u002F\u002F$\u003C\u002Ftd\u003E\n\t\t\t\t\t\t\u003Ctd\u003E\n\t\t\t\t\t\t\t$\\text{all coin flips made}$ $\\text{are mutually independent}$\n\t\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\t\u003C\u002Ftbody\u003E\n\t\t\t\u003C\u002Ftable\u003E\n\t\t\t$\\text{flip a fair coin three times};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ \\text{the result is \\(HHH\\) or \\(TTT\\)}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\mathrm{return}\\ k$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\ThreeHeadsOrThreeTails(k + 1)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tYou run algorithm $\\ThreeHeadsOrThreeTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output\n\t\tof this algorithm. What is the expected value of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"2","correct":false},{"body":"3","correct":false},{"body":"4","correct":true},{"body":"5","correct":false}]},{"body":["\n\t\n\t\tWe flip a fair coin independently $n$ times. Define the random variable\n\t\t[defs]\n\t\t  X = twice the number of heads minus three times the number of tails.\n\t\t[\u002Fdefs]\n\t\tWhat is the expected value of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$-n\u002F2$","correct":true},{"body":"$n\u002F2$","correct":false},{"body":"$-n$","correct":false},{"body":"$n$","correct":false}]},{"body":["Who invented the Fibonacci numbers?"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"Justin Bieber","correct":false},{"body":"Britney Spears","correct":false},{"body":"Fibonacci","correct":true},{"body":"Carl Friedrich Gauss","correct":false}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="Qjo1u"><div class="test-application"><div class="test-header"><div>Fall 2014 Exam</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		A password consists of 13 characters, each character being one of the ten digits $0,1,2,\dots,9$. <br>
+		A password must contain exactly one odd digit. How many passwords are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$13 \cdot 5^{12}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$13 \cdot 5^{13}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$13 \cdot 9^{12}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$13 \cdot 5 \cdot 9^{12}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		A password consists of 13 characters, each character being one of the ten digits $0,1,2,\dots,9$. <br>
+		A password must contain at least one odd digit and at most two even digits. How many passwords are
+		there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$5^{12} + 13 \cdot 5^{12} + {13 \choose 2}5^{12}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$5^{13} + 13 \cdot 9^{12} + {13 \choose 2}9^{12}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$5^{13} + 13 \cdot 5^{13} + {13 \choose 2}5^{13}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$5 \cdot 9^{12} + 13 \cdot 5 \cdot 9^{12} + {13 \choose 2}5 \cdot 9^{12}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		What is
+		$$
+			\sum_{k = 0}^{45} {45 \choose k}(-3)^{2k}.
+		$$
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(-2)^{45}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^{45}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(-8)^{45}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$10^{45}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		How many bitstings of length 13 start with 010 or end with 11?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{10} + 2^{11}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$3 \cdot 2^{10} - 2^{8}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{13} - (2^{10} + 2^{11})$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		Let $S_n$ be the number of bitstrings of length $n$ that do not contain the substring 11. Which of
+		the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2}\ \mathrm{for}\ n \geq 3.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-3}\ \mathrm{for}\ n \geq 3.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + S_{n-3}\ \mathrm{for}\ n \geq 3.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-1}\ \mathrm{for}\ n \geq 3.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		In a group of 100 students,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				40 like 8:30am classes,
+			</li>
+			<li>
+				30 like the course COMP 2804,
+			</li>
+			<li>
+				50 do not like 8:30am classes and do not like the course COMP 2804.
+			</li>
+		</ul>
+		How many students in this group like 8:30am classes and like the course COMP 2804?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->10<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->20<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->30<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->40<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		Consider $m \geq 7$ blue balls $B_1,B_2,\dots,B_m$ and $n \geq 7$ red balls $R_1,R_2,\dots,R_n$.
+		We pick 7 balls of the same color and arrange them on a horizontal line. (The order on the line
+		matters.) How many arrangements are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7!{m \choose 7} + 7!{n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$m!{m \choose 7} + n!{n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7!{m + n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		The number of different strings that can be made by reordering the 10 letters of the word AAABBCCCCC is
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$10!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{10!}{2!3!5!}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${10 \choose 3}{10 \choose 2}{10 \choose 5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		How many solutions are there to the equation $x_1 + x_2 + x_3 = 13$, where $x_1 \geq 0$, $x_2 \geq 0$,
+		$x_3 \geq 0$ are integers?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${13 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${14 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${15 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${16 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		Consider the following recursive function:
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$f(0) = $</td>
+					<td>$-17,$</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;">$f(n) = $</td>
+					<td>$f(n - 1) + 8n - 2\; \ \text{for all}$ $\text{integers}\ n \geq 1.$</td>
+				</tr>
+			</tbody>
+		</table>
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->for all $n \geq 0$: $f(n) = 3n^{2} - n - 17$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->for all $n \geq 0$: $f(n) = 3n^{2} + n - 17$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->for all $n \geq 0$: $f(n) = 4n^{2} - 2n - 17$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->for all $n \geq 0$: $f(n) = 4n^{2} + 2n - 17$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+		</div>
+		
+		Consider the recursive algorithm $\Fib$, which takes as input an
+		integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ f = n$ <br>
+			$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+			$\mathbf{endif};$ <br>
+			$\mathbf{return}\ f$ <br>
+		</p>
+		
+		If we run algorithm $\Fib(20)$, how many calls are there to $\Fib(16)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->7<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		A bowl contains 5 blue balls, 4 red balls, and 6 green balls. We choose 2 balls uniformly at random.
+		What is the probability that these 2 balls have the same color?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{5 \choose 2} + {4 \choose 2} + {6 \choose 2}}{{15 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{15 \choose 2}}{{5 \choose 2} + {4 \choose 2} + {6 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{5 \choose 2}{4 \choose 2}{6 \choose 2}}{{15 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{15 \choose 2}}{{5 \choose 2}{4 \choose 2}{6 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		Annie, Boris, and Charlie have random and independent birthdays. (We ignore leap years, so that a
+		year has 365 days.) What is the probability that Annie, Boris, and Charlie have the same birthday?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{364 \cdot 365}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{365^2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{365}{364^{2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{365^{3}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		We flip a fair coin repeatedly and independently, resulting in a sequence of heads ($H$) and tails
+		($T$). We stop flipping the coin as soon as this sequence contains one $H$ or eight $T$s. What is
+		the probability that this sequence contains at most 7 $T$s?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - (1/2)^{7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\sum_{k=0}^{7} (1/2)^{k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\sum_{k=0}^{7} (1/2)^{k+1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		A bowl contains 5 blue balls and 4 red balls. We choose 2 balls uniformly at random. Define the
+		events
+		[defs]
+		  A = "both balls are red",
+		  B = "both balls have the same color".
+		[/defs]
+		What is the conditional probability $\Pr(A|B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{4 \choose 2}}{{5 \choose 2} + {4 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{5 \choose 2} + {4 \choose 2}}{{4 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{4 \choose 2}}{{9 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{4 \choose 2}}{{5 \choose 2}{4 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		We choose an element $x$ uniformly at random from the set $\{1,2,3,\dots,10\}$. Define the events
+		[defs]
+		  A = "$x$ is even",
+		  B = "$x$ is divisible by 3".
+		[/defs]
+		What is the conditional probability $\Pr(A|B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3/10<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/3<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		We choose an element $x$ uniformly at random from the set $\{1,2,3,\dots,10\}$. Define the events
+		[defs]
+		  A = "$x$ is even"
+		[/defs]
+		and
+		[defs]
+		  B = "$1 \leq x \leq 5$".
+		[/defs]
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>18. <!-- HTML_TAG_START -->
+	
+		We choose an element $x$ uniformly at random from the set $\{1,2,3,\dots,10\}$. Define the events
+		[defs]
+		  A = "$x$ is even"
+		[/defs]
+		and
+		[defs]
+		  B = "$1 \leq x \leq 6$".
+		[/defs]
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>19. <!-- HTML_TAG_START -->
+	
+		When a couple has a child, this child is a boy with probability 1/2 and a girl with probability
+		1/2, independent of the gender of previous children. A couple stops having children as soon as
+		they have a child that has the same gender as their first child. Define the events
+		[defs]
+		  A = "the second child is a boy"
+		[/defs]
+		and
+		[defs]
+		  B = "the couple has at least three children and the third child is a boy".
+		[/defs]
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>20. <!-- HTML_TAG_START -->
+	
+		Assume you answer the first question in this exam by choosing one of the four answers uniformly at random.
+		You answer the second question by choosing, again uniformly at random, one of the three answers you did not choose in
+		the first question. What is the probability that you answer the second question correctly?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{1}{4} \cdot \frac{1}{3} + \frac{3}{4} \cdot \frac{1}{4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>21. <!-- HTML_TAG_START -->
+	
+		I flip two fair and independent coins. If the first coin comes up tails, you lose \$1 (i.e., you win -\$1).
+		If the second coin comes up heads, you win \$2. (Thus, if the first coin comes up tails and the second coin
+		comes up heads, you win \$1.) Define the random variable $X$ to be the amount of dollars that you win. 
+		What is the expected value of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/2<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>22. <!-- HTML_TAG_START -->
+	
+		I flip a fair coin, independently, 6 times, resulting in a sequence of heads ($H$) and tails ($T$).
+		For each (consecutive) $HTH$ in this sequence, you win \$5.
+		Define the random variable $X$ to be the amount of dollars that you win. For example, if the
+		sequence is
+		$$
+			THTHTH,
+		$$
+		then $X = 10$. What is the expected value of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>23. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\ThreeHeadsOrThreeTails}{{\rm T {\scriptsize HREE} H {\scriptsize EADS} O {\scriptsize R} T {\scriptsize HREE} T {\scriptsize AILS}}}$
+		</div>
+		
+		Consider the following recursive algorithm $\ThreeHeadsOrThreeTails$, which takes as input a positive integer $k$:
+		
+		<div style="margin: 1rem 0;">
+			$\mathbf{Algorithm}$ $\ThreeHeadsOrThreeTails(k)\mathrm{:}$ <br>
+			<table>
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$//$</td>
+						<td>
+							$\text{all coin flips made}$ $\text{are mutually independent}$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			$\text{flip a fair coin three times};$ <br>
+			$\mathbf{if}\ \text{the result is \(HHH\) or \(TTT\)}$ <br>
+			$\mathbf{then}\ \mathrm{return}\ k$ <br>
+			$\mathbf{else}\ \ThreeHeadsOrThreeTails(k + 1)$ <br>
+			$\mathbf{endif}$
+		</div>
+		
+		You run algorithm $\ThreeHeadsOrThreeTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output
+		of this algorithm. What is the expected value of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>24. <!-- HTML_TAG_START -->
+	
+		We flip a fair coin independently $n$ times. Define the random variable
+		[defs]
+		  X = twice the number of heads minus three times the number of tails.
+		[/defs]
+		What is the expected value of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$-n/2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n/2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$-n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>25. <!-- HTML_TAG_START -->Who invented the Fibonacci numbers?<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Justin Bieber<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Britney Spears<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Fibonacci<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Carl Friedrich Gauss<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

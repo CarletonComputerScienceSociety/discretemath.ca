@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z1Q1lWd", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"midterm-fall-2016","title":"Fall 2016 Midterm","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tCarleton's Computer Science program has $f$ female students and $m$ male students, where\n\t\t$f \\geq 1$ and $f + m \\geq 4$. The Carleton Computer Science Society has a Board of Directors\n\t\tconsisting of a President and three Vice-Presidents, all of whom are Computer Science students.\n\t\tThe President is female and cannot be a Vice-President. In how many ways can a Board of Directors\n\t\tbe chosen?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${f + m \\choose 4}$","correct":false},{"body":"$f \\cdot {f + m - 1 \\choose 3}$","correct":true},{"body":"$f \\cdot {f + m \\choose 3}$","correct":false},{"body":"$(f - 1) \\cdot {f + m \\choose 3}$","correct":false}]},{"body":["\n\t\n\t\tLet $k$ and $n$ be integers with $2 \\leq k \\leq n$ and consider the set $S = \\{1,2,\\dots,n\\}$.\n\t\tWhat is the number of $k$-element subsets of $S$ that do not contain 1 \u003Cem\u003Eand\u003C\u002Fem\u003E do not contain 2?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${n - 1 \\choose k - 1}$","correct":false},{"body":"${n - 1 \\choose k}$","correct":false},{"body":"${n - 2 \\choose k - 2}$","correct":false},{"body":"${n - 2 \\choose k}$","correct":true}]},{"body":["\n\t\n\t\tLet $k$ and $n$ be integers with $2 \\leq k \\leq n$ and consider the set $S = \\{1,2,\\dots,n\\}$.\n\t\tWhat is the number of $k$-element subsets of $S$ that do not contain 1 \u003Cem\u003Eor\u003C\u002Fem\u003E do not contain 2?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${n - 1 \\choose k} + {n - 1 \\choose k}$","correct":false},{"body":"${n - 2 \\choose k}$","correct":false},{"body":"${n \\choose k} - {n - 2 \\choose k - 2}$","correct":true},{"body":"${n \\choose k} - {n - 1 \\choose k - 1} - {n - 1 \\choose k - 1}$","correct":false}]},{"body":["\n\t\n\t\tFor any integer $n \\geq 3$, let $B_n$ be the number of bitstrings of length $n$ in which the first\n\t\tthree bits are not all equal. Which of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$B_n = 2 \\cdot 2^{n - 3}$","correct":false},{"body":"$B_n = 6 \\cdot 2^{n - 3}$","correct":true},{"body":"$B_n = 2^n - 2$","correct":false},{"body":"$B_n = 2^n - 6$","correct":false}]},{"body":["\n\t\n\t\tConsider strings of length 4 consisting of the characters $a$, $b$, $c$, and $d$.\n\t\tHow many such strings are there that start with $ad$ or end with $dcb$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"17","correct":false},{"body":"18","correct":false},{"body":"19","correct":true},{"body":"20","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 5$ and consider strings of length $n$ consisting of the characters $a$, $b$, $c$, and $d$.\n\t\tHow many such strings are there that start with $ad$ or end with $dcb$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$4^{n - 2} + 4^{n - 3} - 4^{n - 5}$","correct":true},{"body":"$4^{n - 2} + 4^{n - 3}$","correct":false},{"body":"$4^n - 4^{n - 5}$","correct":false},{"body":"$4^n - 4^{n - 2} - 4^{n - 3}$","correct":false}]},{"body":["\n\t\tWhat does\n\t\t$\n\t\t\t{w \\choose 3} \\cdot {m \\choose 2} + {w \\choose 4} \\cdot m + {w \\choose 5}\n\t\t$\n\t\tcount?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"\n\t\tThe number of ways to choose 5 people out of a group consisting of $w$ women and $m$ men,\n\t\twhere at most 3 women can be chosen.\n\t","correct":false},{"body":"\n\t\tThe number of ways to choose 5 people out of a group consisting of $w$ women and $m$ men,\n\t\twhere at most 3 men can be chosen.\n\t","correct":false},{"body":"\n\t\tThe number of ways to choose 5 people out of a group consisting of $w$ women and $m$ men,\n\t\twhere at least 3 women must be chosen.\n\t","correct":true},{"body":"\n\t\tThe number of ways to choose 5 people out of a group consisting of $w$ women and $m$ men,\n\t\twhere at least 3 men must be chosen.\n\t","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 2$ be an integer and let $S$ be a set of $m$ integers. What is the minimum value\n\t\tof $m$ such that we can guarantee that $S$ contains at least two elements whose difference\n\t\tis divisible by $n$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$n - 1$","correct":false},{"body":"$n$","correct":false},{"body":"$n + 1$","correct":true},{"body":"$n + 2$","correct":false}]},{"body":["\n\t\n\t\tWhat is the coefficient of $x^{24}y^{26}$ in the expansion of $(5x - 7y)^{50}$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$- {50 \\choose 24} \\cdot 5^{26} \\cdot 7^{24}$","correct":false},{"body":"$- {50 \\choose 26} \\cdot 5^{24} \\cdot 7^{26}$","correct":false},{"body":"${50 \\choose 24} \\cdot 5^{26} \\cdot 7^{24}$","correct":false},{"body":"${50 \\choose 26} \\cdot 5^{24} \\cdot 7^{26}$","correct":true}]},{"body":["\n\t\n\t\tThe function $f : \\mathbb{N} \\rightarrow \\mathbb{R}$ is defined by\n\t\t$\n\t\t\t\\begin{align}\n\t\t\tf(0) &= 7, \\\\\n\t\t\tf(n) &= \\frac{n}{3} \\cdot f(n - 1)\\; \\ \\mathrm{for}\\ n \\geq 1.\n\t\t\t\\end{align}\n\t\t$\n\t\tWhat is $f(n)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$f(n) = 7 \\cdot \\frac{n!}{3^n}$","correct":true},{"body":"$f(n) = 7^n \\cdot \\frac{n!}{3^n}$","correct":false},{"body":"$f(n) = 7 \\cdot \\frac{(n + 1)!}{3^n}$","correct":false},{"body":"$f(n) = 7^n \\cdot \\frac{(n + 1)!}{3^n}$","correct":false}]},{"body":["\n\t\n\t\tFor any integer $n \\geq 1$, let $B_n$ be the number of bitstrings of length $n$ that do not\n\t\tcontain the substring 11 and do not contain the substring 101. Which of the following is true\n\t\tfor any $n \\geq 4$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$B_n = B_{n - 1} + B_{n - 2}$","correct":false},{"body":"$B_n = B_{n - 1} + B_{n - 3}$","correct":true},{"body":"$B_n = B_{n - 2} + B_{n - 3}$","correct":false},{"body":"$B_n = B_{n - 2} + B_{n - 4}$","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 1$ be an integer, and let $S_n$ be the number of ways in which $n$ can be written\n\t\tas a sum of 3s and 4s, such that the order in which the 3s and 4s occur in the sum matters.\n\t\tFor example, $S_5 = 0$, because 5 cannot be written as a sum of 3s and 4s.\n\t\tWe have $S_{11} = 3$, because\n\t\t\n\t\t\u003Ctable style=\"margin: 1rem auto;\"\u003E\n\t\t\t\u003Ctbody\u003E\n\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$11$\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003Ctd\u003E\n\t\t\t\t\t\t$= 3 + 4 + 4 = 4 + 3 + 4$\n\t\t\t\t\t\t$= 4 + 4 + 3.$\n\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\u003C\u002Ftbody\u003E\n\t\t\u003C\u002Ftable\u003E\n\t\t\n\t\tWhich of the following is true for any $n \\geq 5$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = 2 \\cdot S_{n - 1}$","correct":false},{"body":"$S_n = S_{n - 1} + S_{n - 2}$","correct":false},{"body":"$S_n = S_{n - 2} + S_{n - 3}$","correct":false},{"body":"$S_n = S_{n - 3} + S_{n - 4}$","correct":true}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\Fib}{{\\rm F \\scriptsize IB}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the following recursive algorithm $\\Fib$, which takes as input an\n\t\tinteger $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\Fib(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ f = n$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ f = \\Fib(n - 1) + \\Fib(n - 2)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{return}\\ f$ \u003Cbr\u003E\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tWhen running $\\Fib(12)$, how many calls are there to $\\Fib(8)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"4","correct":false},{"body":"5","correct":true},{"body":"6","correct":false},{"body":"7","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\ElisaDrinksCider}{{\\rm E {\\scriptsize LISA} D {\\scriptsize RINKS} C {\\scriptsize IDER}}}\n\t\t\t \\newcommand{\\elsesp}{\\phantom{\\mathbf{else}\\ }}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the following recursive algorithm $\\ElisaDrinksCider$, which takes as input an integer\n\t\t$n \\geq 1$, which is a power of 2:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\ElisaDrinksCider(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\text{order Fibonachos}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\ElisaDrinksCider(n \u002F 2);$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\text{drink \\(n\\) bottles of cider};$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\ElisaDrinksCider(n \u002F 2)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tFor $n$ a power of 2, let $C(n)$ be the total number of bottles of cider that you drink when running algorithm\n\t\t$\\ElisaDrinksCider(n)$. Which of the following is true for any $n \\geq 1$ that is a power of 2? \u003Cbr\u003E\n\t\t(n.b., $\\log$ denotes the base-2 logarithm)\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$C(n) = n \\log n - 1$","correct":false},{"body":"$C(n) = n \\log n + 1$","correct":false},{"body":"$C(n) = n \\log n$","correct":true},{"body":"$C(n) = 2n \\log n$","correct":false}]},{"body":["\n\t\n\t\tYou flip a fair coin 9 times. Define the event\n\t\t[defs]\n\t\t  A = \"the result of the first flip is not equal to the result of the second flip\".\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"1\u002F4","correct":false},{"body":"1\u002F3","correct":false},{"body":"1\u002F2","correct":true},{"body":"1","correct":false}]},{"body":["\n\t\n\t\tConsider 4 people, each of which has a uniformly random birthday. We ignore leap years; thus, one year\n\t\thas 365 days. Define the event\n\t\t\n\t\t[defs]\n\t\t  A = \"at least 2 of these 4 people have the same birthday\".\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${4 \\choose 2} \\cdot \\frac{1}{365}$","correct":false},{"body":"\n\t\t${4 \\choose 2} \\cdot \\frac{1}{365} + {4 \\choose 3} \\cdot \\frac{1}{365^2} + {4 \\choose 4} \\cdot \\frac{1}{365^3}$\n\t","correct":false},{"body":"$1 - \\frac{361 \\cdot 362 \\cdot 363 \\cdot 364}{365^4}$","correct":false},{"body":"$1 - \\frac{362 \\cdot 363 \\cdot 364}{365^3}$","correct":true}]},{"body":["\n\t\n\t\tIn the game of \u003Cem\u003EHearthstone\u003C\u002Fem\u003E, you are given a deck of 18 distinct cards. One of the cards is the \u003Cem\u003ERaven Idol\u003C\u002Fem\u003E.\n\t\tYou choose a uniformly random hand of 3 cards. Define the event\n\t\t\n\t\t[defs]\n\t\t  A = $\\text{``}$the hand of 3 cards contains the \u003Cem\u003ERaven Idol\u003C\u002Fem\u003E$\\,\\text{''}.$\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"3\u002F17","correct":false},{"body":"3\u002F18","correct":true},{"body":"3\u002F19","correct":false},{"body":"4\u002F19","correct":false}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="Z1Q1lWd"><div class="test-application"><div class="test-header"><div>Fall 2016 Midterm</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		Carleton's Computer Science program has $f$ female students and $m$ male students, where
+		$f \geq 1$ and $f + m \geq 4$. The Carleton Computer Science Society has a Board of Directors
+		consisting of a President and three Vice-Presidents, all of whom are Computer Science students.
+		The President is female and cannot be a Vice-President. In how many ways can a Board of Directors
+		be chosen?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${f + m \choose 4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f \cdot {f + m - 1 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f \cdot {f + m \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(f - 1) \cdot {f + m \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Let $k$ and $n$ be integers with $2 \leq k \leq n$ and consider the set $S = \{1,2,\dots,n\}$.
+		What is the number of $k$-element subsets of $S$ that do not contain 1 <em>and</em> do not contain 2?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n - 1 \choose k - 1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n - 1 \choose k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n - 2 \choose k - 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n - 2 \choose k}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		Let $k$ and $n$ be integers with $2 \leq k \leq n$ and consider the set $S = \{1,2,\dots,n\}$.
+		What is the number of $k$-element subsets of $S$ that do not contain 1 <em>or</em> do not contain 2?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n - 1 \choose k} + {n - 1 \choose k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n - 2 \choose k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n - 2 \choose k - 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${n \choose k} - {n - 1 \choose k - 1} - {n - 1 \choose k - 1}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		For any integer $n \geq 3$, let $B_n$ be the number of bitstrings of length $n$ in which the first
+		three bits are not all equal. Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = 2 \cdot 2^{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = 6 \cdot 2^{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = 2^n - 2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = 2^n - 6$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		Consider strings of length 4 consisting of the characters $a$, $b$, $c$, and $d$.
+		How many such strings are there that start with $ad$ or end with $dcb$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->17<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->18<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->19<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->20<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 5$ and consider strings of length $n$ consisting of the characters $a$, $b$, $c$, and $d$.
+		How many such strings are there that start with $ad$ or end with $dcb$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^{n - 2} + 4^{n - 3} - 4^{n - 5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^{n - 2} + 4^{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^n - 4^{n - 5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$4^n - 4^{n - 2} - 4^{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+		What does
+		$$
+			{w \choose 3} \cdot {m \choose 2} + {w \choose 4} \cdot m + {w \choose 5}
+		$$
+		count?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose 5 people out of a group consisting of $w$ women and $m$ men,
+		where at most 3 women can be chosen.
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose 5 people out of a group consisting of $w$ women and $m$ men,
+		where at most 3 men can be chosen.
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose 5 people out of a group consisting of $w$ women and $m$ men,
+		where at least 3 women must be chosen.
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose 5 people out of a group consisting of $w$ women and $m$ men,
+		where at least 3 men must be chosen.
+	<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 2$ be an integer and let $S$ be a set of $m$ integers. What is the minimum value
+		of $m$ such that we can guarantee that $S$ contains at least two elements whose difference
+		is divisible by $n$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n - 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n + 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n + 2$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		What is the coefficient of $x^{24}y^{26}$ in the expansion of $(5x - 7y)^{50}$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$- {50 \choose 24} \cdot 5^{26} \cdot 7^{24}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$- {50 \choose 26} \cdot 5^{24} \cdot 7^{26}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${50 \choose 24} \cdot 5^{26} \cdot 7^{24}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${50 \choose 26} \cdot 5^{24} \cdot 7^{26}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		The function $f : \mathbb{N} \rightarrow \mathbb{R}$ is defined by
+		$$
+			\begin{align}
+			f(0) &= 7, \\
+			f(n) &= \frac{n}{3} \cdot f(n - 1)\; \ \mathrm{for}\ n \geq 1.
+			\end{align}
+		$$
+		What is $f(n)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 7 \cdot \frac{n!}{3^n}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 7^n \cdot \frac{n!}{3^n}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 7 \cdot \frac{(n + 1)!}{3^n}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 7^n \cdot \frac{(n + 1)!}{3^n}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		For any integer $n \geq 1$, let $B_n$ be the number of bitstrings of length $n$ that do not
+		contain the substring 11 and do not contain the substring 101. Which of the following is true
+		for any $n \geq 4$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = B_{n - 1} + B_{n - 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = B_{n - 1} + B_{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = B_{n - 2} + B_{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = B_{n - 2} + B_{n - 4}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 1$ be an integer, and let $S_n$ be the number of ways in which $n$ can be written
+		as a sum of 3s and 4s, such that the order in which the 3s and 4s occur in the sum matters.
+		For example, $S_5 = 0$, because 5 cannot be written as a sum of 3s and 4s.
+		We have $S_{11} = 3$, because
+		
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$11$</td>
+					<td>
+						$= 3 + 4 + 4 = 4 + 3 + 4$
+						$= 4 + 4 + 3.$
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		Which of the following is true for any $n \geq 5$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n - 1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 1} + S_{n - 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 2} + S_{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 3} + S_{n - 4}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+		</div>
+		
+		Consider the following recursive algorithm $\Fib$, which takes as input an
+		integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ f = n$ <br>
+			$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+			$\mathbf{endif};$ <br>
+			$\mathbf{return}\ f$ <br>
+		</p>
+		
+		When running $\Fib(12)$, how many calls are there to $\Fib(8)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->7<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\ElisaDrinksCider}{{\rm E {\scriptsize LISA} D {\scriptsize RINKS} C {\scriptsize IDER}}}
+			 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+		</div>
+		
+		Consider the following recursive algorithm $\ElisaDrinksCider$, which takes as input an integer
+		$n \geq 1$, which is a power of 2:
+		
+		<p>
+			$\mathbf{Algorithm}\ \ElisaDrinksCider(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 1$ <br>
+			$\mathbf{then}\ \text{order Fibonachos}$ <br>
+			$\mathbf{else}\ \ElisaDrinksCider(n / 2);$ <br>
+			$\elsesp \text{drink \(n\) bottles of cider};$ <br>
+			$\elsesp \ElisaDrinksCider(n / 2)$ <br>
+			$\mathbf{endif}$
+		</p>
+		
+		For $n$ a power of 2, let $C(n)$ be the total number of bottles of cider that you drink when running algorithm
+		$\ElisaDrinksCider(n)$. Which of the following is true for any $n \geq 1$ that is a power of 2? <br>
+		(n.b., $\log$ denotes the base-2 logarithm)
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$C(n) = n \log n - 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$C(n) = n \log n + 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$C(n) = n \log n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$C(n) = 2n \log n$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		You flip a fair coin 9 times. Define the event
+		[defs]
+		  A = "the result of the first flip is not equal to the result of the second flip".
+		[/defs]
+		
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		Consider 4 people, each of which has a uniformly random birthday. We ignore leap years; thus, one year
+		has 365 days. Define the event
+		
+		[defs]
+		  A = "at least 2 of these 4 people have the same birthday".
+		[/defs]
+		
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${4 \choose 2} \cdot \frac{1}{365}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		${4 \choose 2} \cdot \frac{1}{365} + {4 \choose 3} \cdot \frac{1}{365^2} + {4 \choose 4} \cdot \frac{1}{365^3}$
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - \frac{361 \cdot 362 \cdot 363 \cdot 364}{365^4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - \frac{362 \cdot 363 \cdot 364}{365^3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		In the game of <em>Hearthstone</em>, you are given a deck of 18 distinct cards. One of the cards is the <em>Raven Idol</em>.
+		You choose a uniformly random hand of 3 cards. Define the event
+		
+		[defs]
+		  A = $\text{``}$the hand of 3 cards contains the <em>Raven Idol</em>$\,\text{''}.$
+		[/defs]
+		
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3/17<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3/18<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3/19<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4/19<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

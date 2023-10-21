@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z1wlfhk", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"midterm-winter-2014","title":"Winter 2014 Midterm","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tOn a table, you see three types of fruit: apples, bananas, and oranges. There are $m \\geq 2$ apples,\n\t\t$n \\geq 2$ bananas, and $k \\geq 2$ oranges. How many ways are there to choose 7 pieces of fruit, if\n\t\tyou must take at least two pieces of each type?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${m + n + k \\choose 7} - (m + n + k)$","correct":false},{"body":"${m + n + k \\choose 7} - {m \\choose 2} - {n \\choose 2} - {k \\choose 2}$","correct":false},{"body":"\n\t\t${m \\choose 3}{n \\choose 2}{k \\choose 2} + {m \\choose 2}{n \\choose 3}{k \\choose 2} + {m \\choose 2}{n \\choose 2}{k \\choose 3}$\n\t","correct":true},{"body":"${m \\choose 2}{n \\choose 2}{k \\choose 2}(m + n + k)$","correct":false}]},{"body":["\n\t\n\t\tConsider 9 boys and 15 girls. How many ways are there to arrange these 24 people on a line if all\n\t\tboys stand next to each other and all girls stand next to each other?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{24!}{9!15!}$","correct":false},{"body":"${24 \\choose 9}(9!)(15!)$","correct":false},{"body":"$(9!)(15!)$","correct":false},{"body":"$2(9!)(15!)$","correct":true}]},{"body":["\n\t\n\t\tLet $S$ be a set of size 37, and let $x$, $y$, and $z$ be three distinct elements of $S$. How many subsets\n\t\tof $S$ are there that contain $x$ \u003Cem\u003Eand\u003C\u002Fem\u003E $y$, but do not contain $z$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$2^{33}$","correct":false},{"body":"$2^{34}$","correct":true},{"body":"$2^{35}$","correct":false},{"body":"$2^{37} - 2^{35} - 2^{36}$","correct":false}]},{"body":["\n\t\n\t\tLet $S$ be a set of size 37, and let $x$, $y$, and $z$ be three distinct elements of $S$. How many subsets\n\t\tof $S$ are there that contain $x$ \u003Cem\u003Eor\u003C\u002Fem\u003E $y$, but do not contain $z$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$2^{36} - 2^{34}$","correct":true},{"body":"$2^{36} - 2^{35}$","correct":false},{"body":"$2^{37} - 2^{34}$","correct":false},{"body":"$2^{37} - 2^{35}$","correct":false}]},{"body":["\n\t\n\t\tA password consists of 12 or 13 characters, each character being one of the 10 digits $0,1,2,\\dots,9$.\n\t\tA password must contain the digit 7 at least once. How many passwords are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$10^{12} + 10^{13} - 9^{12} - 9^{13}$","correct":true},{"body":"$12^{10} + 13^{10} - 12^{9} - 13^{9}$","correct":false},{"body":"$10^{12} + 10^{13} - 7^{12} - 7^{13}$","correct":false},{"body":"$12^{10} + 13^{10} - 12^{7} - 13^{7}$","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 7$ and $k \\geq 1$ be integers, let $A$ be the set of all bitstrings of length $n$ that\n\t\tcontain exactly seven 0s, and let $B$ be the set of all bitstrings of length $k$ that contain at\n\t\tleast one 1. Assume there exists a one-to-one function $f : A \\rightarrow B$. Which of the following\n\t\tis true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$2^k - 1 \u003C {n \\choose 7}$","correct":false},{"body":"$2^k - 1 \\geq {n \\choose 7}$","correct":true},{"body":"$2^k - 1 \u003C \\left. 2^n \\middle\u002F {n \\choose n-7} \\right.$","correct":false},{"body":"$2^k - 1 \\geq \\left. 2^n \\middle\u002F {n \\choose n-7} \\right.$","correct":false}]},{"body":["\n\t\n\t\tWhat is the coefficient of $x^{9}y^{16}$ in the expansion of $(7x + 21y)^{25}$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${25 \\choose 16} 7^{16}21^{9}$","correct":false},{"body":"${16 \\choose 25} 7^{9}21^{16}$","correct":false},{"body":"${25 \\choose 16} 7^{25}3^{16}$","correct":true},{"body":"none of the above","correct":false}]},{"body":["\n\t\n\t\tHow many solutions are there to the equation $x_1 + x_2 + x_3 = 17$, where $x_1 \\geq 0$, $x_2 \\geq 0$,\n\t\tand $x_3 \\geq 0$ are integers?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${19 \\choose 16}$","correct":false},{"body":"${19 \\choose 17}$","correct":true},{"body":"${20 \\choose 16}$","correct":false},{"body":"${20 \\choose 17}$","correct":false}]},{"body":["\n\t\n\t\tHow many strings can be obtained by rearranging the letters of the word\n\t\t\u003Cp style=\"margin: 1rem 0; text-align: center;\"\u003E\n\t\t\tPOOPERSCOOPER\n\t\t\u003C\u002Fp\u003E\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$13!$","correct":false},{"body":"${13 \\choose 4}{9 \\choose 2}{7 \\choose 2}{5 \\choose 3}$","correct":false},{"body":"${13 \\choose 4}{9 \\choose 3}{6 \\choose 2}{4 \\choose 2}$","correct":false},{"body":"${13 \\choose 1}{12 \\choose 4}{8 \\choose 2}{6 \\choose 1}{5 \\choose 2}{3 \\choose 3}$","correct":true}]},{"body":["\n\t\n\t\tThe function $f : \\mathbb{N} \\rightarrow \\mathbb{N}$ is defined by\n\t\t$\n\t\t\t\\begin{align}\n\t\t\tf(0) &= 2 \\\\\n\t\t\tf(n + 1) &= f(n) + 6n - 2\\; \\ \\mathrm{for}\\ n \\geq 0\n\t\t\t\\end{align}\n\t\t$\n\t\tWhat is $f(n)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$f(n) = 3n^{2} - 5n + 2$","correct":true},{"body":"$f(n) = 3n^{2} + 5n + 2$","correct":false},{"body":"$f(n) = 2n^{2} - 5n + 2$","correct":false},{"body":"$f(n) = 2n^{2} + 5n + 2$","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\Fib}{{\\rm F \\scriptsize IB}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the following recursive algorithm $\\Fib$, which takes as input an\n\t\tinteger $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\Fib(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ f = n$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ f = \\Fib(n - 1) + \\Fib(n - 2)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{return}\\ f$ \u003Cbr\u003E\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tWhen running $\\Fib(7)$, how many calls are there to $\\Fib(3)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"4","correct":false},{"body":"5","correct":true},{"body":"6","correct":false},{"body":"7","correct":false}]},{"body":["\n\t\n\t\tThe Fibonacci numbers are defined as follows: $f_0 = 0$, $f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for\n\t\t$n \\geq 2$. \u003Cbr\u003E\n\t\t\n\t\tConsider again the recursive algorithm $\\Fib$, which takes as input an integer $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\Fib(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ f = n$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ f = \\Fib(n - 1) + \\Fib(n - 2)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{return}\\ f$ \u003Cbr\u003E\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tFor $n \\geq 3$, run algorithm $\\Fib(n)$ and let $a_n$ be the number of times that $\\Fib(2)$ is called. \u003Cbr\u003E\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"For $n \\geq 3$, $a_n = f_{n - 1}$","correct":true},{"body":"For $n \\geq 3$, $a_n = f_n$","correct":false},{"body":"For $n \\geq 3$, $a_n = f_{n + 1}$","correct":false},{"body":"For $n \\geq 3$, $a_n = -1 + f_n$","correct":false}]},{"body":["\n\t\n\t\tLet $B_n$ be the number of bitstrings of length $n$ that do not contain 111. Which of the following\n\t\tis true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$B_n = B_{n-1} + B_{n-2} + 2^{n-3}$","correct":false},{"body":"$B_n = B_{n-1} + B_{n-2} + 2^{n-3} - B_{n-3}$","correct":false},{"body":"$B_n = B_{n-1} + B_{n-2} + B_{n-3}$","correct":true},{"body":"$B_n = B_{n-1} + B_{n-2} + B_{n-3} + 2^{n-4}$","correct":false}]},{"body":["\n\t\n\t\tA standard deck of 52 cards has 4 Kings. Consider a hand of 9 cards, chosen uniformly at random.\n\t\tWhat is the probability that there are exactly two Kings in this hand?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$1 - \\left. {48 \\choose 7} \\middle\u002F {52 \\choose 9} \\right.$","correct":false},{"body":"$\\left. \\bigl\\{ {4 \\choose 2} + {48 \\choose 7} \\bigr\\} \\middle\u002F {52 \\choose 9} \\right.$","correct":false},{"body":"$\\left. {52 \\choose 9} \\middle\u002F \\bigl\\{ {4 \\choose 2}{48 \\choose 7} \\bigr\\} \\right.$","correct":false},{"body":"$\\left. {4 \\choose 2}{48 \\choose 7} \\middle\u002F {52 \\choose 9} \\right.$","correct":true}]},{"body":["\n\t\n\t\tWe choose a bitstring of length 25 uniformly at random. What is the probability that this string\n\t\tcontains at least two 1s?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$1 - (1\u002F2)^{25} - 25(1\u002F2)^{25}$","correct":true},{"body":"$1 + (1\u002F2)^{25} - 25(1\u002F2)^{25}$","correct":false},{"body":"$\\sum_{k=2}^{25} {{25}\\choose{k}}(1\u002F2)^{k}$","correct":false},{"body":"none of the above","correct":false}]},{"body":["\n\t\n\t\tConsider three people, each one having a uniformly random birthday (out of 365 days; we ignore leap\n\t\tyears). What is the probability that at least two of them have the same birthday?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$1 - \\frac{365^2}{364 \\cdot 363}$","correct":false},{"body":"$1 - \\frac{364 \\cdot 363}{365^2}$","correct":true},{"body":"$1 - \\left. {3 \\choose 2} \\middle\u002F 365^3 \\right.$","correct":false},{"body":"$1 - \\left. \\bigl\\{ {3\\choose 2} + {3 \\choose 3} \\bigr\\} \\middle\u002F 365^3 \\right.$","correct":false}]},{"body":["\n\t\n\t\tWhat is Simon Pratt’s favorite drink?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"Herbal tea","correct":false},{"body":"India Pale Ale","correct":true},{"body":"Poutine","correct":false},{"body":"None of the above, because Simon doesn't like beer","correct":false}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="Z1wlfhk"><div class="test-application"><div class="test-header"><div>Winter 2014 Midterm</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		On a table, you see three types of fruit: apples, bananas, and oranges. There are $m \geq 2$ apples,
+		$n \geq 2$ bananas, and $k \geq 2$ oranges. How many ways are there to choose 7 pieces of fruit, if
+		you must take at least two pieces of each type?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${m + n + k \choose 7} - (m + n + k)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${m + n + k \choose 7} - {m \choose 2} - {n \choose 2} - {k \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		${m \choose 3}{n \choose 2}{k \choose 2} + {m \choose 2}{n \choose 3}{k \choose 2} + {m \choose 2}{n \choose 2}{k \choose 3}$
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${m \choose 2}{n \choose 2}{k \choose 2}(m + n + k)$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Consider 9 boys and 15 girls. How many ways are there to arrange these 24 people on a line if all
+		boys stand next to each other and all girls stand next to each other?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{24!}{9!15!}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${24 \choose 9}(9!)(15!)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(9!)(15!)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2(9!)(15!)$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		Let $S$ be a set of size 37, and let $x$, $y$, and $z$ be three distinct elements of $S$. How many subsets
+		of $S$ are there that contain $x$ <em>and</em> $y$, but do not contain $z$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{33}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{34}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{35}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{37} - 2^{35} - 2^{36}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		Let $S$ be a set of size 37, and let $x$, $y$, and $z$ be three distinct elements of $S$. How many subsets
+		of $S$ are there that contain $x$ <em>or</em> $y$, but do not contain $z$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{36} - 2^{34}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{36} - 2^{35}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{37} - 2^{34}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{37} - 2^{35}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		A password consists of 12 or 13 characters, each character being one of the 10 digits $0,1,2,\dots,9$.
+		A password must contain the digit 7 at least once. How many passwords are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$10^{12} + 10^{13} - 9^{12} - 9^{13}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$12^{10} + 13^{10} - 12^{9} - 13^{9}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$10^{12} + 10^{13} - 7^{12} - 7^{13}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$12^{10} + 13^{10} - 12^{7} - 13^{7}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 7$ and $k \geq 1$ be integers, let $A$ be the set of all bitstrings of length $n$ that
+		contain exactly seven 0s, and let $B$ be the set of all bitstrings of length $k$ that contain at
+		least one 1. Assume there exists a one-to-one function $f : A \rightarrow B$. Which of the following
+		is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^k - 1 < {n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^k - 1 \geq {n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^k - 1 < \left. 2^n \middle/ {n \choose n-7} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^k - 1 \geq \left. 2^n \middle/ {n \choose n-7} \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		What is the coefficient of $x^{9}y^{16}$ in the expansion of $(7x + 21y)^{25}$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${25 \choose 16} 7^{16}21^{9}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${16 \choose 25} 7^{9}21^{16}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${25 \choose 16} 7^{25}3^{16}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->none of the above<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		How many solutions are there to the equation $x_1 + x_2 + x_3 = 17$, where $x_1 \geq 0$, $x_2 \geq 0$,
+		and $x_3 \geq 0$ are integers?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${19 \choose 16}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${19 \choose 17}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${20 \choose 16}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${20 \choose 17}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		How many strings can be obtained by rearranging the letters of the word
+		<p style="margin: 1rem 0; text-align: center;">
+			POOPERSCOOPER
+		</p>
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$13!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${13 \choose 4}{9 \choose 2}{7 \choose 2}{5 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${13 \choose 1}{12 \choose 4}{8 \choose 2}{6 \choose 1}{5 \choose 2}{3 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+		$$
+			\begin{align}
+			f(0) &= 2 \\
+			f(n + 1) &= f(n) + 6n - 2\; \ \mathrm{for}\ n \geq 0
+			\end{align}
+		$$
+		What is $f(n)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 3n^{2} - 5n + 2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 3n^{2} + 5n + 2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 2n^{2} - 5n + 2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 2n^{2} + 5n + 2$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+		</div>
+		
+		Consider the following recursive algorithm $\Fib$, which takes as input an
+		integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ f = n$ <br>
+			$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+			$\mathbf{endif};$ <br>
+			$\mathbf{return}\ f$ <br>
+		</p>
+		
+		When running $\Fib(7)$, how many calls are there to $\Fib(3)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->7<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		The Fibonacci numbers are defined as follows: $f_0 = 0$, $f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for
+		$n \geq 2$. <br>
+		
+		Consider again the recursive algorithm $\Fib$, which takes as input an integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ f = n$ <br>
+			$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+			$\mathbf{endif};$ <br>
+			$\mathbf{return}\ f$ <br>
+		</p>
+		
+		For $n \geq 3$, run algorithm $\Fib(n)$ and let $a_n$ be the number of times that $\Fib(2)$ is called. <br>
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For $n \geq 3$, $a_n = f_{n - 1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For $n \geq 3$, $a_n = f_n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For $n \geq 3$, $a_n = f_{n + 1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->For $n \geq 3$, $a_n = -1 + f_n$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		Let $B_n$ be the number of bitstrings of length $n$ that do not contain 111. Which of the following
+		is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = B_{n-1} + B_{n-2} + 2^{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = B_{n-1} + B_{n-2} + 2^{n-3} - B_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = B_{n-1} + B_{n-2} + B_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$B_n = B_{n-1} + B_{n-2} + B_{n-3} + 2^{n-4}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		A standard deck of 52 cards has 4 Kings. Consider a hand of 9 cards, chosen uniformly at random.
+		What is the probability that there are exactly two Kings in this hand?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - \left. {48 \choose 7} \middle/ {52 \choose 9} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. \bigl\{ {4 \choose 2} + {48 \choose 7} \bigr\} \middle/ {52 \choose 9} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {52 \choose 9} \middle/ \bigl\{ {4 \choose 2}{48 \choose 7} \bigr\} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {4 \choose 2}{48 \choose 7} \middle/ {52 \choose 9} \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		We choose a bitstring of length 25 uniformly at random. What is the probability that this string
+		contains at least two 1s?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - (1/2)^{25} - 25(1/2)^{25}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 + (1/2)^{25} - 25(1/2)^{25}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\sum_{k=2}^{25} {{25}\choose{k}}(1/2)^{k}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->none of the above<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		Consider three people, each one having a uniformly random birthday (out of 365 days; we ignore leap
+		years). What is the probability that at least two of them have the same birthday?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - \frac{365^2}{364 \cdot 363}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - \frac{364 \cdot 363}{365^2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - \left. {3 \choose 2} \middle/ 365^3 \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - \left. \bigl\{ {3\choose 2} + {3 \choose 3} \bigr\} \middle/ 365^3 \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		What is Simon Pratt’s favorite drink?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Herbal tea<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->India Pale Ale<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->Poutine<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above, because Simon doesn't like beer<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

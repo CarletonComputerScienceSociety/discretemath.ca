@@ -1,0 +1,401 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z12QNNF", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"midterm-winter-2015","title":"Winter 2015 Midterm","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tThe Carleton Computer Science Society has a Board of Directors consisting of a President and a\n\t\tseven-person Advisory Board. The President cannot be on the Advisory Board. Let $n$ be the number of\n\t\tstudents in Carleton's Computer Science program, where $n \\geq 8$. In how many ways can a Board of\n\t\tDirectors be chosen?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$(n - 7) + {n \\choose 7}$","correct":false},{"body":"$n + {n \\choose 7}$","correct":false},{"body":"$(n - 7) \\cdot {n \\choose 7}$","correct":true},{"body":"$n \\cdot {n \\choose 7}$","correct":false}]},{"body":["\n\t\n\t\tLet $A$ be a set of 7 elements and let $B$ be a set of 15 elements.\n\t\tHow many functions $f : A \\rightarrow B$ are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$7^{15}$","correct":false},{"body":"$15^7$","correct":true},{"body":"$15!\u002F7!$","correct":false},{"body":"${15 \\choose 7}$","correct":false}]},{"body":["\n\t\n\t\tLet $A$ be a set of 7 elements and let $B$ be a set of 15 elements. How many one-to-one (i.e.,\n\t\tinjective) functions $f : A \\rightarrow B$ are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$8 \\cdot 9 \\cdot 10 \\cdot 11 \\cdot 12 \\cdot 13 \\cdot 14 \\cdot 15$","correct":false},{"body":"$9 \\cdot 10 \\cdot 11 \\cdot 12 \\cdot 13 \\cdot 14 \\cdot 15$","correct":true},{"body":"$10 \\cdot 11 \\cdot 12 \\cdot 13 \\cdot 14 \\cdot 15$","correct":false},{"body":"$9 \\cdot 10 \\cdot 11 \\cdot 12 \\cdot 13 \\cdot 14$","correct":false}]},{"body":["\n\t\n\t\tConsider strings consisting of the characters $a$, $b$, and $c$. Such a string is called \u003Cem\u003Evalid\u003C\u002Fem\u003E,\n\t\tif no two consecutive characters are equal. Thus, $abacbac$ is valid, whereas $abaccac$ is not\n\t\tvalid. \u003Cbr\u003E\n\t\t\n\t\tLet $n \\geq 1$ be an integer and let $V_n$ be the number of valid strings of length $n$. Which of\n\t\tthe following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$V_n = 3 \\cdot 2^{n-1}$","correct":true},{"body":"$V_n = 3^n - (n - 1) \\cdot 3$","correct":false},{"body":"$V_n = 3^n - (n - 1) \\cdot 3 \\cdot 3^{n-2}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tConsider strings of length 99 consisting of the characters $a$, $b$, and $c$. How many such strings\n\t\tare there that start with $abc$ or end with $bbb$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$3^{96} + 3^{96}$","correct":false},{"body":"$3^{99} - 2 \\cdot 3^{96}$","correct":false},{"body":"$2 \\cdot 3^{96} - 3^{93}$","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\Silly}{{\\rm S \\scriptsize ILLY}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tWhat does\n\t\t$\n\t\t\t\\sum_{k=2}^{n-1} (k-1)(n-k)\n\t\t$\n\t\tcount?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The number of 3-element subsets of an $(n-1)$-element set.","correct":false},{"body":"The number of 3-element subsets of an $n$-element set.","correct":true},{"body":"The number of 3-element subsets of an $(n+1)$-element set.","correct":false},{"body":"The number of times you fart when running algorithm $\\Silly(n)$.","correct":false}]},{"body":["\n\t\n\t\tWhat is the minimum number of people needed so that we can guarantee that at least three of them\n\t\thave the same birthday? (We ignore leap years; thus, a year has 365 days.)\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$365^2$","correct":false},{"body":"$365^2 + 1$","correct":false},{"body":"$2 \\cdot 365$","correct":false},{"body":"$2 \\cdot 365 + 1$","correct":true}]},{"body":["\n\t\n\t\tWhat is the coefficient of $x^{17}$ in the expansion of $(17 + 2x)^{99}$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$2^{16} \\cdot 17^{82} \\cdot {99 \\choose 16}$","correct":false},{"body":"$2^{17} \\cdot 17^{82} \\cdot {99 \\choose 17}$","correct":true},{"body":"$2^{82} \\cdot 17^{17} \\cdot {99 \\choose 17}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tHow many solutions are there to the equation $x_1 + x_2 + x_3 = 99$, where $x_1 \\geq 0$, $x_2 \\geq 0$,\n\t\tand $x_3 \\geq 0$ are integers?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${101 \\choose 2}$","correct":true},{"body":"${101 \\choose 3}$","correct":false},{"body":"${102 \\choose 2}$","correct":false},{"body":"${102 \\choose 3}$","correct":false}]},{"body":["\n\t\n\t\tThe function $f: \\mathbb{N} \\rightarrow \\mathbb{N}$ is defined by\n\t\t$\n\t\t\t\\begin{align}\n\t\t\tf(0) &= 15 \\\\\n\t\t\tf(n) &= f(n - 1) +6n - 4\\; \\ \\mathrm{for}\\ n \\geq 1\n\t\t\t\\end{align}\n\t\t$\n\t\tWhat is $f(n)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$f(n) = 3n^{2} + 2n + 15$","correct":false},{"body":"$f(n) = 3n^{2} - 2n + 15$","correct":false},{"body":"$f(n) = 3n^{2} + n + 15$","correct":false},{"body":"$f(n) = 3n^{2} - n + 15$","correct":true}]},{"body":["\n\t\n\t\tConsider strings consisting of the characters $a$, $b$, and $c$. Such a string is called \u003Cem\u003Evalid\u003C\u002Fem\u003E,\n\t\tif it does not contain the substring $aaa$. Let $S_n$ be the number of valid strings of length\n\t\t$n$. Which of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = 2 \\cdot S_{n-1} + 2 \\cdot S_{n-2}$","correct":false},{"body":"$S_n = 2 \\cdot S_{n-1} + 2 \\cdot S_{n-2} + S_{n-3}$","correct":false},{"body":"$S_n = 2 \\cdot S_{n-1} + S_{n-2} + 2 \\cdot S_{n-3}$","correct":false},{"body":"$S_n = 2 \\cdot S_{n-1} + 2 \\cdot S_{n-2} + 2 \\cdot S_{n-3}$","correct":true}]},{"body":["\n\t\n\t\tLet $n \\geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a\n\t\tsum of 1s and 2s, such that\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tthe order in which the 1s and 2s occur in the sum matters, and\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tit is not allowed to have two consecutive 1s.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tFor example, if $n = 7$, then\n\t\t$\n\t\t\t7 = 1 + 2 + 1 + 2 + 1\n\t\t$ is allowed, whereas\n\t\t$\n\t\t\t7 = 1 + 2 + 1 + 1 + 2\n\t\t$\n\t\tis not allowed. \u003Cbr\u003E\n\t\t\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = S_{n-1} + S_{n-2}$","correct":false},{"body":"$S_n = S_{n-1} + S_{n-3}$","correct":false},{"body":"$S_n = S_{n-2} + S_{n-3}$","correct":true},{"body":"$S_n = S_{n-1} + S_{n-2} + S_{n-3}$","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\Fib}{{\\rm F \\scriptsize IB}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the following recursive algorithm $\\Fib$, which takes as input an\n\t\tinteger $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\Fib(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ f = n$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ f = \\Fib(n - 1) + \\Fib(n - 2)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{return}\\ f$ \u003Cbr\u003E\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tWhen running $\\Fib(99)$, how many calls are there to $\\Fib(95)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"4","correct":false},{"body":"5","correct":true},{"body":"6","correct":false},{"body":"7","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\NationalAnthem}{{\\rm N {\\scriptsize ATIONAL} A {\\scriptsize NTHEM}}}\n\t\t\t \\newcommand{\\elsesp}{\\phantom{\\mathbf{else}\\ }}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the following recursive algorithm $\\NationalAnthem$, which takes as input an integer $n \\geq 1$,\n\t\twhich is a power of 2:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\NationalAnthem(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\mathrm{sing}\\ {\\it O\\ Canada}\\ \\mathrm{once}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\NationalAnthem(n \u002F 2);$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\mathrm{sing}\\ {\\it O\\ Canada}\\ \\mathrm{once};$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\NationalAnthem(n \u002F 2)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tFor $n$ a power of 2, let $S(n)$ be the number of times you sing \u003Cem\u003EO Canada\u003C\u002Fem\u003E when running algorithm\n\t\t$\\NationalAnthem(n)$. Which of the following is true? \u003Cbr\u003E\n\t\t(n.b., $\\log$ denotes the base-2 logarithm)\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S(n) = 1 + \\log n$","correct":false},{"body":"$S(n) = 1 + n \\log n$","correct":false},{"body":"$S(n) = 2n + 1$","correct":false},{"body":"$S(n) = 2n - 1$","correct":true}]},{"body":["\n\t\n\t\tYou flip a fair coin 5 times. Define the event\n\t\t[defs]\n\t\t  A = \"the number of heads is odd\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"3\u002F8","correct":false},{"body":"4\u002F8","correct":true},{"body":"5\u002F8","correct":false},{"body":"6\u002F8","correct":false}]},{"body":["\n\t\n\t\tYou flip a fair coin 11 times. Define the events\n\t\t[defs]\n\t\t  A = \"the number of heads is odd\"\n\t\t[\u002Fdefs]\n\t\tand\n\t\t[defs]\n\t\t  B = \"the number of tails is even\".\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\Pr(A) = \\Pr(B)$","correct":true},{"body":"$\\Pr(A) \u003C \\Pr(B)$","correct":false},{"body":"$\\Pr(A) \u003E \\Pr(B)$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tIn order to celebrate that the COMP 2804 midterm went well, you go to your neighborhood pub. This\n\t\tpub has 16 different beers on tap:\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tThere are 7 beers of the \u003Cem\u003Epilsner\u003C\u002Fem\u003E type.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tThere are 5 beers of the \u003Cem\u003EIndia pale ale\u003C\u002Fem\u003E type.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tThere are 4 beers of the \u003Cem\u003EGerman wheatbeer\u003C\u002Fem\u003E type.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tYou order 4 different beers with at least one beer of each type. What is the number of ways in which\n\t\tyou can do this? (The order in which you order the beers does not matter.)\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${16 \\choose 4}$","correct":false},{"body":"${7 \\choose 2} \\cdot 5 \\cdot 4 + 7 \\cdot {5 \\choose 2} \\cdot 4 + 7 \\cdot 5 \\cdot {4 \\choose 2}$","correct":true},{"body":"${16 \\choose 4} - {7 \\choose 3} - {5 \\choose 3} - {4 \\choose 3}$","correct":false},{"body":"None of the above.","correct":false}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="Z12QNNF"><div class="test-application"><div class="test-header"><div>Winter 2015 Midterm</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		The Carleton Computer Science Society has a Board of Directors consisting of a President and a
+		seven-person Advisory Board. The President cannot be on the Advisory Board. Let $n$ be the number of
+		students in Carleton's Computer Science program, where $n \geq 8$. In how many ways can a Board of
+		Directors be chosen?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(n - 7) + {n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n + {n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(n - 7) \cdot {n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n \cdot {n \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Let $A$ be a set of 7 elements and let $B$ be a set of 15 elements.
+		How many functions $f : A \rightarrow B$ are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$7^{15}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$15^7$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$15!/7!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${15 \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		Let $A$ be a set of 7 elements and let $B$ be a set of 15 elements. How many one-to-one (i.e.,
+		injective) functions $f : A \rightarrow B$ are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$8 \cdot 9 \cdot 10 \cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$9 \cdot 10 \cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$10 \cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$9 \cdot 10 \cdot 11 \cdot 12 \cdot 13 \cdot 14$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		Consider strings consisting of the characters $a$, $b$, and $c$. Such a string is called <em>valid</em>,
+		if no two consecutive characters are equal. Thus, $abacbac$ is valid, whereas $abaccac$ is not
+		valid. <br>
+		
+		Let $n \geq 1$ be an integer and let $V_n$ be the number of valid strings of length $n$. Which of
+		the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$V_n = 3 \cdot 2^{n-1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$V_n = 3^n - (n - 1) \cdot 3$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$V_n = 3^n - (n - 1) \cdot 3 \cdot 3^{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		Consider strings of length 99 consisting of the characters $a$, $b$, and $c$. How many such strings
+		are there that start with $abc$ or end with $bbb$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$3^{96} + 3^{96}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$3^{99} - 2 \cdot 3^{96}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2 \cdot 3^{96} - 3^{93}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\Silly}{{\rm S \scriptsize ILLY}}$
+		</div>
+		
+		What does
+		$$
+			\sum_{k=2}^{n-1} (k-1)(n-k)
+		$$
+		count?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of 3-element subsets of an $(n-1)$-element set.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of 3-element subsets of an $n$-element set.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of 3-element subsets of an $(n+1)$-element set.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of times you fart when running algorithm $\Silly(n)$.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		What is the minimum number of people needed so that we can guarantee that at least three of them
+		have the same birthday? (We ignore leap years; thus, a year has 365 days.)
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$365^2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$365^2 + 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2 \cdot 365$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2 \cdot 365 + 1$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		What is the coefficient of $x^{17}$ in the expansion of $(17 + 2x)^{99}$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{16} \cdot 17^{82} \cdot {99 \choose 16}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{17} \cdot 17^{82} \cdot {99 \choose 17}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{82} \cdot 17^{17} \cdot {99 \choose 17}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		How many solutions are there to the equation $x_1 + x_2 + x_3 = 99$, where $x_1 \geq 0$, $x_2 \geq 0$,
+		and $x_3 \geq 0$ are integers?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${101 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${101 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${102 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${102 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		The function $f: \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+		$$
+			\begin{align}
+			f(0) &= 15 \\
+			f(n) &= f(n - 1) +6n - 4\; \ \mathrm{for}\ n \geq 1
+			\end{align}
+		$$
+		What is $f(n)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 3n^{2} + 2n + 15$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 3n^{2} - 2n + 15$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 3n^{2} + n + 15$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$f(n) = 3n^{2} - n + 15$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		Consider strings consisting of the characters $a$, $b$, and $c$. Such a string is called <em>valid</em>,
+		if it does not contain the substring $aaa$. Let $S_n$ be the number of valid strings of length
+		$n$. Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2} + S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-1} + S_{n-2} + 2 \cdot S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2} + 2 \cdot S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a
+		sum of 1s and 2s, such that
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				the order in which the 1s and 2s occur in the sum matters, and
+			</li>
+			<li>
+				it is not allowed to have two consecutive 1s.
+			</li>
+		</ul>
+		For example, if $n = 7$, then
+		$$
+			7 = 1 + 2 + 1 + 2 + 1
+		$$ is allowed, whereas
+		$$
+			7 = 1 + 2 + 1 + 1 + 2
+		$$
+		is not allowed. <br>
+		
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-2} + S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+		</div>
+		
+		Consider the following recursive algorithm $\Fib$, which takes as input an
+		integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ f = n$ <br>
+			$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+			$\mathbf{endif};$ <br>
+			$\mathbf{return}\ f$ <br>
+		</p>
+		
+		When running $\Fib(99)$, how many calls are there to $\Fib(95)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->7<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\NationalAnthem}{{\rm N {\scriptsize ATIONAL} A {\scriptsize NTHEM}}}
+			 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+		</div>
+		
+		Consider the following recursive algorithm $\NationalAnthem$, which takes as input an integer $n \geq 1$,
+		which is a power of 2:
+		
+		<p>
+			$\mathbf{Algorithm}\ \NationalAnthem(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 1$ <br>
+			$\mathbf{then}\ \mathrm{sing}\ {\it O\ Canada}\ \mathrm{once}$ <br>
+			$\mathbf{else}\ \NationalAnthem(n / 2);$ <br>
+			$\elsesp \mathrm{sing}\ {\it O\ Canada}\ \mathrm{once};$ <br>
+			$\elsesp \NationalAnthem(n / 2)$ <br>
+			$\mathbf{endif}$
+		</p>
+		
+		For $n$ a power of 2, let $S(n)$ be the number of times you sing <em>O Canada</em> when running algorithm
+		$\NationalAnthem(n)$. Which of the following is true? <br>
+		(n.b., $\log$ denotes the base-2 logarithm)
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S(n) = 1 + \log n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S(n) = 1 + n \log n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S(n) = 2n + 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S(n) = 2n - 1$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		You flip a fair coin 5 times. Define the event
+		[defs]
+		  A = "the number of heads is odd".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3/8<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4/8<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/8<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6/8<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		You flip a fair coin 11 times. Define the events
+		[defs]
+		  A = "the number of heads is odd"
+		[/defs]
+		and
+		[defs]
+		  B = "the number of tails is even".
+		[/defs]
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\Pr(A) = \Pr(B)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\Pr(A) < \Pr(B)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\Pr(A) > \Pr(B)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		In order to celebrate that the COMP 2804 midterm went well, you go to your neighborhood pub. This
+		pub has 16 different beers on tap:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				There are 7 beers of the <em>pilsner</em> type.
+			</li>
+			<li>
+				There are 5 beers of the <em>India pale ale</em> type.
+			</li>
+			<li>
+				There are 4 beers of the <em>German wheatbeer</em> type.
+			</li>
+		</ul>
+		You order 4 different beers with at least one beer of each type. What is the number of ways in which
+		you can do this? (The order in which you order the beers does not matter.)
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${16 \choose 4}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${7 \choose 2} \cdot 5 \cdot 4 + 7 \cdot {5 \choose 2} \cdot 4 + 7 \cdot 5 \cdot {4 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${16 \choose 4} - {7 \choose 3} - {5 \choose 3} - {4 \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

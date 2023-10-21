@@ -1,0 +1,522 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z27q3yC", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"exam-fall-2019","title":"Fall 2019 Exam","Author":"Michiel Smid","questions":[{"body":["\n\t\tConsider strings of length 85, in which each character is one of the letters $a,b,c,d$. \u003Cbr\u003E\n\t\tHow many such strings have exactly 5 letters $c$?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${85 \\choose 5} \\cdot 3^{80}$","correct":true},{"body":"${85 \\choose 5} \\cdot 3^{85}$","correct":false},{"body":"${85 \\choose 5} \\cdot 4^{80}$","correct":false},{"body":"${85 \\choose 5} \\cdot 4^{85}$","correct":false}]},{"body":["\n\t\tConsider strings of length 85, in which each character is one of the letters $a,b,c,d$. \u003Cbr\u003E\n\t\tHow many such strings have exactly 15 letters $a$ and exactly 30 letters $d$?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${85 \\choose 15} \\cdot {70 \\choose 30} \\cdot 2^{40}$","correct":true},{"body":"${85 \\choose 15} \\cdot {70 \\choose 30} \\cdot 3^{40}$","correct":false},{"body":"${85 \\choose 15} \\cdot {70 \\choose 30} \\cdot 4^{40}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tConsider strings of length 85, in which each character is one of the letters $a,b,c,d$. \u003Cbr\u003E\n\t\tHow many such strings have exactly 15 letters $a$ or exactly 30 letters $d$?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${85 \\choose 15} \\cdot 3^{70} + {85 \\choose 30} \\cdot 3^{55}$","correct":false},{"body":"\n\t\t${85 \\choose 15} \\cdot 3^{70} + {85 \\choose 30} \\cdot 3^{55} - {85 \\choose 15} \\cdot {70 \\choose 30} \\cdot 2^{40}$\n\t","correct":true},{"body":"${85 \\choose 15} \\cdot 4^{70} + {85 \\choose 30} \\cdot 4^{55}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tYou are given 20 beer bottles $B_1,B_2,...,B_{20}$ and 50 cider bottles $C_1,C_2,...,C_{50}$. \u003Cbr\u003E\n\t\tConsider subsets of these 70 bottles, that contain exactly 12 beer bottles (and any number of cider bottles)\n\t\tor exactly 12 cider bottles (and any number of beer bottles). How many such subsets are there?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${20 \\choose 12} + {50 \\choose 12}$","correct":false},{"body":"${20 \\choose 12} + {50 \\choose 12} - {20 \\choose 12} \\cdot {50 \\choose 12}$","correct":false},{"body":"${20 \\choose 12} \\cdot 2^{50} + {50 \\choose 12} \\cdot 2^{20}$","correct":false},{"body":"\n\t\t${20 \\choose 12} \\cdot 2^{50} + {50 \\choose 12} \\cdot 2^{20} - {20 \\choose 12} \\cdot {50 \\choose 12}$\n\t","correct":true}]},{"body":["\n\t\tYou are given 20 beer bottles $B_1,B_2,...,B_{20}$ and 50 cider bottles $C_1,C_2,...,C_{50}$. \u003Cbr\u003E\n\t\tConsider subsets of these 70 bottles, that contain at least 3 beer bottles (and any number of cider bottles).\n\t\tHow many such subsets are there?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$2^{70} - 2^{50} - 20 - {20 \\choose 2}$","correct":false},{"body":"\n\t\t$2^{70} - 2^{50} - 20 \\cdot 2^{50} - {20 \\choose 2} \\cdot 2^{50}$\n\t","correct":true},{"body":"$2^{70} - 2^{50} - 20 \\cdot 2^{50}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tLet $m \\geq 2$ and $n \\geq 2$ be integers. What does\n\t\t$\n\t\t\t{m \\choose 2} + {n \\choose 2} + m \\cdot n\n\t\t$\n\t\tcount?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The number of ways to choose a subset from a set consisting of $m + n$ elements.","correct":false},{"body":"The number of ways to choose an ordered pair of 2 elements from a set consisting of $m + n$ elements.","correct":false},{"body":"\n\t\tThe number of ways to choose a 2-element subset from a set consisting of $m + n$ elements.\n\t","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tNick eats lots of bananas. During a period of 7 days, Nick eats a total of 25 bananas. A banana schedule\n\t\tis a sequence of 7 numbers, whose sum is equal to 25, and whose numbers indicate the number of bananas\n\t\tthat Nick eats on each day. Three examples of such schedules are (3,2,7,4,1,3,5), (2,3,7,4,1,3,5), and\n\t\t(3,0,9,4,1,0,8). How many banana schedules are there?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${31 \\choose 6}$","correct":true},{"body":"${31 \\choose 7}$","correct":false},{"body":"${32 \\choose 6}$","correct":false},{"body":"${32 \\choose 7}$","correct":false}]},{"body":["\n\t\tA string that is obtained by rearranging the letters of the word BOOGER is called \u003Cem\u003Eawesome\u003C\u002Fem\u003E, if\n\t\tthe string does not contain the substring OO. Thus, GEOROB is awesome, whereas GREOOB is not awesome.\n\t\tWhat is the number of awesome strings?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$6 \\cdot {5 \\choose 2} \\cdot 3 \\cdot 2$","correct":false},{"body":"$(6 \\cdot {5 \\choose 2} \\cdot 3 \\cdot 2) - 5!$","correct":true},{"body":"$6! - 5!$","correct":false},{"body":"$(6 \\cdot {5 \\choose 2} \\cdot 3) - 5!$","correct":false}]},{"body":["\n\t\tConsider bitstrings that do not contain 110. Let $S_n$ be the number of such strings having\n\t\tlength $n$.\n\t\tWhich of the following is true for any $n \\geq 4$?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = S_{n - 1} + S_{n - 2} + S_{n - 3}$","correct":false},{"body":"$S_n = S_{n - 1} + S_{n - 2} + 2^{n - 2}$","correct":false},{"body":"$S_n = S_{n - 1} + S_{n - 2} + 2^{n - 3}$","correct":false},{"body":"$S_n = S_{n - 1} + S_{n - 2} + 1$","correct":true}]},{"body":["\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\IFeelLikeSinging}{{\\rm IF {\\scriptsize EEL} L {\\scriptsize IKE} S {\\scriptsize INGING}}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the recursive algorithm $\\IFeelLikeSinging$, which takes as input an integer $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\IFeelLikeSinging(n):$ \u003Cbr\u003E\n\t\t\t$\\quad \\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1\\ \\mathbf{then}$ \u003Cbr\u003E\n\t\t\t$\\quad \\quad \\text{sing O Canada}$ \u003Cbr\u003E\n\t\t\t$\\quad \\mathbf{else}\\ \\mathbf{if}\\ n\\ \\text{is odd}\\ \\mathbf{then}$ \u003Cbr\u003E\n\t\t\t$\\quad \\quad \\IFeelLikeSinging(n + 1)$ \u003Cbr\u003E\n\t\t\t$\\quad \\mathbf{else}$ \u003Cbr\u003E\n\t\t\t$\\quad \\quad \\IFeelLikeSinging(\\frac{n}{2})$ \u003Cbr\u003E\n\t\t\t$\\quad \\quad \\IFeelLikeSinging(\\frac{n}{2} - 1)$ \u003Cbr\u003E\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tIf you run algorithm $\\IFeelLikeSinging(9)$, how many times do you sing O Canada?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"6","correct":false},{"body":"7","correct":false},{"body":"8","correct":true},{"body":"9","correct":false}]},{"body":["\n\t\tAssume you write a multiple-choice exam that has 25 questions. For each question, four options are given\n\t\tto you, and exactly one of these options is the correct answer. Assume that you answer each question\n\t\tuniformly at random, where the choices for different questions are independent of each other. What is the\n\t\tprobability that you have exactly 17 correct answers?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${25 \\choose 17} \\cdot \\left( 1 \\middle\u002F 4 \\right)^{17}$","correct":false},{"body":"${25 \\choose 17} \\cdot \\left( 3 \\middle\u002F 4 \\right)^{17}$","correct":false},{"body":"\n\t\t${25 \\choose 17} \\cdot \\left( 1 \\middle\u002F 4 \\right)^{17} \\cdot \\left( 3 \\middle\u002F 4 \\right)^8$\n\t","correct":true},{"body":"\n\t\t${25 \\choose 17} \\cdot \\left( 1 \\middle\u002F 4 \\right)^8 \\cdot \\left( 3 \\middle\u002F 4 \\right)^{17}$\n\t","correct":false}]},{"body":["\n\t\tConsider a uniformly random bitstring of length 5. Define the events\n\t\t\n\t\t[defs]\n\t\t\tA = \"the first three bits are 101 or 110\",\n\t\t\tB = \"the last three bits are 111\".\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhich of the following is true?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":true},{"body":"The events $A$ and $B$ are not independent.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tA certain terrible, no-good, mean-spirited, awful professor gives his students 250 sample exam questions\n\t\tand then makes his final exam by choosing 25 of these questions uniformly at random. Student Nika doesn't\n\t\thave much time to study so she chooses 50 (out of 250) random sample exam questions and practices on those.\n\t\t\n\t\t\u003Cp style=\"margin: 0.5rem 0;\"\u003E\n\t\t\tWhen Nika writes the exam, what is the expected number of questions that appear on the exam and that\n\t\t\tNika has practiced on?\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\t(n.b., depending on your background, it may be helpful to observe that this can be modelled using the hypergeometric\n\t\tdistribution)\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"2","correct":false},{"body":"5","correct":true},{"body":"10","correct":false},{"body":"20","correct":false}]},{"body":["\n\t\tContinuing from the previous question, what is the probability that Nika has not practiced on any of the\n\t\tactual exam questions?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"0","correct":false},{"body":"$\\left. {225 \\choose 50} \\middle\u002F {250 \\choose 50} \\right.$","correct":true},{"body":"$\\left. {225 \\choose 25} \\middle\u002F {250 \\choose 50} \\right.$","correct":false},{"body":"$\\left. {225 \\choose 25} \\middle\u002F {225 \\choose 50} \\right.$","correct":false}]},{"body":["\n\t\tA bowl contains 5 blue balls and 4 red balls. We choose 2 balls uniformly at random. Define the events\n\t\t\n\t\t[defs]\n\t\t  A = \"both balls are red\",\n\t\t  B = \"both balls have the same color\".\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhat is the conditional probability $\\Pr(A|B)$?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{{4 \\choose 2}}{{5 \\choose 2} + {4 \\choose 2}}$","correct":true},{"body":"$\\frac{{5 \\choose 2} + {4 \\choose 2}}{{4 \\choose 2}}$","correct":false},{"body":"$\\frac{{4 \\choose 2}}{{9 \\choose 2}}$","correct":false},{"body":"$\\frac{{4 \\choose 2}}{{5 \\choose 2} \\cdot {4 \\choose 2}}$","correct":false}]},{"body":["\n\t\tWe choose an element $x$ uniformly at random from the set $\\{1,2,3,...,10\\}$. Define the events\n\t\t\n\t\t[defs]\n\t\t  A = \"$x$ is even\",\n\t\t  B = \"$x$ is divisible by 3\".\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhat is the conditional probability $\\Pr(A|B)$?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"3\u002F10","correct":false},{"body":"1\u002F3","correct":true},{"body":"1\u002F2","correct":false},{"body":"2\u002F3","correct":false}]},{"body":["\n\t\tWe choose an element $x$ uniformly at random from the set $\\{1,2,3,...,10\\}$. Define the events\n\t\t\n\t\t[defs]\n\t\t  A = \"$x$ is even\",\n\t\t  B = \"$1 \\leq x \\leq 5$\".\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhich of the following is true?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":false},{"body":"The events $A$ and $B$ are not independent.","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tWe choose an element $x$ uniformly at random from the set $\\{1,2,3,...,10\\}$. Define the events\n\t\t\n\t\t[defs]\n\t\t  A = \"$x$ is even\",\n\t\t  B = \"$1 \\leq x \\leq 6$\".\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhich of the following is true?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":true},{"body":"The events $A$ and $B$ are not independent.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tWhen a couple has a child, this child is a boy with probability 1\u002F2 and a girl with probability 1\u002F2,\n\t\tindependent of the sex of previous children. A couple stops having children as soon as they have a child\n\t\tthat has the same sex as their first child. Define the events\n\t\t\n\t\t[defs]\n\t\t  A = \"the second child is a boy\",\n\t\t  B = \"the couple has at least three children and the third child is a boy\".\n\t\t[\u002Fdefs]\n\t\t\n\t\tWhich of the following is true?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":true},{"body":"The events $A$ and $B$ are not independent.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tI flip two fair and independent coins. If the first coin comes up tails, you lose \\$1 (i.e., you win -\\$1).\n\t\tIf the second coin comes up heads, you win \\$2. (Thus, if the first coin comes up tails and the second coin\n\t\tcomes up heads, you win \\$1.) Define the random variable $X$ to be the amount of dollars that you win.\n\t\tWhat is the expected value of $X$?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"2","correct":false},{"body":"1","correct":false},{"body":"1\u002F4","correct":false},{"body":"1\u002F2","correct":true}]},{"body":["\n\t\tLet $n \\geq 2$ be an integer. Consider a string $c_1,c_2,...,c_n$ of length $n$, in which each character $c_i$\n\t\tis a uniformly random element of the set $\\{1,2,3\\}$ (independently of all other characters). Consider the random\n\t\tvariable $X$ whose value is the number of indices $i \\in \\{1,...,n - 1\\}$ for which the product $c_i \\cdot c_{i + 1}$\n\t\tis odd.\n\t\t\n\t\t\u003Cp style=\"margin: 0.5rem 0;\"\u003E\n\t\t\tWhat is the expected value $\\mathbb{E}(X)$ of the random variable $X$?\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cem\u003EHint:\u003C\u002Fem\u003E Use indicator random variables.\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{2}{3} \\cdot n$","correct":false},{"body":"$\\frac{2}{3} \\cdot (n - 1)$","correct":false},{"body":"$\\frac{4}{9} \\cdot n$","correct":false},{"body":"$\\frac{4}{9} \\cdot (n - 1)$","correct":true}]},{"body":["\n\t\tYou are given a fair 6-sided red die and a fair 6-sided blue die. Consider the following experiment:\n\t\t\n\t\t\u003Cp style=\"margin-top: 0.5rem;\"\u003E\n\t\t\tExperiment: Roll each die once and take the sum of the two rolls. You repeat this experiment until\n\t\t\tthe sum of the two rolls is equal to 7. Consider the random variable\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\t[defs]\n\t\t  X = the number of times you do the experiment.\n\t\t[\u002Fdefs]\n\t\t\n\t\t(This value $X$ includes the experiment in which the sum is 7 for the first time.) \u003Cbr\u003E\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of the random variable $X$?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"6","correct":true},{"body":"5","correct":false},{"body":"4","correct":false},{"body":"3","correct":false}]},{"body":["\n\t\tIs the following statement true or false?\n\t\t\n\t\t\u003Cp style=\"text-align: center;\"\u003E\n\t\t\tFor any random variable $X$, $\\mathbb{E}\\left(1 \\middle\u002F X \\right) = 1 \u002F \\mathbb{E}(X)$.\n\t\t\u003C\u002Fp\u003E\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The statement is true.","correct":false},{"body":"The statement is false.","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\tLet $n$ and $k$ be integers such that $n$ is even, $n \\geq 2$, and\n\t\t$1 \\leq k \\leq n$. The Carleton\n\t\tComputer Science Society (CCSS) is having their annual \u003Cs\u003EChristmas\u003C\u002Fs\u003E Holiday Season Party, which\n\t\tis attended by $n$ students.\n\t\t\n\t\t\u003C!-- yes, i know, css li::marker is great. it also doesn't work on Safari --\u003E\n\t\t\u003Ctable style=\"margin: 1rem 0; padding-left: 1.1em;\"\u003E\n\t\t\t\u003Ctbody\u003E\n\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\u003Ctd style=\"vertical-align: top; text-align: right; padding: 0;\"\u003E(i)\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003Ctd style=\"padding: 0 0 0 0.35em;\"\u003E\n\t\t\t\t\t\t$k$ of these $n$ students are politically correct and, thus, refuse to say \u003Cem\u003EMerry Christmas\u003C\u002Fem\u003E.\n\t\t\t\t\t\tInstead, they say \u003Cem\u003EHappy Holidays\u003C\u002Fem\u003E.\n\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\u003Ctd style=\"vertical-align: top; text-align: right; padding: 0;\"\u003E(ii)\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003Ctd style=\"padding: 0 0 0 0.35em;\"\u003E\n\t\t\t\t\t\t$n - k$ of these $n$ students do not care about political correctness and, thus, they say\n\t\t\t\t\t\t\u003Cem\u003EMerry Christmas\u003C\u002Fem\u003E.\n\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\u003C\u002Ftbody\u003E\n\t\t\u003C\u002Ftable\u003E\n\t\t\n\t\tConsider a uniformly random permutation of these $n$ students. The positions in this permutation are numbered\n\t\tas $1,2,...,n$.\n\t\t\n\t\t\u003Cp style=\"margin: 0.5rem 0;\"\u003E\n\t\t\tDefine the random variable $X$ as the number of positions $i$ with $1 \\leq i \\leq \\left. n \\middle\u002F2 \\right.$\n\t\t\tsuch that both students at positions $i$ and $2i$ are politically correct.\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of the random variable $X$?\n\t\t\n\t\t\u003Cp style=\"margin-top: 0.5rem;\"\u003E\n\t\t\t\u003Cem\u003EHint:\u003C\u002Fem\u003E Use indicator random variables.\n\t\t\u003C\u002Fp\u003E\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$n \\cdot \\frac{k(k - 1)}{n(n - 1)}$","correct":false},{"body":"$n \\cdot \\frac{(k - 1)(k - 2)}{n(n - 1)}$","correct":false},{"body":"$\\frac{n}{2} \\cdot \\frac{k(k - 1)}{n(n - 1)}$","correct":true},{"body":"$\\frac{n}{2} \\cdot \\frac{(k - 1)(k - 2)}{n(n - 1)}$","correct":false}]},{"body":["\n\t\tHow do you feel about writing an exam on Friday evening?\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"I would rather sit in the pub and have a beer.","correct":true},{"body":"I would rather sit in the pub and have a beer.","correct":true},{"body":"I would rather sit in the pub and have a beer.","correct":true},{"body":"I would rather sit in the pub and have a beer.","correct":true},{"body":"I would rather sit in the pub and have a beer.","correct":true}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="Z27q3yC"><div class="test-application"><div class="test-header"><div>Fall 2019 Exam</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+		Consider strings of length 85, in which each character is one of the letters $a,b,c,d$. <br>
+		How many such strings have exactly 5 letters $c$?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 5} \cdot 3^{80}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 5} \cdot 3^{85}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 5} \cdot 4^{80}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 5} \cdot 4^{85}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+		Consider strings of length 85, in which each character is one of the letters $a,b,c,d$. <br>
+		How many such strings have exactly 15 letters $a$ and exactly 30 letters $d$?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 15} \cdot {70 \choose 30} \cdot 2^{40}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 15} \cdot {70 \choose 30} \cdot 3^{40}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 15} \cdot {70 \choose 30} \cdot 4^{40}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+		Consider strings of length 85, in which each character is one of the letters $a,b,c,d$. <br>
+		How many such strings have exactly 15 letters $a$ or exactly 30 letters $d$?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 15} \cdot 3^{70} + {85 \choose 30} \cdot 3^{55}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		${85 \choose 15} \cdot 3^{70} + {85 \choose 30} \cdot 3^{55} - {85 \choose 15} \cdot {70 \choose 30} \cdot 2^{40}$
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${85 \choose 15} \cdot 4^{70} + {85 \choose 30} \cdot 4^{55}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+		You are given 20 beer bottles $B_1,B_2,...,B_{20}$ and 50 cider bottles $C_1,C_2,...,C_{50}$. <br>
+		Consider subsets of these 70 bottles, that contain exactly 12 beer bottles (and any number of cider bottles)
+		or exactly 12 cider bottles (and any number of beer bottles). How many such subsets are there?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${20 \choose 12} + {50 \choose 12}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${20 \choose 12} + {50 \choose 12} - {20 \choose 12} \cdot {50 \choose 12}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${20 \choose 12} \cdot 2^{50} + {50 \choose 12} \cdot 2^{20}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		${20 \choose 12} \cdot 2^{50} + {50 \choose 12} \cdot 2^{20} - {20 \choose 12} \cdot {50 \choose 12}$
+	<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+		You are given 20 beer bottles $B_1,B_2,...,B_{20}$ and 50 cider bottles $C_1,C_2,...,C_{50}$. <br>
+		Consider subsets of these 70 bottles, that contain at least 3 beer bottles (and any number of cider bottles).
+		How many such subsets are there?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{70} - 2^{50} - 20 - {20 \choose 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		$2^{70} - 2^{50} - 20 \cdot 2^{50} - {20 \choose 2} \cdot 2^{50}$
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{70} - 2^{50} - 20 \cdot 2^{50}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+		Let $m \geq 2$ and $n \geq 2$ be integers. What does
+		$$
+			{m \choose 2} + {n \choose 2} + m \cdot n
+		$$
+		count?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of ways to choose a subset from a set consisting of $m + n$ elements.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of ways to choose an ordered pair of 2 elements from a set consisting of $m + n$ elements.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		The number of ways to choose a 2-element subset from a set consisting of $m + n$ elements.
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+		Nick eats lots of bananas. During a period of 7 days, Nick eats a total of 25 bananas. A banana schedule
+		is a sequence of 7 numbers, whose sum is equal to 25, and whose numbers indicate the number of bananas
+		that Nick eats on each day. Three examples of such schedules are (3,2,7,4,1,3,5), (2,3,7,4,1,3,5), and
+		(3,0,9,4,1,0,8). How many banana schedules are there?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${31 \choose 6}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${31 \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${32 \choose 6}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${32 \choose 7}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+		A string that is obtained by rearranging the letters of the word BOOGER is called <em>awesome</em>, if
+		the string does not contain the substring OO. Thus, GEOROB is awesome, whereas GREOOB is not awesome.
+		What is the number of awesome strings?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$6 \cdot {5 \choose 2} \cdot 3 \cdot 2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(6 \cdot {5 \choose 2} \cdot 3 \cdot 2) - 5!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$6! - 5!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(6 \cdot {5 \choose 2} \cdot 3) - 5!$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+		Consider bitstrings that do not contain 110. Let $S_n$ be the number of such strings having
+		length $n$.
+		Which of the following is true for any $n \geq 4$?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 1} + S_{n - 2} + S_{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 1} + S_{n - 2} + 2^{n - 2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 1} + S_{n - 2} + 2^{n - 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n - 1} + S_{n - 2} + 1$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+		<div hidden>
+			$\newcommand{\IFeelLikeSinging}{{\rm IF {\scriptsize EEL} L {\scriptsize IKE} S {\scriptsize INGING}}}$
+		</div>
+		
+		Consider the recursive algorithm $\IFeelLikeSinging$, which takes as input an integer $n \geq 0$:
+		
+		<p>
+			$\IFeelLikeSinging(n):$ <br>
+			$\quad \mathbf{if}\ n = 0\ \mathrm{or}\ n = 1\ \mathbf{then}$ <br>
+			$\quad \quad \text{sing O Canada}$ <br>
+			$\quad \mathbf{else}\ \mathbf{if}\ n\ \text{is odd}\ \mathbf{then}$ <br>
+			$\quad \quad \IFeelLikeSinging(n + 1)$ <br>
+			$\quad \mathbf{else}$ <br>
+			$\quad \quad \IFeelLikeSinging(\frac{n}{2})$ <br>
+			$\quad \quad \IFeelLikeSinging(\frac{n}{2} - 1)$ <br>
+		</p>
+		
+		If you run algorithm $\IFeelLikeSinging(9)$, how many times do you sing O Canada?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->7<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->8<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->9<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+		Assume you write a multiple-choice exam that has 25 questions. For each question, four options are given
+		to you, and exactly one of these options is the correct answer. Assume that you answer each question
+		uniformly at random, where the choices for different questions are independent of each other. What is the
+		probability that you have exactly 17 correct answers?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${25 \choose 17} \cdot \left( 1 \middle/ 4 \right)^{17}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${25 \choose 17} \cdot \left( 3 \middle/ 4 \right)^{17}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		${25 \choose 17} \cdot \left( 1 \middle/ 4 \right)^{17} \cdot \left( 3 \middle/ 4 \right)^8$
+	<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->
+		${25 \choose 17} \cdot \left( 1 \middle/ 4 \right)^8 \cdot \left( 3 \middle/ 4 \right)^{17}$
+	<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+		Consider a uniformly random bitstring of length 5. Define the events
+		
+		[defs]
+			A = "the first three bits are 101 or 110",
+			B = "the last three bits are 111".
+		[/defs]
+		
+		Which of the following is true?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+		A certain terrible, no-good, mean-spirited, awful professor gives his students 250 sample exam questions
+		and then makes his final exam by choosing 25 of these questions uniformly at random. Student Nika doesn't
+		have much time to study so she chooses 50 (out of 250) random sample exam questions and practices on those.
+		
+		<p style="margin: 0.5rem 0;">
+			When Nika writes the exam, what is the expected number of questions that appear on the exam and that
+			Nika has practiced on?
+		</p>
+		
+		(n.b., depending on your background, it may be helpful to observe that this can be modelled using the hypergeometric
+		distribution)
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->10<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->20<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+		Continuing from the previous question, what is the probability that Nika has not practiced on any of the
+		actual exam questions?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->0<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {225 \choose 50} \middle/ {250 \choose 50} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {225 \choose 25} \middle/ {250 \choose 50} \right.$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\left. {225 \choose 25} \middle/ {225 \choose 50} \right.$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+		A bowl contains 5 blue balls and 4 red balls. We choose 2 balls uniformly at random. Define the events
+		
+		[defs]
+		  A = "both balls are red",
+		  B = "both balls have the same color".
+		[/defs]
+		
+		What is the conditional probability $\Pr(A|B)$?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{4 \choose 2}}{{5 \choose 2} + {4 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{5 \choose 2} + {4 \choose 2}}{{4 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{4 \choose 2}}{{9 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{{4 \choose 2}}{{5 \choose 2} \cdot {4 \choose 2}}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+		We choose an element $x$ uniformly at random from the set $\{1,2,3,...,10\}$. Define the events
+		
+		[defs]
+		  A = "$x$ is even",
+		  B = "$x$ is divisible by 3".
+		[/defs]
+		
+		What is the conditional probability $\Pr(A|B)$?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3/10<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/3<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+		We choose an element $x$ uniformly at random from the set $\{1,2,3,...,10\}$. Define the events
+		
+		[defs]
+		  A = "$x$ is even",
+		  B = "$1 \leq x \leq 5$".
+		[/defs]
+		
+		Which of the following is true?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>18. <!-- HTML_TAG_START -->
+		We choose an element $x$ uniformly at random from the set $\{1,2,3,...,10\}$. Define the events
+		
+		[defs]
+		  A = "$x$ is even",
+		  B = "$1 \leq x \leq 6$".
+		[/defs]
+		
+		Which of the following is true?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>19. <!-- HTML_TAG_START -->
+		When a couple has a child, this child is a boy with probability 1/2 and a girl with probability 1/2,
+		independent of the sex of previous children. A couple stops having children as soon as they have a child
+		that has the same sex as their first child. Define the events
+		
+		[defs]
+		  A = "the second child is a boy",
+		  B = "the couple has at least three children and the third child is a boy".
+		[/defs]
+		
+		Which of the following is true?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>20. <!-- HTML_TAG_START -->
+		I flip two fair and independent coins. If the first coin comes up tails, you lose \$1 (i.e., you win -\$1).
+		If the second coin comes up heads, you win \$2. (Thus, if the first coin comes up tails and the second coin
+		comes up heads, you win \$1.) Define the random variable $X$ to be the amount of dollars that you win.
+		What is the expected value of $X$?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/2<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>21. <!-- HTML_TAG_START -->
+		Let $n \geq 2$ be an integer. Consider a string $c_1,c_2,...,c_n$ of length $n$, in which each character $c_i$
+		is a uniformly random element of the set $\{1,2,3\}$ (independently of all other characters). Consider the random
+		variable $X$ whose value is the number of indices $i \in \{1,...,n - 1\}$ for which the product $c_i \cdot c_{i + 1}$
+		is odd.
+		
+		<p style="margin: 0.5rem 0;">
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+		</p>
+		
+		<em>Hint:</em> Use indicator random variables.
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{2}{3} \cdot n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{2}{3} \cdot (n - 1)$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{4}{9} \cdot n$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{4}{9} \cdot (n - 1)$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>22. <!-- HTML_TAG_START -->
+		You are given a fair 6-sided red die and a fair 6-sided blue die. Consider the following experiment:
+		
+		<p style="margin-top: 0.5rem;">
+			Experiment: Roll each die once and take the sum of the two rolls. You repeat this experiment until
+			the sum of the two rolls is equal to 7. Consider the random variable
+		</p>
+		
+		[defs]
+		  X = the number of times you do the experiment.
+		[/defs]
+		
+		(This value $X$ includes the experiment in which the sum is 7 for the first time.) <br>
+		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->3<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>23. <!-- HTML_TAG_START -->
+		Is the following statement true or false?
+		
+		<p style="text-align: center;">
+			For any random variable $X$, $\mathbb{E}\left(1 \middle/ X \right) = 1 / \mathbb{E}(X)$.
+		</p>
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The statement is true.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The statement is false.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>24. <!-- HTML_TAG_START -->
+		Let $n$ and $k$ be integers such that $n$ is even, $n \geq 2$, and
+		$1 \leq k \leq n$. The Carleton
+		Computer Science Society (CCSS) is having their annual <s>Christmas</s> Holiday Season Party, which
+		is attended by $n$ students.
+		
+		<!-- yes, i know, css li::marker is great. it also doesn't work on Safari -->
+		<table style="margin: 1rem 0; padding-left: 1.1em;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top; text-align: right; padding: 0;">(i)</td>
+					<td style="padding: 0 0 0 0.35em;">
+						$k$ of these $n$ students are politically correct and, thus, refuse to say <em>Merry Christmas</em>.
+						Instead, they say <em>Happy Holidays</em>.
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top; text-align: right; padding: 0;">(ii)</td>
+					<td style="padding: 0 0 0 0.35em;">
+						$n - k$ of these $n$ students do not care about political correctness and, thus, they say
+						<em>Merry Christmas</em>.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		Consider a uniformly random permutation of these $n$ students. The positions in this permutation are numbered
+		as $1,2,...,n$.
+		
+		<p style="margin: 0.5rem 0;">
+			Define the random variable $X$ as the number of positions $i$ with $1 \leq i \leq \left. n \middle/2 \right.$
+			such that both students at positions $i$ and $2i$ are politically correct.
+		</p>
+		
+		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+		
+		<p style="margin-top: 0.5rem;">
+			<em>Hint:</em> Use indicator random variables.
+		</p>
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n \cdot \frac{k(k - 1)}{n(n - 1)}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n \cdot \frac{(k - 1)(k - 2)}{n(n - 1)}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{n}{2} \cdot \frac{k(k - 1)}{n(n - 1)}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{n}{2} \cdot \frac{(k - 1)(k - 2)}{n(n - 1)}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>25. <!-- HTML_TAG_START -->
+		How do you feel about writing an exam on Friday evening?
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->I would rather sit in the pub and have a beer.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->I would rather sit in the pub and have a beer.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->I would rather sit in the pub and have a beer.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->I would rather sit in the pub and have a beer.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(undefined)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->I would rather sit in the pub and have a beer.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+

@@ -1,0 +1,578 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>DiscreteMath.ca</title>
+    
+  <link rel="stylesheet" href="/discretemath.ca/assets/asset.918d0f23.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.f82489c7.css" />
+<link rel="stylesheet" href="/discretemath.ca/assets/asset.2c6b76c4.css" /><style>astro-root, astro-fragment { display: contents; }</style><script type="module" src="/discretemath.ca/entry.f8a12119.js"></script>
+<script type="module" data-astro-component-hydration>import setup from '/discretemath.ca/entry.316778ed.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("miwCu", {name:"Test",value: true}, async () => {
+  const [{ Test: Component }, { default: hydrate }] = await Promise.all([import("/discretemath.ca/entry.5d71de35.js"), import("/discretemath.ca/entry.8bd524e0.js")]);
+  return (el, children) => hydrate(el)(Component, {"data":{"id":"exam-winter-2017","title":"Winter 2017 Exam","Author":"Michiel Smid","questions":[{"body":["\n\t\n\t\tConsider permutations $a_1,a_2,\\dots,a_{10}$ of the set $\\{1,2,\\dots,10\\}$ for which\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t$a_1,a_3,a_5,a_7,a_9$ are all odd and\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t$a_2,a_4,a_6,a_8,a_{10}$ are all even.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tHow many such permutations are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$10!$","correct":false},{"body":"$5^5 \\cdot 5^5$","correct":false},{"body":"$(5!)^2$","correct":true},{"body":"$2 \\cdot (5!)^2$","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 2$ be an integer. Consider permutations $a_1,a_2,\\dots,a_n$ of the set $\\{1,2,\\dots,n\\}$\n\t\tfor which $a_1 \u003C a_2$. How many such permutations are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\frac{n!}{2}$","correct":true},{"body":"$n!$","correct":false},{"body":"$2{n \\choose 2} \\cdot (n-2)!$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $B$ be a set consisting of 45 bottles. Out of these, 17 are beer bottles, and the remaining 28\n\t\tare cider bottles. Consider subsets of $B$ that contain\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\texactly 5 beer bottles and zero or more cider bottles,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tor\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\texactly 5 cider bottles and zero or more beer bottles.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tHow many such subsets are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${17 \\choose 5} \\cdot 2^{28} + 2^{17} \\cdot {28 \\choose 5}$","correct":false},{"body":"${17 \\choose 5} \\cdot 2^{28} + 2^{17} \\cdot {28 \\choose 5} - {17 \\choose 5} \\cdot {28 \\choose 5}$","correct":true},{"body":"$2^{45} - {17 \\choose 5} - {28 \\choose 5}$","correct":false},{"body":"$2^{45} - {17 \\choose 5} \\cdot {28 \\choose 5}$","correct":false}]},{"body":["\n\t\n\t\tA bitstring $b_1b_2 \\dots b_n$ is called a palindrome if $b_1b_2 \\dots b_n = b_nb_{n-1} \\dots b_1$, i.e.,\n\t\treading the string from left to right gives the same result as reading it from right to left. Let\n\t\t$n \\geq 3$ be an odd integer. How many palindromes of length $n$ are there?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$2^{n-1}$","correct":false},{"body":"$2^{n-2}$","correct":false},{"body":"$2^{(n-1)\u002F2}$","correct":false},{"body":"$2^{(n+1)\u002F2}$","correct":true}]},{"body":["\n\t\n\t\tLet $n \\geq 2$ be an integer. What does $2^{n} - 2^{n-2}$ count?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The number of bitstrings of length $n$ in which the first bit is 0 or the last bit is 1.","correct":true},{"body":"The number of bitstrings of length $n$ in which the first bit is 0 and the last bit is 1.","correct":false},{"body":"The number of bitstrings of length $n$ in which the first bit is equal to the last bit.","correct":false},{"body":"The number of bitstrings of length $n$ in which the first bit is not equal to the last bit.","correct":false}]},{"body":["\n\t\n\t\tConsider a group of 100 students. In this group,\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t63 students like beer,\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t71 students like cider, and\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\t25 students do not like beer and do not like cider.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tHow many students like beer and cider?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"57","correct":false},{"body":"58","correct":false},{"body":"59","correct":true},{"body":"60","correct":false}]},{"body":["\n\t\n\t\tIn this question, we consider bitstrings of length $n$, where $n$ is an even integer, and in which\n\t\tthe positions are numbered $1,2,\\dots,n$. \u003Cbr\u003E\n\t\t\n\t\tFor any even integer $n$, let $S_n$ be the number of bitstrings of length $n$ that have both of the\n\t\tfollowing two properties:\n\t\t\u003Cul style=\"margin: 0.5rem 0;\"\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tThere is a 0 at every even position.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\t\u003Cli\u003E\n\t\t\t\tThe entire bitstring does not contain the substring 101.\n\t\t\t\u003C\u002Fli\u003E\n\t\t\u003C\u002Ful\u003E\n\t\tWhich of the following is true for all even integers $n \\geq 6$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = S_{n\u002F2} + S_{(n\u002F2)-3}$","correct":false},{"body":"$S_n = S_{n-1} + S_{n-3}$","correct":false},{"body":"$S_n = S_{n-2} + S_{n-3}$","correct":false},{"body":"$S_n = S_{n-2} + S_{n-4}$","correct":true}]},{"body":["\n\t\n\t\tConsider bitstrings that contain at least one occurrence of 000. Let $S_n$ be the number of such\n\t\tstrings having length $n$. Which of the following is true for $n \\geq 4$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$S_n = S_{n-1} + S_{n-2} + 2^{n-2}$","correct":false},{"body":"$S_n = S_{n-1} + S_{n-2} + S_{n-3} + 2^{n-3}$","correct":true},{"body":"$S_n = S_{n-1} + S_{n-2} + S_{n-3}$","correct":false},{"body":"$S_n = S_{n-1} + S_{n-2} + S_{n-3} + 2^{n-4}$","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\Hello}{{\\rm H {\\scriptsize ELLO}}}\n\t\t\t \\newcommand{\\elsesp}{\\phantom{\\mathbf{else}\\ }}\n\t\t\t \\newcommand{\\thensp}{\\phantom{\\mathbf{then}\\ }}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the recursive algorithm $\\Hello$, which takes as input an integer $n \\geq 0$:\n\t\t\n\t\t\u003Cp\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\Hello(n)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ n = 0\\ \\mathrm{or}\\ n = 1$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\text{print ``hello''}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\mathbf{if}\\ n\\ \\mathrm{is}\\ \\mathrm{even}$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\mathbf{then}\\ \\Hello(\\frac{n}{2});$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\thensp \\Hello(\\frac{n}{2} - 1)$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\mathbf{else}\\ \\Hello(n - 1);$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\elsesp \\Hello(n - 2)$ \u003Cbr\u003E\n\t\t\t$\\elsesp \\mathbf{endif};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$\n\t\t\u003C\u002Fp\u003E\n\t\t\n\t\tIf we run algorithm $\\Hello(7)$, how many times is the word \"hello\" printed?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"9","correct":false},{"body":"10","correct":false},{"body":"11","correct":true},{"body":"12","correct":false}]},{"body":["\n\t\n\t\tWe choose, uniformly at random, a string consisting of 14 characters, where each character is a\n\t\tlowercase letter. Let $A$ be the event\n\t\t[defs]\n\t\t  A = \"the string contains at least one vowel\".\n\t\t[\u002Fdefs]\n\t\t(A vowel is one of the letters $a$, $e$, $i$, $o$, and $u$.) What is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$1 - (21\u002F26)^{14}$","correct":true},{"body":"$1 - (26\u002F21)^{14}$","correct":false},{"body":"$5 \\cdot (5\u002F26) \\cdot (21\u002F26)^{13}$","correct":false},{"body":"$14 \\cdot (5\u002F26) \\cdot (21\u002F26)^{13}$","correct":false}]},{"body":["\n\t\n\t\tConsider a group consisting of 7 girls and 6 boys. Elisa is one of the girls. How many ways are\n\t\tthere to arrange these 13 people on a horizontal line such that Elisa has 2 neighbors, both of whom\n\t\tare girls? (The order on the line matters.)\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$11 \\cdot {6 \\choose 2} \\cdot 10!$","correct":false},{"body":"$11 \\cdot 6 \\cdot 5 \\cdot 10!$","correct":true},{"body":"$12 \\cdot 6 \\cdot 5 \\cdot 10!$","correct":false},{"body":"$13 \\cdot 6 \\cdot 5 \\cdot 10!$","correct":false}]},{"body":["\n\t\n\t\tLet $X = \\{1,2,3,\\dots,10\\}$. We choose, uniformly at random, a subset $Y$ of $X$, where $Y$ has\n\t\tsize 5. Define the events\n\t\t[defs]\n\t\t  A = \"1 is an element of $Y$\",\n\t\t  B = \"7 is an element of $Y$\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A|B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"4\u002F8","correct":false},{"body":"5\u002F8","correct":false},{"body":"4\u002F9","correct":true},{"body":"5\u002F9","correct":false}]},{"body":["\n\t\n\t\tWe flip a fair coin, independently, five times. Define the events\n\t\t[defs]\n\t\t  A = \"the coin comes up heads exactly four times\",\n\t\t  B = \"the fifth coin flip results in heads\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A|B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"1\u002F3","correct":false},{"body":"2\u002F3","correct":false},{"body":"2\u002F5","correct":false},{"body":"1\u002F4","correct":true}]},{"body":["\n\t\n\t\tLet $n \\geq 3$ be an integer. Consider a uniformly random permutation $a_1a_2 \\dots a_n$ of the set\n\t\t$\\{1,2,\\dots,n\\}$. Define the events\n\t\t[defs]\n\t\t  A = \"$a_n = n$\",\n\t\t  B = \"$a_2 \u003E a_1$\".\n\t\t[\u002Fdefs]\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The events $A$ and $B$ are independent.","correct":true},{"body":"The events $A$ and $B$ are not independent.","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 5$ be an integer. Consider a uniformly random permutation $a_1a_2 \\dots a_n$ of the set\n\t\t$\\{1,2,\\dots,n\\}$. Define the events\n\t\t[defs]\n\t\t  A = \"$a_1 = 1$\",\n\t\t  B = \"$a_n = 5$\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A \\cup B)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${\\frac{1}{n}} - {\\frac{1}{n(n-1)}}$","correct":false},{"body":"${\\frac{2}{n}} - {\\frac{1}{n(n-1)}}$","correct":true},{"body":"${\\frac{2}{n}} - {\\frac{1}{n^{2}}}$","correct":false},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tLet $A$ and $B$ be two events in some sample space. You are given that\n\t\t$\n\t\t\t\\begin{align}\n\t\t\t\\Pr(A|B) &= \\Pr(B|A), \\\\\n\t\t\t\\Pr(A \\cup B) &= 1, \\\\\n\t\t\t\\Pr(A \\cap B) &\u003E 0.\n\t\t\t\\end{align}\n\t\t$\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$\\Pr(A) \u003C 1\u002F2$","correct":false},{"body":"$\\Pr(A) \u003E 1\u002F2$","correct":true},{"body":"$\\Pr(A) \u003C 1$","correct":false},{"body":"$\\Pr(A) \u003E 0$","correct":false}]},{"body":["\n\t\n\t\tConsider a uniformly random permutation of the set $\\{1,2,\\dots,50\\}$. Define the event\n\t\t[defs]\n\t\t  A = \"in the permutation, both 8 and 4 are to the left of both 1 and 2\".\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(A)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"1\u002F3","correct":false},{"body":"2\u002F3","correct":false},{"body":"1\u002F5","correct":false},{"body":"1\u002F6","correct":true}]},{"body":["\n\t\n\t\tYou roll a fair red die and a fair blue die, independently of each other. Define the random\n\t\tvariables\n\t\t[defs]\n\t\t  X = \"the result of the red die\",\n\t\t  Y = \"the result of the blue die\",\n\t\t  Z = $\\min(X,Y)$.\n\t\t[\u002Fdefs]\n\t\tWhat is $\\Pr(Z = 2)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"5\u002F18","correct":false},{"body":"1\u002F6","correct":false},{"body":"1\u002F4","correct":true},{"body":"1\u002F3","correct":false}]},{"body":["\n\t\n\t\tLet $n \\geq 3$ be an integer and consider a group $P_1,P_2,\\dots,P_n$ of $n$ people. Each of these\n\t\tpeople has a uniformly random birthday, which is independent of the birthdays of the other people.\n\t\tWe ignore leap years; thus, the year has 365 days. \u003Cbr\u003E\n\t\t\n\t\tDefine the random variable $X$ to be the number of unordered triples $\\{P_i,P_j,P_k\\}$ of people\n\t\t(i.e., subsets consisting of three people) that have the same birthday. \u003Cbr\u003E\n\t\t\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of $X$? \u003Cbr\u003E\n\t\t\u003Cem\u003EHint:\u003C\u002Fem\u003E Use indicator random variables.\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"${\\frac{1}{365^2}} \\cdot {n \\choose 3}$","correct":true},{"body":"${\\frac{1}{365^3}} \\cdot {n \\choose 3}$","correct":false},{"body":"${\\frac{1}{365^2}} \\cdot n^3$","correct":false},{"body":"${\\frac{1}{365^3}} \\cdot n^3$","correct":false}]},{"body":["\n\t\n\t\tConsider a coin that comes up heads with probability 1\u002F5 and comes up tails with probability 4\u002F5.\n\t\tYou flip this coin twice, independently of each other. For each heads, you win \\$100. For each tails, you win \\$50. \u003Cbr\u003E\n\t\t\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"80","correct":false},{"body":"100","correct":false},{"body":"120","correct":true},{"body":"140","correct":false}]},{"body":["\n\t\n\t\tYou are given a fair red die and a fair blue die. You roll each die once, independently of each other.\n\t\tLet $(i,j)$ be the outcome, where $i$ is the result of the red die and $j$ is the result of the blue die.\n\t\tDefine the random variables\n\t\t$\n\t\t\tX = |i - j|\n\t\t$\n\t\tand\n\t\t$\n\t\t\tY = \\max(i, j).\n\t\t$\n\t\tWhich of the following is true?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The random variables $X$ and $Y$ are independent.","correct":false},{"body":"The random variables $X$ and $Y$ are not independent.","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\t\u003Cdiv hidden\u003E\n\t\t\t$\\newcommand{\\TwoTails}{{\\rm T {\\scriptsize WO} T {\\scriptsize AILS}}}$\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tConsider the following recursive algorithm $\\TwoTails$, which takes as input a positive integer $k$:\n\t\t\n\t\t\u003Cdiv style=\"margin: 1rem 0;\"\u003E\n\t\t\t$\\mathbf{Algorithm}\\ \\TwoTails(k)\\mathrm{:}$ \u003Cbr\u003E\n\t\t\t\u003Ctable\u003E\n\t\t\t\t\u003Ctbody\u003E\n\t\t\t\t\t\u003Ctr\u003E\n\t\t\t\t\t\t\u003Ctd style=\"vertical-align: top;\"\u003E$\u002F\u002F$\u003C\u002Ftd\u003E\n\t\t\t\t\t\t\u003Ctd\u003E\n\t\t\t\t\t\t\t$\\text{all coin flips made are mutually}$ $\\text{independent}$\n\t\t\t\t\t\t\u003C\u002Ftd\u003E\n\t\t\t\t\t\u003C\u002Ftr\u003E\n\t\t\t\t\u003C\u002Ftbody\u003E\n\t\t\t\u003C\u002Ftable\u003E\n\t\t\t$\\text{flip a fair coin twice};$ \u003Cbr\u003E\n\t\t\t$\\mathbf{if}\\ \\text{the coin came up heads exactly twice}$ \u003Cbr\u003E\n\t\t\t$\\mathbf{then}\\ \\mathrm{return}\\ 2^k$ \u003Cbr\u003E\n\t\t\t$\\mathbf{else}\\ \\TwoTails(k + 1)$ \u003Cbr\u003E\n\t\t\t$\\mathbf{endif}$ \u003Cbr\u003E\n\t\t\u003C\u002Fdiv\u003E\n\t\t\n\t\tYou run algorithm $\\TwoTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the\n\t\toutput of this algorithm. \u003Cbr\u003E\n\t\tLet $m \\geq 1$ be an integer. What is $\\Pr(X = 2^m)$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"$(1\u002F4)^{m} \\cdot 3\u002F4$","correct":false},{"body":"$(1\u002F4)^{m-1} \\cdot 3\u002F4$","correct":false},{"body":"$(3\u002F4)^{m} \\cdot 1\u002F4$","correct":false},{"body":"$(3\u002F4)^{m-1} \\cdot 1\u002F4$","correct":true}]},{"body":["\n\t\n\t\tIs the following statement true or false?\n\t\t\u003Cp align=\"center\"\u003E\n\t\t\tFor any two random variables $X$ and $Y$,\n\t\t\t$\\mathbb{E}(X \\cdot Y) = \\mathbb{E}(X) \\cdot \\mathbb{E}(Y)$.\n\t\t\u003C\u002Fp\u003E\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"The statement is true.","correct":false},{"body":"The statement is false.","correct":true},{"body":"None of the above.","correct":false}]},{"body":["\n\t\n\t\tElisa Kazan has successfully completed her first term as President of the Carleton Computer Science\n\t\tSociety. In order to celebrate this, Elisa decides to spend an evening in the Hyacintho Cactus Bar\n\t\tand Grill in downtown Ottawa. During this evening, Tan Tran is working as a server. Since Tan has\n\t\tbeen studying very hard for COMP 2804, he is a bit absent-minded: Every time a customer orders a\n\t\tdrink, Tan serves the wrong drink with probability 1\u002F12, independently of other orders. \u003Cbr\u003E\n\t\t\n\t\tElisa orders 7 ciders, one cider at a time. Let $(D_1,D_2,\\dots,D_7)$ be the sequence of drinks\n\t\tthat Tan serves. Define the following random variable $X$:\n\t\t[defs]\n\t\t  X = the number of indices $i$ such that $D_i$ is a cider and $D_{i+1}$ is not a cider.\n\t\t[\u002Fdefs]\n\t\tWhat is the expected value $\\mathbb{E}(X)$ of $X$?\n\t\n\t"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"44\u002F144","correct":false},{"body":"55\u002F144","correct":false},{"body":"66\u002F144","correct":true},{"body":"77\u002F144","correct":false}]},{"body":["How do you feel about writing an exam on Sunday afternoon?"],"type":"MultipleChoice","lab":null,"factory":null,"options":[{"body":"I hate it!","correct":true}]}]}}, children, {"client":"load"});
+
+});
+</script>
+</head>
+  <body>
+    <div class="course-layout astro-HTFMQHB3">
+    <div class="course-navbar"></div>
+    <div class="course-layout-content astro-HTFMQHB3">
+      <div class="examination-layout astro-6J3HAJS7">
+    <astro-root ssr uid="miwCu"><div class="test-application"><div class="test-header"><div>Winter 2017 Exam</div>
+  <div>description</div></div>
+  <div class="multiple-choice-question"><div>1. <!-- HTML_TAG_START -->
+	
+		Consider permutations $a_1,a_2,\dots,a_{10}$ of the set $\{1,2,\dots,10\}$ for which
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				$a_1,a_3,a_5,a_7,a_9$ are all odd and
+			</li>
+			<li>
+				$a_2,a_4,a_6,a_8,a_{10}$ are all even.
+			</li>
+		</ul>
+		How many such permutations are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$10!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$5^5 \cdot 5^5$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(5!)^2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2 \cdot (5!)^2$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>2. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 2$ be an integer. Consider permutations $a_1,a_2,\dots,a_n$ of the set $\{1,2,\dots,n\}$
+		for which $a_1 < a_2$. How many such permutations are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\frac{n!}{2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$n!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2{n \choose 2} \cdot (n-2)!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>3. <!-- HTML_TAG_START -->
+	
+		Let $B$ be a set consisting of 45 bottles. Out of these, 17 are beer bottles, and the remaining 28
+		are cider bottles. Consider subsets of $B$ that contain
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				exactly 5 beer bottles and zero or more cider bottles,
+			</li>
+		</ul>
+		or
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				exactly 5 cider bottles and zero or more beer bottles.
+			</li>
+		</ul>
+		How many such subsets are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${17 \choose 5} \cdot 2^{28} + 2^{17} \cdot {28 \choose 5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${17 \choose 5} \cdot 2^{28} + 2^{17} \cdot {28 \choose 5} - {17 \choose 5} \cdot {28 \choose 5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{45} - {17 \choose 5} - {28 \choose 5}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{45} - {17 \choose 5} \cdot {28 \choose 5}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>4. <!-- HTML_TAG_START -->
+	
+		A bitstring $b_1b_2 \dots b_n$ is called a palindrome if $b_1b_2 \dots b_n = b_nb_{n-1} \dots b_1$, i.e.,
+		reading the string from left to right gives the same result as reading it from right to left. Let
+		$n \geq 3$ be an odd integer. How many palindromes of length $n$ are there?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{n-1}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{(n-1)/2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$2^{(n+1)/2}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>5. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 2$ be an integer. What does $2^{n} - 2^{n-2}$ count?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of bitstrings of length $n$ in which the first bit is 0 or the last bit is 1.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of bitstrings of length $n$ in which the first bit is 0 and the last bit is 1.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of bitstrings of length $n$ in which the first bit is equal to the last bit.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The number of bitstrings of length $n$ in which the first bit is not equal to the last bit.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>6. <!-- HTML_TAG_START -->
+	
+		Consider a group of 100 students. In this group,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				63 students like beer,
+			</li>
+			<li>
+				71 students like cider, and
+			</li>
+			<li>
+				25 students do not like beer and do not like cider.
+			</li>
+		</ul>
+		How many students like beer and cider?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->57<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->58<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->59<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->60<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>7. <!-- HTML_TAG_START -->
+	
+		In this question, we consider bitstrings of length $n$, where $n$ is an even integer, and in which
+		the positions are numbered $1,2,\dots,n$. <br>
+		
+		For any even integer $n$, let $S_n$ be the number of bitstrings of length $n$ that have both of the
+		following two properties:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				There is a 0 at every even position.
+			</li>
+			<li>
+				The entire bitstring does not contain the substring 101.
+			</li>
+		</ul>
+		Which of the following is true for all even integers $n \geq 6$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n/2} + S_{(n/2)-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-2} + S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-2} + S_{n-4}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>8. <!-- HTML_TAG_START -->
+	
+		Consider bitstrings that contain at least one occurrence of 000. Let $S_n$ be the number of such
+		strings having length $n$. Which of the following is true for $n \geq 4$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + 2^{n-2}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + S_{n-3} + 2^{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + S_{n-3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$S_n = S_{n-1} + S_{n-2} + S_{n-3} + 2^{n-4}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>9. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\Hello}{{\rm H {\scriptsize ELLO}}}
+			 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}
+			 \newcommand{\thensp}{\phantom{\mathbf{then}\ }}$
+		</div>
+		
+		Consider the recursive algorithm $\Hello$, which takes as input an integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Hello(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ \text{print ``hello''}$ <br>
+			$\mathbf{else}\ \mathbf{if}\ n\ \mathrm{is}\ \mathrm{even}$ <br>
+			$\elsesp \mathbf{then}\ \Hello(\frac{n}{2});$ <br>
+			$\elsesp \thensp \Hello(\frac{n}{2} - 1)$ <br>
+			$\elsesp \mathbf{else}\ \Hello(n - 1);$ <br>
+			$\elsesp \elsesp \Hello(n - 2)$ <br>
+			$\elsesp \mathbf{endif};$ <br>
+			$\mathbf{endif}$
+		</p>
+		
+		If we run algorithm $\Hello(7)$, how many times is the word "hello" printed?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->9<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->10<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->11<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->12<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>10. <!-- HTML_TAG_START -->
+	
+		We choose, uniformly at random, a string consisting of 14 characters, where each character is a
+		lowercase letter. Let $A$ be the event
+		[defs]
+		  A = "the string contains at least one vowel".
+		[/defs]
+		(A vowel is one of the letters $a$, $e$, $i$, $o$, and $u$.) What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - (21/26)^{14}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$1 - (26/21)^{14}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$5 \cdot (5/26) \cdot (21/26)^{13}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$14 \cdot (5/26) \cdot (21/26)^{13}$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>11. <!-- HTML_TAG_START -->
+	
+		Consider a group consisting of 7 girls and 6 boys. Elisa is one of the girls. How many ways are
+		there to arrange these 13 people on a horizontal line such that Elisa has 2 neighbors, both of whom
+		are girls? (The order on the line matters.)
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$11 \cdot {6 \choose 2} \cdot 10!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$11 \cdot 6 \cdot 5 \cdot 10!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$12 \cdot 6 \cdot 5 \cdot 10!$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$13 \cdot 6 \cdot 5 \cdot 10!$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>12. <!-- HTML_TAG_START -->
+	
+		Let $X = \{1,2,3,\dots,10\}$. We choose, uniformly at random, a subset $Y$ of $X$, where $Y$ has
+		size 5. Define the events
+		[defs]
+		  A = "1 is an element of $Y$",
+		  B = "7 is an element of $Y$".
+		[/defs]
+		What is $\Pr(A|B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4/8<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/8<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->4/9<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/9<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>13. <!-- HTML_TAG_START -->
+	
+		We flip a fair coin, independently, five times. Define the events
+		[defs]
+		  A = "the coin comes up heads exactly four times",
+		  B = "the fifth coin flip results in heads".
+		[/defs]
+		What is $\Pr(A|B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/4<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>14. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 3$ be an integer. Consider a uniformly random permutation $a_1a_2 \dots a_n$ of the set
+		$\{1,2,\dots,n\}$. Define the events
+		[defs]
+		  A = "$a_n = n$",
+		  B = "$a_2 > a_1$".
+		[/defs]
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The events $A$ and $B$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>15. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 5$ be an integer. Consider a uniformly random permutation $a_1a_2 \dots a_n$ of the set
+		$\{1,2,\dots,n\}$. Define the events
+		[defs]
+		  A = "$a_1 = 1$",
+		  B = "$a_n = 5$".
+		[/defs]
+		What is $\Pr(A \cup B)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${\frac{1}{n}} - {\frac{1}{n(n-1)}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${\frac{2}{n}} - {\frac{1}{n(n-1)}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${\frac{2}{n}} - {\frac{1}{n^{2}}}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>16. <!-- HTML_TAG_START -->
+	
+		Let $A$ and $B$ be two events in some sample space. You are given that
+		$$
+			\begin{align}
+			\Pr(A|B) &= \Pr(B|A), \\
+			\Pr(A \cup B) &= 1, \\
+			\Pr(A \cap B) &> 0.
+			\end{align}
+		$$
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\Pr(A) < 1/2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\Pr(A) > 1/2$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\Pr(A) < 1$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$\Pr(A) > 0$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>17. <!-- HTML_TAG_START -->
+	
+		Consider a uniformly random permutation of the set $\{1,2,\dots,50\}$. Define the event
+		[defs]
+		  A = "in the permutation, both 8 and 4 are to the left of both 1 and 2".
+		[/defs]
+		What is $\Pr(A)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->2/3<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/5<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/6<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>18. <!-- HTML_TAG_START -->
+	
+		You roll a fair red die and a fair blue die, independently of each other. Define the random
+		variables
+		[defs]
+		  X = "the result of the red die",
+		  Y = "the result of the blue die",
+		  Z = $\min(X,Y)$.
+		[/defs]
+		What is $\Pr(Z = 2)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->5/18<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/6<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/4<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->1/3<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>19. <!-- HTML_TAG_START -->
+	
+		Let $n \geq 3$ be an integer and consider a group $P_1,P_2,\dots,P_n$ of $n$ people. Each of these
+		people has a uniformly random birthday, which is independent of the birthdays of the other people.
+		We ignore leap years; thus, the year has 365 days. <br>
+		
+		Define the random variable $X$ to be the number of unordered triples $\{P_i,P_j,P_k\}$ of people
+		(i.e., subsets consisting of three people) that have the same birthday. <br>
+		
+		What is the expected value $\mathbb{E}(X)$ of $X$? <br>
+		<em>Hint:</em> Use indicator random variables.
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${\frac{1}{365^2}} \cdot {n \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${\frac{1}{365^3}} \cdot {n \choose 3}$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${\frac{1}{365^2}} \cdot n^3$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->${\frac{1}{365^3}} \cdot n^3$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>20. <!-- HTML_TAG_START -->
+	
+		Consider a coin that comes up heads with probability 1/5 and comes up tails with probability 4/5.
+		You flip this coin twice, independently of each other. For each heads, you win \$100. For each tails, you win \$50. <br>
+		
+		What is the expected value $\mathbb{E}(X)$ of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->80<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->100<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->120<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->140<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>21. <!-- HTML_TAG_START -->
+	
+		You are given a fair red die and a fair blue die. You roll each die once, independently of each other.
+		Let $(i,j)$ be the outcome, where $i$ is the result of the red die and $j$ is the result of the blue die.
+		Define the random variables
+		$$
+			X = |i - j|
+		$$
+		and
+		$$
+			Y = \max(i, j).
+		$$
+		Which of the following is true?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The random variables $X$ and $Y$ are independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The random variables $X$ and $Y$ are not independent.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>22. <!-- HTML_TAG_START -->
+	
+		<div hidden>
+			$\newcommand{\TwoTails}{{\rm T {\scriptsize WO} T {\scriptsize AILS}}}$
+		</div>
+		
+		Consider the following recursive algorithm $\TwoTails$, which takes as input a positive integer $k$:
+		
+		<div style="margin: 1rem 0;">
+			$\mathbf{Algorithm}\ \TwoTails(k)\mathrm{:}$ <br>
+			<table>
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$//$</td>
+						<td>
+							$\text{all coin flips made are mutually}$ $\text{independent}$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			$\text{flip a fair coin twice};$ <br>
+			$\mathbf{if}\ \text{the coin came up heads exactly twice}$ <br>
+			$\mathbf{then}\ \mathrm{return}\ 2^k$ <br>
+			$\mathbf{else}\ \TwoTails(k + 1)$ <br>
+			$\mathbf{endif}$ <br>
+		</div>
+		
+		You run algorithm $\TwoTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the
+		output of this algorithm. <br>
+		Let $m \geq 1$ be an integer. What is $\Pr(X = 2^m)$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(1/4)^{m} \cdot 3/4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(1/4)^{m-1} \cdot 3/4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(3/4)^{m} \cdot 1/4$<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->$(3/4)^{m-1} \cdot 1/4$<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>23. <!-- HTML_TAG_START -->
+	
+		Is the following statement true or false?
+		<p align="center">
+			For any two random variables $X$ and $Y$,
+			$\mathbb{E}(X \cdot Y) = \mathbb{E}(X) \cdot \mathbb{E}(Y)$.
+		</p>
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The statement is true.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->The statement is false.<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->None of the above.<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>24. <!-- HTML_TAG_START -->
+	
+		Elisa Kazan has successfully completed her first term as President of the Carleton Computer Science
+		Society. In order to celebrate this, Elisa decides to spend an evening in the Hyacintho Cactus Bar
+		and Grill in downtown Ottawa. During this evening, Tan Tran is working as a server. Since Tan has
+		been studying very hard for COMP 2804, he is a bit absent-minded: Every time a customer orders a
+		drink, Tan serves the wrong drink with probability 1/12, independently of other orders. <br>
+		
+		Elisa orders 7 ciders, one cider at a time. Let $(D_1,D_2,\dots,D_7)$ be the sequence of drinks
+		that Tan serves. Define the following random variable $X$:
+		[defs]
+		  X = the number of indices $i$ such that $D_i$ is a cider and $D_{i+1}$ is not a cider.
+		[/defs]
+		What is the expected value $\mathbb{E}(X)$ of $X$?
+	
+	<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->44/144<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(b)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->55/144<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(c)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->66/144<!-- HTML_TAG_END --></div></div>
+      </div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(d)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->77/144<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+<div class="multiple-choice-question"><div>25. <!-- HTML_TAG_START -->How do you feel about writing an exam on Sunday afternoon?<!-- HTML_TAG_END --></div>
+  <div><div><div class="multiple-choice-option" style="background-color: transparent"><div class="multiple-choice-option-letter">(a)</div>
+  <div class="multiple-choice-option-body"><!-- HTML_TAG_START -->I hate it!<!-- HTML_TAG_END --></div></div>
+      </div></div></div>
+
+
+  <button><div class="button_label">Submit</div></button></div></astro-root>
+  </div>
+    </div>
+  </div>
+  </body></html>
+
+
+
