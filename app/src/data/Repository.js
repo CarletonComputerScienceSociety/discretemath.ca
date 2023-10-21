@@ -82,8 +82,8 @@ class Repository {
         type: "MultipleChoice",
         lab: null,
         factory: null,
-        options: xmlQuestion["multiple-choice"].answer.map(
-          (xmlOption) => this.#transformXmlOptionToJson(xmlOption)
+        options: xmlQuestion["multiple-choice"].answer.map((xmlOption) =>
+          this.#transformXmlOptionToJson(xmlOption)
         ),
       };
     }
