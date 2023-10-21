@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a group of 8 people, consisting of Simon, John, and 6 other people. How many ways are there
+		to arrange these 8 people on a horizontal line such that Simon and John are standing next to each
+		other? (The order on the line matters and Simon is either to the left or to the right of John.)
+	]]>
+	</question>
+	<answer correct="false">$7 \cdot 6!$</answer>
+	<answer correct="true">$2 \cdot 7 \cdot 6!$</answer>
+	<answer correct="false">$8 \cdot 6!$</answer>
+	<answer correct="false">$2 \cdot 8 \cdot 6!$</answer>
+</multiple-choice>

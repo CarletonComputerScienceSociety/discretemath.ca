@@ -1,0 +1,23 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a group of 100 students. In this group,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				13 students like Donald Trump,
+			</li>
+			<li>
+				25 students like Justin Bieber, and
+			</li>
+			<li>
+				8 students like Donald Trump and like Justin Bieber.
+			</li>
+		</ul>
+		How many students do not like Donald Trump and do not like Justin Bieber?
+	]]>
+	</question>
+	<answer correct="false">69</answer>
+	<answer correct="true">70</answer>
+	<answer correct="false">71</answer>
+	<answer correct="false">72</answer>
+</multiple-choice>

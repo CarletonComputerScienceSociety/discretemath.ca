@@ -1,0 +1,32 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given that:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				The course COMP 9999 runs over a period of one year, starting on January 1 and ending on December
+				31. There is one lecture every day; thus, the total number of lectures is 365.
+			</li>
+			<li>
+				Dania and Nick take this course. Dania's birthday is on November 19. Nick's birthday is on December
+				3.
+			</li>
+			<li>
+				Professor G. Ruesome teaches the course. Professor Ruesome decides to have 20 quizzes during the
+				year. For this, he chooses a uniformly random subset of 20 days; the quizzes will be on the 20
+				chosen days. (It is possible that there is a quiz on January 1.)
+			</li>
+		</ul>
+		
+		Determine the conditional probability $\Pr(B|C)$, where $B$ and $C$ are the events
+		[defs]
+		  B = "there is a quiz on Nick's birthday",
+		  C = "there are exactly 5 quizzes in December".
+		[/defs]
+	]]>
+	</question>
+	<answer correct="false">4/31</answer>
+	<answer correct="true">5/31</answer>
+	<answer correct="false">4/32</answer>
+	<answer correct="false">5/32</answer>
+</multiple-choice>

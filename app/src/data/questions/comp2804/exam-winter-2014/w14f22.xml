@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		I flip a fair coin, independently, 10 times, resulting in a sequence of heads ($H$) and tails ($T$).
+		For each $HT$ in this sequence, you win \$3.
+		Define the random variable $X$ to be the amount of dollars that you win. For example, if the
+		sequence is
+		$$
+			HHTTHTTHTT,
+		$$
+		then $X = 9$. What is the expected value of $X$?
+	]]>
+	</question>
+	<answer correct="true">27/4</answer>
+	<answer correct="false">28/4</answer>
+	<answer correct="false">29/4</answer>
+	<answer correct="false">30/4</answer>
+</multiple-choice>

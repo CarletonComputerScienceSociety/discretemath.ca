@@ -1,0 +1,20 @@
+<multiple-choice>
+	<question><![CDATA[
+		A string that is obtained by rearranging the letters of the word
+		<p style="text-align: center;">POOPERSCOOPER</p>
+		is called <em>cool</em>, if each occurrence of E has the letter R to its left or
+		right, and each occurrence of R has the letter E to its left or right. Thus, both
+		<p style="text-align: center;">POOPERSCOOPER</p>
+		and
+		<p style="text-align: center;">OPRECSOOOERPP</p>
+		are cool, whereas
+		<p style="text-align: center;">EPOOPRSCOOPER</p>
+		is not cool. What is the number of cool strings?
+	]]></question>
+	<answer correct="false">${11 \choose 3} \cdot {8 \choose 4} \cdot {4 \choose 2} \cdot {2 \choose 1} \cdot {1 \choose 1}$</answer>
+	<answer correct="false">${11 \choose 3} \cdot {8 \choose 4} \cdot {4 \choose 2} \cdot {2 \choose 1} \cdot {1 \choose 1} \cdot 2$</answer>
+	<answer correct="false">${11 \choose 3} \cdot {8 \choose 4} \cdot {4 \choose 2} \cdot {2 \choose 1} \cdot {1 \choose 1} \cdot 3$</answer>
+	<answer correct="true">
+		${11 \choose 3} \cdot {8 \choose 4} \cdot {4 \choose 2} \cdot {2 \choose 1} \cdot {1 \choose 1} \cdot 4$
+	</answer>
+</multiple-choice>

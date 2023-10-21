@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A password consists of 28 characters, each character being a lowercase letter. A password must
+		contain exactly one vowel (i.e., <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, or <em>u</em>).
+		How many passwords are there?
+	]]>
+	</question>
+	<answer correct="false">$5 \cdot 21^{27}$</answer>
+	<answer correct="true">$28 \cdot 5 \cdot 21^{27}$</answer>
+	<answer correct="false">$28 \cdot 5 \cdot 27^{21}$</answer>
+	<answer correct="false">$28 \cdot 5 \cdot 26^{27}$</answer>
+</multiple-choice>

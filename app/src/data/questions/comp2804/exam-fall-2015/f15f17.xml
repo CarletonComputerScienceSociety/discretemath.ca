@@ -1,0 +1,26 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given that:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				The course COMP 9999 runs over a period of one year, starting on January 1 and ending on December
+				31. There is one lecture every day; thus, the total number of lectures is 365.
+			</li>
+			<li>
+				At the beginning of each of the 365 lectures, Nick flips a fair and independent coin twice.
+				If the coin comes up heads twice, then Nick eats 3 bananas during the lecture; otherwise,
+				Nick eats 5 bananas during the lecture.
+			</li>
+		</ul>
+		
+		Let $X$ be the total number of bananas that Nick eats during the 365 lectures of the course COMP
+		9999. What is the expected value $\mathbb{E}(X)$ of $X$? <br>
+		(n.b., you may find it useful to apply Linearity of Expectation)
+	]]>
+	</question>
+	<answer correct="true">$\frac{9 \cdot 365}{2}$</answer>
+	<answer correct="false">$\frac{7 \cdot 365}{2}$</answer>
+	<answer correct="false">$\frac{5 \cdot 365}{2}$</answer>
+	<answer correct="false">$4 \cdot 365$</answer>
+</multiple-choice>

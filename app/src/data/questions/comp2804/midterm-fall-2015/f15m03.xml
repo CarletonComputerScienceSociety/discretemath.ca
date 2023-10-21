@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $A$ be a set of 6 elements and let $B$ be a set of 13 elements. How many one-to-one (i.e.,
+		injective) functions $f : A \rightarrow B$ are there?
+	]]>
+	</question>
+	<answer correct="false">$5 \cdot 6 \cdot 7 \cdot 8 \cdot 9 \cdot 10 \cdot 11 \cdot 12 \cdot 13$</answer>
+	<answer correct="false">$6 \cdot 7 \cdot 8 \cdot 9 \cdot 10 \cdot 11 \cdot 12 \cdot 13$</answer>
+	<answer correct="false">$7 \cdot 8 \cdot 9 \cdot 10 \cdot 11 \cdot 12 \cdot 13$</answer>
+	<answer correct="true">$8 \cdot 9 \cdot 10 \cdot 11 \cdot 12 \cdot 13$</answer>
+</multiple-choice>

@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given a uniformly random bitstring of length five. Define the events
+		[defs]
+		  A = "the bitstring contains at most four 1's",
+		  B = "the bitstring contians an odd number of 1's".
+		[/defs]
+		What is $\Pr(A|B)$?
+	]]>
+	</question>
+	<answer correct="false">12/16</answer>
+	<answer correct="false">13/16</answer>
+	<answer correct="false">14/16</answer>
+	<answer correct="true">15/16</answer>
+</multiple-choice>

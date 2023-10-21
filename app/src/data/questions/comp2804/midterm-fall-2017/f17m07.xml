@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 2$ be an integer. What does
+		$$
+			\sum_{k=2}^{n} {{n}\choose{k}} \cdot 2^{n-k}
+		$$
+		count?
+	]]>
+	</question>
+	<answer correct="false">The number of strings of length $n$, where each character is $a$ or $b$, that contain at least one $a$.</answer>
+	<answer correct="false">The number of strings of length $n$, where each character is $a$ or $b$, that contain at least 2 many $a$'s.</answer>
+	<answer correct="false">The number of strings of length $n$, where each character is $a$, $b$, or $c$, that contain at least one $a$.</answer>
+	<answer correct="true">The number of strings of length $n$, where each character is $a$, $b$, or $c$, that contain at least 2 many $a$'s.</answer>
+</multiple-choice>

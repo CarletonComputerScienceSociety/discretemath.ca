@@ -1,0 +1,24 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In this question, we consider bitstrings of length $n$, where $n$ is an even integer, and in which
+		the positions are numbered $1,2,\dots,n$. <br>
+		
+		For any even integer $n$, let $S_n$ be the number of bitstrings of length $n$ that have both of the
+		following two properties:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				There is a 0 at every even position.
+			</li>
+			<li>
+				The entire bitstring does not contain the substring 101.
+			</li>
+		</ul>
+		Which of the following is true for all even integers $n \geq 6$?
+	]]>
+	</question>
+	<answer correct="false">$S_n = S_{n/2} + S_{(n/2)-3}$</answer>
+	<answer correct="false">$S_n = S_{n-1} + S_{n-3}$</answer>
+	<answer correct="false">$S_n = S_{n-2} + S_{n-3}$</answer>
+	<answer correct="true">$S_n = S_{n-2} + S_{n-4}$</answer>
+</multiple-choice>

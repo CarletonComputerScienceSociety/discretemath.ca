@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Is the following statement true or false?
+		
+		<p style="text-align: center;">
+			For any random variable $X$, $\mathbb{E}\left(1 \middle/ X \right) = 1 / \mathbb{E}(X)$.
+		</p>
+	]]>
+	</question>
+	<answer correct="false">The statement is true.</answer>
+	<answer correct="true">The statement is false.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

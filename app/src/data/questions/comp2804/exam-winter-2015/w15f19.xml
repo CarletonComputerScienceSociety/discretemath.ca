@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		I flip a fair coin, independently, $n$ times. For each heads, you win \$3, whereas for each tails,
+		you lose \$1. Define the random variable $X$ to be the amount of dollars that you win. What is the
+		expected value of $X$?
+	]]>
+	</question>
+	<answer correct="false">$n/2$</answer>
+	<answer correct="true">$n$</answer>
+	<answer correct="false">$3n/2$</answer>
+	<answer correct="false">$2n$</answer>
+</multiple-choice>

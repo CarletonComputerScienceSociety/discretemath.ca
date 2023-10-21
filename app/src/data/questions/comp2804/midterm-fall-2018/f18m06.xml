@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S$ be a subset of the set $\{1,2,3,\dots,50\}$. <br>
+		What is the minimum size of this subset $S$, such that there must be at least two elements in $S$ whose sum is equal to 51?
+	]]>
+	</question>
+	<answer correct="false">25</answer>
+	<answer correct="true">26</answer>
+	<answer correct="false">27</answer>
+	<answer correct="false">28</answer>
+</multiple-choice>

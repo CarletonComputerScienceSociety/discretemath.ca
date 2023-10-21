@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider 17-element subsets of the set $\{1,2,3,\dots,45\}$. <br>
+		How many such subsets have the property that the largest element in the subset is equal to 30?
+	]]>
+	</question>
+	<answer correct="true">${{29}\choose{16}}$</answer>
+	<answer correct="false">${29 \choose 17}$</answer>
+	<answer correct="false">${30 \choose 16}$</answer>
+	<answer correct="false">${30 \choose 17}$</answer>
+</multiple-choice>

@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question><![CDATA[
+		For any integer $n \geq 1$, let $B_n$ be the number of bitstrings of length $n$ that do not
+		contain the substring 11 and do not contain the substring 101. Which of the following is true
+		for any $n \geq 4$?
+	]]></question>
+	<answer correct="false">$B_n = B_{n - 1} + B_{n - 2}$</answer>
+	<answer correct="true">$B_n = B_{n - 1} + B_{n - 3}$</answer>
+	<answer correct="false">$B_n = B_{n - 2} + B_{n - 3}$</answer>
+	<answer correct="false">$B_n = B_{n - 2} + B_{n - 4}$</answer>
+</multiple-choice>

@@ -1,0 +1,10 @@
+<multiple-choice>
+	<question><![CDATA[
+		Consider a set $S$ consisting of 25 beer bottles $b_1,b_2,...,b_{25}$ and 30 cider bottles $c_1,c_2,...,c_{30}$.
+		How many 10-element subsets of $S$ contain at least 2 beer bottles?
+	]]></question>
+	<answer correct="false">${55 \choose 10} - {30 \choose 10} - {30 \choose 9}$</answer>
+	<answer correct="false">${55 \choose 10} - {30 \choose 10} - 25 \cdot {29 \choose 9}$</answer>
+	<answer correct="true">${55 \choose 10} - {30 \choose 10} - 25 \cdot {30 \choose 9}$</answer>
+	<answer correct="false">${55 \choose 10} - {30 \choose 10} - 25 \cdot {30 \choose 10}$</answer>
+</multiple-choice>

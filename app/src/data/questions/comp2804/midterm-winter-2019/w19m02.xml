@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider permutations of the set $\{a,b,c,d,e,f,g\}$ that do not contain $bge$ (in this order). <br>
+		How many such permutations are there?
+	]]>
+	</question>
+	<answer correct="false">$7! - 6!$</answer>
+	<answer correct="true">$7! - 5!$</answer>
+	<answer correct="false">$7! - 4!$</answer>
+	<answer correct="false">$7! - 3!$</answer>
+</multiple-choice>

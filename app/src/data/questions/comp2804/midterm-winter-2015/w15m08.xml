@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the coefficient of $x^{17}$ in the expansion of $(17 + 2x)^{99}$?
+	]]>
+	</question>
+	<answer correct="false">$2^{16} \cdot 17^{82} \cdot {99 \choose 16}$</answer>
+	<answer correct="true">$2^{17} \cdot 17^{82} \cdot {99 \choose 17}$</answer>
+	<answer correct="false">$2^{82} \cdot 17^{17} \cdot {99 \choose 17}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

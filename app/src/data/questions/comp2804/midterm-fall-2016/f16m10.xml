@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The function $f : \mathbb{N} \rightarrow \mathbb{R}$ is defined by
+		$$
+			\begin{align}
+			f(0) &= 7, \\
+			f(n) &= \frac{n}{3} \cdot f(n - 1)\; \ \mathrm{for}\ n \geq 1.
+			\end{align}
+		$$
+		What is $f(n)$?
+	]]>
+	</question>
+	<answer correct="true">$f(n) = 7 \cdot \frac{n!}{3^n}$</answer>
+	<answer correct="false">$f(n) = 7^n \cdot \frac{n!}{3^n}$</answer>
+	<answer correct="false">$f(n) = 7 \cdot \frac{(n + 1)!}{3^n}$</answer>
+	<answer correct="false">$f(n) = 7^n \cdot \frac{(n + 1)!}{3^n}$</answer>
+</multiple-choice>

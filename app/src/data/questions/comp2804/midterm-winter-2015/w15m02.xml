@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $A$ be a set of 7 elements and let $B$ be a set of 15 elements.
+		How many functions $f : A \rightarrow B$ are there?
+	]]>
+	</question>
+	<answer correct="false">$7^{15}$</answer>
+	<answer correct="true">$15^7$</answer>
+	<answer correct="false">$15!/7!$</answer>
+	<answer correct="false">${15 \choose 7}$</answer>
+</multiple-choice>

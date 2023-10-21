@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Who discovered the Vandermonde Identity?
+	]]>
+	</question>
+	<answer correct="false">Professor Identity</answer>
+	<answer correct="false">Donald Trump</answer>
+	<answer correct="true">Alexandre-Théophile Vandermonde</answer>
+	<answer correct="false">Justin Bieber</answer>
+</multiple-choice>

@@ -1,0 +1,26 @@
+<multiple-choice>
+	<question><![CDATA[
+		<div hidden>
+			$\newcommand{\IFeelLikeSinging}{{\rm IF {\scriptsize EEL} L {\scriptsize IKE} S {\scriptsize INGING}}}$
+		</div>
+		
+		Consider the recursive algorithm $\IFeelLikeSinging$, which takes as input an integer $n \geq 0$:
+		
+		<p>
+			$\IFeelLikeSinging(n):$ <br>
+			$\quad \mathbf{if}\ n = 0\ \mathrm{or}\ n = 1\ \mathbf{then}$ <br>
+			$\quad \quad \text{sing O Canada}$ <br>
+			$\quad \mathbf{else}\ \mathbf{if}\ n\ \text{is odd}\ \mathbf{then}$ <br>
+			$\quad \quad \IFeelLikeSinging(n + 1)$ <br>
+			$\quad \mathbf{else}$ <br>
+			$\quad \quad \IFeelLikeSinging(\frac{n}{2})$ <br>
+			$\quad \quad \IFeelLikeSinging(\frac{n}{2} - 1)$ <br>
+		</p>
+		
+		If you run algorithm $\IFeelLikeSinging(9)$, how many times do you sing O Canada?
+	]]></question>
+	<answer correct="false">6</answer>
+	<answer correct="false">7</answer>
+	<answer correct="true">8</answer>
+	<answer correct="false">9</answer>
+</multiple-choice>

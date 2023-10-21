@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+		Who discovered the Fibonacci numbers?
+	</question>
+	<answer correct="false">Donald Trump</answer>
+	<answer correct="true">
+		The Italian mathematician Fibonacci, also known as Leonardo Bonacci, Leonardo of Pisa, or Leonardo Bigollo Pisano
+	</answer>
+	<answer correct="false">Alexandre-Théophile Vandermonde</answer>
+	<answer correct="false">Keith Richards (the guitarist of the greatest rock band in the universe)</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many solutions are there to the equation $x_1 + x_2 + x_3 = 13$, where $x_1 \geq 0$, $x_2 \geq 0$,
+		$x_3 \geq 0$ are integers?
+	]]>
+	</question>
+	<answer correct="false">${13 \choose 2}$</answer>
+	<answer correct="false">${14 \choose 2}$</answer>
+	<answer correct="true">${15 \choose 2}$</answer>
+	<answer correct="false">${16 \choose 2}$</answer>
+</multiple-choice>

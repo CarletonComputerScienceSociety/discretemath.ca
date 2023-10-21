@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is
+		$$
+			\sum_{k=0}^{45} {45 \choose k} (-3)^{2k}.
+		$$
+	]]>
+	</question>
+	<answer correct="false">$(-2)^{45}$</answer>
+	<answer correct="false">$4^{45}$</answer>
+	<answer correct="false">$(-8)^{45}$</answer>
+	<answer correct="true">$10^{45}$</answer>
+</multiple-choice>

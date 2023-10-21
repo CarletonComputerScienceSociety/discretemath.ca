@@ -1,0 +1,23 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a group of 100 students. In this group,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				63 students like beer,
+			</li>
+			<li>
+				71 students like cider, and
+			</li>
+			<li>
+				25 students do not like beer and do not like cider.
+			</li>
+		</ul>
+		How many students like beer and cider?
+	]]>
+	</question>
+	<answer correct="false">57</answer>
+	<answer correct="false">58</answer>
+	<answer correct="true">59</answer>
+	<answer correct="false">60</answer>
+</multiple-choice>

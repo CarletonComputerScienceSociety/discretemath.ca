@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 2$ be an even integer. What does
+		$$
+			\sum_{k=0}^{\left. (n-2) \middle/ 2 \right.} {{n}\choose{2k+1}}
+		$$
+		count?
+	]]>
+	</question>
+	<answer correct="false">The number of bitstrings of length $n$.</answer>
+	<answer correct="false">The number of bitstrings of length $\left. (n-2) \middle/ 2 \right.$.</answer>
+	<answer correct="true">The number of bitstrings of length $n$ having an odd number of 0's.</answer>
+	<answer correct="false">
+		The number of bitstrings of length $n$ in which the number of 0's plus the number of 1's is at most $\left. (n-1) \middle/ 2 \right.$.
+	</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A password consists of 13 characters, each character being one of the ten digits $0,1,2,\dots,9$. <br>
+		A password must contain exactly one odd digit. How many passwords are there?
+	]]>
+	</question>
+	<answer correct="false">$13 \cdot 5^{12}$</answer>
+	<answer correct="true">$13 \cdot 5^{13}$</answer>
+	<answer correct="false">$13 \cdot 9^{12}$</answer>
+	<answer correct="false">$13 \cdot 5 \cdot 9^{12}$</answer>
+</multiple-choice>

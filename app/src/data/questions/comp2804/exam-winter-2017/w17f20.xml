@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a coin that comes up heads with probability 1/5 and comes up tails with probability 4/5.
+		You flip this coin twice, independently of each other. For each heads, you win \$100. For each tails, you win \$50. <br>
+		
+		What is the expected value $\mathbb{E}(X)$ of $X$?
+	]]>
+	</question>
+	<answer correct="false">80</answer>
+	<answer correct="false">100</answer>
+	<answer correct="true">120</answer>
+	<answer correct="false">140</answer>
+</multiple-choice>

@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $m \geq 5$ and $n \geq 5$ be integers. Let $P$ be a set consisting of $m$ strictly positive
+		integers, and let $N$ be a set consisting of $n$ strictly negative integers. Consider 5-element
+		subsets $A$ of $P \cup N$ such that the product of the elements in $A$ is strictly positive. How
+		many such subsets $A$ are there?
+	]]>
+	</question>
+	<answer correct="false">${n \choose 5} + {n \choose 3} \cdot {m \choose 2} + n \cdot {m \choose 4}$</answer>
+	<answer correct="true">${m \choose 5} + {m \choose 3} \cdot {n \choose 2} + m \cdot {n \choose 4}$</answer>
+	<answer correct="false">${m+n \choose 5} - {n \choose 5}$</answer>
+	<answer correct="false">${m \choose 5} \cdot {n \choose 5}$</answer>
+</multiple-choice>

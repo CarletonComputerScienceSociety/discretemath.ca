@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings consisting of the characters $a$, $b$, and $c$. Such a string is called <em>valid</em>,
+		if it does not contain the substring $aaa$. Let $S_n$ be the number of valid strings of length
+		$n$. Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2}$</answer>
+	<answer correct="false">$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2} + S_{n-3}$</answer>
+	<answer correct="false">$S_n = 2 \cdot S_{n-1} + S_{n-2} + 2 \cdot S_{n-3}$</answer>
+	<answer correct="true">$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2} + 2 \cdot S_{n-3}$</answer>
+</multiple-choice>

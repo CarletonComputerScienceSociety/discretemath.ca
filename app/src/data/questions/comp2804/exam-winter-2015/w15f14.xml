@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S$ be a set of 100 integers; 30 of these are positive and the other 70 integers in $S$ are
+		negative. We choose, uniformly at random, a 20-element subset of $S$. What is the probability that
+		at least one of the elements in this subset is positive?
+	]]>
+	</question>
+	<answer correct="false">$\left. {30 \choose 1} \middle/ {100 \choose 20} \right.$</answer>
+	<answer correct="false">$\left. {30 \choose 1}{70 \choose 19} \middle/ {100 \choose 20} \right.$</answer>
+	<answer correct="true">$1 - \left. {70 \choose 20} \middle/ {100 \choose 20} \right.$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

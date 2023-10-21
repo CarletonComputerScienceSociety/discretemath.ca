@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We flip a fair coin three times; these flips are independent of each other. These three coin flips
+		give us a sequence of length three, where each symbol is $H$ or $T$. Define the events (recall that
+		0 is even):
+		[defs]
+		  A = "the number of $H$ in the sequence is even",
+		  B = "the sequence contains at least two consecutive $H$'s".
+		[/defs]
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">The events $A$ and $B$ are independent.</answer>
+	<answer correct="true">The events $A$ and $B$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

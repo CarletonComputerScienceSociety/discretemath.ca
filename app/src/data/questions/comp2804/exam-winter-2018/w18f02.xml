@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given 20 beer bottles $B_1,B_2,\dots,B_{20}$ and 50 cider bottles $C_1,C_2,\dots,C_{50}$.
+		Consider subsets of these 70 bottles, that contain exactly 12 beer bottles (and any number of cider
+		bottles) or exactly 12 cider bottles (and any number of beer bottles). How many such subsets are
+		there?
+	]]>
+	</question>
+	<answer correct="false">${20 \choose 12} + {50 \choose 12}$</answer>
+	<answer correct="false">${20 \choose 12} + {50 \choose 12} - {20 \choose 12} \cdot {50 \choose 12}$</answer>
+	<answer correct="false">${20 \choose 12} \cdot 2^{50} + {50 \choose 12} \cdot 2^{20}$</answer>
+	<answer correct="true">${20 \choose 12} \cdot 2^{50} + {50 \choose 12} \cdot 2^{20} - {20 \choose 12} \cdot {50 \choose 12}$</answer>
+</multiple-choice>

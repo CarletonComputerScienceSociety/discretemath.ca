@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings consisting of $n$ characters, each character being $a$, $b$, or $c$. Let $S_n$ be the
+		number of such strings of length $n$ that do not contain the substring $aa$. Which of the following
+		is true?
+	]]>
+	</question>
+	<answer correct="false">$S_{n+1} = S_n + S_{n-1}\ \mathrm{for}\ n \geq 2.$</answer>
+	<answer correct="false">$S_{n+1} = 2 \cdot S_n + S_{n-1}\ \mathrm{for}\ n \geq 2.$</answer>
+	<answer correct="false">$S_{n+1} = S_n + 2 \cdot S_{n-1}\ \mathrm{for}\ n \geq 2.$</answer>
+	<answer correct="true">$S_{n+1} = 2 \cdot S_n + 2 \cdot S_{n-1}\ \mathrm{for}\ n \geq 2.$</answer>
+</multiple-choice>

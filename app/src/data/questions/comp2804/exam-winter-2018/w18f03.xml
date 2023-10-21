@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given 20 beer bottles $B_1,B_2,\dots,B_{20}$ and 50 cider bottles $C_1,C_2,\dots,C_{50}$.
+		Consider subsets of these 70 bottles, that contain at least 3 beer bottles (and any number of cider
+		bottles). How many such subsets are there?
+	]]>
+	</question>
+	<answer correct="false">$2^{70} - 2^{50} - 20 - {20 \choose 2}$</answer>
+	<answer correct="true">$2^{70} - 2^{50} - 20 \cdot 2^{50} - {20 \choose 2} \cdot 2^{50}$</answer>
+	<answer correct="false">$2^{70} - 2^{50} - 20 \cdot 2^{50}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

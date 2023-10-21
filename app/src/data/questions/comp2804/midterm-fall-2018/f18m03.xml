@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of length 15, where each character is a lowercase letter or an uppercase letter.
+		How many such strings contain at least two lowercase letters?
+	]]>
+	</question>
+	<answer correct="false">$52^{15} - 26^{15} - 15 \cdot 26^{14}$</answer>
+	<answer correct="true">$52^{15} - 26^{15} - 15 \cdot 26^{15}$</answer>
+	<answer correct="false">$52^{15} - 15 \cdot 26^{15}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

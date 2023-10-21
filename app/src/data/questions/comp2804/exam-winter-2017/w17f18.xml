@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You roll a fair red die and a fair blue die, independently of each other. Define the random
+		variables
+		[defs]
+		  X = "the result of the red die",
+		  Y = "the result of the blue die",
+		  Z = $\min(X,Y)$.
+		[/defs]
+		What is $\Pr(Z = 2)$?
+	]]>
+	</question>
+	<answer correct="false">5/18</answer>
+	<answer correct="false">1/6</answer>
+	<answer correct="true">1/4</answer>
+	<answer correct="false">1/3</answer>
+</multiple-choice>

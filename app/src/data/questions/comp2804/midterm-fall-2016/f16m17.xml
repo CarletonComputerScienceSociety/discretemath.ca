@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In the game of <em>Hearthstone</em>, you are given a deck of 18 distinct cards. One of the cards is the <em>Raven Idol</em>.
+		You choose a uniformly random hand of 3 cards. Define the event
+		
+		[defs]
+		  A = $\text{``}$the hand of 3 cards contains the <em>Raven Idol</em>$\,\text{''}.$
+		[/defs]
+		
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">3/17</answer>
+	<answer correct="true">3/18</answer>
+	<answer correct="false">3/19</answer>
+	<answer correct="false">4/19</answer>
+</multiple-choice>

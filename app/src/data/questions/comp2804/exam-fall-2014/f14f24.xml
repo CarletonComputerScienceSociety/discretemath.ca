@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We flip a fair coin independently $n$ times. Define the random variable
+		[defs]
+		  X = twice the number of heads minus three times the number of tails.
+		[/defs]
+		What is the expected value of $X$?
+	]]>
+	</question>
+	<answer correct="true">$-n/2$</answer>
+	<answer correct="false">$n/2$</answer>
+	<answer correct="false">$-n$</answer>
+	<answer correct="false">$n$</answer>
+</multiple-choice>

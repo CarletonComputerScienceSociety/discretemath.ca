@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		For any integer $n \geq 1$, let $B_n$ be the number of bitstrings of length $n$ that do not contain
+		the substring 10. Which of the following is true for any $n \geq 4$?
+	]]>
+	</question>
+	<answer correct="false">$B_n = n$</answer>
+	<answer correct="true">$B_n = n+1$</answer>
+	<answer correct="false">$B_n = f_{n+1}$, the $(n+1)$-st Fibonacci number.</answer>
+	<answer correct="false">$B_n = f_{n+2}$, the $(n+2)$-nd Fibonacci number.</answer>
+</multiple-choice>

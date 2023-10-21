@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question><![CDATA[
+		You flip a fair coin 9 times. Define the event
+		[defs]
+		  A = "the result of the first flip is not equal to the result of the second flip".
+		[/defs]
+		
+		What is $\Pr(A)$?
+	]]></question>
+	<answer correct="false">1/4</answer>
+	<answer correct="false">1/3</answer>
+	<answer correct="true">1/2</answer>
+	<answer correct="false">1</answer>
+</multiple-choice>

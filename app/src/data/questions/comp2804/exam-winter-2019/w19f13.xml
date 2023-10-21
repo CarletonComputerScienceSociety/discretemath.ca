@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question><![CDATA[
+		You flip a fair coin 6 times; the flips are independent of each other. Consider the events
+		
+		[defs]
+		  A = "exactly 3 flips result in heads",
+		  B = "at least 2 flips result in heads".
+		[/defs]
+		
+		What is $\Pr(A|B)$?
+	]]></question>
+	<answer correct="false">17/57</answer>
+	<answer correct="false">18/57</answer>
+	<answer correct="false">19/57</answer>
+	<answer correct="true">20/57</answer>
+</multiple-choice>

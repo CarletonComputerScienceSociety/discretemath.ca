@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 2$ be an integer. How many bitstrings of length $n$ are there that contain at least two
+		1s?
+	]]>
+	</question>
+	<answer correct="false">${n \choose 2} \cdot 2^{n-2}$</answer>
+	<answer correct="false">$n \cdot 2^{n-1}$</answer>
+	<answer correct="true">$2^{n} - 1 - n$</answer>
+	<answer correct="false">$2^{n} - n$</answer>
+</multiple-choice>

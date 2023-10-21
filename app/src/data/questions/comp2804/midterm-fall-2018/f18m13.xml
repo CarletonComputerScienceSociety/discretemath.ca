@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of characters, where each character is one of the 26 lowercase letters $a,b,c,\dots,z$.
+		Such a string is called $qq$<em>-free</em>, if it does not contain two $q$'s next to each other.
+		For any integer $n \geq 1$, let $Q_n$ be the number of $qq$-free strings of length $n$. <br>
+		
+		Which of the following is true for any integer $n \geq 3$?
+	]]>
+	</question>
+	<answer correct="false">$Q(n) = 26 \cdot Q(n-1) + 26 \cdot Q(n-2)$</answer>
+	<answer correct="true">$Q(n) = 25 \cdot Q(n-1) + 25 \cdot Q(n-2)$</answer>
+	<answer correct="false">$Q(n) = 26 \cdot Q(n-1) + 25 \cdot Q(n-2)$</answer>
+	<answer correct="false">$Q(n) = 25 \cdot Q(n-1) + 26 \cdot Q(n-2)$</answer>
+</multiple-choice>

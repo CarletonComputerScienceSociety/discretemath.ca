@@ -1,0 +1,32 @@
+{ 
+    "id": "exam-winter-2017",
+    "title": "Winter 2017 Exam",
+    "Author": "Michiel Smid",
+    "questions": [
+		"comp2804/exam-winter-2017/w17f01.xml",
+		"comp2804/exam-winter-2017/w17f02.xml",
+		"comp2804/exam-winter-2017/w17f03.xml",
+		"comp2804/exam-winter-2017/w17f04.xml",
+		"comp2804/exam-winter-2017/w17f05.xml",
+		"comp2804/exam-winter-2017/w17f06.xml",
+		"comp2804/exam-winter-2017/w17f07.xml",
+		"comp2804/exam-winter-2017/w17f08.xml",
+		"comp2804/exam-winter-2017/w17f09.xml",
+		"comp2804/exam-winter-2017/w17f10.xml",
+		"comp2804/exam-winter-2017/w17f11.xml",
+		"comp2804/exam-winter-2017/w17f12.xml",
+		"comp2804/exam-winter-2017/w17f13.xml",
+		"comp2804/exam-winter-2017/w17f14.xml",
+		"comp2804/exam-winter-2017/w17f15.xml",
+		"comp2804/exam-winter-2017/w17f16.xml",
+		"comp2804/exam-winter-2017/w17f17.xml",
+		"comp2804/exam-winter-2017/w17f18.xml",
+		"comp2804/exam-winter-2017/w17f19.xml",
+		"comp2804/exam-winter-2017/w17f20.xml",
+		"comp2804/exam-winter-2017/w17f21.xml",
+		"comp2804/exam-winter-2017/w17f22.xml",
+		"comp2804/exam-winter-2017/w17f23.xml",
+		"comp2804/exam-winter-2017/w17f24.xml",
+		"comp2804/exam-winter-2017/w17f25.xml"
+	]
+}

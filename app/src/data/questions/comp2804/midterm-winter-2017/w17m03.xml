@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $b \geq 1$ and $g \geq 1$ be integers. Consider $b$ boys and $g$ girls. How many ways are there
+		to arrange these kids on a line such that the leftmost kid is a girl or the rightmost kid is a boy?
+	]]>
+	</question>
+	<answer correct="false">$(b+g)!$</answer>
+	<answer correct="false">$(b+g)! - b \cdot (b+g-1)! -\ $ $ g \cdot (b+g-1)!$</answer>
+	<answer correct="false">$g \cdot (b+g-1)! + b \cdot (b+g-1)!\ -$ $ b \cdot g \cdot (b+g-1)!$</answer>
+	<answer correct="true">$g \cdot (b+g-1)! + b \cdot (b+g-1)!\ -$ $ b \cdot g \cdot (b+g-2)!$</answer>
+</multiple-choice>

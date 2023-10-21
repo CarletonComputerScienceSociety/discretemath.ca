@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question><![CDATA[
+		Let $n \geq 8$ be an integer. Consider a uniformly random permutation $a_1,a_2,...,a_n$ of
+		the set $\{1,2,...,n\}$. Consider the events
+		
+		[defs]
+		  A = "$a_7$ is the minimum of $a_1,a_2,...,a_7$",
+		  B = "$a_6$ is the minimum of $a_1,a_2,...,a_6$".
+		[/defs]
+		
+		Which of the following is correct?
+	]]></question>
+	<answer correct="true">The events $A$ and $B$ are independent.</answer>
+	<answer correct="false">The events $A$ and $B$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+	<answer correct="false">All of the above.</answer>
+</multiple-choice>

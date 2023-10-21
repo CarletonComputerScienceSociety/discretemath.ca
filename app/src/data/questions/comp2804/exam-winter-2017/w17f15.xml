@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 5$ be an integer. Consider a uniformly random permutation $a_1a_2 \dots a_n$ of the set
+		$\{1,2,\dots,n\}$. Define the events
+		[defs]
+		  A = "$a_1 = 1$",
+		  B = "$a_n = 5$".
+		[/defs]
+		What is $\Pr(A \cup B)$?
+	]]>
+	</question>
+	<answer correct="false">${\frac{1}{n}} - {\frac{1}{n(n-1)}}$</answer>
+	<answer correct="true">${\frac{2}{n}} - {\frac{1}{n(n-1)}}$</answer>
+	<answer correct="false">${\frac{2}{n}} - {\frac{1}{n^{2}}}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 8$ be an even integer and let $k$ be an integer with $2 \leq k \leq n/2$. Consider
+		$k$-element subsets of the set $S = \{1,2,\dots,n\}$. How many such subsets contain at least two even
+		numbers?
+	]]>
+	</question>
+	<answer correct="false">${n \choose k} - {n/2 \choose k - 1} - \frac{n}{2} \cdot {n/2 \choose k}$</answer>
+	<answer correct="false">${n \choose k} - {n/2 \choose k - 1} - \frac{n}{2} \cdot {n/2 \choose k - 1}$</answer>
+	<answer correct="false">${n \choose k} - {n/2 \choose k} - \frac{n}{2} \cdot {n/2 \choose k}$</answer>
+	<answer correct="true">${n \choose k} - {n/2 \choose k} - \frac{n}{2} \cdot {n/2 \choose k - 1}$</answer>
+</multiple-choice>

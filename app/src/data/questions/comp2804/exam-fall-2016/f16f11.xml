@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many solutions are there to the equation
+		$$
+			x_1 + x_2 + x_3 + x_4 + x_5 = 28,
+		$$
+		where $x_1 \geq 0$, $x_2 \geq 0$, $x_3 \geq 0$, $x_4 \geq 0$, and
+		<span class="sticky">$x_5 \geq 0$ are</span> integers?
+	]]>
+	</question>
+	<answer correct="false">${33 \choose 4}$</answer>
+	<answer correct="false">${33 \choose 5}$</answer>
+	<answer correct="true">${32 \choose 4}$</answer>
+	<answer correct="false">${32 \choose 5}$</answer>
+</multiple-choice>

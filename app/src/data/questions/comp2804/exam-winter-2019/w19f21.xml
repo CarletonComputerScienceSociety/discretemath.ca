@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question><![CDATA[
+		Let $n \geq 2$ be an integer. You are given $n$ beer bottles $B_1,B_2,...,B_n$ and two cider bottles $C_1$ and $C_2$.
+		Consider a uniformly random permutation of these $n + 2$ bottles. The positions in this permutation are
+		numbered $1,2,...,n + 2$. Consider the random variable
+		
+		[defs]
+		  X = the position of the leftmost beer bottle.
+		[/defs]
+		
+		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+	]]></question>
+	<answer correct="false">$\frac{n}{n + 2} + \frac{2n + 6}{(n + 1)(n + 2)}$</answer>
+	<answer correct="false">$\frac{n}{n + 2} + \frac{2n + 2}{(n + 1)(n + 2)}$</answer>
+	<answer correct="true">$\frac{n}{n + 2} + \frac{4n + 6}{(n + 1)(n + 2)}$</answer>
+	<answer correct="false">$\frac{n}{n + 2} + \frac{4n + 2}{(n + 1)(n + 2)}$</answer>
+</multiple-choice>

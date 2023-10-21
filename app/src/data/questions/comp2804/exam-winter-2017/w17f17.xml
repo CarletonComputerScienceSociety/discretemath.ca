@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a uniformly random permutation of the set $\{1,2,\dots,50\}$. Define the event
+		[defs]
+		  A = "in the permutation, both 8 and 4 are to the left of both 1 and 2".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">1/3</answer>
+	<answer correct="false">2/3</answer>
+	<answer correct="false">1/5</answer>
+	<answer correct="true">1/6</answer>
+</multiple-choice>

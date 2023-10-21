@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given a fair die that has six faces. One face has the letter $a$ on it, two faces have the
+		letter $b$ on them, and three faces have the letter $c$ on them. Assume you roll this die twice,
+		independently of each other. Define the events
+		[defs]
+		  A = "both rolls result in the same letter",
+		  B = "at least one of the rolls results in the letter $a$".
+		[/defs]
+		What is $\Pr(A|B)$?
+	]]>
+	</question>
+	<answer correct="false">2/7</answer>
+	<answer correct="false">1/7</answer>
+	<answer correct="false">2/11</answer>
+	<answer correct="true">1/11</answer>
+</multiple-choice>

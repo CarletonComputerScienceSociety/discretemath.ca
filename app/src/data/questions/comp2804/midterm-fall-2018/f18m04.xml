@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Elisa Kazan's neighborhood pub serves 8 different types of cider; denote these types by $C_1,C_2,\dots,C_8$.
+		Elisa invites 7 friends to this pub and orders one cider for each friend. Different
+		friends may get the same type of cider. (Elisa came by car and, therefore, orders a glass of water
+		for herself.) <br>
+		In how many ways can Elisa place these orders of cider, such that exactly 4 of her friends get a
+		cider of type $C_3$?
+	]]>
+	</question>
+	<answer correct="true">${7 \choose 4} \cdot 7^3$</answer>
+	<answer correct="false">${7 \choose 4} \cdot 8^3$</answer>
+	<answer correct="false">${7 \choose 4} \cdot 7^4$</answer>
+	<answer correct="false">${7 \choose 4} \cdot 8^4$</answer>
+</multiple-choice>

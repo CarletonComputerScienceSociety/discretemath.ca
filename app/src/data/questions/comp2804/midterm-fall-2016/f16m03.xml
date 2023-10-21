@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $k$ and $n$ be integers with $2 \leq k \leq n$ and consider the set $S = \{1,2,\dots,n\}$.
+		What is the number of $k$-element subsets of $S$ that do not contain 1 <em>or</em> do not contain 2?
+	]]>
+	</question>
+	<answer correct="false">${n - 1 \choose k} + {n - 1 \choose k}$</answer>
+	<answer correct="false">${n - 2 \choose k}$</answer>
+	<answer correct="true">${n \choose k} - {n - 2 \choose k - 2}$</answer>
+	<answer correct="false">${n \choose k} - {n - 1 \choose k - 1} - {n - 1 \choose k - 1}$</answer>
+</multiple-choice>

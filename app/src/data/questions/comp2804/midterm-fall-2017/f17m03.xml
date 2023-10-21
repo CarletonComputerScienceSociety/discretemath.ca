@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 1$ be an integer. Consider functions
+		$$
+			f : \{1,2,3,\dots,n\} \rightarrow \{1,2,3,\dots,7n\}
+		$$
+		such that, for each $i$ with $1 \leq i \leq n$, $f(i)$ is divisible by 7. How many such functions
+		are there?
+	]]>
+	</question>
+	<answer correct="false">$(7n)^{n}$</answer>
+	<answer correct="false">$n^{7n}$</answer>
+	<answer correct="true">$n^{n}$</answer>
+	<answer correct="false">$7^{n}$</answer>
+</multiple-choice>

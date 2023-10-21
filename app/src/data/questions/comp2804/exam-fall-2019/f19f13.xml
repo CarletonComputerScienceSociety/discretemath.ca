@@ -1,0 +1,19 @@
+<multiple-choice>
+	<question><![CDATA[
+		A certain terrible, no-good, mean-spirited, awful professor gives his students 250 sample exam questions
+		and then makes his final exam by choosing 25 of these questions uniformly at random. Student Nika doesn't
+		have much time to study so she chooses 50 (out of 250) random sample exam questions and practices on those.
+		
+		<p style="margin: 0.5rem 0;">
+			When Nika writes the exam, what is the expected number of questions that appear on the exam and that
+			Nika has practiced on?
+		</p>
+		
+		(n.b., depending on your background, it may be helpful to observe that this can be modelled using the hypergeometric
+		distribution)
+	]]></question>
+	<answer correct="false">2</answer>
+	<answer correct="true">5</answer>
+	<answer correct="false">10</answer>
+	<answer correct="false">20</answer>
+</multiple-choice>

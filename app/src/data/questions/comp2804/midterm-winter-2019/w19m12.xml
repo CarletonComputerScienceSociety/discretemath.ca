@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of characters, where each character is an element of the set $\{a, b, c\}$. Such a
+		string is called <em>awesome</em>, if it does not contain $aa$, and does not contain $aba$, and does not contain $abb$. <br>
+		For any integer $n \geq 1$, let $A_n$ be the number of awesome strings of length $n$. <br>
+		Which of the following is true for any integer $n \geq 4$?
+	]]>
+	</question>
+	<answer correct="false">$A_n = A_{n-1} + 2 \cdot A_{n-2} + 2 \cdot A_{n-3}$</answer>
+	<answer correct="false">$A_n = A_{n-1} + 2 \cdot A_{n-2} + A_{n-3}$</answer>
+	<answer correct="false">$A_n = 2 \cdot A_{n-1} + A_{n-2} + 2 \cdot A_{n-3}$</answer>
+	<answer correct="true">$A_n = 2 \cdot A_{n-1} + A_{n-2} + A_{n-3}$</answer>
+</multiple-choice>

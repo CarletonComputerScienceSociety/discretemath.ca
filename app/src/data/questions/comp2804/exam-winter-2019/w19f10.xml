@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question><![CDATA[
+		The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is recursively defined as follows:
+		$$
+			\begin{align}
+			f(0) &= 2 \\
+			f(n) &= 3 \cdot f(n - 1) + 1, \text{ if } n \geq 1
+			\end{align}
+		$$
+		Which of the following is true for all integers $n \geq 0$?
+	]]></question>
+	<answer correct="false">$f(n) = \frac{5}{2} \cdot 3^n - 1$</answer>
+	<answer correct="false">$f(n) = \frac{3}{2} \cdot 3^n - \frac{1}{2}$</answer>
+	<answer correct="true">$f(n) = \frac{5}{2} \cdot 3^n - \frac{1}{2}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

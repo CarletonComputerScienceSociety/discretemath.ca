@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		<div hidden>
+			$\newcommand{\ShortLastName}{{\rm S {\scriptsize HORT} L {\scriptsize AST} N {\scriptsize AME}}}$
+		</div>
+		
+		In the city of $\ShortLastName$, every person has a last name consisting of two characters, the first one being
+		an uppercase letter and the second one being a lowercase letter. What is the minimum number of people
+		needed so that we can guarantee that at least 4 of them have the same last name?
+	]]>
+	</question>
+	<answer correct="false">$3 \cdot 26^{2}$</answer>
+	<answer correct="false">$4 \cdot 26^{2}$</answer>
+	<answer correct="true">$3 \cdot 26^{2} + 1$</answer>
+	<answer correct="false">$4 \cdot 26^{2} + 1$</answer>
+</multiple-choice>

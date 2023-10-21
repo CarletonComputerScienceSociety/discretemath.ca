@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of characters, where each character is $a$, $b$, or $c$. Such a string is called <em>ccc-free</em>
+		if it does not contain <em>ccc</em>. <br>
+		
+		For any integer $n \geq 4$, let $B_n$ be the number of <em>ccc</em>-free strings of length $n$. Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">$B_n = B_{n-1} + B_{n-2} + B_{n-3}$</answer>
+	<answer correct="true">$B_n = 2 \cdot B_{n-1} + 2 \cdot B_{n-2} + 2 \cdot B_{n-3}$</answer>
+	<answer correct="false">$B_n = 2 \cdot B_{n-1} + 2 \cdot B_{n-2} + B_{n-3}$</answer>
+	<answer correct="false">$B_n = B_{n-1} + B_{n-2} + 2 \cdot B_{n-3}$</answer>
+</multiple-choice>

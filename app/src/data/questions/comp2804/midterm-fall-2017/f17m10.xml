@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A bitstring is called 01-<em>free</em> if it does not contain 01.
+		Let $n \geq 2$ be an integer. How many 01-free bitstrings of length $n$ are there?
+	]]>
+	</question>
+	<answer correct="false">$n-1$</answer>
+	<answer correct="false">$n$</answer>
+	<answer correct="true">$n+1$</answer>
+	<answer correct="false">$n+2$</answer>
+</multiple-choice>

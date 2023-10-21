@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Carleton's Computer Science program has $f$ female students and $m$ male students, where
+		$f \geq 1$ and $f + m \geq 4$. The Carleton Computer Science Society has a Board of Directors
+		consisting of a President and three Vice-Presidents, all of whom are Computer Science students.
+		The President is female and cannot be a Vice-President. In how many ways can a Board of Directors
+		be chosen?
+	]]>
+	</question>
+	<answer correct="false">${f + m \choose 4}$</answer>
+	<answer correct="true">$f \cdot {f + m - 1 \choose 3}$</answer>
+	<answer correct="false">$f \cdot {f + m \choose 3}$</answer>
+	<answer correct="false">$(f - 1) \cdot {f + m \choose 3}$</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider 9 boys and 15 girls. How many ways are there to arrange these 24 people on a line if all
+		boys stand next to each other and all girls stand next to each other?
+	]]>
+	</question>
+	<answer correct="false">$\frac{24!}{9!15!}$</answer>
+	<answer correct="false">${24 \choose 9}(9!)(15!)$</answer>
+	<answer correct="false">$(9!)(15!)$</answer>
+	<answer correct="true">$2(9!)(15!)$</answer>
+</multiple-choice>

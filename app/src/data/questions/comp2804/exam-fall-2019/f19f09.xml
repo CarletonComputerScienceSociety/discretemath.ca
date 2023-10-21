@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question><![CDATA[
+		Consider bitstrings that do not contain 110. Let $S_n$ be the number of such strings having
+		length $n$.
+		Which of the following is true for any $n \geq 4$?
+	]]></question>
+	<answer correct="false">$S_n = S_{n - 1} + S_{n - 2} + S_{n - 3}$</answer>
+	<answer correct="false">$S_n = S_{n - 1} + S_{n - 2} + 2^{n - 2}$</answer>
+	<answer correct="false">$S_n = S_{n - 1} + S_{n - 2} + 2^{n - 3}$</answer>
+	<answer correct="true">$S_n = S_{n - 1} + S_{n - 2} + 1$</answer>
+</multiple-choice>

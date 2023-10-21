@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a set $S$ consisting of 20 integers; 5 of these are strictly positive and the other 15
+		integers in $S$ are strictly negative. What is the number of 3-element subsets of $S$ having the
+		property that the product of the 3 elements in the subset is negative?
+	]]>
+	</question>
+	<answer correct="false">${20 \choose 3}$</answer>
+	<answer correct="false">${15 \choose 3}$</answer>
+	<answer correct="true">${15 \choose 3} + 15 \cdot {5 \choose 2}$</answer>
+	<answer correct="false">${15 \choose 3} + {15 \choose 2} \cdot 5 + 15 \cdot {5 \choose 2}$</answer>
+</multiple-choice>

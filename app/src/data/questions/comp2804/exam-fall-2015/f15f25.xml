@@ -1,0 +1,9 @@
+<multiple-choice>
+	<question>
+		Who discovered Newton's Binomial Theorem?
+	</question>
+	<answer correct="false">Professor Binomial.</answer>
+	<answer correct="false">Justin Bieber.</answer>
+	<answer correct="true">Isaac Newton.</answer>
+	<answer correct="false">Professor G. Ruesome (the guy teaching COMP 9999).</answer>
+</multiple-choice>

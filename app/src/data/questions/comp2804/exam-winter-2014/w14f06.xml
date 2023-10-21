@@ -1,0 +1,23 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In a group of 150 people,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				30 weigh at least 150 pounds,
+			</li>
+			<li>
+				60 are at least 6 feet tall,
+			</li>
+			<li>
+				70 weigh less than 150 pounds and are less than 6 feet tall.
+			</li>
+		</ul>
+		How many people weigh at least 150 pounds and are at least 6 feet tall?
+	]]>
+	</question>
+	<answer correct="true">10</answer>
+	<answer correct="false">20</answer>
+	<answer correct="false">30</answer>
+	<answer correct="false">40</answer>
+</multiple-choice>

@@ -1,0 +1,21 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The functions $f: \mathbb{N} \rightarrow \mathbb{N}$ and $g: \mathbb{N} \rightarrow \mathbb{N}$ are
+		recursively defined as follows:
+		$$
+			\begin{alignat}{2}
+			f(0) &= 0, \\
+			f(n) &= 2 + f(n - 1)\ \; &\mathrm{if}\ n \geq 1, \\
+			g(0) &= 1, \\
+			g(n) &= 7 \cdot g(n - 1)\ \; &\mathrm{if}\ n \geq 1.
+			\end{alignat}
+		$$
+		For any integer $n \geq 0$, what is $g(f(n))$?
+	]]>
+	</question>
+	<answer correct="true">$7^{2n}$</answer>
+	<answer correct="false">$7^{n}$</answer>
+	<answer correct="false">$(2n)^{7}$</answer>
+	<answer correct="false">$n^{7}$</answer>
+</multiple-choice>

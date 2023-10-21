@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 5$ and consider strings of length $n$ consisting of the characters $a$, $b$, $c$, and $d$.
+		How many such strings are there that start with $ad$ or end with $dcb$?
+	]]>
+	</question>
+	<answer correct="true">$4^{n - 2} + 4^{n - 3} - 4^{n - 5}$</answer>
+	<answer correct="false">$4^{n - 2} + 4^{n - 3}$</answer>
+	<answer correct="false">$4^n - 4^{n - 5}$</answer>
+	<answer correct="false">$4^n - 4^{n - 2} - 4^{n - 3}$</answer>
+</multiple-choice>

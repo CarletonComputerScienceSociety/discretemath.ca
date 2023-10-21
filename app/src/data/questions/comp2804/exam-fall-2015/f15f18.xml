@@ -1,0 +1,19 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The $n$ students $S_1,S_2,\dots,S_n$ decide to organize a Secret Santa: They take a uniformly
+		random permutation $P_1,P_2,\dots,P_n$ of $S_1,S_2,\dots,S_n$. For each $i = 1,2,\dots,n$,
+		student $S_i$ buys a gift and gives it, anonymously, to student $P_i$.
+		
+		<p style="margin: 0.5rem 0;">
+			Let $X$ be the number of students who give their gift to themselves. What is the expected value
+			$\mathbb{E}(X)$ of the random variable $X$? <br>
+			<em>Hint:</em> Use an indicator random variable for each student.
+		</p>
+	]]>
+	</question>
+	<answer correct="true">$1$</answer>
+	<answer correct="false">$2$</answer>
+	<answer correct="false">$1 + 1/n$</answer>
+	<answer correct="false">$2 + 1/n$</answer>
+</multiple-choice>

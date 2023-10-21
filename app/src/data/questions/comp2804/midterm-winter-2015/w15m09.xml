@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many solutions are there to the equation $x_1 + x_2 + x_3 = 99$, where $x_1 \geq 0$, $x_2 \geq 0$,
+		and $x_3 \geq 0$ are integers?
+	]]>
+	</question>
+	<answer correct="true">${101 \choose 2}$</answer>
+	<answer correct="false">${101 \choose 3}$</answer>
+	<answer correct="false">${102 \choose 2}$</answer>
+	<answer correct="false">${102 \choose 3}$</answer>
+</multiple-choice>

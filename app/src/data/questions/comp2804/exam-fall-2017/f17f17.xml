@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $X = \{1,2,\dots,100\}$. Let $Y$ be a uniformly random 7-element subset of $X$. Define the event
+		[defs]
+		  A = "the set $Y$ contains at least one even number".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">$1 - (1/2)^{7}$</answer>
+	<answer correct="false">$(1/2)^{7}$</answer>
+	<answer correct="true">$1 - \frac{{50 \choose 7}}{{100 \choose 7}}$</answer>
+	<answer correct="false">$\frac{{50 \choose 7}}{{100 \choose 7}}$</answer>
+</multiple-choice>

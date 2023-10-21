@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a set $S$ consisting of 20 integers. The integer 0 is an element of $S$, 9 elements in $S$
+		are strictly positive, and the remaining 10 elements are strictly negative. What is the number of
+		7-element subsets of $S$ having the property that the product of the 7 elements in the subset is
+		equal to 0?
+	]]>
+	</question>
+	<answer correct="true">${19 \choose 6}$</answer>
+	<answer correct="false">${19 \choose 7}$</answer>
+	<answer correct="false">${20 \choose 6}$</answer>
+	<answer correct="false">${20}\choose{7}$</answer>
+</multiple-choice>

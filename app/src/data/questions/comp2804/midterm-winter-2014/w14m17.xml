@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is Simon Pratt’s favorite drink?
+	]]>
+	</question>
+	<answer correct="false">Herbal tea</answer>
+	<answer correct="true">India Pale Ale</answer>
+	<answer correct="false">Poutine</answer>
+	<answer correct="false">None of the above, because Simon doesn't like beer</answer>
+</multiple-choice>

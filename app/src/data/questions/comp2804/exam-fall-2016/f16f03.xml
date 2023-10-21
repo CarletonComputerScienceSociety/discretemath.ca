@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many bitstrings of length 55 start with 000 or end with 1010?
+	]]>
+	</question>
+	<answer correct="false">$2^{55} - 2^{48}$</answer>
+	<answer correct="false">$2^{51} + 2^{52}$</answer>
+	<answer correct="true">$2^{51} + 2^{52} - 2^{48}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

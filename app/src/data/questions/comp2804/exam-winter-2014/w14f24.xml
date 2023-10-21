@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We flip a fair coin independently $n$ times. Define the random variable
+		[defs]
+		  X = the number of heads minus the number of tails in the sequence of $n$ flips.
+		[/defs]
+		What is the expected value of $X$?
+	]]>
+	</question>
+	<answer correct="false">$n/2$</answer>
+	<answer correct="false">$n/4$</answer>
+	<answer correct="false">$n/8$</answer>
+	<answer correct="true">$0$</answer>
+</multiple-choice>

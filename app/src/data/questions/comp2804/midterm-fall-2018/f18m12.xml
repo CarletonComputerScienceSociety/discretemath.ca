@@ -1,0 +1,21 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The functions $f: \mathbb{N} \rightarrow \mathbb{N}$ and $g: \mathbb{N} \rightarrow \mathbb{N}$ are
+		recursively defined as follows:
+		$$
+			\begin{alignat}{2}
+			f(0) &= 3, \\
+			f(n) &= 5 + f(n - 1)\ \; &\mathrm{if}\ n \geq 1, \\
+			g(0) &= 1, \\
+			g(n) &= 2 \cdot g(n - 1) &\mathrm{if}\ n \geq 1.
+			\end{alignat}
+		$$
+		For any integer $n \geq 0$, what is $f(g(n))$?
+	]]>
+	</question>
+	<answer correct="true">$3 + 5 \cdot 2^{n}$</answer>
+	<answer correct="false">$5 + 3 \cdot 2^{n}$</answer>
+	<answer correct="false">$2^{3 + 5n}$</answer>
+	<answer correct="false">$2^{5 + 3n}$</answer>
+</multiple-choice>

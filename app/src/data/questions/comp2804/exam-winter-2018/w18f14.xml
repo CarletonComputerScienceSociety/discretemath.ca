@@ -1,0 +1,19 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given two bitstrings $a_1,a_2,\dots,a_{77}$ and $b_1,b_2,\dots,b_{77}$ of length 77. In
+		both bitstrings, each bit is 0 with probability 3/4, and 1 with probability 1/4 (independent of
+		all other bits). <br>
+		
+		Consider the string
+		$$
+			a_1-b_1,a_2-b_2,\dots,a_{77}-b_{77}.
+		$$
+		What is the probability that each element in this string is non-zero?
+	]]>
+	</question>
+	<answer correct="true">$(3/8)^{77}$</answer>
+	<answer correct="false">$(4/8)^{77}$</answer>
+	<answer correct="false">$(5/8)^{77}$</answer>
+	<answer correct="false">$(6/8)^{77}$</answer>
+</multiple-choice>

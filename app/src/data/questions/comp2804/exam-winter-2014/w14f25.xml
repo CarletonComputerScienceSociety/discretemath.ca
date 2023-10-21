@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Who discovered the formula
+		$$
+			1 + 2 + 3 + \dots + n = n(n + 1) / 2
+		$$
+		when he was a young boy?
+	]]>
+	</question>
+	<answer correct="false">Justin Bieber</answer>
+	<answer correct="false">Fibonacci</answer>
+	<answer correct="true">Carl Friedrich Gauss</answer>
+	<answer correct="false">Simon Pratt</answer>
+</multiple-choice>

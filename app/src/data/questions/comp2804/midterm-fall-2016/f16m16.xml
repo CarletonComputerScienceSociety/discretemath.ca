@@ -1,0 +1,20 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider 4 people, each of which has a uniformly random birthday. We ignore leap years; thus, one year
+		has 365 days. Define the event
+		
+		[defs]
+		  A = "at least 2 of these 4 people have the same birthday".
+		[/defs]
+		
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">${4 \choose 2} \cdot \frac{1}{365}$</answer>
+	<answer correct="false">
+		${4 \choose 2} \cdot \frac{1}{365} + {4 \choose 3} \cdot \frac{1}{365^2} + {4 \choose 4} \cdot \frac{1}{365^3}$
+	</answer>
+	<answer correct="false">$1 - \frac{361 \cdot 362 \cdot 363 \cdot 364}{365^4}$</answer>
+	<answer correct="true">$1 - \frac{362 \cdot 363 \cdot 364}{365^3}$</answer>
+</multiple-choice>

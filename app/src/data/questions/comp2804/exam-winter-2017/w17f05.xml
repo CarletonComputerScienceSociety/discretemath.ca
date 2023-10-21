@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 2$ be an integer. What does $2^{n} - 2^{n-2}$ count?
+	]]>
+	</question>
+	<answer correct="true">The number of bitstrings of length $n$ in which the first bit is 0 or the last bit is 1.</answer>
+	<answer correct="false">The number of bitstrings of length $n$ in which the first bit is 0 and the last bit is 1.</answer>
+	<answer correct="false">The number of bitstrings of length $n$ in which the first bit is equal to the last bit.</answer>
+	<answer correct="false">The number of bitstrings of length $n$ in which the first bit is not equal to the last bit.</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many solutions are there to the equation $x_1 + x_2 + x_3 = 17$, where $x_1 \geq 0$, $x_2 \geq 0$,
+		and $x_3 \geq 0$ are integers?
+	]]>
+	</question>
+	<answer correct="false">${19 \choose 16}$</answer>
+	<answer correct="true">${19 \choose 17}$</answer>
+	<answer correct="false">${20 \choose 16}$</answer>
+	<answer correct="false">${20 \choose 17}$</answer>
+</multiple-choice>

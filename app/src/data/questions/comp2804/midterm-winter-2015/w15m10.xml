@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The function $f: \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+		$$
+			\begin{align}
+			f(0) &= 15 \\
+			f(n) &= f(n - 1) +6n - 4\; \ \mathrm{for}\ n \geq 1
+			\end{align}
+		$$
+		What is $f(n)$?
+	]]>
+	</question>
+	<answer correct="false">$f(n) = 3n^{2} + 2n + 15$</answer>
+	<answer correct="false">$f(n) = 3n^{2} - 2n + 15$</answer>
+	<answer correct="false">$f(n) = 3n^{2} + n + 15$</answer>
+	<answer correct="true">$f(n) = 3n^{2} - n + 15$</answer>
+</multiple-choice>

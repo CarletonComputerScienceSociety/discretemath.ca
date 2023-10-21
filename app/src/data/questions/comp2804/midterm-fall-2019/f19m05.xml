@@ -1,0 +1,10 @@
+<multiple-choice>
+	<question><![CDATA[
+		Consider strings of length 4 over the alphabet $\{a,b,c,d\}$. How many such strings are there that
+		start with $ad$ or end with $dcb$?
+	]]></question>
+	<answer correct="false">17</answer>
+	<answer correct="false">18</answer>
+	<answer correct="true">19</answer>
+	<answer correct="false">20</answer>
+</multiple-choice>

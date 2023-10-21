@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question><![CDATA[
+		In a standard deck of 52 cards, each card has a <em>suit</em> and a <em>rank</em>.
+		There are four suits (spades ♠, hearts ♡, clubs ♣, and diamonds ♢), and 13 ranks
+		(Ace, 2,3,4,5,6,7,8,9,10, Jack, Queen, and King). <br>
+		Assume you get a uniformly random hand consisting of 5 cards. What is the probability
+		that the 5 cards in this hand consist of 3 Aces and 2 Queens?
+	]]></question>
+	<answer correct="true">$\left. 24 \middle/ {52 \choose 5} \right.$</answer>
+	<answer correct="false">$\left. 25 \middle/ {52 \choose 5} \right.$</answer>
+	<answer correct="false">$\left. 26 \middle/ {52 \choose 5} \right.$</answer>
+	<answer correct="false">$\left. 27 \middle/ {52 \choose 5} \right.$</answer>
+</multiple-choice>

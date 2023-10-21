@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question><![CDATA[
+		Consider the sets $A = \{1,2,...,10\}$ and $B = \{1,2,...,14\}$.
+		Let $S = \{(x,y) : x \in A, y \in B\}$.
+		An element $(x,y)$ of $S$ is <em>awesome</em>, if $x$ is even or $y$ is even.
+		What is the number of awesome elements in $S$?
+	]]></question>
+	<answer correct="false">104</answer>
+	<answer correct="true">105</answer>
+	<answer correct="false">106</answer>
+	<answer correct="false">107</answer>
+</multiple-choice>

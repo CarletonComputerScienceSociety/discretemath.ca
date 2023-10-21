@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 2$ be an integer. Consider permutations $a_1,a_2,\dots,a_n$ of the set $\{1,2,\dots,n\}$
+		for which $a_1 < a_2$. How many such permutations are there?
+	]]>
+	</question>
+	<answer correct="true">$\frac{n!}{2}$</answer>
+	<answer correct="false">$n!$</answer>
+	<answer correct="false">$2{n \choose 2} \cdot (n-2)!$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

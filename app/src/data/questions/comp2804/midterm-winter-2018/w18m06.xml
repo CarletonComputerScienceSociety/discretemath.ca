@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In the city of <em>ShortLastName</em>, every person has a last name consisting of one uppercase letter,
+		followed by two lowercase letters. No two letters in a last name can be equal. Thus, <em>Lin</em>
+		is a valid last name, whereas <em>Xax</em> is not a valid last name. <br>
+		
+		What is the minimum size of the population of <em>ShortLastName</em>, such that there must be at least two people
+		who have the same last name?
+	]]>
+	</question>
+	<answer correct="false">$1 + 26!$</answer>
+	<answer correct="false">$1 + 26^{3}$</answer>
+	<answer correct="false">$1 + \frac{24 \cdot 25 \cdot 26}{3!}$</answer>
+	<answer correct="true">$1 + 24 \cdot 25 \cdot 26$</answer>
+</multiple-choice>

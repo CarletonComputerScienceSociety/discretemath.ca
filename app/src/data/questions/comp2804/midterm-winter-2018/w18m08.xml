@@ -1,0 +1,23 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $m \geq 34$ be an even integer, let $n \geq 1$ be an integer, and consider the two sets
+		$$
+			A = \{1,2,\dots,m\}
+		$$
+		and
+		$$
+			B = \{m+1,m+2,\dots,m+n\}.
+		$$
+		Let $k$ be an integer with $17 \leq k \leq n+17$. <br>
+		
+		Consider subsets $X$ of $A \cup B$, such that $|X| = k, |X \cap A| = 17$, and all elements of $X \cap A$ are even. <br>
+		
+		How many such subsets $X$ are there?
+	]]>
+	</question>
+	<answer correct="true">${m/2 \choose 17} \cdot {n \choose k-17}$</answer>
+	<answer correct="false">${m \choose 17} \cdot {n \choose k-17}$</answer>
+	<answer correct="false">${m+n \choose 17} \cdot {n \choose k-17}$</answer>
+	<answer correct="false">${m/2+n \choose 17} \cdot {n \choose k-17}$</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		For any integer $n \geq 2$, let $S_n$ be the number of bitstrings of length $n$ in which the first
+		bit is not equal to the last bit. Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">$S_n = 2^{n-2}$</answer>
+	<answer correct="true">$S_n = 2^{n-1}$</answer>
+	<answer correct="false">$S_n = 2^{n} - 2^{n-2}$</answer>
+	<answer correct="false">$S_n = 2^{n} - 2^{n-1} + 2^{n-2}$</answer>
+</multiple-choice>

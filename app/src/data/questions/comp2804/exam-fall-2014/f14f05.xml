@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S_n$ be the number of bitstrings of length $n$ that do not contain the substring 11. Which of
+		the following is true?
+	]]>
+	</question>
+	<answer correct="true">$S_n = S_{n-1} + S_{n-2}\ \mathrm{for}\ n \geq 3.$</answer>
+	<answer correct="false">$S_n = S_{n-1} + S_{n-3}\ \mathrm{for}\ n \geq 3.$</answer>
+	<answer correct="false">$S_n = S_{n-1} + S_{n-2} + S_{n-3}\ \mathrm{for}\ n \geq 3.$</answer>
+	<answer correct="false">$S_n = 2 \cdot S_{n-1}\ \mathrm{for}\ n \geq 3.$</answer>
+</multiple-choice>

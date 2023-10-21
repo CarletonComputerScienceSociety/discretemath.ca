@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S = \{1,2,3,4,5,6,7\}$. You choose a uniformly random 3-element subset $X$ of $S$. Thus,
+		each 3-element subset of $S$ has a probability of $\left. 1 \middle/ {7 \choose 3} \right.$ of being $X$.
+		Define the event
+		[defs]
+		  A = "4 is an element of $X$".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">7/15</answer>
+	<answer correct="false">15/7</answer>
+	<answer correct="true">3/7</answer>
+	<answer correct="false">7/3</answer>
+</multiple-choice>
