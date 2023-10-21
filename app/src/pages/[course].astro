@@ -19,9 +19,8 @@ const data = new Repository().fetchCourse(course);
   <div>
     <h1>{data.code}: {data.title}</h1>
     <p>{data.description}</p>
-    <h3>Tests:</h3>
     <!-- TODO: remove base link -->
-    <div class="content-container">
+    <div class="course-page__content-cards">
       {data.tests.map((test) => (
         <a href={`/discretemath.ca/${data.id}/tests/${test.id}`}>
           <ContentCard title={test.title} tag={"Test"} />
@@ -29,7 +28,7 @@ const data = new Repository().fetchCourse(course);
       ))}
     </div>
     <h3>Labs:</h3>
-    <div class="content-container">
+    <div class="course-page__content-cards">
       {data.labs.map((lab) => (
         <a href={`/discretemath.ca/${data.id}/labs/${lab.id}`}>
           <ContentCard title={lab.title} tag={"Lab"} />
@@ -43,10 +42,11 @@ const data = new Repository().fetchCourse(course);
 </CourseLayout>
 
 <style lang="scss">
-  .content-container {
+  .course-page__content-cards {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+    flex-wrap: wrap;
   }
   a {
     text-decoration: none;

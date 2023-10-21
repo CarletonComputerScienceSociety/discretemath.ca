@@ -76,7 +76,20 @@ class Repository {
 
   // convert an xml question to json
   #transformXmlQuestionToJson = (xmlQuestion) => {
+    if (xmlQuestion["multiple-choice"] !== undefined) {
+      return {
+        body: xmlQuestion["multiple-choice"].question,
+        type: "MultipleChoice",
+        lab: null,
+        factory: null,
+        options: xmlQuestion["multiple-choice"].answer.map(
+          (xmlOption) => this.#transformXmlOptionToJson(xmlOption)
+        ),
+      };
+    }
+
     const questionData = xmlQuestion.question["$"];
+
     switch (questionData.type) {
       case "MultipleChoice":
         return {
