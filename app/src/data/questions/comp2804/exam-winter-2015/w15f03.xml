@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many bitstrings of length 77 start with 1111 or end with 0000?
+	]]>
+	</question>
+	<answer correct="false">$2^{73} + 2^{73}$</answer>
+	<answer correct="true">$2^{74} - 2^{69}$</answer>
+	<answer correct="false">$2^{77} - 2^{69}$</answer>
+	<answer correct="false">$2^{77} - 2^{73} - 2^{73}$</answer>
+</multiple-choice>

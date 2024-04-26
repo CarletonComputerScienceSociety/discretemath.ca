@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		Let $K_n$ be the complete graph on $n$ vertices, in which each pair of vertices is connected by an
+		edge. For each edge $e$ of $K_n$, we flip a fair and independent coin; if the coin comes up heads,
+		we color $e$ red, if it comes up tails, we color $e$ blue. <br>
+		
+		Assume that the vertex set of $K_n$ is $\{1,2,3,\dots,n\}$. Let $K'$ be the subgraph of $K_n$
+		induced by the vertices $1,2, \dots,k$ (i.e., an edge $(i,j)$ of $K_n$ is in $K'$ if and only if
+		both $i$ and $j$ are at most $k$). Let $A$ be the event
+		[defs]
+			A = "all edges of $K'$ have the same color."
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	<option correct="false">$1/2^{k \choose 2}$</option>
+	<option correct="true">$2/2^{k \choose 2}$</option>
+	<option correct="false">$2^{k \choose 2}/2^{n \choose 2}$</option>
+	<option correct="false">$2 \cdot 2^{k \choose 2}/2^{n \choose 2}$</option>
+</question>

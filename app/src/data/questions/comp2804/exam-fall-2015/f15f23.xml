@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S$ be a uniformly random 2-element subset of $\{1,2,3,4\}$, and let $X$ be the number of
+		elements of $S$ that are even. What is the expected value $\mathbb{E}(X)$ of $X$?
+	]]>
+	</question>
+	<answer correct="true">1</answer>
+	<answer correct="false">3/2</answer>
+	<answer correct="false">2</answer>
+	<answer correct="false">5/2</answer>
+</multiple-choice>

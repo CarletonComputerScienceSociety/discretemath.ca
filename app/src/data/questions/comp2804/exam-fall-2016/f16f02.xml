@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a set $A$ having size 7 and a set $B$ having size 9. How many one-to-one functions
+		$f : A \rightarrow B$ are there?
+	]]>
+	</question>
+	<answer correct="false">$\frac{7!}{2}$</answer>
+	<answer correct="false">$\frac{7!}{3}$</answer>
+	<answer correct="true">$\frac{9!}{2}$</answer>
+	<answer correct="false">$\frac{9!}{3}$</answer>
+</multiple-choice>

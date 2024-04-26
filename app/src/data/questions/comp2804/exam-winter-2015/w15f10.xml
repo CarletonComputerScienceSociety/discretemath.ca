@@ -1,0 +1,23 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S$ be the set of ordered pairs of integers that is recursively defined in the following way:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				$(1,6) \in S$.
+			</li>
+			<li>
+				If $(a,b) \in S$ then $(a+3, b+4) \in S$.
+			</li>
+			<li>
+				If $(a,b) \in S$ then $(a+5, b+2) \in S$.
+			</li>
+		</ul>
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="true">For every element $(a,b)$ in $S$, $a + b$ is divisible by 7.</answer>
+	<answer correct="false">For every element $(a,b)$ in $S$, $a + b$ is not divisible by 7.</answer>
+	<answer correct="false">$S = \{(a,b) : a &gt; 0$ and $b &gt; 0$ are integers and $a + b$ is divisible by 7$\}$.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

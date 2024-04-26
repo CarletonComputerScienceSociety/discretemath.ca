@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 1$ be an integer. A bag contains $n$ red balls and $n$ blue balls. We choose a uniformly
+		random subset of two balls. Define the event
+		[defs]
+		  A = "this subset consists of one red ball and one blue ball".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="true">$\left. n^2 \middle/ {2n \choose 2} \right.$</answer>
+	<answer correct="false">$\left. {2n \choose 2} \middle/ n^2 \right.$</answer>
+	<answer correct="false">$\left. n^2 \middle/ {n \choose 2} \right.$</answer>
+	<answer correct="false">$\left. {n \choose 2} \middle/ n^2 \right.$</answer>
+</multiple-choice>

@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is Elisa Kazan's favorite drink?
+	]]>
+	</question>
+	<answer correct="false">Beer</answer>
+	<answer correct="true">Cider</answer>
+	<answer correct="false">Hot chocolate</answer>
+	<answer correct="false">Poutine</answer>
+</multiple-choice>

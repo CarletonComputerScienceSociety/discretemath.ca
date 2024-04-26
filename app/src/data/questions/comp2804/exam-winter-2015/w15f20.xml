@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $G = (V,E)$ be a graph with vertex set $V$ and edge set $E$, let $n$ be the size of $V$, and let
+		$m$ be the size of $E$. For each vertex of $V$, flip a fair and independent coin. Let $V'$ be the
+		subset of $V$ consisting of all vertices of $V$ whose coin flip resulted in heads. Let $E'$ be the
+		set consisting of all edges $(u,v)$ in $E$ for which both $u$ and $v$ are in $V'$. Define the random
+		variable $X$ to be the number of edges in $E'$. What is the expected value of $X$?
+	]]>
+	</question>
+	<answer correct="false">$m/2$</answer>
+	<answer correct="true">$m/4$</answer>
+	<answer correct="false">$m/8$</answer>
+	<answer correct="false">$m/16$</answer>
+</multiple-choice>

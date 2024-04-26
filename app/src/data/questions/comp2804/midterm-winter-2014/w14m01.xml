@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		On a table, you see three types of fruit: apples, bananas, and oranges. There are $m \geq 2$ apples,
+		$n \geq 2$ bananas, and $k \geq 2$ oranges. How many ways are there to choose 7 pieces of fruit, if
+		you must take at least two pieces of each type?
+	]]>
+	</question>
+	<answer correct="false">${m + n + k \choose 7} - (m + n + k)$</answer>
+	<answer correct="false">${m + n + k \choose 7} - {m \choose 2} - {n \choose 2} - {k \choose 2}$</answer>
+	<answer correct="true">
+		${m \choose 3}{n \choose 2}{k \choose 2} + {m \choose 2}{n \choose 3}{k \choose 2} + {m \choose 2}{n \choose 2}{k \choose 3}$
+	</answer>
+	<answer correct="false">${m \choose 2}{n \choose 2}{k \choose 2}(m + n + k)$</answer>
+</multiple-choice>

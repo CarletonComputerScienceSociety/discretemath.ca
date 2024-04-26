@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You flip a fair coin 5 times; the flips are independent of each other. What is the probability that
+		in these 5 coin flips, the coin comes up heads an odd number of times?
+	]]>
+	</question>
+	<answer correct="false">2/3</answer>
+	<answer correct="true">1/2</answer>
+	<answer correct="false">1/3</answer>
+	<answer correct="false">1/4</answer>
+</multiple-choice>

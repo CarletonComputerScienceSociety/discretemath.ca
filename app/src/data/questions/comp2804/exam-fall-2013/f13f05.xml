@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		Let $S$ be a set of size 37, and let $x$ and $y$ be two distinct elements of $S$. How many subsets
+		of $S$ are there that contain $x$ but do not contain $y$?
+	]]>
+	<option correct="true">$2^{35}$</option>
+	<option correct="false">$2^{36}$</option>
+	<option correct="false">$2^{37} - 2^{35}$</option>
+	<option correct="false">$2^{35} + 2^{36}$</option>
+</question>

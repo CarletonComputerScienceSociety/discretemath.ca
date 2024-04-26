@@ -1,0 +1,21 @@
+<multiple-choice>
+	<question><![CDATA[
+		You are given a fair 6-sided red die and a fair 6-sided blue die. Consider the following experiment:
+		
+		<p style="margin-top: 0.5rem;">
+			Experiment: Roll each die once and take the sum of the two rolls. You repeat this experiment until
+			the sum of the two rolls is equal to 7. Consider the random variable
+		</p>
+		
+		[defs]
+		  X = the number of times you do the experiment.
+		[/defs]
+		
+		(This value $X$ includes the experiment in which the sum is 7 for the first time.) <br>
+		What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+	]]></question>
+	<answer correct="true">6</answer>
+	<answer correct="false">5</answer>
+	<answer correct="false">4</answer>
+	<answer correct="false">3</answer>
+</multiple-choice>

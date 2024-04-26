@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the number of bitstrings of length $n$ that contain 00 or 11?
+	]]>
+	</question>
+	<answer correct="false">$2 \cdot (n-1) \cdot 2^{n-2}$</answer>
+	<answer correct="false">$2 \cdot n \cdot 2^{n-1}$</answer>
+	<answer correct="false">$2^n - 4$</answer>
+	<answer correct="true">$2^n - 2$</answer>
+</multiple-choice>

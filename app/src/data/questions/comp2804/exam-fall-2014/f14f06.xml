@@ -1,0 +1,23 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In a group of 100 students,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				40 like 8:30am classes,
+			</li>
+			<li>
+				30 like the course COMP 2804,
+			</li>
+			<li>
+				50 do not like 8:30am classes and do not like the course COMP 2804.
+			</li>
+		</ul>
+		How many students in this group like 8:30am classes and like the course COMP 2804?
+	]]>
+	</question>
+	<answer correct="false">10</answer>
+	<answer correct="true">20</answer>
+	<answer correct="false">30</answer>
+	<answer correct="false">40</answer>
+</multiple-choice>

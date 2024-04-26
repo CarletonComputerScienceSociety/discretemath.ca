@@ -1,0 +1,30 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The Carleton Computer Science Society (CCSS) is organizing their annual Saint Patrick's Day party.
+		The CCSS has bought three types of drinks:
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				Porterhouse Brewing Co. Oyster Stout,
+			</li>
+			<li>
+				Guinness Extra Stout,
+			</li>
+			<li>
+				Magners Original Irish Cider.
+			</li>
+		</ul>
+		There is an unlimited supply for each of these types. <br>
+		There are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. <br>
+		Let $A$ be the event
+		[defs]
+		  A = "exactly 50 students get Magners Original Irish Cider".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="true">$\frac{{ 75 \choose 50 } \cdot 2^{25}}{3^{75}}$</answer>
+	<answer correct="false">$\frac{3^{75}}{{75 \choose 50} \cdot 2^{25}}$</answer>
+	<answer correct="false">$\frac{75 \choose 50}{3^{75}}$</answer>
+	<answer correct="false">$\frac{{75 \choose 50} \cdot 3^{25}}{3^{75}}$</answer>
+</multiple-choice>

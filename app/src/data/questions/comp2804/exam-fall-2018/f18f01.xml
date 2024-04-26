@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of length 70, in which each character is one of the letters $a,b,c$. How many
+		such strings have exactly 1 letter $c$?
+	]]>
+	</question>
+	<answer correct="true">$70 \cdot 2^{69}$</answer>
+	<answer correct="false">$70 \cdot 3^{69}$</answer>
+	<answer correct="false">$70 \cdot 2^{70}$</answer>
+	<answer correct="false">$70 \cdot 3^{70}$</answer>
+</multiple-choice>

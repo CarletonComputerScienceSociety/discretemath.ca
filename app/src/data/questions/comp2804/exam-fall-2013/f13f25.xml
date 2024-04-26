@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		True or false: If $X$ and $Y$ are random variables, then $E(X+Y) = E(X) + E(Y)$, even if $X$ and $Y$
+		are not independent.
+	]]>
+	<option correct="true">True</option>
+	<option correct="false">False</option>
+</question>

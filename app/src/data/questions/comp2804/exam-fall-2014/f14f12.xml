@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A bowl contains 5 blue balls, 4 red balls, and 6 green balls. We choose 2 balls uniformly at random.
+		What is the probability that these 2 balls have the same color?
+	]]>
+	</question>
+	<answer correct="true">$\frac{{5 \choose 2} + {4 \choose 2} + {6 \choose 2}}{{15 \choose 2}}$</answer>
+	<answer correct="false">$\frac{{15 \choose 2}}{{5 \choose 2} + {4 \choose 2} + {6 \choose 2}}$</answer>
+	<answer correct="false">$\frac{{5 \choose 2}{4 \choose 2}{6 \choose 2}}{{15 \choose 2}}$</answer>
+	<answer correct="false">$\frac{{15 \choose 2}}{{5 \choose 2}{4 \choose 2}{6 \choose 2}}$</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 7$ be an integer and consider strings of length $n$ consisting of the characters $a$, $b$,
+		$c$, and $d$. How many such strings are there that start with $abc$ or end with $dddd$?
+	]]>
+	</question>
+	<answer correct="false">$4^{n-3} + 4^{n-4}$</answer>
+	<answer correct="true">$4^{n-3} + 4^{n-4} - 4^{n-7}$</answer>
+	<answer correct="false">$2 \cdot 4^{n-3} - 4^{n-7}$</answer>
+	<answer correct="false">$2 \cdot 4^{n-4} - 4^{n-7}$</answer>
+</multiple-choice>

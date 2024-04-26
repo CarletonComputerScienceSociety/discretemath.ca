@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+		$$
+			\begin{align}
+			f(0) &= 7 \\
+			f(n) &= f(n - 1) + 10n - 6\; \ \mathrm{for}\ n \geq 1
+			\end{align}
+		$$
+		What is $f(n)$?
+	]]>
+	</question>
+	<answer correct="false">$f(n) = 4n^2 - 2n + 7$</answer>
+	<answer correct="false">$f(n) = 4n^2 - n + 7$</answer>
+	<answer correct="false">$f(n) = 5n^2 - 2n + 7$</answer>
+	<answer correct="true">$f(n) = 5n^2 - n + 7$</answer>
+</multiple-choice>

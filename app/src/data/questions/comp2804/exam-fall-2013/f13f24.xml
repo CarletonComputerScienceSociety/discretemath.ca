@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		Let $X$ be a random variable with probability distribution $\Pr(X=0) = 1/2$, $\Pr(X=1) = 1/12$,
+		$\Pr(X=2) = 1/4$, $\Pr(X=3) = 1/6$. What is the expected value $E(X)$ of $X$?
+	]]>
+	<option correct="false">3/2</option>
+	<option correct="false">12/13</option>
+	<option correct="true">13/12</option>
+	<option correct="false">3</option>
+</question>

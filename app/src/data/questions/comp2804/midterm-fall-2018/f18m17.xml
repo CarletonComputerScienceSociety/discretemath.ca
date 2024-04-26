@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		This midterm has 17 questions. For each question, four options are given. Assume that you answer each
+		question, by choosing one of the four options uniformly at random. <br>
+		
+		Define the event
+		[defs]
+		  A = "you answer exactly 7 questions correctly".
+		[/defs]
+		What $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="true">$\frac{{17 \choose 7} \cdot 3^{10}}{4^{17}}$</answer>
+	<answer correct="false">$\frac{{17 \choose 7} \cdot 2^{10}}{4^{17}}$</answer>
+	<answer correct="false">$\frac{{17 \choose 7}}{4^{17}}$</answer>
+	<answer correct="false">$\frac{4^{17}}{{17 \choose 7}}$</answer>
+</multiple-choice>

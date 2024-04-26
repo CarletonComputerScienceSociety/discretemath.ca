@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		How many bitstrings of length 33 are there that start with 1010, end with 0101, and contain exactly
+		11 zeros?
+	]]>
+	<option correct="true">${25 \choose 7}$</option>
+	<option correct="false">${33 \choose 7} - 2^8$</option>
+	<option correct="false">${33 \choose 7} - 2 \cdot 2^4$</option>
+	<option correct="false">none of the above.</option>
+</question>

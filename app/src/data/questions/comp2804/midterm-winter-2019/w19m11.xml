@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is recursively defined as follows:
+		$$
+			\begin{align}
+			f(0) &= 6, \\
+			f(n) &= 4 \cdot f(n-1) + 2^{n} \ \ \mathrm{if}\ n \geq 1.
+			\end{align}
+		$$
+		Which of the following is true for all integers $n \geq 0$?
+	]]>
+	</question>
+	<answer correct="false">$f(n) = 6 \cdot 4^{n} - 2^{n}$</answer>
+	<answer correct="true">$f(n) = 7 \cdot 4^{n} - 2^{n}$</answer>
+	<answer correct="false">$f(n) = 8 \cdot 4^{n} - 2^{n+1}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You roll a fair die 18 times; the rolls are independent of each other. What is the probability that
+		you roll a 5 exactly three times?
+	]]>
+	</question>
+	<answer correct="false">${18 \choose 3} \cdot \left(5 \middle/ 6 \right)^{18}$</answer>
+	<answer correct="false">$18 \cdot \left. 5^{15} \middle/ 6^{18} \right.$</answer>
+	<answer correct="true">${18 \choose 3} \cdot \left. 5^{15} \middle/ 6^{18} \right.$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings of length 99 consisting of the characters $a$, $b$, and $c$. How many such strings
+		are there that start with $abc$ or end with $bbb$?
+	]]>
+	</question>
+	<answer correct="false">$3^{96} + 3^{96}$</answer>
+	<answer correct="false">$3^{99} - 2 \cdot 3^{96}$</answer>
+	<answer correct="true">$2 \cdot 3^{96} - 3^{93}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

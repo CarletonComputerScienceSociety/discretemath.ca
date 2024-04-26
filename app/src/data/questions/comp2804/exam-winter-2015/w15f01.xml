@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a set $S$ consisting of 20 integers; 5 of these are even and the other 15 integers in $S$
+		are odd. What is the number of 7-element subsets of $S$ having exactly 3 even integers?
+	]]>
+	</question>
+	<answer correct="false">${20 \choose 7}$</answer>
+	<answer correct="false">${5\choose 3} + {15 \choose 4}$</answer>
+	<answer correct="true">${5 \choose 3}{15 \choose 4}$</answer>
+	<answer correct="false">${5 \choose 4}{15 \choose 3}$</answer>
+</multiple-choice>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		Consider the following recursive function:
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$f(0)$</td>
+					<td>$\;=\;$</td>
+					<td>$7,$</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;">$f(n + 1)$</td>
+					<td>$\;=\;$</td>
+					<td>$f(n) + 6n + 1\; \ \text{for all}$ $\text{integers}\ n \geq 0.$</td>
+				</tr>
+			</tbody>
+		</table>
+		Which of the following is true?
+	]]>
+	<option correct="false">for all $n \geq 0$: $f(n) = 2n^2 + 2n + 7$</option>
+	<option correct="false">for all $n \geq 0$: $f(n) = 3n^2 + 2n + 7$</option>
+	<option correct="false">for all $n \geq 0$: $f(n) = 2n^2 - 2n + 7$</option>
+	<option correct="true">for all $n \geq 0$: $f(n) = 3n^2 - 2n + 7$</option>
+</question>

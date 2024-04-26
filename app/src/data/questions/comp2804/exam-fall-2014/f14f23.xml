@@ -1,0 +1,37 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		<div hidden>
+			$\newcommand{\ThreeHeadsOrThreeTails}{{\rm T {\scriptsize HREE} H {\scriptsize EADS} O {\scriptsize R} T {\scriptsize HREE} T {\scriptsize AILS}}}$
+		</div>
+		
+		Consider the following recursive algorithm $\ThreeHeadsOrThreeTails$, which takes as input a positive integer $k$:
+		
+		<div style="margin: 1rem 0;">
+			$\mathbf{Algorithm}$ $\ThreeHeadsOrThreeTails(k)\mathrm{:}$ <br>
+			<table>
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$//$</td>
+						<td>
+							$\text{all coin flips made}$ $\text{are mutually independent}$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			$\text{flip a fair coin three times};$ <br>
+			$\mathbf{if}\ \text{the result is \(HHH\) or \(TTT\)}$ <br>
+			$\mathbf{then}\ \mathrm{return}\ k$ <br>
+			$\mathbf{else}\ \ThreeHeadsOrThreeTails(k + 1)$ <br>
+			$\mathbf{endif}$
+		</div>
+		
+		You run algorithm $\ThreeHeadsOrThreeTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the output
+		of this algorithm. What is the expected value of $X$?
+	]]>
+	</question>
+	<answer correct="false">2</answer>
+	<answer correct="false">3</answer>
+	<answer correct="true">4</answer>
+	<answer correct="false">5</answer>
+</multiple-choice>

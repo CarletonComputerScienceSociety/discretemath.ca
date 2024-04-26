@@ -1,0 +1,10 @@
+<multiple-choice>
+	<question>
+		Continuing from the previous question, what is the probability that Nika has not practiced on any of the
+		actual exam questions?
+	</question>
+	<answer correct="false">0</answer>
+	<answer correct="true">$\left. {225 \choose 50} \middle/ {250 \choose 50} \right.$</answer>
+	<answer correct="false">$\left. {225 \choose 25} \middle/ {250 \choose 50} \right.$</answer>
+	<answer correct="false">$\left. {225 \choose 25} \middle/ {225 \choose 50} \right.$</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We choose a subset of $\{1,2,3,4,5\}$ uniformly at random. What is the probability that this
+		subset has size 3?
+	]]>
+	</question>
+	<answer correct="false">4/16</answer>
+	<answer correct="false">4/32</answer>
+	<answer correct="true">5/16</answer>
+	<answer correct="false">5/32</answer>
+</multiple-choice>

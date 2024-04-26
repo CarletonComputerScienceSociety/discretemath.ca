@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In a standard deck of 52 cards, each card has a <em>suit</em> and a <em>rank</em>.
+		There are four suits (spades ♠, hearts ♡, clubs ♣, and diamonds ♢),
+		and 13 ranks (Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, and King). <br>
+		Assume you get a uniformly random hand consisting of 5 cards. What is the probability that the 5
+		cards in this hand are all of the same suit?
+	]]>
+	</question>
+	<answer correct="false">$\left. {13 \choose 5} \middle/ {52 \choose 5} \right.$</answer>
+	<answer correct="false">$\left. {52 \choose 5} \middle/ {13 \choose 5} \right.$</answer>
+	<answer correct="true">$4 \cdot \left. {13 \choose 5} \middle/ {52 \choose 5} \right.$</answer>
+	<answer correct="false">$4 \cdot \left. {52 \choose 5} \middle/ {13 \choose 5} \right.$</answer>
+</multiple-choice>

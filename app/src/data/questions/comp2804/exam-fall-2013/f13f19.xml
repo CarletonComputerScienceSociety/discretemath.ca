@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		A jar contains 7 red balls and 9 blue balls. We choose, uniformly at random and without replacement,
+		3 balls. Define the following two events:
+		[defs]
+			A = "exactly 2 of the balls are red"
+			B = "the number of red balls is even"
+		[/defs]
+		What is the conditional probability $\Pr(A|B)$? (Recall that 0 is even.)
+	]]>
+	<option correct="false">$\frac{{9 \choose 3} + 9 \cdot {7 \choose 2}}{9 \cdot {7 \choose 2}}$</option>
+	<option correct="false">$\frac{9 \cdot {7 \choose 2}}{{16 \choose 3}}$</option>
+	<option correct="false">$\frac{{9 \choose 3} + 9 \cdot {7 \choose 2}}{{16 \choose 3}}$</option>
+	<option correct="true">$\frac{9 \cdot {7 \choose 2}}{{9 \choose 3} + 9 \cdot {7 \choose 2}}$</option>
+</question>

@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 3$ be an integer and let $S$ be a set consisting of $n$ elements. How many ordered
+		triples $(A, B, C)$ are there for which $A \subseteq S$, $B \subseteq S$, $C \subseteq S$, and $A$, $B$,
+		and $C$ are pairwise disjoint?
+	]]>
+	</question>
+	<answer correct="false">$2^n$</answer>
+	<answer correct="false">$3^n$</answer>
+	<answer correct="true">$4^n$</answer>
+	<answer correct="false">$5^n$</answer>
+</multiple-choice>

@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Annie, Boris, and Charlie have random and independent birthdays. (We ignore leap years, so that a
+		year has 365 days.) What is the probability that Annie, Boris, and Charlie have the same birthday?
+	]]>
+	</question>
+	<answer correct="false">$\frac{1}{364 \cdot 365}$</answer>
+	<answer correct="true">$\frac{1}{365^2}$</answer>
+	<answer correct="false">$\frac{365}{364^{2}}$</answer>
+	<answer correct="false">$\frac{1}{365^{3}}$</answer>
+</multiple-choice>

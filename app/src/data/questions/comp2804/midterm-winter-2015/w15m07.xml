@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the minimum number of people needed so that we can guarantee that at least three of them
+		have the same birthday? (We ignore leap years; thus, a year has 365 days.)
+	]]>
+	</question>
+	<answer correct="false">$365^2$</answer>
+	<answer correct="false">$365^2 + 1$</answer>
+	<answer correct="false">$2 \cdot 365$</answer>
+	<answer correct="true">$2 \cdot 365 + 1$</answer>
+</multiple-choice>

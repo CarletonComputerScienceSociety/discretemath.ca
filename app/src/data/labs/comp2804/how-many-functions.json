@@ -1,0 +1,9 @@
+{
+  "id": "how-many-functions",
+  "title": "Practice 'How Many Functions' Problems",
+  "factories": [
+    "HowManyFunctions",
+    "HowManyNonOneToOneFunctions",
+    "HowManyOneToOneFunctions"
+  ]
+}

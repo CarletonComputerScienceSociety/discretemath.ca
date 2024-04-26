@@ -1,0 +1,66 @@
+---
+import CourseLayout from "../layouts/CourseLayout.astro";
+import { Repository } from "../data";
+import Graph from "../apps/Graphs/Graph.svelte";
+import { ContentCard } from "../components";
+
+export function getStaticPaths() {
+  return [
+    { params: { course: "comp1805" } },
+    { params: { course: "comp2804" } },
+  ];
+}
+
+const { course } = Astro.params;
+const data = new Repository().fetchCourse(course);
+---
+
+<CourseLayout>
+  <div>
+    <h1>{data.code}: {data.title}</h1>
+    <p>{data.description}</p>
+    <!-- TODO: remove base link -->
+    <div class="course-page__content-cards">
+      {data.tests.map((test) => (
+        <a href={`/discretemath.ca/${data.id}/tests/${test.id}`}>
+          <ContentCard title={test.title} tag={"Test"} />
+        </a>
+      ))}
+    </div>
+    <h3>Labs:</h3>
+    <div class="course-page__content-cards">
+      {data.labs.map((lab) => (
+        <a href={`/discretemath.ca/${data.id}/labs/${lab.id}`}>
+          <ContentCard title={lab.title} tag={"Lab"} />
+        </a>
+      ))}
+    </div>
+    <br />
+    <h3>Temporary Graph Demo:</h3>
+    <Graph client:load />
+  </div>
+</CourseLayout>
+
+<style lang="scss">
+  .course-page__content-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h1 {
+    font-family: Arial;
+  }
+
+  h3 {
+    font-family: Arial;
+  }
+
+  p {
+    font-family: Arial;
+  }
+</style>

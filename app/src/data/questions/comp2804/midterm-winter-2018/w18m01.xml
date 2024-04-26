@@ -1,0 +1,22 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings consisting of 12 characters, where each character is an element of the set $\{a,b,c,d,e\}$.
+		The positions in such strings are numbered as $1,2,3,\dots,12$. <br>
+		
+		How many such strings have the property that
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				each even position contains an element of $\{a,b,c\}$, and
+			</li>
+			<li>
+				each odd position contains an element of $\{d,e\}$?
+			</li>
+		</ul>
+	]]>
+	</question>
+	<answer correct="true">$6^6$</answer>
+	<answer correct="false">$5^{12}$</answer>
+	<answer correct="false">$6^3 \cdot 6^2$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

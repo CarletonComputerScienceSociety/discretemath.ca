@@ -1,0 +1,21 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given 20 beer bottles $B_1,B_2,\dots,B_{20}$ and 30 cider bottles $C_1,C_2,\dots,C_{30}$.
+		Assume you arrange these 50 bottles on a horizontal line such that
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				the leftmost 10 bottles are all beer bottles, and
+			</li>
+			<li>
+				the rightmost 10 bottles are all cider bottles.
+			</li>
+		</ul>
+		How many such arrangements are there? (The order of the bottles matters.)
+	]]>
+	</question>
+	<answer correct="false">${20 \choose 10} \cdot {30 \choose 10} \cdot 30!$</answer>
+	<answer correct="true">${20 \choose 10} \cdot 10! \cdot {30 \choose 10} \cdot 10! \cdot 30!$</answer>
+	<answer correct="false">${20 \choose 10} \cdot 10! \cdot {30 \choose 10} \cdot 10!$</answer>
+	<answer correct="false">$50!$</answer>
+</multiple-choice>

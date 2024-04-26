@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		This midterm has 17 questions. For each question, four options are given, exactly one of which is
+		correct. Assume that you answer each question, by choosing one of the four options uniformly at random. <br>
+		Let A be the event
+		[defs]
+		  A = "you answer at least 16 questions correctly".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{4^{17}}{52}$</answer>
+	<answer correct="false">$\frac{51}{4^{17}}$</answer>
+	<answer correct="false">$\frac{49}{4^{17}}$</answer>
+	<answer correct="true">$\frac{52}{4^{17}}$</answer>
+</multiple-choice>

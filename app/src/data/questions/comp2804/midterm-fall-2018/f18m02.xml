@@ -1,0 +1,20 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider bitstrings of length 9. The positions in these strings are numbered as $1,2,3,\dots,9$.
+		How many such bitstrings have the property that
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				the bit at each even position is 0, or
+			</li>
+			<li>
+				the bitstring starts with 1010?
+			</li>
+		</ul>
+	]]>
+	</question>
+	<answer correct="false">54</answer>
+	<answer correct="true">56</answer>
+	<answer correct="false">58</answer>
+	<answer correct="false">60</answer>
+</multiple-choice>

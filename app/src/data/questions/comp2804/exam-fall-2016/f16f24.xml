@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You repeatedly and independently roll a fair die until the result of the roll is divisible by 3.
+		Define the random variable $X$ to be the number of times you roll the die. For example, if the
+		results of the rolls are 4, 5, 1, 4, 3, then $X=5$. <br>
+		
+		What is the expected value $\mathbb{E}(X)$ of $X$?
+	]]>
+	</question>
+	<answer correct="false">2</answer>
+	<answer correct="true">3</answer>
+	<answer correct="false">4</answer>
+	<answer correct="false">5</answer>
+</multiple-choice>

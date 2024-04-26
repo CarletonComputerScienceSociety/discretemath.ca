@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+		Let $m \geq 2$ and $n \geq 2$ be integers. Why does the identity
+		$$
+			{m + n \choose 2} = {m \choose 2} + {n \choose 2} + mn
+		$$
+		hold?
+	</question>
+	<answer correct="false">
+		Because both sides count the number of ways $m$ men and $n$ women can be arranged on a line,
+		such that no two men are standing next to each other.
+	</answer>
+	<answer correct="false">Because both sides count the number of ordered pairs in a set of size $m + n$.</answer>
+	<answer correct="true">
+		Because both sides count the number of 2-element subsets of a set of size $m + n$.
+	</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

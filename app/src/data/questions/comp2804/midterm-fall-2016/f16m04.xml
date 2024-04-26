@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		For any integer $n \geq 3$, let $B_n$ be the number of bitstrings of length $n$ in which the first
+		three bits are not all equal. Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">$B_n = 2 \cdot 2^{n - 3}$</answer>
+	<answer correct="true">$B_n = 6 \cdot 2^{n - 3}$</answer>
+	<answer correct="false">$B_n = 2^n - 2$</answer>
+	<answer correct="false">$B_n = 2^n - 6$</answer>
+</multiple-choice>

@@ -1,0 +1,42 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You flip a fair red coin once, and you flip a fair blue coin once, independently of each other.
+		Define the random variables
+		
+		<!-- yes, i'm aware of the cases environment. the strings are sufficiently long i need them to word wrap on mobile -->
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td rowspan="2">$X = \bigg\{$</td>
+					<td>$1\ $</td>
+					<td>if the red coin flip resulted in heads$,$</td>
+				</tr>
+				<tr>
+					<td>$0\ $</td>
+					<td>if the red coin flip resulted in tails$,$</td>
+				</tr>
+				<tr>
+					<td rowspan="2">$Y = \bigg\{$</td>
+					<td>$1\ $</td>
+					<td>if the blue coin flip resulted in heads$,$</td>
+				</tr>
+				<tr>
+					<td>$0\ $</td>
+					<td>if the blue coin flip resulted in tails$,$</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		and
+		[defs]
+		  Z = $\min(X,Y).$
+		[/defs]
+		What is the expected value $\mathbb{E}(Z)$ of the random variable $Z$?
+	]]>
+	</question>
+	<answer correct="true">1/4</answer>
+	<answer correct="false">1/2</answer>
+	<answer correct="false">3/4</answer>
+	<answer correct="false">1</answer>
+</multiple-choice>

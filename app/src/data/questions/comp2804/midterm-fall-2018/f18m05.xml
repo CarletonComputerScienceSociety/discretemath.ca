@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider the equation
+		$$
+			x_1 + x_2 + x_3 + x_4 + x_5 = 17.
+		$$
+		How many solutions $(x_1, x_2, x_3, x_4, x_5)$ does this equation have, where
+		$x_1 \geq 0$, $x_2 \geq 0$, $x_3 \geq 0$, $x_4 \geq 0$, and $x_5 \geq 0$ are all integers?
+	]]>
+	</question>
+	<answer correct="false">${22 \choose 5}$</answer>
+	<answer correct="false">${22 \choose 4}$</answer>
+	<answer correct="false">${21 \choose 5}$</answer>
+	<answer correct="true">${21 \choose 4}$</answer>
+</multiple-choice>

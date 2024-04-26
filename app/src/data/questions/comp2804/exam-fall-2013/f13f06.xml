@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		How many bitstrings of length 6 start with 10 or end with 01?
+	]]>
+	<option correct="true">28</option>
+	<option correct="false">30</option>
+	<option correct="false">32</option>
+	<option correct="false">34</option>
+</question>

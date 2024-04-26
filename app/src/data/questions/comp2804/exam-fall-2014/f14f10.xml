@@ -1,0 +1,24 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider the following recursive function:
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$f(0) = $</td>
+					<td>$-17,$</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;">$f(n) = $</td>
+					<td>$f(n - 1) + 8n - 2\; \ \text{for all}$ $\text{integers}\ n \geq 1.$</td>
+				</tr>
+			</tbody>
+		</table>
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">for all $n \geq 0$: $f(n) = 3n^{2} - n - 17$</answer>
+	<answer correct="false">for all $n \geq 0$: $f(n) = 3n^{2} + n - 17$</answer>
+	<answer correct="false">for all $n \geq 0$: $f(n) = 4n^{2} - 2n - 17$</answer>
+	<answer correct="true">for all $n \geq 0$: $f(n) = 4n^{2} + 2n - 17$</answer>
+</multiple-choice>

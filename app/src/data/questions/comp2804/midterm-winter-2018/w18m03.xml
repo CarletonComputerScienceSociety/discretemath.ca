@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings consisting of 12 characters, where each character is an element of the set $\{a,b,c,d,e\}$.
+		The positions in such strings are numbered as $1,2,3,\dots,12$. <br>
+		
+		How many such strings contain at least two $a$'s?
+	]]>
+	</question>
+	<answer correct="true">$5^{12} - 4^{12} - 12 \cdot 4^{11}$</answer>
+	<answer correct="false">$5^{12} - 4^{12} - 12 \cdot 4^{12}$</answer>
+	<answer correct="false">$12^{5} - 12^{4} - 12 \cdot 11^{4}$</answer>
+	<answer correct="false">$12^{5} - 12^{4} - 12 \cdot 12^{4}$</answer>
+</multiple-choice>

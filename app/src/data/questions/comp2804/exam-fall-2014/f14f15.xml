@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A bowl contains 5 blue balls and 4 red balls. We choose 2 balls uniformly at random. Define the
+		events
+		[defs]
+		  A = "both balls are red",
+		  B = "both balls have the same color".
+		[/defs]
+		What is the conditional probability $\Pr(A|B)$?
+	]]>
+	</question>
+	<answer correct="true">$\frac{{4 \choose 2}}{{5 \choose 2} + {4 \choose 2}}$</answer>
+	<answer correct="false">$\frac{{5 \choose 2} + {4 \choose 2}}{{4 \choose 2}}$</answer>
+	<answer correct="false">$\frac{{4 \choose 2}}{{9 \choose 2}}$</answer>
+	<answer correct="false">$\frac{{4 \choose 2}}{{5 \choose 2}{4 \choose 2}}$</answer>
+</multiple-choice>

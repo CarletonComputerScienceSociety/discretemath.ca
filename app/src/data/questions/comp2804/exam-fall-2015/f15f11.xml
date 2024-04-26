@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Nick gets 75 bananas for his birthday. He decides to eat them all over a period of 5 days. In order
+		to do this, Nick makes a banana-schedule, which specifies the number of bananas he is going to eat
+		on the first day, on the second day, etc., up to the fifth day. For example, (20, 20, 10, 20, 5),
+		(40, 13, 0, 20, 2), and (40, 13, 20, 2, 0) are three different banana-schedules. What is the
+		total number of banana-schedules?
+	]]>
+	</question>
+	<answer correct="true">${79 \choose 4}$</answer>
+	<answer correct="false">${79 \choose 5}$</answer>
+	<answer correct="false">${80 \choose 4}$</answer>
+	<answer correct="false">${80 \choose 5}$</answer>
+</multiple-choice>

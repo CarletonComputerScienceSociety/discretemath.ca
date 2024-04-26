@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You roll a fair red die and a fair blue die, independently of each other. Let $r$ be the result of
+		the red die and let $b$ be the result of the blue die. Define the events
+		[defs]
+		  A = "$r + b = 6$",
+		  B = "$b = 4$".
+		[/defs]
+		What is $\Pr(B|A)$?
+	]]>
+	</question>
+	<answer correct="false">1/3</answer>
+	<answer correct="false">1/4</answer>
+	<answer correct="true">1/5</answer>
+	<answer correct="false">1/6</answer>
+</multiple-choice>

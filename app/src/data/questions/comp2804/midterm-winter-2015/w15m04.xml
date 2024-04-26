@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings consisting of the characters $a$, $b$, and $c$. Such a string is called <em>valid</em>,
+		if no two consecutive characters are equal. Thus, $abacbac$ is valid, whereas $abaccac$ is not
+		valid. <br>
+		
+		Let $n \geq 1$ be an integer and let $V_n$ be the number of valid strings of length $n$. Which of
+		the following is true?
+	]]>
+	</question>
+	<answer correct="true">$V_n = 3 \cdot 2^{n-1}$</answer>
+	<answer correct="false">$V_n = 3^n - (n - 1) \cdot 3$</answer>
+	<answer correct="false">$V_n = 3^n - (n - 1) \cdot 3 \cdot 3^{n-2}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

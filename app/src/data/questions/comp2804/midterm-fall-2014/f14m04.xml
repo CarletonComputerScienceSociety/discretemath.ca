@@ -1,0 +1,25 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider 12 boys, 17 girls, and 25 dogs. How many ways are there to arrange them on a line if
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				all boys stand next to each other,
+			</li>
+			<li>
+				all girls stand next to each other,
+			</li>
+			<li>
+				all dogs stand next to each other,
+			</li>
+			<li>
+				none of the boys are standing next to any of the girls.
+			</li>
+		</ul>
+	]]>
+	</question>
+	<answer correct="false">$12! + 17! + 25!$</answer>
+	<answer correct="false">$2(12! + 17! + 25!)$</answer>
+	<answer correct="false">$(12!)(17!)(25!)$</answer>
+	<answer correct="true">$2(12!)(17!)(25!)$</answer>
+</multiple-choice>

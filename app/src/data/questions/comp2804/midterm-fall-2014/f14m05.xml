@@ -1,0 +1,10 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Is the following true or false? In any group of 900 people, there must be at least three people that
+		have the same birthday.
+	]]>
+	</question>
+	<answer correct="true">True</answer>
+	<answer correct="false">False</answer>
+</multiple-choice>

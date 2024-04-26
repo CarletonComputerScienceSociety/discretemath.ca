@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		I flip two fair and independent coins. If the first coin comes up tails, you lose \$1 (i.e., you win -\$1).
+		If the second coin comes up heads, you win \$2. (Thus, if the first coin comes up tails and the second coin
+		comes up heads, you win \$1.) Define the random variable $X$ to be the amount of dollars that you win. 
+		What is the expected value of $X$?
+	]]>
+	</question>
+	<answer correct="false">2</answer>
+	<answer correct="false">1</answer>
+	<answer correct="false">1/4</answer>
+	<answer correct="true">1/2</answer>
+</multiple-choice>

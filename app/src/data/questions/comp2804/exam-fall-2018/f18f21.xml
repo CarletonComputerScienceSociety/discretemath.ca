@@ -1,0 +1,29 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You are given two independent random variables $X$ and $Y$, where
+		
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$\Pr(X = 0)$</td>
+					<td>
+						$= \Pr(X = 1) = \Pr(Y = 0)$
+						$= \Pr(Y = 1) = 1/2.$
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		Define the random variable
+		$$
+			Z = (X + Y)\ \mathrm{mod}\ 2.
+		$$
+		Which of the following is correct?
+	]]>
+	</question>
+	<answer correct="true">The random variables $X$ and $Z$ are independent.</answer>
+	<answer correct="false">The random variables $X$ and $Z$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+	<answer correct="false">All of the above.</answer>
+</multiple-choice>

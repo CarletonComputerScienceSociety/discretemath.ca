@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $B_n$ be the number of bitstrings of length $n$ that do not contain 1111. Which of the following
+		is true?
+	]]>
+	</question>
+	<answer correct="false">$B_n = B_{n-1} + B_{n-2} + B_{n-3}$</answer>
+	<answer correct="true">$B_n = B_{n-1} + B_{n-2} + B_{n-3} + B_{n-4}$</answer>
+	<answer correct="false">$B_n = 2^{n} - 2^{n-4}$</answer>
+	<answer correct="false">$B_n = 2^{n} - (n-3) \cdot 2^{n-4}$</answer>
+</multiple-choice>

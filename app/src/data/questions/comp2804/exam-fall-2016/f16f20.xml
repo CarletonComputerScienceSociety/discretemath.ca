@@ -1,0 +1,19 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 2$ be an integer and consider a group $P_1,P_2,\dots,P_n$ of $n$ people.
+		Each of these people has a uniformly random birthday, which is independent of the birthdays of the
+		other people. We ignore leap years; thus, the year has 365 days. <br>
+		
+		Define the random variable $X$ to be the number of unordered pairs $\{P_i,P_j\}$ of people that have
+		the same birthday. <br>
+		
+		What is the expected value $\mathbb{E}(X)$ of $X$? <br>
+		<em>Hint:</em> Use indicator random variables.
+	]]>
+	</question>
+	<answer correct="true">$\frac{1}{365} \cdot {n \choose 2}$</answer>
+	<answer correct="false">$\left( \frac{1}{365} \right)^2 \cdot {n \choose 2}$</answer>
+	<answer correct="false">$\frac{1}{365} \cdot n^2$</answer>
+	<answer correct="false">$\left( \frac{1}{365} \right)^2 \cdot n^2$</answer>
+</multiple-choice>

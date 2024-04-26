@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We flip a fair coin three times; these flips are independent of each other. These three coin flips
+		give us a sequence of length three, where each symbol is $H$ or $T$. Define the events
+		[defs]
+		  A = "the sequence contains at most one $T$",
+		  B = "the symbols in the sequence are not all equal".
+		[/defs]
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="true">The events $A$ and $B$ are independent.</answer>
+	<answer correct="false">The events $A$ and $B$ are not independent.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

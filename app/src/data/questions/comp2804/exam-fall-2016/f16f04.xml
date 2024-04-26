@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What does $2^{n} - 1 - n - {n \choose 2}$ count?
+	]]>
+	</question>
+	<answer correct="false">The number of bitstrings of length $n$ that have at least two 1's.</answer>
+	<answer correct="false">The number of bitstrings of length $n$ that have at most two 1's.</answer>
+	<answer correct="false">The number of subsets of a set of size $n$ that have size at least two.</answer>
+	<answer correct="true">The number of subsets of a set of size $n$ that have size at least three.</answer>
+</multiple-choice>

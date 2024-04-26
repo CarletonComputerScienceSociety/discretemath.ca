@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We flip a fair coin repeatedly and independently, resulting in a sequence of heads ($H$) and tails
+		($T$). We stop flipping the coin as soon as this sequence contains one $H$ or eight $T$s. What is
+		the probability that this sequence contains at most 7 $T$s?
+	]]>
+	</question>
+	<answer correct="false">$1 - (1/2)^{7}$</answer>
+	<answer correct="false">$\sum_{k=0}^{7} (1/2)^{k}$</answer>
+	<answer correct="true">$\sum_{k=0}^{7} (1/2)^{k+1}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

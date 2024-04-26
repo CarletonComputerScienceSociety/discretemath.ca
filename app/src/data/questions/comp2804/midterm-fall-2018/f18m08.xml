@@ -1,0 +1,17 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a set $\mathcal{B} = \{B_1,B_2,\dots,B_{13}\}$ of 13 beer bottles and a set
+		$\mathcal{C} = \{C_1,C_2,\dots,C_{12}\}$ of 12 cider bottles. <br>
+		
+		Consider subsets $X$ of $\mathcal{B} \cup \mathcal{C}$, such that $X$ consists of exactly 5 beer
+		bottles and all cider bottles in $X$ have an even index. <br>
+		
+		How many such subsets $X$ are there?
+	]]>
+	</question>
+	<answer correct="false">${12 \choose 5} \cdot 2^6$</answer>
+	<answer correct="false">${13 \choose 5} \cdot 2^5$</answer>
+	<answer correct="true">${13 \choose 5} \cdot 2^6$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

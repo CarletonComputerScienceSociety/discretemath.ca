@@ -1,0 +1,20 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		One of Lindsay and Simon is chosen uniformly at random. The person that is chosen wins \$100.
+		Define the random variables $L$ and $S$ as follows:
+		[defs]
+		  L = the amount that Lindsay wins
+		[/defs]
+		and
+		[defs]
+		  S = the amount that Simon wins.
+		[/defs]
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">$\mathbb{E}(L) = 50$ and $\mathbb{E}(\max(L,S)) = 50$.</answer>
+	<answer correct="false">$\mathbb{E}(L) = 100$ and $\mathbb{E}(\max(L,S)) = 100$.</answer>
+	<answer correct="true">$\mathbb{E}(L) = 50$ and $\mathbb{E}(\max(L,S)) = 100$.</answer>
+	<answer correct="false">$\mathbb{E}(L) = 100$ and $\mathbb{E}(\max(L,S)) = 50$.</answer>
+</multiple-choice>

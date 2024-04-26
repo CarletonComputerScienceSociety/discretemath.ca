@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+		You flip a fair coin 6 times; the flips are independent of each other.
+		What is the probability that in these 6 coin flips, the coin comes up heads exactly
+		3 times?
+	</question>
+	<answer correct="false">3/16</answer>
+	<answer correct="false">4/16</answer>
+	<answer correct="true">5/16</answer>
+	<answer correct="false">6/16</answer>
+</multiple-choice>

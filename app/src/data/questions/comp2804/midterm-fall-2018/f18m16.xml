@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Alexa, Tri, and Zoltan each have a uniformly random birthday. (We ignore leap years, so that one
+		year has 365 days.) <br>
+		
+		Define the event
+		[defs]
+		  A = "Alexa, Tri, and Zoltan have different birthdays".
+		[/defs]
+		What is $\text{Pr}(A)$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{365^2}{363 \cdot 364}$</answer>
+	<answer correct="false">$\frac{363^3}{362 \cdot 363 \cdot 364}$</answer>
+	<answer correct="true">$\frac{363 \cdot 364}{365^2}$</answer>
+	<answer correct="false">$\frac{362 \cdot 363 \cdot 364}{365^3}$</answer>
+</multiple-choice>

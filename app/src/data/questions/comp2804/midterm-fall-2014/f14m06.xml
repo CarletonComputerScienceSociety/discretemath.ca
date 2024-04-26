@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a square with sides of length 3. Assume this square contains 10 points. Which of the
+		following is true?
+	]]>
+	</question>
+	<answer correct="false">At least two of these $n$ points are at distance at most $1$.</answer>
+	<answer correct="false">At least two of these $n$ points are at distance at most $\left. 1 \middle/ \sqrt{2} \right.$.</answer>
+	<answer correct="true">At least two of these $n$ points are at distance at most $\sqrt{2}$.</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many strings can be obtained by rearranging the letters of the word
+		<p style="text-align: center;">
+			BOOKKEEPER
+		</p>
+	]]>
+	</question>
+	<answer correct="false">$2! \cdot 2! \cdot 3!$</answer>
+	<answer correct="true">${10 \choose 2} \cdot {8 \choose 2} \cdot {6 \choose 3} \cdot 3 \cdot 2$</answer>
+	<answer correct="false">${10 \choose 2} \cdot {8 \choose 2} \cdot {6 \choose 3} \cdot {3 \choose 2}$</answer>
+	<answer correct="false">${10 \choose 2} \cdot {8 \choose 2} \cdot {5 \choose 3} \cdot 3 \cdot 2$</answer>
+</multiple-choice>

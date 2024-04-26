@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider strings consisting of characters, where each character is an element of $\{a, b, c, d\}$.
+		Such a string is called <em>valid</em>, if it does not contain $aa$, it does not contain $bb$,
+		it does not contain $cc$, and it does not contain $dd$. <br>
+		
+		For any integer $n \geq 2$, what is the number of valid strings of length $n$?
+	]]>
+	</question>
+	<answer correct="false">$4^{n} - 4(n-1)$</answer>
+	<answer correct="false">$4^{n} - 4n$</answer>
+	<answer correct="false">$4 \cdot 3^{n}$</answer>
+	<answer correct="true">$4 \cdot 3^{n-1}$</answer>
+</multiple-choice>

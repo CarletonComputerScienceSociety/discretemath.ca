@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 3$ and $m \geq 3$ be integers. What does
+		$$
+		{n \choose 3} + {m \choose 3} + n \cdot {m \choose 2} + m \cdot {n \choose 2}
+		$$
+		count?
+	]]>
+	</question>
+	<answer correct="true">The number of subsets having size 3 of a set consisting of $n$ positive numbers and $m$ negative numbers.</answer>
+	<answer correct="false">The number of subsets having size at most 3 of a set consisting of $n$ positive numbers and $m$ negative numbers.</answer>
+	<answer correct="false">The number of subsets having size 2 or 3 of a set consisting of $n$ positive numbers and $m$ negative numbers.</answer>
+	<answer correct="false">The number of subsets having size 2 and 3 of a set consisting of $n$ positive numbers and $m$ negative numbers.</answer>
+</multiple-choice>

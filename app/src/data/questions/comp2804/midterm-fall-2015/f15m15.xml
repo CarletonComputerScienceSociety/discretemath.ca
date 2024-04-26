@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You flip a fair coin 7 times. Define the event
+		[defs]
+		  A = "the result of the first flip is equal to the result of the 7-th flip".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{2^5 + 2}{2^7}$</answer>
+	<answer correct="true">$1/2$</answer>
+	<answer correct="false">$1/3$</answer>
+	<answer correct="false">$1/4$</answer>
+</multiple-choice>

@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The number of different strings that can be made by reordering the 10 letters of the word AAABBCCCCC is
+	]]>
+	</question>
+	<answer correct="false">$10!$</answer>
+	<answer correct="true">$\frac{10!}{2!3!5!}$</answer>
+	<answer correct="false">${10 \choose 3}{10 \choose 2}{10 \choose 5}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

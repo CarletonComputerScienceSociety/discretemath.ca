@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		Consider a multiple choice exam with 100 questions, in which for each question, four options are
+		given to choose from. You answer each question by choosing an answer uniformly at random, and
+		independently of the other answers. What is the expected number of correct answers?
+	]]>
+	<option correct="false">$\sum_{k=0}^{100} (1/4)^{k}(3/4)^{100-k}$</option>
+	<option correct="false">$\sum_{k=0}^{100} k(1/4)^{k}(3/4)^{100-k}$</option>
+	<option correct="false">$\sum_{k=0}^{100} {100 \choose k}(1/4)^{k}(3/4)^{100-k}$</option>
+	<option correct="true">$\sum_{k=0}^{100} k{100 \choose k}(1/4)^{k}(3/4)^{100-k}$</option>
+</question>

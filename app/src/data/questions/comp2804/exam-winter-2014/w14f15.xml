@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We roll two fair and independent dice. Define the events
+		[defs]
+		  A = "at least one of the dice shows a 3",
+		  B = "the sum of the dice is 5".
+		[/defs]
+		What is the conditional probability $\Pr(A|B)$?
+	]]>
+	</question>
+	<answer correct="true">1/2</answer>
+	<answer correct="false">1/4</answer>
+	<answer correct="false">1/8</answer>
+	<answer correct="false">1/9</answer>
+</multiple-choice>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		A group of $n \geq 3$ people is sitting at a round table, so that each person has two neighbors, one
+		clockwise neighbor and one counter clockwise neighbor. Each person flips a fair and independent
+		coin. A person starts singing if and only if (i) his coin comes up heads, (ii) the coin of his
+		clockwise neighbor comes up tails, and (iii) the coin of his counter clockwise neighbor comes up
+		tails. Let $X$ be the random variable whose value is the number of people that are singing. What is
+		the expected value $E(X)$ of $X$?
+	]]>
+	<option correct="false">$n/2$</option>
+	<option correct="false">$n/3$</option>
+	<option correct="false">$n/4$</option>
+	<option correct="true">$n/8$</option>
+</question>

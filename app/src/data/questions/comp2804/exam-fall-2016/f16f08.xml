@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider the following recursive function:
+		[defs]
+		  f(0) = $1$,
+		  f(n) = $\frac{5}{n} \cdot f(n - 1)\; \ \text{for all}$ $\mathrm{integers}\ n \geq 1$.
+		[/defs]
+		Which of the following is true for all $n \geq 0$?
+	]]>
+	</question>
+	<answer correct="false">$f(n) = \frac{5}{n!}$</answer>
+	<answer correct="true">$f(n) = \frac{5^{n}}{n!}$</answer>
+	<answer correct="false">$f(n) = \frac{5^{n}}{(n+1)!}$</answer>
+	<answer correct="false">$f(n) = \frac{5^{n+1}}{n!}$</answer>
+</multiple-choice>

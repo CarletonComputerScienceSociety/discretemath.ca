@@ -1,0 +1,30 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		<div hidden>
+			$\newcommand{\Hello}{{\rm H {\scriptsize ELLO}}}
+			 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+		</div>
+		
+		Consider the recursive algorithm $\Hello$, which takes as input an integer $n \geq 0$:
+		
+		<p>
+			$\mathbf{Algorithm}\ \Hello(n)\mathrm{:}$ <br>
+			$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+			$\mathbf{then}\ \text{print ``hello''}$ <br>
+			$\mathbf{else}\ \mathbf{if}\ n\ \mathrm{is}\ \mathrm{even}$ <br>
+			$\elsesp \mathbf{then}\ \Hello(n / 2)$ <br>
+			$\elsesp \mathbf{else}\ \Hello(n - 1);$ <br>
+			$\elsesp \elsesp \Hello(n - 2)$ <br>
+			$\elsesp \mathbf{endif};$ <br>
+			$\mathbf{endif}$
+		</p>
+		
+		If we run algorithm $\Hello(7)$, how many times is the word "hello" printed?
+	]]>
+	</question>
+	<answer correct="false">4</answer>
+	<answer correct="true">5</answer>
+	<answer correct="false">6</answer>
+	<answer correct="false">7</answer>
+</multiple-choice>

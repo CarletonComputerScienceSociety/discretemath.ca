@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a set $S$ consisting of 20 integers; 5 of them are even and the other 15 integers in $S$
+		are odd. What is the number of 7-element subsets of $S$ having at least 5 even integers or at least
+		5 odd integers?
+	]]>
+	</question>
+	<answer correct="true">
+		${5 \choose 5}{15 \choose 2} + {5 \choose 2}{15 \choose 5} + {5 \choose 1}{15 \choose 6} + {5 \choose 0}{15 \choose 7}$
+	</answer>
+	<answer correct="false">${5 \choose 5}{15 \choose 2} + {5 \choose 2}{15 \choose 5} - {5 \choose 5}{15 \choose 5}$</answer>
+	<answer correct="false">${20 \choose 7} - {5 \choose 4}{15 \choose 4}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

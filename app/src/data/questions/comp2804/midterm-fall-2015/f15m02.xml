@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $S$ be a set of 25 elements and let $x$, $y$, and $z$ be three distinct elements of $S$. What is
+		the number of subsets of $S$ that contain both $x$ and $y$, but do not contain $z$?
+	]]>
+	</question>
+	<answer correct="false">$2^{25} - 2^{22}$</answer>
+	<answer correct="false">$2^{25} - 2^{24} + 2^{23}$</answer>
+	<answer correct="true">$2^{22}$</answer>
+	<answer correct="false">$2^{23}$</answer>
+</multiple-choice>

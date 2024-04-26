@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a square with sides of length 17. This square contains $n$ points. What is the minimum
+		value of $n$ such that we can guarantee that at least two of these points have distance at most
+		$\left. 17 \middle/ \sqrt{2} \right.$?
+	]]>
+	</question>
+	<answer correct="false">4</answer>
+	<answer correct="true">5</answer>
+	<answer correct="false">6</answer>
+	<answer correct="false">7</answer>
+</multiple-choice>

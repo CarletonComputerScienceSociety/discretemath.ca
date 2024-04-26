@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We choose, uniformly at random, a string consisting of 14 characters, where each character is a
+		lowercase letter. Let $A$ be the event
+		[defs]
+		  A = "the string contains at least one vowel".
+		[/defs]
+		(A vowel is one of the letters $a$, $e$, $i$, $o$, and $u$.) What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="true">$1 - (21/26)^{14}$</answer>
+	<answer correct="false">$1 - (26/21)^{14}$</answer>
+	<answer correct="false">$5 \cdot (5/26) \cdot (21/26)^{13}$</answer>
+	<answer correct="false">$14 \cdot (5/26) \cdot (21/26)^{13}$</answer>
+</multiple-choice>

@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		A password consists of 10 characters, each character being a lowercase letter or a digit. A password
+		must contain at least one digit and at most three digits. How many passwords are there?
+	]]>
+	</question>
+	<answer correct="false">${10 \choose 1}26^9 + {10 \choose 2}26^8 + {10 \choose 3}26^7$</answer>
+	<answer correct="false">$10 \cdot 26^9 + 10^2 \cdot 26^8 + 10^3 \cdot 26^7$</answer>
+	<answer correct="true">
+		${10 \choose 1} \cdot 10 \cdot 26^9 + {10 \choose 2} \cdot 10^2 \cdot 26^8\ +$ $ {10 \choose 3} \cdot 10^3 \cdot 26^7$
+	</answer>
+	<answer correct="false">none of the above</answer>
+</multiple-choice>

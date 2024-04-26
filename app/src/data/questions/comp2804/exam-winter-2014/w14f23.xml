@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		We roll a pair of fair dice repeatedly and independently, and stop as soon as the sum of the numbers
+		for the pair is 7. Define the random variable $X$ to be the number of times we roll the dice. (In
+		one roll, we roll a pair of dice.) What is the expected value of $X$?
+	]]>
+	</question>
+	<answer correct="false">4</answer>
+	<answer correct="false">5</answer>
+	<answer correct="true">6</answer>
+	<answer correct="false">7</answer>
+</multiple-choice>

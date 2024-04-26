@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the coefficient of $x^{81}y^{7}$ in the expansion of $(3x-17y)^{88}$?
+	]]>
+	</question>
+	<answer correct="false">${88 \choose 7} \cdot 3^{81} \cdot 17^7$</answer>
+	<answer correct="true">$- {88 \choose 7} \cdot 3^{81} \cdot 17^7$</answer>
+	<answer correct="false">${88 \choose 7} \cdot 3^7 \cdot 17^{81}$</answer>
+	<answer correct="false">$- {88 \choose 7} \cdot 3^7 \cdot 17^{81}$</answer>
+</multiple-choice>

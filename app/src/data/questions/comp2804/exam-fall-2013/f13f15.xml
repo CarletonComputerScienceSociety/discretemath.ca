@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<question type="MultipleChoice">
+	<![CDATA[
+		Let $A = \{1,2,3,\dots,100\}$. We choose a uniform random element $x$ in $A$ and, independently,
+		choose a uniform random element $y$ in $A$. What is the probability that $x = y$?
+	]]>
+	<option correct="true">$\frac{1}{100}$</option>
+	<option correct="false">$\frac{1}{100 \cdot 99}$</option>
+	<option correct="false">$\frac{1}{100 \cdot 100}$</option>
+	<option correct="false">$\frac{1}{{100 \choose 2}}$</option>
+</question>

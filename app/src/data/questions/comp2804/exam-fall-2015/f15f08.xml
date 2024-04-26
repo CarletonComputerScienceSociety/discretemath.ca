@@ -1,0 +1,24 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider the following recursive function:
+		<table style="margin: 1rem auto;">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;">$f(0) = $</td>
+					<td>$7,$</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;">$f(n) = $</td>
+					<td>$2 \cdot f(n - 1) + 1\; \ \text{for all}$ $\text{integers}\ n \geq 1.$</td>
+				</tr>
+			</tbody>
+		</table>
+		Which of the following is true?
+	]]>
+	</question>
+	<answer correct="false">$f(n) = 8n + 7$</answer>
+	<answer correct="false">$f(n) = 4n^{2} + 4n + 7$</answer>
+	<answer correct="true">$f(n) = 2^{n+3} - 1$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

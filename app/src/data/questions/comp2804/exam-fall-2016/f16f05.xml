@@ -1,0 +1,23 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		In a group of 100 students,
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				25 drink cider,
+			</li>
+			<li>
+				50 drink beer,
+			</li>
+			<li>
+				33 do not drink cider and do not drink beer.
+			</li>
+		</ul>
+		How many people in this group drink both cider and beer?
+	]]>
+	</question>
+	<answer correct="true">8</answer>
+	<answer correct="false">9</answer>
+	<answer correct="false">10</answer>
+	<answer correct="false">11</answer>
+</multiple-choice>

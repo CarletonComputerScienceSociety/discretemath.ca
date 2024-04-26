@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 1$ be an integer.
+		Consider a uniformly random permutation of the set $\{1,2,3,\dots,2n\}$. Define the event
+		[defs]
+		  A = "both the first element and the last element in the permutation are even integers".
+		[/defs]
+		What is $\Pr(A)$?
+	]]>
+	</question>
+	<answer correct="false">$\frac{2(2n-1)}{n-1}$</answer>
+	<answer correct="false">$\frac{n-1}{4n}$</answer>
+	<answer correct="true">$\frac{n-1}{2(2n-1)}$</answer>
+	<answer correct="false">$\frac{n}{2(2n-1)}$</answer>
+</multiple-choice>

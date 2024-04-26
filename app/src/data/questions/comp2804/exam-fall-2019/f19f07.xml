@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+		Nick eats lots of bananas. During a period of 7 days, Nick eats a total of 25 bananas. A banana schedule
+		is a sequence of 7 numbers, whose sum is equal to 25, and whose numbers indicate the number of bananas
+		that Nick eats on each day. Three examples of such schedules are (3,2,7,4,1,3,5), (2,3,7,4,1,3,5), and
+		(3,0,9,4,1,0,8). How many banana schedules are there?
+	</question>
+	<answer correct="true">${31 \choose 6}$</answer>
+	<answer correct="false">${31 \choose 7}$</answer>
+	<answer correct="false">${32 \choose 6}$</answer>
+	<answer correct="false">${32 \choose 7}$</answer>
+</multiple-choice>

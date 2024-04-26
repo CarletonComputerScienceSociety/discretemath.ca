@@ -1,0 +1,18 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+		$$
+			\begin{align}
+			f(0) &= 2 \\
+			f(n + 1) &= f(n) + 6n - 2\; \ \mathrm{for}\ n \geq 0
+			\end{align}
+		$$
+		What is $f(n)$?
+	]]>
+	</question>
+	<answer correct="true">$f(n) = 3n^{2} - 5n + 2$</answer>
+	<answer correct="false">$f(n) = 3n^{2} + 5n + 2$</answer>
+	<answer correct="false">$f(n) = 2n^{2} - 5n + 2$</answer>
+	<answer correct="false">$f(n) = 2n^{2} + 5n + 2$</answer>
+</multiple-choice>

@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>Who is Lindsay Bangs?</question>
+	<answer correct="false">A world-renowned rapper.</answer>
+	<answer correct="false">
+	<![CDATA[
+		Goalie of the Ottawa Senators, her nickname is <em>The Hamburglar</em>.
+	]]>
+	</answer>
+	<answer correct="true">President of the Carleton Computer Science Society.</answer>
+	<answer correct="false">
+	<![CDATA[
+		Owner of the brewery that produces <em>Leo's Early Breakfast IPA</em>.
+	]]>
+	</answer>
+</multiple-choice>

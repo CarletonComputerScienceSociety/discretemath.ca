@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $A$ and $B$ be events in a sample space, such that $\Pr(A) = 1/3$, $\Pr(B) = 1/2$,
+		and $\Pr(A|B) = 2/5$. What is $\Pr(B|A)$?
+	]]>
+	</question>
+	<answer correct="false">1/5</answer>
+	<answer correct="false">2/5</answer>
+	<answer correct="true">3/5</answer>
+	<answer correct="false">4/5</answer>
+</multiple-choice>

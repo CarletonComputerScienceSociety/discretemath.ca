@@ -1,0 +1,15 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		The Carleton Computer Science Society has a Board of Directors consisting of a President, two
+		Vice-Presidents, and a five-person Advisory Board. The President cannot be Vice-President and cannot be
+		on the Advisory Board. A Vice-President cannot be on the Advisory Board. Let $n$ be the number of
+		students in Carleton's Computer Science program, where $n \geq 8$. In how many ways can a Board of
+		Directors be chosen?
+	]]>
+	</question>
+	<answer correct="false">$n{n \choose 2}{n \choose 5}$</answer>
+	<answer correct="false">$(n-2){n\choose 2}{n-2 \choose 5}$</answer>
+	<answer correct="false">$(n-5){n \choose 2}{n-1 \choose 5}$</answer>
+	<answer correct="true">$(n-7){n \choose 2}{n-2 \choose 5}$</answer>
+</multiple-choice>

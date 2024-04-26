@@ -1,0 +1,13 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		You repeatedly, and independently, roll two fair dice, until the sum of the values of the two dice
+		is equal to 12. Define the random variable $X$ to be the number of times you roll the pair of dice.
+		What is the expected value of $X$?
+	]]>
+	</question>
+	<answer correct="true">36</answer>
+	<answer correct="false">30</answer>
+	<answer correct="false">20</answer>
+	<answer correct="false">12</answer>
+</multiple-choice>

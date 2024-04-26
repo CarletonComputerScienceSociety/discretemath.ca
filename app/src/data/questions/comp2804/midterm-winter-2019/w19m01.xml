@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider bitstrings of length 13. The positions in these strings are numbered as $1,2,3,\dots,13$.
+		How many such bitstrings have the property that all bits at the odd positions are equal?
+	]]>
+	</question>
+	<answer correct="false">32</answer>
+	<answer correct="false">64</answer>
+	<answer correct="true">128</answer>
+	<answer correct="false">256</answer>
+</multiple-choice>

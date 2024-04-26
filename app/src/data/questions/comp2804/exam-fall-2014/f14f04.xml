@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		How many bitstings of length 13 start with 010 or end with 11?
+	]]>
+	</question>
+	<answer correct="false">$2^{10} + 2^{11}$</answer>
+	<answer correct="true">$3 \cdot 2^{10} - 2^{8}$</answer>
+	<answer correct="false">$2^{13} - (2^{10} + 2^{11})$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

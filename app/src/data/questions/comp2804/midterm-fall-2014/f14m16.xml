@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider 10 boxes and 10 balls. We throw each ball, uniformly, in a random box. What is the
+		probability that, after we have thrown all 10 balls, none of the 10 boxes is empty?
+	]]>
+	</question>
+	<answer correct="true">$\frac{10!}{10^{10}}$</answer>
+	<answer correct="false">$\frac{10^{10}}{10!}$</answer>
+	<answer correct="false">$1 - \frac{10 \cdot (9/10)^{10}}{10^{10}}$</answer>
+	<answer correct="false">None of the above.</answer>
+</multiple-choice>

@@ -1,0 +1,11 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		What is the coefficient of $x^{20}y^{80}$ in the expansion of $(7x-13y)^{100}$?
+	]]>
+	</question>
+	<answer correct="true">${100 \choose 80} \cdot 7^{20} \cdot 13^{80}$</answer>
+	<answer correct="false">$- {100 \choose 80} \cdot 7^{20} \cdot 13^{80}$</answer>
+	<answer correct="false">${100 \choose 20} \cdot 7^{80} \cdot 13^{20}$</answer>
+	<answer correct="false">$- {100 \choose 20} \cdot 7^{80} \cdot 13^{20}$</answer>
+</multiple-choice>

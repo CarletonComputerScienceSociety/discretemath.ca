@@ -6,7 +6,7 @@ DiscreteMath.ca is an interactive platform built specifically for content from C
 
 <hr>
 
-![API](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/api.yml/badge.svg) ![Client](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/client.yml/badge.svg) ![Dynamic](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/dynamic.yml/badge.svg)
+![API](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/api.yml/badge.svg) ![Client](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/app.yml/badge.svg) ![Dynamic](https://github.com/CarletonComputerScienceSociety/discretemath.ca/actions/workflows/dynamic.yml/badge.svg)
 
 <hr>
 
@@ -16,6 +16,10 @@ DiscreteMath.ca is an interactive platform built specifically for content from C
 ## Client
 
 The user interface, written with Svelte. The user interface makes use of Mathjax and Pseudocode.js to render content provided from API.
+
+## App
+
+The in-development updated version of the client with improved mathjax handling.
 
 ## API
 

@@ -1,0 +1,24 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $B$ be a set consisting of 45 bottles. Out of these, 17 are beer bottles, and the remaining 28
+		are cider bottles. Consider subsets of $B$ that contain
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				exactly 5 beer bottles and zero or more cider bottles,
+			</li>
+		</ul>
+		or
+		<ul style="margin: 0.5rem 0;">
+			<li>
+				exactly 5 cider bottles and zero or more beer bottles.
+			</li>
+		</ul>
+		How many such subsets are there?
+	]]>
+	</question>
+	<answer correct="false">${17 \choose 5} \cdot 2^{28} + 2^{17} \cdot {28 \choose 5}$</answer>
+	<answer correct="true">${17 \choose 5} \cdot 2^{28} + 2^{17} \cdot {28 \choose 5} - {17 \choose 5} \cdot {28 \choose 5}$</answer>
+	<answer correct="false">$2^{45} - {17 \choose 5} - {28 \choose 5}$</answer>
+	<answer correct="false">$2^{45} - {17 \choose 5} \cdot {28 \choose 5}$</answer>
+</multiple-choice>

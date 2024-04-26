@@ -1,0 +1,12 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 8$ be an even integer and let $S = \{1,2,3,\dots,n\}$. Consider 7-element subsets of $S$
+		that consist of 4 even numbers and 3 odd numbers. How many such subsets are there?
+	]]>
+	</question>
+	<answer correct="true">${n/2 \choose 4} \cdot {n/2 \choose 3}$</answer>
+	<answer correct="false">${n \choose 4} \cdot {n \choose 3}$</answer>
+	<answer correct="false">${n/2 \choose 4} + {n/2 \choose 3}$</answer>
+	<answer correct="false">${n \choose 4} + {n \choose 3}$</answer>
+</multiple-choice>

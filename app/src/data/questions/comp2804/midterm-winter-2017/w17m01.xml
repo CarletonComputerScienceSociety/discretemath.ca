@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Carleton's Computer Science program has $f$ female students and $m$ male students, where $f \geq 1$
+		and $f + m \geq 8$. The Carleton Computer Science Society has a Board of Directors consisting of a
+		President, five Vice-Presidents, and two Cider-Presidents (whose task is to buy cider for the
+		President). All members of the Board of Directors are Computer Science students. The President is
+		female, cannot be Vice-President, and cannot be Cider-President. A Vice-President cannot be Cider-President.
+		In how many ways can a Board of Directors be chosen?
+	]]>
+	</question>
+	<answer correct="false">$f \cdot {f+m-1 \choose 7}$</answer>
+	<answer correct="false">$f + {f+m-1 \choose 5} + {f+m-6 \choose 2}$</answer>
+	<answer correct="true">$f \cdot {f+m-1 \choose 5} \cdot {f+m-6 \choose 2}$</answer>
+	<answer correct="false">$f \cdot {f+m \choose 5} \cdot {f+m \choose 2}$</answer>
+</multiple-choice>

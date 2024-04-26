@@ -1,0 +1,14 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Let $n \geq 7$ and $k \geq 1$ be integers, let $A$ be the set of all bitstrings of length $n$ that
+		contain exactly seven 0s, and let $B$ be the set of all bitstrings of length $k$ that contain at
+		least one 1. Assume there exists a one-to-one function $f : A \rightarrow B$. Which of the following
+		is true?
+	]]>
+	</question>
+	<answer correct="false">$2^k - 1 &lt; {n \choose 7}$</answer>
+	<answer correct="true">$2^k - 1 \geq {n \choose 7}$</answer>
+	<answer correct="false">$2^k - 1 &lt; \left. 2^n \middle/ {n \choose n-7} \right.$</answer>
+	<answer correct="false">$2^k - 1 \geq \left. 2^n \middle/ {n \choose n-7} \right.$</answer>
+</multiple-choice>

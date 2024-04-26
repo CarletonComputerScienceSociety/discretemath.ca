@@ -1,0 +1,16 @@
+<multiple-choice>
+	<question>
+	<![CDATA[
+		Consider a uniformly random bitstring of length 5. Define the events
+		[defs]
+		  A = "the bitstring contains exactly two 0s",
+		  B = "the bitstring contains an even number of 0s".
+		[/defs]
+		(Note that zero is even.) What is the conditional probability $\Pr(A|B)$?
+	]]>
+	</question>
+	<answer correct="false">$\left. {5 \choose 2} \middle/ 2^3 \right.$</answer>
+	<answer correct="true">$\left. {5 \choose 2} \middle/ 2^4 \right.$</answer>
+	<answer correct="false">$\left. {5 \choose 2} \middle/ 2^5 \right.$</answer>
+	<answer correct="false">$\left. 2^5 \middle/ {5 \choose 2} \right.$</answer>
+</multiple-choice>

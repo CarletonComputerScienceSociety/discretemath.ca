@@ -1,0 +1,20 @@
+---
+import ExaminationLayout from "../../../layouts/ExaminationLayout.astro";
+import { Lab } from "../../../apps";
+import { Repository } from "../../../data";
+
+// TODO: move params data into data folder?
+export function getStaticPaths() {
+  return [
+    { params: { course: "comp1805", lab: "asymtopic-analysis" } },
+    { params: { course: "comp2804", lab: "how-many-functions" } },
+  ];
+}
+
+const { course, lab } = Astro.params;
+const data = new Repository().fetchLab(`${course}/${lab}`);
+---
+
+<ExaminationLayout>
+  <Lab client:load {data} />
+</ExaminationLayout>
