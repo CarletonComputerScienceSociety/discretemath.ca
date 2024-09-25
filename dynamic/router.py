@@ -13,6 +13,9 @@ import generators.comp2804.bitstrings_of_length.main as bitstrings_of_length_gen
 import generators.comp2804.binomial_expansion_coefficient.main as binomial_expansion_coefficient_generator
 
 
+import generators.comp2804.coefficient_of_term.main as coefficient_of_term_generator
+import generators.comp2804.probability_of_choice.main as probability_of_choice_generator
+
 router = APIRouter(
     prefix="/api", tags=["generate"], responses={404: {"description": "Not found"}}
 )
@@ -31,6 +34,8 @@ routes = {
         "set-theory-question": "/comp2804/set-theory",
         "num-of-functions": "/comp2804/num-of-functions",
         "let-m-and-n-question": "/comp2804/let-m-and-n",
+        "coefficient_of_term": "/comp2804/coefficient_of_term",
+        "probability_of_choice": "/comp2804/probability_of_choice",
     },
 }
 
@@ -90,6 +95,22 @@ async def generate_m_and_n_question():
 async def generate_m_and_n_question():
     return binomial_expansion_coefficient_generator.call()
 
+  
 @router.get(routes["comp2804"]["bitstrings-of-length"])
 async def generate_bitstrings_of_length_question():
     return bitstrings_of_length_generator.call()
+
+
+@router.get(routes["comp2804"]["let-m-and-n-question"])
+async def generate_m_and_n_question():
+    return m_and_n_generator.call()
+
+
+@router.get(routes["comp2804"]["coefficient_of_term"])
+async def coefficient_of_term_question():
+    return coefficient_of_term_generator.call()
+
+
+@router.get(routes["comp2804"]["probability_of_choice"])
+async def probability_of_choice_question():
+    return probability_of_choice_generator.call()
