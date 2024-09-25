@@ -61,6 +61,39 @@
   </head>
 
   <body>
+    <script>
+      var urlMap = {
+        "https://discretemath.ca/": "https://questions.carletoncomputerscience.ca/",
+        "https://discretemath.ca/#/comp2804": "https://questions.carletoncomputerscience.ca/comp2804",
+        "https://discretemath.ca/#/tests/1": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2013-fall-midterm",
+        "https://discretemath.ca/#/tests/2": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2017-winter-midterm",
+        "https://discretemath.ca/#/tests/3": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2014-fall-midterm",
+        "https://discretemath.ca/#/tests/4": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2018-fall-midterm",
+        "https://discretemath.ca/#/tests/5": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2015-fall-midterm",
+        "https://discretemath.ca/#/tests/6": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2016-fall-midterm",
+        "https://discretemath.ca/#/tests/7": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2015-winter-midterm",
+        "https://discretemath.ca/#/tests/8": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2018-winter-midterm",
+        "https://discretemath.ca/#/tests/9": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2016-winter-midterm",
+        "https://discretemath.ca/#/tests/10": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2014-winter-midterm",
+        "https://discretemath.ca/#/tests/11": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2017-fall-midterm",
+        "https://discretemath.ca/#/tests/12": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2019-fall-final",
+        "https://discretemath.ca/#/tests/13": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2015-winter-final",
+        "https://discretemath.ca/#/tests/14": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2016-fall-final",
+        "https://discretemath.ca/#/tests/15": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2017-fall-final",
+        "https://discretemath.ca/#/tests/16": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2014-winter-final",
+        "https://discretemath.ca/#/tests/17": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2018-winter-final",
+        "https://discretemath.ca/#/tests/18": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2018-fall-final",
+        "https://discretemath.ca/#/tests/19": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2014-fall-final",
+        "https://discretemath.ca/#/tests/20": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2017-winter-final",
+        "https://discretemath.ca/#/tests/21": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2015-fall-final",
+        "https://discretemath.ca/#/tests/22": "https://questions.carletoncomputerscience.ca/evaluations/comp2804/2013-fall-final",
+      }
+      const currentPageUrl = window.location.href;
+      console.log(currentPageUrl);
+      if (urlMap[currentPageUrl]) {
+        window.location.href = urlMap[currentPageUrl];
+      }
+    </script>
     <noscript>
       <img
         src="https://shynet.carletoncomputersciencesociety.ca/ingress/9854bb91-6c3f-457e-a875-81af33ce0970/pixel.gif"
